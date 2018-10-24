@@ -1,0 +1,1489 @@
+<skin>
+  <!--  Original Skin: SmartLiteFHD by SkinMania  -->
+  <!-- Media -->
+
+  
+  <!-- EMC Media Center  -->
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="EnhancedMovieCenterMenu" title="EnhancedMovieCenterMenu" position="center,center" size="1920,1080">
+    <!-- Backg -->
+    <eLabel backgroundColor="EL_Background" position="260,50" size="1400,980" zPosition="-21" />
+    <eLabel backgroundColor="Red" position="260,130" size="1400,3" zPosition="-9" foregroundColor="white" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="config" itemHeight="50" font="FHD; 32" backgroundColor="EL_Background" enableWrapAround="1" position="310,155" scrollbarMode="showOnDemand" size="1300,650" transparent="1" foregroundColor="white" />
+    <eLabel backgroundColor="blueCH" foregroundColor="white" name="new eLabel" position="310,815" size="1300,3" zPosition="-1" />
+    <widget render="Label" source="help" font="FHD; 30" backgroundColor="EL_Background" halign="left" position="310,825" size="1300,150" transparent="1" foregroundColor="white" valign="top" />
+    <!-- Buttons -->
+    <eLabel backgroundColor="blue" foregroundColor="white" name="" position="260,978" size="1400,1" zPosition="-10" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="310,985" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="630,985" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/blue.png" position="950,985" size="40,40" />
+    <widget name="key_red" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="355,985" size="270,40" transparent="1" zPosition="1" />
+    <widget name="key_green" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="675,985" size="270,40" transparent="1" zPosition="1" />
+    <widget name="key_blue" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="995,985" size="270,40" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="1497,63" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1504,47" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="white" halign="right" position="1344,86" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="white" halign="right" position="1344,58" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+  </screen>
+  <screen name="EMCSelection" title="Enhanced Movie Center" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
+    <!-- Backg1 -->
+    <eLabel backgroundColor="EL_Background" position="center,center" size="1800,960" zPosition="-20" />
+    <eLabel backgroundColor="Red" position="60,140" size="1800,3" zPosition="-9" foregroundColor="white" />
+    <!-- Widget -->
+    <eLabel text="EMC - Enhanced Movie Center" position="100,70" size="1450,58" font="FHD; 42" halign="left" backgroundColor="EL_Background" transparent="1" />
+    <widget name="list" itemHeight="46" CoolFont="FHD;32" CoolSelectFont="FHD;32" CoolDateFont="FHD;32" CoolSelNumTxtWidth="50" CoolCSWidth="210" CoolDirInfoWidth="210" CoolIconPos="10" CoolIconHPos="5" CoolIconSize="36,36" CoolMoviePos="50" CoolMovieSize="900" CoolFolderSize="900" CoolTitleColor="0" CoolDatePos="1140" CoolDateWidth="150" CoolDateColor="0" CoolHighlightColor="0" CoolProgressPos="1000" CoolBarPos="1000" CoolBarHPos="10" CoolBarSize="55,10" CoolBarSizeSa="120,26" BackColorSel="EL_Selection" DefaultColor="white" FinishedColor="yellow" RecordingColor="EL_Red" UnwatchedColor="white" WatchingColor="EL_Green" backgroundColor="EL_Background" foregroundColorSelected="white" position="100,155" scrollbarMode="showNever" size="1380,598" transparent="1" />
+    <widget source="Service" render="Label" position="100,770" size="1170,50" font="FHD; 34" foregroundColor="white" backgroundColor="EL_New" valign="center" halign="left" transparent="1" zPosition="1">
+      <convert type="EMCEventName">Name</convert>
+    </widget>
+    <widget source="Service" render="Label" position="1520,570" size="300,185" font="FHD; 30" foregroundColor="white" backgroundColor="EL_New" halign="center" transparent="1" zPosition="1" valign="top" noWrap="1">
+      <convert type="EMCMovieInfo">RecordServiceName</convert>
+    </widget>
+    <widget source="Service" render="Label" position="1270,770" size="100,50" font="FHD; 34" foregroundColor="white" backgroundColor="EL_New" halign="left" transparent="1" zPosition="1">
+      <convert type="EMCServiceTime">StartTime</convert>
+      <convert type="EMCClockToText">Format:%H:%M </convert>
+    </widget>
+    <widget source="Service" render="Label" position="1360,770" size="120,50" font="FHD; 34" foregroundColor="white" backgroundColor="EL_New" transparent="1" zPosition="1">
+      <convert type="EMCServiceTime">EndTime</convert>
+      <convert type="EMCClockToText">Format:- %H:%M</convert>
+    </widget>
+    <widget source="Service" render="Label" position="1520,770" size="150,50" font="FHD; 34" foregroundColor="white" backgroundColor="EL_New" halign="left" transparent="1" zPosition="1">
+      <convert type="EMCServiceTime">Duration</convert>
+      <convert type="EMCClockToText">InMinutes</convert>
+    </widget>
+    <widget alphatest="on" name="Cover" position="1514,155" size="312,400" zPosition="4" />
+    <widget backgroundColor="EL_Background" font="FHD; 34" foregroundColor="EL_Foreground" halign="right" position="1670,770" render="Label" size="150,50" source="Service" transparent="1">
+      <convert type="EMCMovieInfo">FileSize</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="FHD; 30" foregroundColor="EL_Foreground" halign="left" position="100,830" render="Label" size="1380,130" source="Service" transparent="1" valign="top">
+      <convert type="EMCEventName">ExtendedDescription</convert>
+    </widget>
+    <widget source="Service" render="Label" font="FHD; 34" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="right" position="1519,830" size="300,135" transparent="1" valign="top">
+      <convert type="EMCServiceTime">StartTime</convert>
+      <convert type="EMCClockToText">Format:%d.%m.%Y</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Regular;32" foregroundColor="EL_Foreground" halign="center" name="wait" position="center,center" size="1920,50" valign="center" zPosition="1" />
+    <eLabel backgroundColor="blueCH" position="100,760" size="1720,3" zPosition="-9" foregroundColor="white" />
+    <!-- Buttons -->
+    <eLabel backgroundColor="blue" foregroundColor="white" name="" position="60,968" size="1800,1" zPosition="-10" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_menu.png" position="1756,976" size="64,38" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="100,975" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="400,975" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/yellow.png" position="700,975" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/blue.png" position="1000,975" size="40,40" />
+    <widget backgroundColor="EL_Background" font="Regular; 28" halign="left" position="145,975" size="250,40" name="key_red" transparent="1" zPosition="1" />
+    <widget backgroundColor="EL_Background" font="Regular; 28" halign="left" position="445,975" size="250,40" name="key_green" transparent="1" zPosition="1" />
+    <widget backgroundColor="EL_Background" font="Regular; 28" halign="left" position="745,975" size="250,40" name="key_yellow" transparent="1" zPosition="1" />
+    <widget backgroundColor="EL_Background" font="Regular; 28" halign="left" position="1045,975" size="250,40" name="key_blue" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="1707,73" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1714,56" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1554,96" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1554,68" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+  </screen>
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="EMCMediaCenter" position="0,0" size="1920,1080" title="InfoBar">
+    <!-- Background -->
+    <eLabel backgroundColor="EL_Background" name="InfoBar" position="center,950" size="1920,130" zPosition="-11" />
+    <eLabel backgroundColor="Red" name="" position="0,952" size="1920,1" zPosition="-10" foregroundColor="white" />
+    <!-- Widget -->
+    <widget backgroundColor="EL_Background" font="Bold; 37" foregroundColor="blueCH" halign="left" position="1385,1008" render="Label" size="160,50" source="Service" transparent="1" valign="center">
+      <convert type="EMCServicePosition">Length</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="FHD; 35" foregroundColor="EL_Foreground" noWrap="1" position="80,962" render="Label" size="1280,50" source="session.CurrentService" transparent="1" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 30" foregroundColor="EL_Blue" halign="left" position="80,1007" render="Label" shadowColor="EL_Background" shadowOffset="-1,-1" size="140,45" source="Service" transparent="1" valign="center">
+      <convert type="EMCServicePosition">Position</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 30" foregroundColor="EL_Blue" halign="right" position="1220,1010" render="Label" size="140,45" source="Service" transparent="1" valign="center" text="+55:59">
+      <convert type="EMCServicePosition">Remaining,Negate</convert>
+    </widget>
+    <eLabel backgroundColor="white" foregroundColor="EL_Accent1" name="new eLabel" position="220,1031" size="1000,1" zPosition="-1" />
+    <widget source="Service" render="EMCPositionGauge" position="220,1028" size="1000,7" transparent="1" zPosition="6">
+      <convert type="EMCServicePosition">Gauge</convert>
+    </widget>
+    <widget source="Service" render="EMCPositionGauge" pointer="SmartLiteFHD/extensions/CoolPointer4.png:1000,0" position="220,1028" size="1000,7" transparent="1" zPosition="7">
+      <convert type="EMCServicePosition">Position</convert>
+    </widget>
+    <!-- icons -->
+    <widget backgroundColor="EL_Background" font="Bold; 32" foregroundColor="EL_Blue" halign="right" position="1575,958" render="Label" size="90,45" source="session.CurrentService" transparent="1" valign="center" zPosition="1">
+      <convert type="ServiceInfo">VideoWidth</convert>
+    </widget>
+    <eLabel backgroundColor="EL_Background" font="Bold; 32" halign="center" noWrap="1" position="1665,958" size="30,45" text="x" transparent="1" valign="center" zPosition="2" foregroundColor="EL_Blue" />
+    <widget backgroundColor="EL_Background" font="Bold; 32" foregroundColor="EL_Blue" halign="left" position="1695,958" render="Label" size="90,45" source="session.CurrentService" transparent="1" valign="center" zPosition="3">
+      <convert type="ServiceInfo">VideoHeight</convert>
+    </widget>
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/my_icons/dolby_off2.png" position="1728,1020" size="50,30" zPosition="1" />
+    <widget alphatest="blend" pixmap="SmartLiteFHD/my_icons/dolby_on.png" position="1728,1020" render="Pixmap" size="50,30" source="session.CurrentService" zPosition="2">
+      <convert type="ServiceInfo">IsMultichannel</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/my_icons/format_off2.png" position="1656,1020" size="52,30" zPosition="1" />
+    <widget alphatest="blend" pixmap="SmartLiteFHD/my_icons/format_on.png" position="1656,1020" render="Pixmap" size="52,30" source="session.CurrentService" zPosition="2">
+      <convert type="ServiceInfo">IsWidescreen</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/my_icons/hd_off.png" position="1580,1020" size="63,30" zPosition="1" />
+    <widget source="session.CurrentService" render="Pixmap" alphatest="blend" pixmap="SmartLiteFHD/my_icons/hd_on.png" position="1580,1020" size="63,30" zPosition="2">
+      <convert type="ServiceInfo">VideoWidth</convert>
+      <convert type="ValueRange">721,3841</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="SmartLiteFHD/my_icons/rec_on.png" position="1430,970" render="Pixmap" size="78,30" source="session.RecordState" zPosition="2">
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
+    <eLabel backgroundColor="blue" foregroundColor="blue" name="new eLabel" position="1565,1007" size="230,1" zPosition="-1" />
+    <!-- Clock -->
+    <eLabel backgroundColor="EL_Background" position="1687,73" size="150,68" transparent="0" zPosition="-12" />
+    <eLabel backgroundColor="blue" position="1530,73" size="157,68" transparent="0" zPosition="-12" foregroundColor="white" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1694,65" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="white" halign="right" position="1534,106" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="white" halign="right" position="1534,78" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+  </screen>
+  <screen name="EventViewSimple" title="" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
+    <!-- Backg -->
+    <eLabel backgroundColor="EL_Background" name="InfoBar" position="0,850" size="1920,230" zPosition="-11" />
+    <eLabel backgroundColor="Red" name="" position="0,852" size="1920,1" zPosition="-10" foregroundColor="Red" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 34" backgroundColor="EL_Background" halign="left" noWrap="1" position="120,860" size="1080,50" transparent="1" foregroundColor="white" />
+    <widget name="datetime" font="FHD; 32" backgroundColor="EL_Background" halign="right" noWrap="1" position="1460,860" size="340,50" transparent="1" />
+    <widget name="duration" font="FHD; 32" backgroundColor="EL_Background" halign="center" noWrap="1" position="1205,860" size="250,50" transparent="1" foregroundColor="green_light" />
+    <eLabel backgroundColor="EL_Blue" name="" position="120,920" size="1680,3" zPosition="-10" foregroundColor="white" />
+    <widget name="FullDescription" font="FHD; 30" backgroundColor="EL_Background" halign="left" noWrap="1" position="120,930" size="1680,140" transparent="1" valign="top" />
+    <!-- Clock -->
+    <eLabel backgroundColor="EL_Background" position="1687,73" size="150,68" transparent="0" zPosition="-12" />
+    <eLabel backgroundColor="dark" position="1530,73" size="157,68" transparent="0" zPosition="-12" foregroundColor="white" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1694,65" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="white" halign="right" position="1534,106" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="white" halign="right" position="1534,78" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+  </screen>
+  <screen name="InfoBarEventView" title="" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
+    <!-- Backg -->
+    <eLabel backgroundColor="EL_Background" name="InfoBar" position="0,850" size="1920,230" zPosition="-11" />
+    <eLabel backgroundColor="Red" name="" position="0,852" size="1920,1" zPosition="-10" foregroundColor="white" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 34" backgroundColor="EL_Background" halign="left" noWrap="1" position="120,860" size="1080,50" transparent="1" foregroundColor="white" />
+    <widget name="datetime" font="FHD; 32" backgroundColor="EL_Background" halign="right" noWrap="1" position="1460,860" size="340,50" transparent="1" />
+    <widget name="duration" font="FHD; 32" backgroundColor="EL_Background" halign="center" noWrap="1" position="1205,860" size="250,50" transparent="1" foregroundColor="green_light" />
+    <eLabel backgroundColor="EL_Blue" name="" position="120,920" size="1680,3" zPosition="-10" foregroundColor="white" />
+    <widget name="FullDescription" font="FHD; 30" backgroundColor="EL_Background" halign="left" noWrap="1" position="120,930" size="1680,140" transparent="1" valign="top" />
+    <!-- Clock -->
+    <eLabel backgroundColor="EL_Background" position="1687,73" size="150,68" transparent="0" zPosition="-12" />
+    <eLabel backgroundColor="dark" position="1530,73" size="157,68" transparent="0" zPosition="-12" foregroundColor="white" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1694,65" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="white" halign="right" position="1534,106" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="white" halign="right" position="1534,78" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+  </screen>
+  <screen name="EventViewContextMenu" title="" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
+    <!-- Backg -->
+    <eLabel backgroundColor="EL_Background" position="260,50" size="1400,980" zPosition="-21" />
+    <eLabel backgroundColor="Red" position="260,130" size="1400,3" zPosition="-9" foregroundColor="white" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="menu" itemHeight="50" font="FHD;32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="310,155" size="1300,850" transparent="1" zPosition="3" />
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="1497,63" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1504,47" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="white" halign="right" position="1344,86" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="white" halign="right" position="1344,58" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+  </screen>
+  <screen name="EMCPlaylistSetup" title="EMC Playlist Setup" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
+    <!-- Backg -->
+    <eLabel backgroundColor="EL_Background" position="260,50" size="1400,980" zPosition="-21" />
+    <eLabel backgroundColor="Red" position="260,130" size="1400,3" zPosition="-9" foregroundColor="white" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="config" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="310,155" size="1300,800" transparent="1" zPosition="3" />
+    <widget name="HelpWindow" position="275,550" size="1,1" zPosition="10" />
+    <!-- Buttons -->
+    <eLabel backgroundColor="blue" foregroundColor="EL_Background" name="" position="260,978" size="1400,1" zPosition="-10" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="310,985" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="630,985" size="40,40" />
+    <widget name="cancel" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="355,985" size="270,40" transparent="1" zPosition="1" />
+    <widget name="save" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="675,985" size="270,40" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="1497,63" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1504,47" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="white" halign="right" position="1344,86" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="white" halign="right" position="1344,58" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+  </screen>
+  <screen name="EMCPlaylist" title="EMC Playlist" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <!-- Backg -->
+    <eLabel backgroundColor="EL_Background" position="260,50" size="1400,980" zPosition="-21" />
+    <eLabel backgroundColor="Red" position="260,130" size="1400,3" zPosition="-9" foregroundColor="white" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="playlist" itemHeight="50" posFont="FHD; 32" nameFont="Bold; 30" posWidth="60" nameWidth="810" posColor="white" posColorSel="white" nameColor="white" nameColorSel="white" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="310,155" size="1300,800" transparent="1" />
+    <!-- Buttons -->
+    <eLabel backgroundColor="blue" foregroundColor="EL_Background" name="" position="260,978" size="1400,1" zPosition="-10" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="310,985" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="630,985" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/yellow.png" position="950,985" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/blue.png" position="1270,985" size="40,40" />
+    <widget name="cancel" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="355,985" size="270,40" transparent="1" zPosition="1" />
+    <widget name="save" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="675,985" size="270,40" transparent="1" zPosition="1" />
+    <widget name="delete" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="995,985" size="270,40" transparent="1" zPosition="1" />
+    <widget name="deleteall" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="1315,985" size="270,40" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="1497,63" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1504,47" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="white" halign="right" position="1344,86" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="white" halign="right" position="1344,58" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+  </screen>
+  <screen name="EMCFileBrowser" title="EMC Filebrowser" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
+    <!-- Backg -->
+    <eLabel backgroundColor="EL_Background" position="260,50" size="1400,980" zPosition="-21" />
+    <eLabel backgroundColor="Red" position="260,130" size="1400,3" zPosition="-9" foregroundColor="white" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="filelist" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="white" position="310,155" size="1300,800" transparent="1" zPosition="3" />
+    <!-- Buttons -->
+    <eLabel backgroundColor="blue" foregroundColor="EL_Background" name="" position="260,978" size="1400,1" zPosition="-10" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="310,985" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="630,985" size="40,40" />
+    <widget name="cancel" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="355,985" size="270,40" transparent="1" zPosition="1" />
+    <widget name="save" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="675,985" size="270,40" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="1497,63" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1504,47" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="white" halign="right" position="1344,86" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="white" halign="right" position="1344,58" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+  </screen>
+  <screen name="EMCImdbScan" title="EMC Cover search" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <!-- Backg1 -->
+    <eLabel backgroundColor="EL_Background" position="center,center" size="1800,960" zPosition="-20" />
+    <eLabel backgroundColor="Red" position="60,140" size="1800,3" zPosition="-9" foregroundColor="white" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" position="100,70" size="1450,58" font="FHD; 42" halign="left" backgroundColor="EL_Background" transparent="1" />
+    <widget name="menulist" itemHeight="50" font="Bold; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="100,155" size="1350,550" transparent="1" />
+    <widget name="poster" position="1500,155" size="304,340" zPosition="4" alphatest="on" backgroundColor="EL_Background" />
+    <eLabel backgroundColor="blue" position="100,750" size="1720,3" zPosition="-9" foregroundColor="white" />
+    <widget name="download" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="100,760" size="670,45" transparent="1" />
+    <widget name="exist" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="810,760" size="670,45" transparent="1" />
+    <widget name="no_poster" font="FHD; 28" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="center" position="1500,509" size="305,220" transparent="1" valign="top" />
+    <widget name="info" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="100,810" size="1380,45" transparent="1" />
+    <widget name="m_info" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="100,860" size="1380,45" transparent="1" />
+    <widget name="done_msg" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="100,910" size="1380,45" transparent="1" />
+    <!-- Button -->
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_menu.png" position="1173,976" size="64,38" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_ok.png" position="1470,976" size="64,38" />
+    <widget name="Setup" backgroundColor="EL_Background" font="Regular2; 28" halign="left" valign="center" position="1240,975" size="220,40" transparent="1" zPosition="1" foregroundColor="white" />
+    <widget name="Single search" backgroundColor="EL_Background" font="Regular2; 28" halign="left" valign="center" position="1537,975" size="320,40" transparent="1" zPosition="1" foregroundColor="white" />
+    <!-- Buttons -->
+    <eLabel backgroundColor="blue" foregroundColor="white" name="" position="60,968" size="1800,1" zPosition="-10" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="100,975" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/yellow.png" position="450,975" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="800,975" size="40,40" />
+    <widget backgroundColor="EL_Background" font="Regular; 28" halign="left" position="145,975" size="300,40" name="ButtonGreenText" transparent="1" zPosition="1" />
+    <widget backgroundColor="EL_Background" font="Regular; 28" halign="left" position="495,975" size="300,40" name="Manage Cover" transparent="1" zPosition="1" />
+    <widget backgroundColor="EL_Background" font="Regular; 28" halign="left" position="845,975" size="300,40" name="ButtonRedText" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="1707,73" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1714,56" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1554,96" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1554,68" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+  </screen>
+  <screen name="imdbSetup" title="EMC Cover search setup" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
+    <!-- Backg -->
+    <eLabel backgroundColor="EL_Background" position="260,50" size="1400,980" zPosition="-21" />
+    <eLabel backgroundColor="Red" position="260,130" size="1400,3" zPosition="-9" foregroundColor="white" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="config" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="white" position="310,155" size="1300,800" transparent="1" zPosition="3" />
+    <!-- Buttons -->
+    <eLabel backgroundColor="blue" foregroundColor="EL_Background" name="" position="260,978" size="1400,1" zPosition="-10" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="310,985" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="630,985" size="40,40" />
+    <widget name="key_red" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="355,985" size="270,40" transparent="1" zPosition="1" />
+    <widget name="key_green" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="675,985" size="270,40" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="1497,63" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1504,47" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="white" halign="right" position="1344,86" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="white" halign="right" position="1344,58" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+  </screen>
+  <screen name="getCover" title="EMC Cover Selecter" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <!-- Backg -->
+    <eLabel backgroundColor="EL_Background" position="260,50" size="1400,980" zPosition="-21" />
+    <eLabel backgroundColor="Red" position="260,130" size="1400,3" zPosition="-9" foregroundColor="white" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="menulist" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="310,155" size="1000,750" transparent="1" />
+    <widget name="poster" position="1325,155" size="304,340" zPosition="4" alphatest="on" backgroundColor="EL_Background" />
+    <eLabel backgroundColor="white" position="310,915" size="1300,1" zPosition="-9" foregroundColor="white" font="Regular2; 16" />
+    <widget name="info" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="310,920" size="1300,45" transparent="1" />
+    <!-- Buttons-->
+    <eLabel backgroundColor="blue" foregroundColor="EL_Background" name="" position="260,978" size="1400,1" zPosition="-10" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_menu.png" position="310,986" size="64,38" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_ok.png" position="384,986" size="64,38" />
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="1497,63" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1504,47" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="white" halign="right" position="1344,86" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="white" halign="right" position="1344,58" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+  </screen>
+  <screen name="DownloadMovieInfo" title="Movie Information Download (TMDb)" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <!-- Backg -->
+    <eLabel backgroundColor="EL_Background" position="260,50" size="1400,980" zPosition="-21" />
+    <eLabel backgroundColor="Red" position="260,130" size="1400,3" zPosition="-9" foregroundColor="white" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="movie_name" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="green_light" halign="left" position="310,155" size="1300,45" transparent="1" />
+    <eLabel backgroundColor="white" position="310,205" size="1300,1" zPosition="-9" foregroundColor="white" />
+    <widget name="movielist" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="310,215" size="980,650" transparent="1" />
+    <eLabel backgroundColor="white" position="310,915" size="1300,1" zPosition="-9" foregroundColor="white" />
+    <widget name="resulttext" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="green_light" halign="left" position="310,920" size="1300,45" transparent="1" />
+    <widget name="poster" position="1306,215" size="304,340" zPosition="4" alphatest="on" backgroundColor="EL_Background" />
+    <!-- Buttons -->
+    <eLabel backgroundColor="blue" foregroundColor="EL_Background" name="" position="260,978" size="1400,1" zPosition="-10" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_menu.png" position="310,986" size="64,38" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_ok.png" position="685,986" size="64,38" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_info.png" position="1060,986" size="64,38" />
+    <widget name="setup" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="380,985" size="300,40" transparent="1" zPosition="1" />
+    <widget name="save" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="755,985" size="300,40" transparent="1" zPosition="1" />
+    <widget name="movieinfo" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="1130,985" size="380,40" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="1497,63" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1504,47" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="white" halign="right" position="1344,86" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="white" halign="right" position="1344,58" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+  </screen>
+  <screen name="MovieInfoPreview" title="Movie Information Preview" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <!-- Backg -->
+    <eLabel backgroundColor="EL_Background" position="260,50" size="1400,980" zPosition="-21" />
+    <eLabel backgroundColor="Red" position="260,130" size="1400,3" zPosition="-9" foregroundColor="white" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="movie_name" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="green_light" halign="left" position="310,155" size="1300,45" transparent="1" />
+    <eLabel backgroundColor="white" position="310,205" size="1300,1" zPosition="-9" foregroundColor="white" />
+    <widget name="previewtext" font="FHD; 32" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="white" position="310,215" size="980,800" transparent="1" />
+    <widget name="poster" position="1306,215" size="304,340" zPosition="4" alphatest="on" backgroundColor="EL_Background" />
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="1497,63" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1504,47" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="white" halign="right" position="1344,86" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="white" halign="right" position="1344,58" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+  </screen>
+  <screen name="MovieInfoSetup" title="Movie Information Download Setup" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
+    <!-- Backg -->
+    <eLabel backgroundColor="EL_Background" position="260,50" size="1400,980" zPosition="-21" />
+    <eLabel backgroundColor="Red" position="260,130" size="1400,3" zPosition="-9" foregroundColor="white" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="config" itemHeight="50" font="Bold; 30" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="white" position="310,155" size="1300,800" transparent="1" zPosition="3" />
+    <!-- Buttons -->
+    <eLabel backgroundColor="blue" foregroundColor="EL_Background" name="" position="260,978" size="1400,1" zPosition="-10" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="310,985" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="630,985" size="40,40" />
+    <widget name="key_red" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="355,985" size="270,40" transparent="1" zPosition="1" />
+    <widget name="key_green" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="675,985" size="270,40" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="1497,63" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1504,47" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="white" halign="right" position="1344,86" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="white" halign="right" position="1344,58" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+  </screen>
+  <screen name="MovieInfoTMDb" title="Movie Information TMDb" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <!-- Back -->
+    <eLabel backgroundColor="EL_Background" position="70,40" size="1780,980" zPosition="-21" />
+    <eLabel backgroundColor="Red" position="70,120" size="1780,3" zPosition="-9" foregroundColor="white" />
+    <eLabel backgroundColor="white" position="1190,145" size="1,795" zPosition="-9" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" position="100,50" size="1140,58" font="FHD; 42" backgroundColor="EL_Background3" transparent="1" />
+    <widget name="movie_name" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="green_light" halign="left" position="100,140" size="1070,45" transparent="1" />
+    <widget name="previewlist" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" position="100,200" size="1070,750" transparent="1" />
+    <widget name="contenttxt" font="FHD; 32" backgroundColor="EL_Background" position="100,200" size="1070,750" transparent="1" foregroundColor="white" />
+    <widget name="previewcover" position="1310,145" size="381,518" zPosition="4" alphatest="blend" />
+    <widget name="runtime" font="FHD; 28" backgroundColor="EL_Background" halign="left" position="1210,680" size="290,45" transparent="1" />
+    <widget name="runtimetxt" font="FHD; 28" backgroundColor="EL_Background" halign="left" position="1510,680" size="320,45" transparent="1" />
+    <widget name="genre" font="FHD; 28" backgroundColor="EL_Background" halign="left" position="1210,730" size="290,45" transparent="1" />
+    <widget name="genretxt" font="FHD; 28" backgroundColor="EL_Background" halign="left" position="1510,730" size="320,45" transparent="1" />
+    <widget name="country" font="FHD; 28" backgroundColor="EL_Background" halign="left" position="1210,780" size="290,45" transparent="1" />
+    <widget name="countrytxt" font="FHD; 28" backgroundColor="EL_Background" halign="left" position="1510,780" size="320,45" transparent="1" />
+    <widget name="release" font="FHD; 28" backgroundColor="EL_Background" halign="left" position="1210,830" size="290,45" transparent="1" />
+    <widget name="releasetxt" font="FHD; 28" backgroundColor="EL_Background" halign="left" position="1510,830" size="320,45" transparent="1" />
+    <widget name="rating" font="FHD; 28" backgroundColor="EL_Background" halign="left" position="1210,880" size="290,45" transparent="1" />
+    <widget name="ratingtxt" font="FHD; 28" backgroundColor="EL_Background" halign="left" position="1510,880" size="320,45" transparent="1" />
+    <widget name="starsbg" position="1210,980" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/EnhancedMovieCenter/img/starsbar_empty_10.png" zPosition="3" alphatest="blend" />
+    <widget name="stars" position="1210,980" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/EnhancedMovieCenter/img/starsbar_filled_10.png" zPosition="4" transparent="1" />
+    <!-- Button -->
+    <eLabel backgroundColor="blue" foregroundColor="white" name="" position="70,960" size="1780,1" zPosition="-18" />
+    <widget name="key_menu" alphatest="blend" pixmap="SmartLiteFHD/buttons/key_menu.png" position="424,971" size="64,38" />
+    <widget name="key_green" alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="90,970" size="40,40" />
+    <widget name="setup" backgroundColor="EL_Background" font="Regular2; 28" halign="left" valign="center" position="500,970" size="280,40" transparent="1" zPosition="1" />
+    <widget name="save" backgroundColor="EL_Background" font="Regular2; 28" halign="left" valign="center" position="135,970" size="280,40" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="1697,51" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1704,34" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1544,74" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1544,46" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+  </screen>
+  <!--  IMDB  -->
+  <screen name="IMDB" title="Internet Movie Database Details Plugin" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <!-- Backg -->
+    <eLabel backgroundColor="EL_Background" position="260,50" size="1400,980" zPosition="-21" />
+    <eLabel backgroundColor="Red" position="260,130" size="1400,3" zPosition="-9" foregroundColor="white" />
+    <!-- Widget -->
+    <widget source="title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="poster" position="310,155" size="155,200" alphatest="blend" transparent="1" />
+    <widget name="detailslabel" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="480,240" size="1130,130" transparent="1" />
+    <widget name="extralabel" font="Regular;18" position="310,155" size="1300,800" backgroundColor="EL_Background" foregroundColor="EL_Foreground" transparent="1" halign="center" />
+    <widget name="ratinglabel" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="480,190" size="1130,45" halign="center" transparent="1" />
+    <widget name="starsbg" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_empty.png" position="480,155" zPosition="0" size="210,21" transparent="1" alphatest="on" />
+    <widget name="stars" position="480,155" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_filled.png" transparent="1" />
+    <widget name="menu" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="310,380" size="1300,300" zPosition="3" transparent="1" />
+    <widget name="castlabel" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="310,700" size="1300,200" transparent="1" />
+    <widget name="statusbar" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="310,910" size="1300,45" transparent="1" />
+    <!-- Button -->
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_menu.png" position="1590,986" size="64,38" />
+    <!-- Buttons -->
+    <eLabel backgroundColor="blue" foregroundColor="EL_Background" name="" position="260,978" size="1400,1" zPosition="-10" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="310,985" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="630,985" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/yellow.png" position="950,985" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/blue.png" position="1270,985" size="40,40" />
+    <widget name="key_red" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="355,985" size="270,40" transparent="1" zPosition="1" />
+    <widget name="key_green" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="675,985" size="270,40" transparent="1" zPosition="1" />
+    <widget name="key_yellow" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="995,985" size="270,40" transparent="1" zPosition="1" />
+    <widget name="key_blue" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="1315,985" size="270,40" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="1497,63" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1504,47" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="white" halign="right" position="1344,86" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="white" halign="right" position="1344,58" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+  </screen>
+  <!--  Cool TV  -->
+  <screen name="CoolChannelGuide" position="0,0" size="1920,1080" backgroundColor="transparent" title="Cool Channel Guide" flags="wfNoBorder">
+    <!-- Backg -->
+    <eLabel backgroundColor="EL_Background" position="70,40" size="1780,980" zPosition="-21" />
+    <eLabel backgroundColor="Red" position="center,115" size="1780,3" zPosition="-9" foregroundColor="white" />
+    <eLabel backgroundColor="white" position="1400,center" size="2,820" zPosition="-9" />
+    <!-- Widget -->
+    <eLabel text="CoolChannel Guide" backgroundColor="EL_Background3" font="FHD; 40" halign="left" position="90,46" size="430,58" transparent="1" valign="center" zPosition="1" />
+    <widget source="Title" render="Label" position="520,57" size="1020,48" zPosition="3" font="Regular2; 32" backgroundColor="ABackground" halign="left" transparent="1" />
+    <widget name="date" font="Bold; 32" backgroundColor="ABackground" foregroundColor="EL_Foreground" halign="left" position="1420,966" size="300,40" transparent="1" />
+    <widget name="list" itemHeight="45" CoolBarColor="white" CoolBarHPos="12" CoolBarHigh="22" CoolBarPos="1080" CoolBarSize="100" CoolCurrentCol="green_light" CoolDurationColor="white" CoolDurationPos="1190" CoolDurationSize="80" CoolEventColor="blueCH" CoolEventFont="Regular2;28" CoolEventHPos="2" CoolEventPos="360" CoolEventSize="700" CoolFontColSel="white" CoolMarkerPicPos="20" CoolMarkerPicHPos="2" CoolMarkerColor="yellow" CoolMarkerHPos="1" CoolMarkerPos="400" CoolPico="38" CoolPicoHPos="3" CoolRecAlarmCol="#DC6D28" CoolRecColor="#9F1313" CoolServiceColor="EL_Foreground" CoolServiceFont="Regular2;30" CoolServiceHPos="2" CoolServicePos="0" CoolServiceSize="350" CoolTime="1" CoolTimeHPos="2" CoolTimePos="1070" CoolTimeSize="220" CoolTunerCol="grey" backgroundColor="EL_Background" position="90,130" size="1300,675" transparent="1" scrollbarMode="showOnDemand" />
+    <widget source="Event" render="Label" position="90,820" size="1300,45" font="Regular2; 30" backgroundColor="EL_Background" shadowColor="#00605f5e" transparent="1" halign="left" foregroundColor="blueCH" valign="center">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <widget source="Event" render="Label" position="90,865" size="85,45" font="Regular2; 28" backgroundColor="ABackground" halign="left" transparent="1">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget source="Event" render="Label" position="1150,865" size="95,45" font="Regular2; 28" backgroundColor="ABackground" halign="right" transparent="1">
+      <convert type="EventTime">EndTime</convert>
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget source="Event" render="Progress" backgroundColor="EL_PreBlack2" borderWidth="0" pixmap="SmartLiteFHD/colors/00A4C400.png" position="190,885" size="940,5" transparent="1" zPosition="1">
+      <convert type="EventTime">Progress</convert>
+    </widget>
+    <eLabel backgroundColor="grey" foregroundColor="grey" position="190,887" size="940,1" />
+    <widget source="Event" render="Label" backgroundColor="dark" font="Regular2; 28" halign="right" position="1250,865" size="140,45" transparent="1">
+      <convert type="EventTime">Remaining</convert>
+      <convert type="RemainingToText">InMinutes</convert>
+    </widget>
+    <widget source="Event" render="Label" position="1420,135" zPosition="1" size="410,812" font="EL_Standard; 26" backgroundColor="dark" transparent="1" valign="top">
+      <convert type="EventName">ExtendedDescription</convert>
+    </widget>
+    <eLabel backgroundColor="grey" foregroundColor="grey" position="90,815" size="1300,2" />
+    <eLabel backgroundColor="EL_Background" font="Regular; 26" halign="left" noWrap="1" position="90,913" size="80,40" text="Next :" transparent="1" valign="center" foregroundColor="EL_Blue" />
+    <widget source="Service" render="CoolNextEvent" foregroundColor="EL_Blue" backgroundColor="EL_Background" font="EL_Standard; 26" position="180,915" size="1210,40" halign="left" transparent="1">
+    </widget>
+    <!-- Button -->
+    <ePixmap alphatest="blend" name="new ePixmap" pixmap="SmartLiteFHD/buttons/key_menu.png" position="1770,971" size="64,38" />
+    <eLabel backgroundColor="blue" foregroundColor="white" name="" position="70,960" size="1780,1" zPosition="-18" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="90,970" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="400,970" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/yellow.png" position="710,970" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/blue.png" position="1020,970" size="40,40" />
+    <widget backgroundColor="EL_Background" font="Regular; 28" halign="left" position="140,970" size="255,40" name="key_red" transparent="1" zPosition="1" />
+    <widget backgroundColor="EL_Background" font="Regular; 28" halign="left" position="450,970" size="255,40" name="key_green" transparent="1" zPosition="1" />
+    <widget backgroundColor="EL_Background" font="Regular; 28" halign="left" position="760,970" size="255,40" name="key_yellow" transparent="1" zPosition="1" />
+    <widget backgroundColor="EL_Background" font="Regular; 28" halign="left" position="1070,970" size="285,40" name="key_blue" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="1707,53" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1714,36" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1554,76" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1554,48" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+  </screen>
+  <screen name="CoolMultiGuide" position="0,0" size="1920,1080" backgroundColor="transparent" title="Cool Multi Guide" flags="wfNoBorder">
+    <!-- Backg -->
+    <eLabel backgroundColor="EL_Background" position="70,40" size="1780,980" zPosition="-21" />
+    <eLabel backgroundColor="Red" position="center,115" size="1780,3" zPosition="-9" foregroundColor="white" />
+    <eLabel backgroundColor="white" position="90,720" size="1740,1" zPosition="-9" />
+    <!-- Widget -->
+    <eLabel text="CoolMulti Guide" backgroundColor="EL_Background3" font="FHD; 40" halign="left" position="90,46" size="430,58" transparent="1" valign="center" zPosition="1" />
+    <widget source="Title" render="Label" position="520,57" size="1020,48" zPosition="3" font="Regular2; 32" backgroundColor="ABackground" halign="left" transparent="1" />
+    <widget name="date" font="Bold; 32" backgroundColor="ABackground" foregroundColor="EL_Foreground" halign="left" position="1420,966" size="300,40" transparent="1" />
+    <widget source="Event" render="Label" position="90,725" size="1420,45" font="Bold; 28" backgroundColor="EL_Background" transparent="1" halign="left" foregroundColor="blueCH">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <eLabel backgroundColor="EL_Background" font="Bold; 28" halign="left" position="1515,720" size="128,45" text="Laufzeit:" transparent="1" valign="center" zPosition="1" />
+    <widget source="Event" render="Label" position="1655,725" size="85,45" font="Bold; 28" backgroundColor="EL_Background" halign="left" transparent="1">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <eLabel backgroundColor="EL_Background2" font="Bold; 28" halign="center" position="1732,722" size="24,45" text="-" transparent="1" valign="center" zPosition="1" />
+    <widget source="Event" render="Label" position="1745,725" size="85,45" font="Bold; 28" backgroundColor="EL_Background" halign="right" transparent="1">
+      <convert type="EventTime">EndTime</convert>
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget source="Event" render="Label" position="90,775" zPosition="1" size="1740,175" font="Regular; 28" backgroundColor="ABackground" transparent="1" valign="top">
+      <convert type="EventName">ExtendedDescription</convert>
+    </widget>
+    <!-- Bouquet -->
+    <widget name="timeline_text" position="90,130" size="1740,45" foregroundColor="blueCH" backgroundColor="EL_Background" transparent="1" selectionDisabled="1" itemHeight="55" font="Regular; 28" />
+    <widget name="list" font="Regular2; 30" position="90,175" size="1740,540" CoolBackColorSel="#ffd200" CoolCurrentColSel="#ffd200" CoolNowColSel="#ffd200" scrollbarMode="showNever" transparent="1" />
+    <widget name="timeline0" position="0,134" zPosition="1" size="0,0" pixmap="/usr/share/enigma2/SmartLiteFHD/EL_images/timeline-now.png" />
+    <widget name="timeline1" position="0,134" zPosition="1" size="0,0" pixmap="/usr/share/enigma2/SmartLiteFHD/EL_images/timeline-now.png" />
+    <widget name="timeline2" position="0,134" zPosition="1" size="0,0" pixmap="/usr/share/enigma2/SmartLiteFHD/EL_images/timeline-now.png" />
+    <widget name="timeline3" position="0,134" zPosition="1" size="0,0" pixmap="/usr/share/enigma2/SmartLiteFHD/EL_images/timeline-now.png" />
+    <widget name="timeline4" position="0,134" zPosition="1" size="0,0" pixmap="/usr/share/enigma2/SmartLiteFHD/EL_images/timeline-now.png" />
+    <widget name="timeline5" position="0,134" zPosition="1" size="0,0" pixmap="/usr/share/enigma2/SmartLiteFHD/EL_images/timeline-now.png" />
+    <widget name="timeline_now" position="70,175" zPosition="2" size="19,540" pixmap="SmartLiteFHD/extensions/timeline-now2.png" alphatest="blend" />
+    <!-- Button -->
+    <ePixmap alphatest="blend" name="new ePixmap" pixmap="SmartLiteFHD/buttons/key_menu.png" position="1770,971" size="64,38" />
+    <eLabel backgroundColor="blue" foregroundColor="white" name="" position="70,960" size="1780,1" zPosition="-18" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="90,970" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="400,970" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/yellow.png" position="710,970" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/blue.png" position="1020,970" size="40,40" />
+    <widget backgroundColor="EL_Background" font="Regular; 28" halign="left" position="140,970" size="255,40" name="key_red" transparent="1" zPosition="1" />
+    <widget backgroundColor="EL_Background" font="Regular; 28" halign="left" position="450,970" size="255,40" name="key_green" transparent="1" zPosition="1" />
+    <widget backgroundColor="EL_Background" font="Regular; 28" halign="left" position="760,970" size="255,40" name="key_yellow" transparent="1" zPosition="1" />
+    <widget backgroundColor="EL_Background" font="Regular; 28" halign="left" position="1070,970" size="285,40" name="key_blue" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="1707,53" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1714,36" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1554,76" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1554,48" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+  </screen>
+  <screen name="CoolNiceGuide" position="0,0" size="1920,1080" backgroundColor="transparent" title="Cool Nice Guide" flags="wfNoBorder">
+    <!-- Backg -->
+    <eLabel backgroundColor="EL_Background" position="70,40" size="1780,980" zPosition="-21" />
+    <eLabel backgroundColor="Red" position="center,115" size="1780,3" zPosition="-9" foregroundColor="white" />
+    <eLabel backgroundColor="white" position="90,720" size="1740,1" zPosition="-9" />
+    <!-- Widget -->
+    <eLabel text="CoolNice Guide" backgroundColor="EL_Background3" font="FHD; 40" halign="left" position="90,46" size="430,58" transparent="1" valign="center" zPosition="1" />
+    <widget source="Title" render="Label" position="520,57" size="1020,48" zPosition="3" font="Regular2; 32" backgroundColor="ABackground" halign="left" transparent="1" />
+    <widget name="date" font="Bold; 32" backgroundColor="ABackground" foregroundColor="EL_Foreground" halign="left" position="1420,966" size="300,40" transparent="1" />
+    <widget source="Event" render="Label" position="90,725" size="1420,45" font="Bold; 28" backgroundColor="EL_Background" transparent="1" halign="left" foregroundColor="blueCH">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <eLabel backgroundColor="EL_Background" font="Bold; 28" halign="left" position="1515,720" size="128,45" text="Laufzeit:" transparent="1" valign="center" zPosition="1" />
+    <widget source="Event" render="Label" position="1655,725" size="85,45" font="Bold; 28" backgroundColor="EL_Background" halign="left" transparent="1">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <eLabel backgroundColor="EL_Background2" font="Bold; 28" halign="center" position="1732,722" size="24,45" text="-" transparent="1" valign="center" zPosition="1" />
+    <widget source="Event" render="Label" position="1745,725" size="85,45" font="Bold; 28" backgroundColor="EL_Background" halign="right" transparent="1">
+      <convert type="EventTime">EndTime</convert>
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget source="Event" render="Label" position="90,775" zPosition="1" size="1740,175" font="Regular; 28" backgroundColor="ABackground" transparent="1" valign="top">
+      <convert type="EventName">ExtendedDescription</convert>
+    </widget>
+    <!-- Bouquet -->
+    <widget name="timeline_text" position="90,130" size="1740,45" foregroundColor="blueCH" backgroundColor="EL_Background" transparent="1" selectionDisabled="1" itemHeight="55" font="Regular; 28" />
+    <widget name="list" font="Regular2; 30" position="90,175" size="1740,540" CoolBackColorSel="#ffd200" CoolCurrentColSel="#ffd200" CoolNowColSel="#ffd200" scrollbarMode="showNever" transparent="1" />
+    <widget name="timeline0" position="0,134" zPosition="1" size="0,0" pixmap="/usr/share/enigma2/SmartLiteFHD/EL_images/timeline-now.png" />
+    <widget name="timeline1" position="0,134" zPosition="1" size="0,0" pixmap="/usr/share/enigma2/SmartLiteFHD/EL_images/timeline-now.png" />
+    <widget name="timeline2" position="0,134" zPosition="1" size="0,0" pixmap="/usr/share/enigma2/SmartLiteFHD/EL_images/timeline-now.png" />
+    <widget name="timeline3" position="0,134" zPosition="1" size="0,0" pixmap="/usr/share/enigma2/SmartLiteFHD/EL_images/timeline-now.png" />
+    <widget name="timeline4" position="0,134" zPosition="1" size="0,0" pixmap="/usr/share/enigma2/SmartLiteFHD/EL_images/timeline-now.png" />
+    <widget name="timeline5" position="0,134" zPosition="1" size="0,0" pixmap="/usr/share/enigma2/SmartLiteFHD/EL_images/timeline-now.png" />
+    <widget name="timeline_now" position="70,175" zPosition="2" size="19,540" pixmap="SmartLiteFHD/extensions/timeline-now2.png" alphatest="blend" />
+    <!-- Button -->
+    <ePixmap alphatest="blend" name="new ePixmap" pixmap="SmartLiteFHD/buttons/key_menu.png" position="1770,971" size="64,38" />
+    <eLabel backgroundColor="blue" foregroundColor="white" name="" position="70,960" size="1780,1" zPosition="-18" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="90,970" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="400,970" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/yellow.png" position="710,970" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/blue.png" position="1020,970" size="40,40" />
+    <widget backgroundColor="EL_Background" font="Regular; 28" halign="left" position="140,970" size="255,40" name="key_red" transparent="1" zPosition="1" />
+    <widget backgroundColor="EL_Background" font="Regular; 28" halign="left" position="450,970" size="255,40" name="key_green" transparent="1" zPosition="1" />
+    <widget backgroundColor="EL_Background" font="Regular; 28" halign="left" position="760,970" size="255,40" name="key_yellow" transparent="1" zPosition="1" />
+    <widget backgroundColor="EL_Background" font="Regular; 28" halign="left" position="1070,970" size="285,40" name="key_blue" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="1707,53" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1714,36" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1554,76" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1554,48" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+  </screen>
+  <screen name="CoolEasyGuide" position="0,0" size="1920,1080" backgroundColor="transparent" title="Cool Easy Guide" flags="wfNoBorder">
+    <!-- Backg -->
+    <eLabel backgroundColor="EL_Background" position="70,40" size="1780,980" zPosition="-21" />
+    <eLabel backgroundColor="Red" position="center,115" size="1780,3" zPosition="-9" foregroundColor="white" />
+    <!-- Widget -->
+    <eLabel text="CoolEasy Guide" backgroundColor="EL_Background3" font="FHD; 40" halign="left" position="90,46" size="430,58" transparent="1" valign="center" zPosition="1" />
+    <widget source="Title" render="Label" position="520,57" size="1020,48" zPosition="3" font="Regular2; 32" backgroundColor="ABackground" halign="left" transparent="1" />
+    <eLabel backgroundColor="EL_Blue" position="center,390" size="1740,2" zPosition="1" foregroundColor="EL_Blue" />
+    <widget name="date" font="Bold; 32" backgroundColor="ABackground" foregroundColor="EL_Foreground" halign="left" position="1420,966" size="300,40" transparent="1" />
+    <widget source="Event" render="Label" position="320,125" size="1350,45" font="Regular2; 28" backgroundColor="EL_Background" shadowColor="#00605f5e" transparent="1" halign="left" valign="center">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <widget source="Event" render="Label" position="90,128" size="100,45" font="Regular2; 30" backgroundColor="ABackground" halign="left" transparent="1">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget source="Event" render="Label" position="181,128" size="110,45" font="Regular2; 28" backgroundColor="EL_Background" halign="left" transparent="1">
+      <convert type="EventTime">EndTime</convert>
+      <convert type="ClockToText">Format:- %H:%M</convert>
+    </widget>
+    <widget source="Event" render="Progress" backgroundColor="EL_PreBlack2" borderWidth="0" pixmap="SmartLiteFHD/colors/00A4C400.png" position="90,180" size="1740,5" transparent="1" zPosition="1">
+      <convert type="EventTime">Progress</convert>
+    </widget>
+    <eLabel backgroundColor="grey" foregroundColor="grey" position="center,182" size="1740,1" />
+    <widget source="Event" render="Label" backgroundColor="EL_Background" font="Regular2; 28" halign="right" position="1680,128" size="150,45" transparent="1">
+      <convert type="EventTime">Remaining</convert>
+      <convert type="RemainingToText">InMinutes</convert>
+    </widget>
+    <widget source="Event" render="Label" position="90,194" zPosition="1" size="1740,182" font="EL_Standard; 26" backgroundColor="EL_Background" transparent="1" valign="top">
+      <convert type="EventName">ExtendedDescription</convert>
+    </widget>
+    <widget name="list" itemHeight="50" CoolBarColor="white" CoolBarHPos="12" CoolBarHigh="25" CoolBarPos="300" CoolBarSize="170" CoolCurrentCol="green_light" CoolDurationColor="white" CoolDurationPos="1500" CoolDurationSize="180" CoolEventColor="blueCH" CoolEventFont="Regular2;30" CoolEventHPos="10" CoolEventPos="495" CoolEventSize="1100" CoolFont="Regular2;30" CoolFontColSel="white" CoolPico="41" CoolPicoHPos="2" CoolRecAlarmCol="#DC6D28" CoolRecColor="#9F1313" CoolServiceColor="white" CoolServiceFont="Regular2;30" CoolServiceHPos="6" CoolServicePos="10" CoolServiceSize="680" CoolTimeHPos="6" CoolTimePos="500" CoolTimeSize="200" CoolTunerCol="grey" backgroundColor="EL_Background" position="90,400" scrollbarMode="showOnDemand" size="1740,550" transparent="1" />
+    <!-- Button -->
+    <ePixmap alphatest="blend" name="new ePixmap" pixmap="SmartLiteFHD/buttons/key_menu.png" position="1770,971" size="64,38" />
+    <eLabel backgroundColor="blue" foregroundColor="white" name="" position="70,960" size="1780,1" zPosition="-18" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="90,970" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="400,970" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/yellow.png" position="710,970" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/blue.png" position="1020,970" size="40,40" />
+    <widget backgroundColor="EL_Background" font="Regular; 28" halign="left" position="140,970" size="255,40" name="key_red" transparent="1" zPosition="1" />
+    <widget backgroundColor="EL_Background" font="Regular; 28" halign="left" position="450,970" size="255,40" name="key_green" transparent="1" zPosition="1" />
+    <widget backgroundColor="EL_Background" font="Regular; 28" halign="left" position="760,970" size="255,40" name="key_yellow" transparent="1" zPosition="1" />
+    <widget backgroundColor="EL_Background" font="Regular; 28" halign="left" position="1070,970" size="285,40" name="key_blue" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="1707,53" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1714,36" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1554,76" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1554,48" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+  </screen>
+  <screen name="CoolSingleGuide" position="0,0" size="1920,1080" backgroundColor="transparent" title="Cool Single Guide" flags="wfNoBorder">
+    <!-- Backg -->
+    <eLabel backgroundColor="EL_Background" position="70,40" size="1780,980" zPosition="-21" />
+    <eLabel backgroundColor="Red" position="center,115" size="1780,3" zPosition="-9" foregroundColor="white" />
+    <!-- Widget -->
+    <eLabel text="CoolSingle Guide" backgroundColor="EL_Background3" font="FHD; 40" halign="left" position="90,46" size="430,58" transparent="1" valign="center" zPosition="1" />
+    <widget source="Title" render="Label" position="520,57" size="1020,48" zPosition="3" font="Regular2; 32" backgroundColor="ABackground" halign="left" transparent="1" />
+    <widget name="date" font="Bold; 32" backgroundColor="ABackground" foregroundColor="EL_Foreground" halign="left" position="1420,966" size="300,40" transparent="1" />
+    <widget name="list" itemHeight="45" CoolDayColor="yellow" CoolDayPos="0" CoolDaySize="80" CoolEventColor="EL_Blue" CoolEventFont="Regular2;30" CoolEventPos="200" CoolEventSize="1120" CoolFont="Regular2;30" CoolFontColSel="white" CoolRecAlarmCol="#DC6D28" CoolRecColor="#9F1313" CoolTimeColor="EL_Foreground" CoolTimePos="100" CoolTimeSize="100" CoolTunerCol="grey" backgroundColor="EL_Background" position="90,190" scrollbarMode="showOnDemand" size="1300,765" transparent="1" />
+    <eLabel backgroundColor="white" position="1404,195" size="1,750" zPosition="-9" />
+    <widget source="Service" render="Label" position="90,128" size="1300,45" font="Regular2; 30" backgroundColor="EL_Background" shadowColor="#00605f5e" transparent="1" halign="left" foregroundColor="blueCH">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+    <widget source="Event" render="Label" position="1420,128" size="95,45" font="Regular2; 28" backgroundColor="EL_Background" halign="left" transparent="1">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget source="Event" render="Label" position="1506,128" size="105,45" font="Regular2; 28" backgroundColor="ABackground" halign="left" transparent="1">
+      <convert type="EventTime">EndTime</convert>
+      <convert type="ClockToText">Format:- %H:%M</convert>
+    </widget>
+    <widget source="Event" render="Progress" backgroundColor="EL_PreBlack2" borderWidth="0" pixmap="SmartLiteFHD/colors/00A4C400.png" position="1420,178" size="410,5" transparent="1" zPosition="1">
+      <convert type="EventTime">Progress</convert>
+    </widget>
+    <eLabel backgroundColor="grey" foregroundColor="grey" position="1420,180" size="410,1" />
+    <widget source="Event" render="Label" backgroundColor="EL_Background" font="Regular2; 28" halign="right" position="1680,128" size="150,45" transparent="1">
+      <convert type="EventTime">Remaining</convert>
+      <convert type="RemainingToText">InMinutes</convert>
+    </widget>
+    <widget source="Event" render="Label" position="1420,195" zPosition="1" size="410,755" font="Regular2; 28" backgroundColor="ABackground" transparent="1" valign="top">
+      <convert type="EventName">ExtendedDescription</convert>
+    </widget>
+    <eLabel backgroundColor="grey" foregroundColor="grey" position="90,180" size="1300,1" />
+    <!-- Button -->
+    <ePixmap alphatest="blend" name="new ePixmap" pixmap="SmartLiteFHD/buttons/key_menu.png" position="1770,971" size="64,38" />
+    <eLabel backgroundColor="blue" foregroundColor="white" name="" position="70,960" size="1780,1" zPosition="-18" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="90,970" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="400,970" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/yellow.png" position="710,970" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/blue.png" position="1020,970" size="40,40" />
+    <widget backgroundColor="EL_Background" font="Regular; 28" halign="left" position="140,970" size="255,40" name="key_red" transparent="1" zPosition="1" />
+    <widget backgroundColor="EL_Background" font="Regular; 28" halign="left" position="450,970" size="255,40" name="key_green" transparent="1" zPosition="1" />
+    <widget backgroundColor="EL_Background" font="Regular; 28" halign="left" position="760,970" size="255,40" name="key_yellow" transparent="1" zPosition="1" />
+    <widget backgroundColor="EL_Background" font="Regular; 28" halign="left" position="1070,970" size="285,40" name="key_blue" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="1707,53" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1714,36" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1554,76" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1554,48" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+  </screen>
+  <screen name="CoolSearch" position="0,0" size="1920,1080" backgroundColor="transparent" title="Cool Search" flags="wfNoBorder">
+    <!-- Backg -->
+    <eLabel backgroundColor="EL_Background" position="70,40" size="1780,980" zPosition="-21" />
+    <eLabel backgroundColor="Red" position="center,115" size="1780,3" zPosition="-9" foregroundColor="white" />
+    <!-- Widget -->
+    <eLabel text="CoolSearch" backgroundColor="EL_Background3" font="FHD; 40" halign="left" position="90,46" size="430,58" transparent="1" valign="center" zPosition="1" />
+    <eLabel backgroundColor="EL_Blue" position="center,390" size="1740,2" zPosition="1" foregroundColor="EL_Blue" />
+    <widget name="date" font="Bold; 32" backgroundColor="ABackground" foregroundColor="EL_Foreground" halign="left" position="1420,966" size="300,40" transparent="1" />
+    <widget source="Event" render="Label" position="320,125" size="1350,45" font="Regular2; 28" backgroundColor="EL_Background" shadowColor="#00605f5e" transparent="1" halign="left" valign="center">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <widget source="Event" render="Label" position="90,128" size="100,45" font="Regular2; 30" backgroundColor="ABackground" halign="left" transparent="1">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget source="Event" render="Label" position="181,128" size="110,45" font="Regular2; 28" backgroundColor="EL_Background" halign="left" transparent="1">
+      <convert type="EventTime">EndTime</convert>
+      <convert type="ClockToText">Format:- %H:%M</convert>
+    </widget>
+    <widget source="Event" render="Progress" backgroundColor="EL_PreBlack2" borderWidth="0" pixmap="SmartLiteFHD/colors/00A4C400.png" position="90,180" size="1740,5" transparent="1" zPosition="1">
+      <convert type="EventTime">Progress</convert>
+    </widget>
+    <eLabel backgroundColor="grey" foregroundColor="grey" position="center,182" size="1740,1" />
+    <widget source="Event" render="Label" backgroundColor="EL_Background" font="Regular2; 28" halign="right" position="1680,128" size="150,45" transparent="1">
+      <convert type="EventTime">Remaining</convert>
+      <convert type="RemainingToText">InMinutes</convert>
+    </widget>
+    <widget source="Event" render="Label" position="90,194" zPosition="1" size="1740,182" font="EL_Standard; 26" backgroundColor="EL_Background" transparent="1" valign="top">
+      <convert type="EventName">ExtendedDescription</convert>
+    </widget>
+    <widget name="list" itemHeight="45" CoolDayColor="yellow" CoolDayPos="0" CoolDaySize="70" CoolDateColor="white" CoolDatePos="90" CoolDateSize="110" CoolTimeColor="white" CoolTimePos="200" CoolTimeSize="100" CoolServiceColor="blueCH" CoolServiceFont="Regular2;30" CoolServicePos="310" CoolServiceSize="410" CoolEventColor="white" CoolEventFont="Regular2;30" CoolEventPos="650" CoolEventSize="1180" CoolFont="Regular2;30" CoolFontColSel="green_light" CoolBackColorSel="blue" CoolRecAlarmCol="#DC6D28" CoolRecColor="red" backgroundColor="EL_Background" position="89,412" scrollbarMode="showOnDemand" size="1745,525" transparent="1" />
+    <!-- Button -->
+    <eLabel backgroundColor="EL_Selection" foregroundColor="white" name="" position="70,960" size="1780,1" zPosition="-18" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="90,970" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="400,970" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/yellow.png" position="710,970" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/blue.png" position="1020,970" size="40,40" />
+    <widget backgroundColor="EL_Background" font="Regular; 28" halign="left" position="140,970" size="255,40" name="key_red" transparent="1" zPosition="1" />
+    <widget backgroundColor="EL_Background" font="Regular; 28" halign="left" position="450,970" size="255,40" name="key_green" transparent="1" zPosition="1" />
+    <widget backgroundColor="EL_Background" font="Regular; 28" halign="left" position="760,970" size="255,40" name="key_yellow" transparent="1" zPosition="1" />
+    <widget backgroundColor="EL_Background" font="Regular; 28" halign="left" position="1070,970" size="285,40" name="key_blue" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <widget backgroundColor="EL_Background3" font="Bold; 52" halign="left" position="1700,33" render="Label" size="169,80" source="global.CurrentTime" transparent="1" valign="center" foregroundColor="white">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background3" font="Bold; 27" foregroundColor="white" halign="right" position="1405,54" render="Label" size="285,40" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A, %e. %b</convert>
+    </widget>
+  </screen>
+  <screen name="CoolInfoGuide" position="0,0" size="1920,1080" backgroundColor="transparent" title="Cool Info Guide" flags="wfNoBorder">
+    <!-- Backg -->
+    <eLabel backgroundColor="EL_Background" position="70,40" size="1780,980" zPosition="-21" />
+    <eLabel backgroundColor="Red" position="center,115" size="1780,3" zPosition="-9" foregroundColor="white" />
+    <!-- Widget -->
+    <eLabel text="Cool Info Guide" backgroundColor="EL_Background3" font="FHD; 40" halign="left" position="90,46" size="430,58" transparent="1" valign="center" zPosition="1" />
+    <widget name="date" font="Bold; 32" backgroundColor="ABackground" foregroundColor="EL_Foreground" halign="left" position="1420,966" size="300,40" transparent="1" />
+    <widget name="CoolDescription" backgroundColor="EL_Background" font="Regular2; 29" position="90,340" size="1740,370" transparent="1" />
+    <widget backgroundColor="EL_Background" font="Regular2; 30" position="745,130" render="Label" size="340,45" source="Service" transparent="1" halign="left" foregroundColor="EL_Blue">
+      <convert type="SL_ServiceName">Provider</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Regular2; 30" halign="right" position="1100,130" render="Label" size="730,45" source="Service" transparent="1" foregroundColor="EL_Blue">
+      <convert type="SL_ServiceName">Bouquet</convert>
+    </widget>
+    <widget source="Service" render="Label" position="90,130" size="650,45" font="Regular2; 30" backgroundColor="EL_Background" shadowColor="#00605f5e" transparent="1" halign="left" foregroundColor="EL_Blue">
+      <convert type="SL_ServiceName">%n. %N</convert>
+    </widget>
+    <widget source="Event" render="Label" position="90,225" size="85,45" font="Bold; 28" backgroundColor="dark" halign="left" transparent="1">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget source="Event" render="Label" position="1595,225" size="85,45" font="Bold; 28" backgroundColor="EL_Background" halign="right" transparent="1">
+      <convert type="EventTime">EndTime</convert>
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget source="Event" render="Progress" backgroundColor="EL_PreBlack2" borderWidth="0" pixmap="SmartLiteFHD/colors/00A4C400.png" position="190,245" size="1390,5" transparent="1" zPosition="1">
+      <convert type="EventTime">Progress</convert>
+    </widget>
+    <eLabel backgroundColor="grey" foregroundColor="grey" position="190,247" size="1390,1" />
+    <widget source="Event" render="Label" backgroundColor="dark" font="Bold; 28" halign="right" position="1680,225" size="150,45" transparent="1">
+      <convert type="EventTime">Remaining</convert>
+      <convert type="RemainingToText">InMinutes</convert>
+    </widget>
+    <widget name="CoolEvent" itemHeight="45" CoolFont="Regular2;30" CoolDayPos="0" CoolDaySize="80" CoolDayColor="white" CoolTimePos="100" CoolTimeSize="200" CoolTimeColor="white" CoolEventPos="310" CoolEventSize="1250" CoolEventColor="white" CoolDurationPos="1590" CoolDurationSize="150" CoolDurationColor="EL_Foreground" CoolBackColorSel="blue" CoolFontColSel="EL_Foreground" CoolRecAlarmCol="#DC6D28" CoolRecColor="red" CoolTunerCol="grey" backgroundColor="EL_Background" position="90,280" size="1740,45" transparent="1" />
+    <widget name="CoolShort" backgroundColor="EL_Background" font="Regular2; 30" foregroundColor="blueCH" halign="left" position="90,178" size="1740,45" transparent="1" />
+    <eLabel backgroundColor="EL_Blue" position="90,720" size="1740,1" zPosition="-9" foregroundColor="EL_Blue" />
+    <eLabel text="Similar broadcasts:" backgroundColor="EL_Background" font="Regular2; 30" halign="left" position="90,725" size="365,45" transparent="1" foregroundColor="EL_Blue" />
+    <widget name="CoolSimilar" backgroundColor="EL_Background" font="Regular; 28" position="90,770" size="1740,180" transparent="1" />
+    <!-- Button -->
+    <ePixmap alphatest="blend" name="new ePixmap" pixmap="SmartLiteFHD/buttons/key_menu.png" position="1770,971" size="64,38" />
+    <eLabel backgroundColor="EL_Selection" foregroundColor="white" name="" position="70,960" size="1780,1" zPosition="-18" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="90,970" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="400,970" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/yellow.png" position="710,970" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/blue.png" position="1020,970" size="40,40" />
+    <widget backgroundColor="EL_Background" font="Regular; 28" halign="left" position="140,970" size="255,40" name="key_red" transparent="1" zPosition="1" />
+    <widget backgroundColor="EL_Background" font="Regular; 28" halign="left" position="450,970" size="255,40" name="key_green" transparent="1" zPosition="1" />
+    <widget backgroundColor="EL_Background" font="Regular; 28" halign="left" position="760,970" size="255,40" name="key_yellow" transparent="1" zPosition="1" />
+    <widget backgroundColor="EL_Background" font="Regular; 28" halign="left" position="1070,970" size="285,40" name="key_blue" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <widget backgroundColor="EL_Background3" font="Bold; 52" halign="left" position="1700,33" render="Label" size="169,80" source="global.CurrentTime" transparent="1" valign="center" foregroundColor="white">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background3" font="Bold; 27" foregroundColor="white" halign="right" position="1405,54" render="Label" size="285,40" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A, %e. %b</convert>
+    </widget>
+  </screen>
+  <screen name="CoolTVGuide" position="0,0" size="1920,1080" backgroundColor="transparent" title="CoolT VGuide" flags="wfNoBorder">
+    <!-- Backg -->
+    <eLabel backgroundColor="EL_Background" position="70,40" size="1780,980" zPosition="-21" />
+    <eLabel backgroundColor="Red" position="center,115" size="1780,3" zPosition="-9" foregroundColor="white" />
+    <!-- Widget -->
+    <eLabel text="CoolTV Guide" backgroundColor="EL_Background3" font="FHD; 40" halign="left" position="90,46" size="430,58" transparent="1" valign="center" zPosition="1" />
+    <widget source="Title" render="Label" position="520,57" size="1020,48" zPosition="3" font="Regular2; 32" backgroundColor="ABackground" halign="left" transparent="1" />
+    <eLabel backgroundColor="EL_Blue" position="center,390" size="1740,2" zPosition="1" foregroundColor="EL_Blue" />
+    <widget name="date" font="Bold; 32" backgroundColor="ABackground" foregroundColor="EL_Foreground" halign="left" position="1420,966" size="300,40" transparent="1" />
+    <widget source="Event" render="Label" position="90,125" size="1740,45" font="Regular2; 30" backgroundColor="EL_Background" shadowColor="#00605f5e" transparent="1" halign="left" valign="top">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <widget source="Event" render="Label" position="90,175" size="85,45" font="Bold; 28" backgroundColor="dark" halign="left" transparent="1">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget source="Event" render="Label" position="404,175" size="85,45" font="Bold; 28" backgroundColor="EL_Background" halign="left" transparent="1">
+      <convert type="EventTime">EndTime</convert>
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget source="Event" render="Progress" backgroundColor="EL_PreBlack2" borderWidth="0" pixmap="SmartLiteFHD/colors/00A4C400.png" position="90,225" size="550,5" transparent="1" zPosition="1">
+      <convert type="EventTime">Progress</convert>
+    </widget>
+    <eLabel backgroundColor="grey" foregroundColor="grey" position="90,227" size="550,1" />
+    <widget source="Event" render="Label" backgroundColor="EL_Background" font="Bold; 28" halign="right" position="489,175" size="150,45" transparent="1">
+      <convert type="EventTime">Remaining</convert>
+      <convert type="RemainingToText">InMinutes</convert>
+    </widget>
+    <widget source="Event" render="Label" position="90,235" zPosition="1" size="1740,150" font="Regular2; 27" backgroundColor="EL_Background" transparent="1" valign="top">
+      <convert type="EventName">ExtendedDescription</convert>
+    </widget>
+    <widget name="timeline_text" position="90,400" size="1740,45" foregroundColor="green_light" backgroundColor="EL_Background" transparent="1" selectionDisabled="1" itemHeight="55" font="Regular; 28" />
+    <widget name="timeline_now" position="71,460" zPosition="2" size="19,480" pixmap="SmartLiteFHD/extensions/timeline-now2.png" alphatest="blend" />
+    <widget name="list" scrollbarSliderForegroundColor="EL_Foreground" scrollbarSliderBorderColor="EL_Foreground" scrollbarSliderBorderWidth="1" CoolBackColor="EL_Foreground" CoolBackColorSel="EL_Selection" CoolCurrentCol="#8585ff" CoolCurrentColSel="EL_Selection" CoolFontCol="EL_Foreground" CoolFontColSel="yellow" CoolNowCol="dark" CoolNowColSel="EL_Foreground" CoolNowFontCol="EL_Foreground" CoolNowFontColSel="dark" backgroundColor="EL_Background" position="center,460" scrollbarMode="showOnDemand" size="1740,480" transparent="1" scrollbarWidth="4" />
+    <!-- Button -->
+    <ePixmap alphatest="blend" name="new ePixmap" pixmap="SmartLiteFHD/buttons/key_menu.png" position="1770,971" size="64,38" />
+    <eLabel backgroundColor="blue" foregroundColor="white" name="" position="70,960" size="1780,1" zPosition="-18" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="90,970" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="400,970" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/yellow.png" position="710,970" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/blue.png" position="1020,970" size="40,40" />
+    <widget backgroundColor="EL_Background" font="Regular; 28" halign="left" position="140,970" size="255,40" name="key_red" transparent="1" zPosition="1" />
+    <widget backgroundColor="EL_Background" font="Regular; 28" halign="left" position="450,970" size="255,40" name="key_green" transparent="1" zPosition="1" />
+    <widget backgroundColor="EL_Background" font="Regular; 28" halign="left" position="760,970" size="255,40" name="key_yellow" transparent="1" zPosition="1" />
+    <widget backgroundColor="EL_Background" font="Regular; 28" halign="left" position="1070,970" size="285,40" name="key_blue" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="1707,53" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1714,36" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1554,76" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1554,48" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+  </screen>
+  <screen name="CoolTinyGuide" position="0,0" size="1920,1080" backgroundColor="transparent" title="Cool Tiny Guide" flags="wfNoBorder">
+    <!-- Backg -->
+    <eLabel backgroundColor="EL_Background" position="70,40" size="1780,980" zPosition="-21" />
+    <eLabel backgroundColor="Red" position="center,115" size="1780,3" zPosition="-9" foregroundColor="white" />
+    <!-- Widget -->
+    <eLabel text="CoolTiny Guide" backgroundColor="EL_Background3" font="FHD; 40" halign="left" position="90,46" size="430,58" transparent="1" valign="center" zPosition="1" />
+    <widget source="Title" render="Label" position="520,57" size="1020,48" zPosition="3" font="Regular2; 32" backgroundColor="ABackground" halign="left" transparent="1" />
+    <eLabel backgroundColor="EL_Blue" position="center,390" size="1740,2" zPosition="1" foregroundColor="EL_Blue" />
+    <widget name="date" font="Bold; 32" backgroundColor="ABackground" foregroundColor="EL_Foreground" halign="left" position="1420,966" size="300,40" transparent="1" />
+    <widget source="Event" render="Label" position="90,125" size="1740,45" font="Regular2; 30" backgroundColor="EL_Background" shadowColor="#00605f5e" transparent="1" halign="left" valign="top">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <widget source="Event" render="Label" position="90,175" size="85,45" font="Bold; 28" backgroundColor="dark" halign="left" transparent="1">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget source="Event" render="Label" position="404,175" size="85,45" font="Bold; 28" backgroundColor="EL_Background" halign="left" transparent="1">
+      <convert type="EventTime">EndTime</convert>
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget source="Event" render="Progress" backgroundColor="EL_PreBlack2" borderWidth="0" pixmap="SmartLiteFHD/colors/00A4C400.png" position="90,225" size="550,5" transparent="1" zPosition="1">
+      <convert type="EventTime">Progress</convert>
+    </widget>
+    <eLabel backgroundColor="grey" foregroundColor="grey" position="90,227" size="550,1" />
+    <widget source="Event" render="Label" backgroundColor="EL_Background" font="Bold; 28" halign="right" position="489,175" size="150,45" transparent="1">
+      <convert type="EventTime">Remaining</convert>
+      <convert type="RemainingToText">InMinutes</convert>
+    </widget>
+    <widget source="Event" render="Label" position="90,235" zPosition="1" size="1740,150" font="Regular2; 27" backgroundColor="EL_Background" transparent="1" valign="top">
+      <convert type="EventName">ExtendedDescription</convert>
+    </widget>
+    <widget name="timeline_text" position="90,400" size="1740,45" foregroundColor="green_light" backgroundColor="EL_Background" transparent="1" selectionDisabled="1" itemHeight="55" font="Regular; 28" />
+    <widget name="timeline_now" position="71,460" zPosition="2" size="19,480" pixmap="SmartLiteFHD/extensions/timeline-now2.png" alphatest="blend" />
+    <widget name="list" scrollbarSliderForegroundColor="EL_Foreground" scrollbarSliderBorderColor="EL_Foreground" scrollbarSliderBorderWidth="1" CoolBackColor="EL_Foreground" CoolBackColorSel="EL_Selection" CoolCurrentCol="#8585ff" CoolCurrentColSel="EL_Selection" CoolFontCol="EL_Foreground" CoolFontColSel="yellow" CoolNowCol="dark" CoolNowColSel="EL_Foreground" CoolNowFontCol="EL_Foreground" CoolNowFontColSel="dark" backgroundColor="EL_Background" position="center,460" scrollbarMode="showOnDemand" size="1740,480" transparent="1" scrollbarWidth="4" />
+    <!-- Button -->
+    <ePixmap alphatest="blend" name="new ePixmap" pixmap="SmartLiteFHD/buttons/key_menu.png" position="1770,971" size="64,38" />
+    <eLabel backgroundColor="blue" foregroundColor="white" name="" position="70,960" size="1780,1" zPosition="-18" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="90,970" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="400,970" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/yellow.png" position="710,970" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/blue.png" position="1020,970" size="40,40" />
+    <widget backgroundColor="EL_Background" font="Regular; 28" halign="left" position="140,970" size="255,40" name="key_red" transparent="1" zPosition="1" />
+    <widget backgroundColor="EL_Background" font="Regular; 28" halign="left" position="450,970" size="255,40" name="key_green" transparent="1" zPosition="1" />
+    <widget backgroundColor="EL_Background" font="Regular; 28" halign="left" position="760,970" size="255,40" name="key_yellow" transparent="1" zPosition="1" />
+    <widget backgroundColor="EL_Background" font="Regular; 28" halign="left" position="1070,970" size="285,40" name="key_blue" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="1707,53" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1714,36" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1554,76" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1554,48" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+  </screen>
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="CoolTVGuideSetup" position="center,center" size="1920,1080" title="CoolTV Guide Setup">
+    <!-- Backg -->
+    <eLabel backgroundColor="EL_Background" position="260,50" size="1400,980" zPosition="-21" />
+    <eLabel backgroundColor="Red" position="260,130" size="1400,3" zPosition="-9" foregroundColor="white" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="290,60" size="1050,58" transparent="1" />
+    <widget name="config" itemHeight="50" font="Bold; 30" backgroundColor="EL_Background" enableWrapAround="1" scrollbarMode="showOnDemand" position="290,165" size="1340,650" transparent="1" foregroundColor="white" />
+    <eLabel backgroundColor="white" position="290,857" size="1340,3" zPosition="-9" foregroundColor="white" />
+    <widget name="CoolText1" position="290,870" size="1340,45" font="Regular2; 28" backgroundColor="EL_Background" shadowColor="#000000" shadowOffset="-2,-2" halign="left" transparent="1" />
+    <widget name="CoolText2" position="center,920" size="1340,45" font="Regular2; 28" backgroundColor="EL_Background" shadowColor="#000000" shadowOffset="-2,-2" halign="left" transparent="1" />
+    <!-- Buttons -->
+    <eLabel backgroundColor="blue" foregroundColor="EL_Background" name="" position="center,978" size="1400,1" zPosition="-10" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="310,985" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="600,985" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/yellow.png" position="890,985" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/blue.png" position="1180,985" size="40,40" />
+    <widget name="key_red" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="355,985" size="240,40" transparent="1" zPosition="1" />
+    <widget name="key_green" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="645,985" size="240,40" transparent="1" zPosition="1" />
+    <widget name="key_yellow" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="935,985" size="240,40" transparent="1" zPosition="1" />
+    <widget name="key_blue" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="1225,985" size="240,40" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="1497,63" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1504,47" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="white" halign="right" position="1344,86" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="white" halign="right" position="1344,58" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+  </screen>
+  <!-- TURKvod  -->
+  <screen name="TURKvodPlaylist" title="Playlist" position="center,center" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
+    <eLabel backgroundColor="EL_Background" position="70,40" size="1780,980" zPosition="-21" />
+    <!-- Widget -->
+    <widget name="playlist" position="90,120" size="1000,45" font="Bold; 30" foregroundColor="EL_Foreground" backgroundColor="EL_Background3" transparent="1" />
+    <eLabel backgroundColor="EL_Blue" position="90,110" size="1780,1" zPosition="1" foregroundColor="EL_Blue" />
+    <widget name="Listbox1" itemHeight="40" font="Bold; 30" backgroundColor="EL_Background" position="90,180" size="1000,750" scrollbarMode="showOnDemand" enableWrapAround="0" transparent="1" />
+    <eLabel backgroundColor="white" position="1105,120" size="1,825" zPosition="-9" />
+    <widget name="description" position="1120,595" size="720,350" font="Regular; 28" backgroundColor="EL_Background" transparent="1" valign="top" halign="center" />
+    <widget name="poster" position="1120,120" size="375,470" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TURKvod/img/clear.png" zPosition="1" transparent="1" alphatest="blend" />
+    <widget name="version" position="1635,200" zPosition="4" size="200,45" halign="right" font="Bold; 30" transparent="1" foregroundColor="EL_Foreground" backgroundColor="EL_Background" />
+    <widget name="chminus" position="1245,970" zPosition="4" size="250,40" halign="left" font="Bold; 26" transparent="1" foregroundColor="EL_Foreground" backgroundColor="EL_Background" />
+    <widget name="chplus" position="1580,970" zPosition="4" size="250,40" halign="left" font="Bold; 26" transparent="1" foregroundColor="EL_Foreground" backgroundColor="EL_Background" />
+    <widget name="stop" position="1525,250" zPosition="4" size="310,40" halign="right" font="Regular; 28" transparent="1" foregroundColor="EL_Foreground" backgroundColor="EL_Background" />
+    <widget name="menu" font="Bold; 26" position="165,57" size="220,40" halign="left" valign="center" zPosition="4" transparent="1" foregroundColor="EL_Foreground" backgroundColor="EL_Background" />
+    <widget name="gecmis" font="Bold; 26" position="470,57" size="220,40" halign="left" valign="center" zPosition="4" transparent="1" foregroundColor="EL_Foreground" backgroundColor="EL_Background3" />
+    <widget name="favori" font="Bold; 26" position="775,57" size="220,40" halign="left" valign="center" zPosition="4" transparent="1" foregroundColor="EL_Foreground" backgroundColor="EL_Background3" />
+    <widget name="hdd" font="Bold; 26" position="1080,58" size="220,40" halign="left" valign="center" zPosition="4" transparent="1" foregroundColor="EL_Foreground" backgroundColor="EL_Background3" />
+    <ePixmap position="1635,120" size="200,75" pixmap="SmartLiteFHD/plugins_png/TURKvod/turVOD.png" transparent="0" alphatest="blend" />
+    <!-- Button -->
+    <eLabel backgroundColor="EL_Selection" foregroundColor="white" name="" position="70,960" size="1780,1" zPosition="-18" />
+    <ePixmap alphatest="blend" name="new ePixmap" pixmap="SmartLiteFHD/buttons/key_menu.png" position="90,57" size="64,38" />
+    <ePixmap alphatest="blend" name="new ePixmap" pixmap="SmartLiteFHD/buttons/key_exit.png" position="395,57" size="64,38" />
+    <ePixmap alphatest="blend" name="new ePixmap" pixmap="SmartLiteFHD/buttons/key_text.png" position="700,57" size="64,38" />
+    <ePixmap alphatest="blend" name="new ePixmap" pixmap="SmartLiteFHD/buttons/key_tv.png" position="1005,58" size="64,38" />
+    <ePixmap alphatest="blend" name="new ePixmap" pixmap="SmartLiteFHD/plugins_png/TURKvod/key_minus.png" position="1175,971" size="64,38" />
+    <ePixmap alphatest="blend" name="new ePixmap" pixmap="SmartLiteFHD/plugins_png/TURKvod/key_plus.png" position="1510,971" size="64,38" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="90,970" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="360,970" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/yellow.png" position="630,970" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/blue.png" position="900,970" size="40,40" />
+    <widget backgroundColor="EL_Background" font="Bold; 26" halign="left" valign="center" name="cekis" position="135,970" size="220,40" transparent="1" zPosition="1" />
+    <widget backgroundColor="EL_Background" font="Bold; 26" halign="left" valign="center" name="indirilen" position="405,970" size="220,40" transparent="1" zPosition="1" />
+    <widget backgroundColor="EL_Background" font="Bold; 26" halign="left" valign="center" name="lokal" position="675,970" size="220,40" transparent="1" zPosition="1" />
+    <widget backgroundColor="EL_Background" font="Bold; 26" halign="left" valign="center" name="filme_don" position="945,970" size="220,40" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <widget backgroundColor="EL_Background" font="Regular2; 36" foregroundColor="white" halign="right" position="1330,51" render="Label" size="500,50" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A,%e.%b   %H:%M</convert>
+    </widget>
+  </screen>
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="TURKvodVideoPlayer" position="0,0" size="1920,1080" title="Videothek">
+    <!-- Clock -->
+    <eLabel backgroundColor="EL_Background" position="1687,73" size="150,68" transparent="0" zPosition="-12" />
+    <eLabel backgroundColor="dark" position="1530,73" size="157,68" transparent="0" zPosition="-12" foregroundColor="white" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1694,65" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="white" halign="right" position="1534,106" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="white" halign="right" position="1534,78" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+    <!-- Background -->
+    <eLabel backgroundColor="EL_Background" name="InfoBar" position="center,872" size="1720,178" zPosition="-20" />
+    <eLabel backgroundColor="white" name="" position="center,870" size="1720,2" zPosition="-10" />
+    <eLabel backgroundColor="white" name="" position="100,870" size="2,182" zPosition="-10" />
+    <eLabel backgroundColor="white" name="" position="center,1050" size="1720,2" zPosition="-10" />
+    <eLabel backgroundColor="white" name="" position="1820,870" size="2,182" zPosition="-10" />
+    <eLabel backgroundColor="dark" foregroundColor="EL_Background" name="" position="center,995" size="1720,1" zPosition="-11" />
+    <!-- Widget -->
+    <widget name="state" font="Bold; 26" position="1574,1005" size="216,40" backgroundColor="EL_Background" halign="center" zPosition="10" transparent="1" />
+    <widget name="pico" position="115,956" size="20,20" zPosition="1" transparent="1" alphatest="blend" />
+    <ePixmap alphatest="blend" name="new ePixmap" pixmap="SmartLiteFHD/buttons/key_text.png" position="870,1006" size="64,38" />
+    <widget name="altyazi" font="Bold; 26" halign="left" valign="center" position="939,1005" size="200,40" backgroundColor="EL_Background" foregroundColor="EL_Foreground" transparent="1" zPosition="1" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="110,1005" size="40,40" />
+    <widget name="kaydet" font="Bold; 26" halign="left" valign="center" position="155,1005" size="180,40" backgroundColor="EL_Background" foregroundColor="EL_Foreground" transparent="1" zPosition="1" />
+    <ePixmap alphatest="blend" name="new ePixmap" pixmap="SmartLiteFHD/buttons/key_video.png" position="1144,1006" size="64,38" />
+    <widget name="paylas" font="Bold; 26" halign="left" valign="center" position="1213,1005" size="200,40" backgroundColor="EL_Background" foregroundColor="EL_Foreground" transparent="1" zPosition="1" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/blue.png" position="570,1005" size="40,40" />
+    <widget name="cont_play" font="Bold; 26" halign="left" valign="center" position="615,1005" size="250,40" backgroundColor="EL_Background" foregroundColor="EL_Foreground" transparent="1" zPosition="1" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="340,1005" size="40,40" />
+    <widget name="tsenable" font="Bold; 26" halign="left" valign="center" position="385,1005" size="180,40" backgroundColor="EL_Background" foregroundColor="EL_Foreground" transparent="1" zPosition="1" />
+    <widget backgroundColor="EL_Background" font="Regular2; 30" foregroundColor="EL_Foreground" halign="left" position="115,889" render="Label" shadowColor="EL_Background" shadowOffset="-1,-1" size="145,42" source="session.CurrentService" transparent="1" valign="center">
+      <convert type="ServicePosition">Position,ShowHours</convert>
+    </widget>
+    <widget render="PositionGauge" source="session.CurrentService" pointer="SmartLiteFHD/colors/00A4C400.png:1375,0" size="1365,5" position="115,946" transparent="1" zPosition="1">
+      <convert type="ServicePosition">Gauge</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 38" foregroundColor="green_light" halign="center" position="1584,880" render="Label" size="196,60" source="session.CurrentService" transparent="1" valign="center">
+      <convert type="ServicePosition">Length</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Regular2; 38" halign="center" noWrap="1" position="260,880" render="Label" size="1075,60" source="session.CurrentService" transparent="1">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Regular2; 30" foregroundColor="EL_Foreground" halign="right" position="1335,889" render="Label" shadowColor="EL_Background" shadowOffset="-1,-1" size="145,42" source="session.CurrentService" transparent="1" valign="center">
+      <convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
+    </widget>
+    <eLabel backgroundColor="EL_Accent1" foregroundColor="EL_Accent1" name="new eLabel" position="115,948" size="1365,1" zPosition="-1" />
+    <!-- icons -->
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/my_icons/dolby_off.png" position="1281,956" size="65,32" zPosition="1" />
+    <widget alphatest="blend" pixmap="SmartLiteFHD/my_icons/dolby_on.png" position="1281,956" render="Pixmap" size="65,32" source="session.CurrentService" zPosition="2">
+      <convert type="ServiceInfo">IsMultichannel</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/my_icons/format_off.png" position="1349,956" size="65,32" zPosition="1" />
+    <widget alphatest="blend" pixmap="SmartLiteFHD/my_icons/format_on.png" position="1349,956" render="Pixmap" size="65,32" source="session.CurrentService" zPosition="2">
+      <convert type="ServiceInfo">IsWidescreen</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/my_icons/hd_off.png" position="1417,956" size="65,32" zPosition="1" />
+    <widget alphatest="blend" pixmap="SmartLiteFHD/my_icons/hd_on.png" position="1417,956" render="Pixmap" size="65,32" source="session.CurrentService" zPosition="2">
+      <convert type="ServiceInfo">VideoWidth</convert>
+      <convert type="ValueRange">721,1980</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="SmartLiteFHD/my_icons/rec_on.png" position="1213,956" render="Pixmap" size="65,32" source="session.RecordState" zPosition="2">
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 28" foregroundColor="EL_Foreground" halign="right" position="1584,956" render="Label" size="85,32" source="session.CurrentService" transparent="1" valign="center">
+      <convert type="ServiceInfo">VideoWidth</convert>
+    </widget>
+    <eLabel backgroundColor="EL_Background" font="Bold; 26" foregroundColor="EL_Foreground" halign="center" position="1669,956" size="26,32" text="x" transparent="1" valign="center" />
+    <widget backgroundColor="EL_Background" font="Bold; 28" foregroundColor="EL_Foreground" halign="left" position="1695,956" render="Label" size="85,32" source="session.CurrentService" transparent="1" valign="center">
+      <convert type="ServiceInfo">VideoHeight</convert>
+    </widget>
+  </screen>
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="turkQuality" title="Episode selector" position="0,center" size="1920,1080" transparent="0">
+    <!-- Backg -->
+    <eLabel backgroundColor="EL_Background" position="50,center" size="1300,920" zPosition="-21" />
+    <eLabel backgroundColor="EL_Selection" foregroundColor="white" name="" position="50,132" size="1300,1" zPosition="-10" />
+    <eLabel backgroundColor="EL_New" position="1390,80" size="450,450" zPosition="-9" foregroundColor="white" />
+    <eLabel backgroundColor="EL_New" position="1390,550" size="450,80" zPosition="-9" foregroundColor="white" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/menu/setup2.png" position="1440,130" size="350,350" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" position="70,82" size="1250,46" font="Bold; 32" backgroundColor="EL_Background" foregroundColor="white" transparent="1" />
+    <widget name="menulabel" position="80,165" size="1240,45" font="Regular2; 30" backgroundColor="EL_Background" halign="left" valign="center" transparent="1" />
+    <eLabel backgroundColor="white" position="80,215" size="1240,1" zPosition="1" foregroundColor="white" />
+    <widget name="menulist" itemHeight="50" font="Bold; 30" scrollbarMode="showNever" foregroundColor="EL_Foreground" backgroundColor="EL_Background" position="80,225" size="1240,750" transparent="1" zPosition="3" />
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="1687,565" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1694,548" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1534,588" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1534,560" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+  </screen>
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="In_form" position="center,center" size="1920,1080" title="">
+    <!-- Backg -->
+    <eLabel backgroundColor="EL_Background" position="50,center" size="1300,920" zPosition="-21" />
+    <eLabel backgroundColor="EL_Selection" foregroundColor="white" name="" position="50,132" size="1300,1" zPosition="-10" />
+    <eLabel backgroundColor="EL_New" position="1390,80" size="450,450" zPosition="-9" foregroundColor="white" />
+    <eLabel backgroundColor="EL_New" position="1390,550" size="450,80" zPosition="-9" foregroundColor="white" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/menu/setup2.png" position="1440,130" size="350,350" />
+    <!-- Widget -->
+    <eLabel text="Info" position="70,82" size="1250,46" font="Bold; 32" backgroundColor="EL_Background" foregroundColor="white" transparent="1" />
+    <eLabel backgroundColor="white" position="80,650" size="1240,1" zPosition="-9" foregroundColor="white" />
+    <widget name="aciklama" font="Regular2; 30" halign="left" valign="center" position="80,145" size="1240,45" backgroundColor="EL_Background" transparent="1" zPosition="1" foregroundColor="green_light" />
+    <widget name="baslik" font="Regular2; 30" halign="left" valign="center" position="80,195" size="1240,45" backgroundColor="EL_Background" transparent="1" zPosition="1" />
+    <widget name="list" font="Bold; 30" itemHeight="50" position="80,245" size="1240,400" scrollbarMode="showOnDemand" foregroundColor="EL_Foreground" backgroundColor="EL_Background" transparent="1" zPosition="1" />
+    <widget name="text" font="Regular2; 28" itemHeight="50" position="80,660" size="1240,250" scrollbarMode="showOnDemand" foregroundColor="EL_Foreground" backgroundColor="EL_Background" transparent="1" zPosition="1" valign="top" />
+    <widget name="anket" font="Regular2; 28" position="80,950" size="1240,45" backgroundColor="EL_Background" transparent="1" halign="left" foregroundColor="yellow" />
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="1687,565" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1694,548" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1534,588" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1534,560" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+  </screen>
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="plugin_kt" position="center,center" size="1920,1080" title="Playlist">
+    <!-- Backg -->
+    <eLabel backgroundColor="EL_Background" position="50,center" size="1300,920" zPosition="-21" />
+    <eLabel backgroundColor="EL_Selection" foregroundColor="white" name="" position="50,132" size="1300,1" zPosition="-10" />
+    <eLabel backgroundColor="EL_New" position="1390,80" size="450,450" zPosition="-9" foregroundColor="white" />
+    <eLabel backgroundColor="EL_New" position="1390,550" size="450,80" zPosition="-9" foregroundColor="white" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/menu/setup2.png" position="1440,130" size="350,350" />
+    <!-- Widget -->
+    <widget name="baslik" position="70,82" size="1250,46" font="Bold; 32" backgroundColor="EL_Background" foregroundColor="white" transparent="1" />
+    <widget name="config" itemHeight="50" font="Bold; 30" backgroundColor="EL_Background" position="80,165" scrollbarMode="showOnDemand" size="1240,700" transparent="1" />
+    <eLabel text="Uyelik Aktif Olmasini Istiyorsaniz Bilgileri Dogru Girmelisiniz" position="80,885" size="1240,45" font="Regular2; 28" transparent="1" foregroundColor="white" />
+    <!-- Buttons -->
+    <eLabel backgroundColor="EL_Selection" foregroundColor="EL_Background" name="" position="50,948" size="1300,1" zPosition="-10" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="80,955" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="375,955" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/blue.png" position="670,955" size="40,40" />
+    <widget name="uyelik_kay" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="125,955" size="250,40" transparent="1" zPosition="1" />
+    <widget name="ayarlari_kaydet" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="420,955" size="250,40" transparent="1" zPosition="1" />
+    <widget name="pas" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="715,955" size="250,40" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="1687,565" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1694,548" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1534,588" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1534,560" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+  </screen>
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="vodeScreen" position="center,center" size="1920,1080" title="TURKvod Video Download Listesi">
+    <!-- Backg -->
+    <eLabel backgroundColor="EL_Background" position="50,center" size="1300,920" zPosition="-21" />
+    <eLabel backgroundColor="EL_Selection" foregroundColor="white" name="" position="50,132" size="1300,1" zPosition="-10" />
+    <eLabel backgroundColor="EL_New" position="1390,80" size="450,450" zPosition="-9" foregroundColor="white" />
+    <eLabel backgroundColor="EL_New" position="1390,550" size="450,80" zPosition="-9" foregroundColor="white" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/menu/setup2.png" position="1440,130" size="350,350" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" position="70,82" size="1250,46" font="Bold; 32" backgroundColor="EL_Background" foregroundColor="white" transparent="1" />
+    <widget source="movielist" render="Listbox" backgroundColor="EL_Background" position="80,165" scrollbarMode="showOnDemand" size="1240,800" transparent="1">
+      <convert type="TemplatedMultiContent">
+                       {"template": [
+			            MultiContentEntryText(pos = (10, 5), size = (650, 50), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the name
+			            MultiContentEntryText(pos = (680, 5), size = (220, 50), font=1, flags = RT_HALIGN_RIGHT, text = 2), # index 2 is the state
+			            MultiContentEntryProgress(pos = (920, 10), size = (220, 30), percent = -3), # index 3 should be progress
+			            MultiContentEntryText(pos = (1160, 5), size = (80, 50), font=1, flags = RT_HALIGN_RIGHT, text = 4), # index 4 is the percentage
+                        ],
+                        "fonts": [gFont("Regular",28),gFont("Regular",28)],
+                        "itemHeight": 50
+                        }
+              </convert>
+    </widget>
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="1687,565" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1694,548" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1534,588" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1534,560" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+  </screen>
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="RenAy" position="center,center" size="1920,1080" title="Playlist">
+    <!-- Backg -->
+    <eLabel backgroundColor="EL_Background" position="50,center" size="1300,920" zPosition="-21" />
+    <eLabel backgroundColor="EL_Selection" foregroundColor="white" name="" position="50,132" size="1300,1" zPosition="-10" />
+    <eLabel backgroundColor="EL_New" position="1390,80" size="450,450" zPosition="-9" foregroundColor="white" />
+    <eLabel backgroundColor="EL_New" position="1390,550" size="450,80" zPosition="-9" foregroundColor="white" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/menu/setup2.png" position="1440,130" size="350,350" />
+    <!-- Widget -->
+    <widget name="baslik" position="70,82" size="1250,46" font="Bold; 32" backgroundColor="EL_Background" foregroundColor="white" transparent="1" />
+    <widget name="config" itemHeight="50" font="Bold; 30" backgroundColor="EL_Background" position="80,center" scrollbarMode="showOnDemand" size="1240,750" transparent="1" />
+    <!-- Buttons -->
+    <eLabel backgroundColor="EL_Selection" foregroundColor="EL_Background" name="" position="50,948" size="1300,1" zPosition="-10" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="80,955" size="40,40" />
+    <widget name="ayarlari_kaydet" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="125,955" size="250,40" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="1687,565" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1694,548" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1534,588" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1534,560" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+  </screen>
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="font" position="center,center" size="1920,1080" title="Playlist">
+    <!-- Backg -->
+    <eLabel backgroundColor="EL_Background" position="50,center" size="1300,920" zPosition="-21" />
+    <eLabel backgroundColor="EL_Selection" foregroundColor="white" name="" position="50,132" size="1300,1" zPosition="-10" />
+    <eLabel backgroundColor="EL_New" position="1390,80" size="450,450" zPosition="-9" foregroundColor="white" />
+    <eLabel backgroundColor="EL_New" position="1390,550" size="450,80" zPosition="-9" foregroundColor="white" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/menu/setup2.png" position="1440,130" size="350,350" />
+    <!-- Widget -->
+    <widget name="baslik" position="70,82" size="1250,46" font="Bold; 32" backgroundColor="EL_Background" foregroundColor="white" transparent="1" />
+    <widget name="pico" alphatest="blend" backgroundColor="EL_Background" position="80,165" size="1240,800" transparent="1" />
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="1687,565" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1694,548" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1534,588" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1534,560" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+  </screen>
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="plugin_pay" position="center,center" size="1920,1080" title="Playlist">
+    <!-- Backg -->
+    <eLabel backgroundColor="EL_Background" position="50,center" size="1300,920" zPosition="-21" />
+    <eLabel backgroundColor="EL_Selection" foregroundColor="white" name="" position="50,132" size="1300,1" zPosition="-10" />
+    <eLabel backgroundColor="EL_New" position="1390,80" size="450,450" zPosition="-9" foregroundColor="white" />
+    <eLabel backgroundColor="EL_New" position="1390,550" size="450,80" zPosition="-9" foregroundColor="white" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/menu/setup2.png" position="1440,130" size="350,350" />
+    <!-- Widget -->
+    <widget name="baslik" position="70,82" size="1250,46" font="Bold; 32" backgroundColor="EL_Background" foregroundColor="white" transparent="1" />
+    <widget name="config" itemHeight="50" font="Bold; 30" backgroundColor="EL_Background" position="80,center" size="1240,750" transparent="1" />
+    <!-- Buttons -->
+    <eLabel backgroundColor="EL_Selection" foregroundColor="EL_Background" name="" position="50,948" size="1300,1" zPosition="-10" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="80,955" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="375,955" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/yellow.png" position="670,955" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/blue.png" position="965,955" size="40,40" />
+    <widget name="pay_ekle" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="125,955" size="250,40" transparent="1" zPosition="1" />
+    <widget name="ark_gonder" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="420,955" size="250,40" transparent="1" zPosition="1" />
+    <widget name="oz_ekle" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="715,955" size="250,40" transparent="1" zPosition="1" />
+    <widget name="oz_sil" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="1010,955" size="250,40" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="1687,565" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1694,548" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1534,588" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1534,560" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+  </screen>
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="KeyBoard" position="center,center" size="1920,1080" title="Virtual KeyBoard">
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/menu/keyboard.png" position="1440,130" size="350,350" />
+    <!-- Backg -->
+    <eLabel backgroundColor="EL_Background" position="50,center" size="1300,920" zPosition="-21" />
+    <eLabel backgroundColor="blue" foregroundColor="white" name="" position="80,270" size="1240,60" zPosition="1" />
+    <eLabel backgroundColor="EL_New" position="1390,80" size="450,450" zPosition="-9" foregroundColor="white" />
+    <eLabel backgroundColor="EL_New" position="1390,550" size="450,80" zPosition="-9" foregroundColor="white" />
+    <!-- Widget -->
+    <eLabel text="Virtual KeyBoard" position="70,82" size="1260,46" font="Bold; 32" backgroundColor="EL_Background" transparent="1" foregroundColor="white" />
+    <widget name="header" backgroundColor="EL_Background" font="Regular2; 32" foregroundColor="EL_Foreground" halign="center" noWrap="1" position="80,165" size="1240,90" transparent="1" />
+    <eLabel backgroundColor="EL_Selection" foregroundColor="white" name="" position="50,132" size="1300,1" zPosition="-10" />
+    <eLabel backgroundColor="EL_Background" position="82,272" size="1236,56" zPosition="2" font="Regular; 24" />
+    <widget backgroundColor="EL_Background" font="Bold; 33" foregroundColor="EL_Foreground" halign="right" name="text" noWrap="1" position="94,276" size="1212,50" zPosition="3" />
+    <widget name="list" position="250,350" size="960,540" selectionDisabled="1" transparent="1" />
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="1687,565" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1694,548" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1534,588" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1534,560" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+  </screen>
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="TurkvodSearch" position="center,center" size="1920,1080" title="Virtual KeyBoard">
+    <!-- Backg -->
+    <eLabel backgroundColor="EL_Background" position="50,center" size="1300,920" zPosition="-21" />
+    <eLabel backgroundColor="EL_Selection" foregroundColor="white" name="" position="50,132" size="1300,1" zPosition="-10" />
+    <eLabel backgroundColor="EL_New" position="1390,80" size="450,450" zPosition="-9" foregroundColor="white" />
+    <eLabel backgroundColor="EL_New" position="1390,550" size="450,80" zPosition="-9" foregroundColor="white" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/menu/setup2.png" position="1440,130" size="350,350" />
+    <!-- Widget -->
+    <widget name="header" position="70,82" size="1250,46" font="Bold; 32" backgroundColor="EL_Background" foregroundColor="white" transparent="1" />
+    <widget name="selection" itemHeight="50" font="Bold; 30" scrollbarMode="showNever" backgroundColor="EL_Background" position="80,center" size="1240,750" transparent="1" />
+    <!-- Buttons -->
+    <eLabel backgroundColor="EL_Selection" foregroundColor="EL_Background" name="" position="50,948" size="1300,1" zPosition="-10" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="80,955" size="40,40" />
+    <eLabel text="Sil" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="125,955" size="250,40" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="1687,565" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1694,548" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1534,588" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1534,560" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+  </screen>
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="plugin_gun" position="center,center" size="1920,1080" title="">
+    <!-- Backg -->
+    <eLabel backgroundColor="EL_Background" position="50,center" size="1300,920" zPosition="-21" />
+    <eLabel backgroundColor="EL_Selection" foregroundColor="white" name="" position="50,132" size="1300,1" zPosition="-10" />
+    <eLabel backgroundColor="EL_New" position="1390,80" size="450,450" zPosition="-9" foregroundColor="white" />
+    <eLabel backgroundColor="EL_New" position="1390,550" size="450,80" zPosition="-9" foregroundColor="white" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/menu/setup2.png" position="1440,130" size="350,350" />
+    <!-- Widget -->
+    <widget name="baslik" position="70,82" size="1250,46" font="Bold; 32" backgroundColor="EL_Background" foregroundColor="white" transparent="1" />
+    <widget name="menulist" itemHeight="50" font="Bold; 30" enableWrapAround="0" scrollbarMode="showOnDemand" backgroundColor="EL_Background" position="80,145" size="1240,350" transparent="1" />
+    <widget name="res" alphatest="blend" backgroundColor="EL_Background" position="80,505" size="1240,250" transparent="1" font="Regular2; 28" foregroundColor="yellow" valign="top" />
+    <widget name="ver" position="80,760" size="1240,45" font="Bold; 30" backgroundColor="EL_Background" transparent="1" foregroundColor="green_light" />
+    <widget name="durum" position="79,810" size="1240,175" font="Regular2; 28" backgroundColor="EL_Background" transparent="1" />
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="1687,565" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1694,548" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1534,588" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1534,560" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+  </screen>
+
+  
+</skin>
