@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <skin>
-  <!-- SmartLiteFHD Skin V1.00 by SkinMania for Octagon -->
+  <!-- SmartLiteFHD Skin V1.50 by SkinMania for Octagon -->
   <!-- Recommended to use with XPicons (220x132) -->
   <!-- You are not allowed to modify and redistribute SmartLiteFHD Skin and all graphics -->
   <output id="0">
@@ -2540,7 +2540,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <eLabel text="Minutes:" backgroundColor="background" font="Bold; 34" position="707,center" size="165,55" transparent="1" valign="center" zPosition="3" halign="center" />
     <widget name="minutes" font="Bold; 32" position="center,center" size="165,51" transparent="1" zPosition="3" halign="center" />
   </screen>
-  <screen name="MediaPlayer" title="MediaPlayer" backgroundColor="transparent" borderColor="transparent" borderWidth="0" flags="wfNoBorder" position="center,center" size="1920,1080">
+  <screen name="MediaPlayer" title="MediaPlayer" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <ePixmap position="0,0" size="1920,1080" zPosition="-90" pixmap="SmartLiteFHD/menu/bgBlue.png" />
     <!-- Backg1 -->
     <eLabel backgroundColor="EL_Background" position="640,80" size="1200,920" zPosition="-20" />
@@ -3800,10 +3800,19 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
   <screen backgroundColor="transparent" flags="wfNoBorder" name="ServiceInfo" position="center,center" size="1920,1080" title="Serviceinfo">
     <panel name="Backg" />
     <panel name="Clock" />
-    <panel name="BN4" />
     <!-- Widget -->
     <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1000,58" transparent="1" />
     <widget name="infolist" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" selectionDisabled="1" backgroundColor="EL_Background" foregroundColor="white" position="310,165" size="1300,800" transparent="1" />
+    <!-- Widget -->
+    <eLabel backgroundColor="blue" foregroundColor="EL_Background" name="" position="260,978" size="1400,1" zPosition="-10" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="310,985" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="630,985" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/yellow.png" position="950,985" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/blue.png" position="1270,985" size="40,40" />
+    <widget name="red" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="355,985" size="270,40" transparent="1" zPosition="1" />
+    <widget name="green" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="675,985" size="270,40" transparent="1" zPosition="1" />
+    <widget name="yellow" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="995,985" size="270,40" transparent="1" zPosition="1" />
+    <widget name="blue" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="1315,985" size="270,40" transparent="1" zPosition="1" />
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="ServiceInfoSimple" title="Service info" position="0,center" size="1920,1080" transparent="0">
     <panel name="Backg" />
