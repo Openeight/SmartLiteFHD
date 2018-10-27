@@ -191,38 +191,39 @@
     <!-- <panel name="Wizard" /> -->
 	<screen name="Wizard">
       <!-- Backg -->
-      <eLabel backgroundColor="EL_Background" position="center,center" size="1720,900" zPosition="-20" />
-      <eLabel backgroundColor="Red" position="100,170" size="1720,3" zPosition="-9" foregroundColor="white" />
+      <eLabel backgroundColor="EL_Background" position="100,center" size="1420,900" zPosition="-20" />
+      <eLabel backgroundColor="EL_New" position="1560,center" size="170,560" zPosition="-50" foregroundColor="white" />
+      <eLabel backgroundColor="Red" position="100,170" size="1420,3" zPosition="-9" foregroundColor="white" />
       <!-- Widget -->
-      <widget source="Title" render="Label" position="130,100" size="1390,58" font="FHD; 42" backgroundColor="EL_Background" transparent="1" halign="left" />
-      <widget name="text" font="FHD; 32" halign="left" valign="top" backgroundColor="EL_Background" position="130,190" size="1390,300" transparent="1" />
+      <widget source="Title" render="Label" position="130,100" size="1090,58" font="FHD; 42" backgroundColor="EL_Background" transparent="1" halign="left" />
+      <widget name="text" font="FHD; 32" halign="left" valign="top" backgroundColor="EL_Background" position="130,190" size="1360,300" transparent="1" />
       <eLabel backgroundColor="white" position="130,504" size="1390,2" zPosition="-9" foregroundColor="white" />
-      <widget source="list" render="Listbox" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="130,520" scrollbarMode="showOnDemand" size="1390,400" transparent="1" zPosition="9">
+      <widget source="list" render="Listbox" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="130,520" scrollbarMode="showOnDemand" size="1360,400" transparent="1" zPosition="9">
         <convert type="TemplatedMultiContent">
-                {"template":[ MultiContentEntryText(pos=(20,2),size=(1100,42),flags=RT_HALIGN_LEFT,text=0) ],
+                {"template":[ MultiContentEntryText(pos=(20,2),size=(1300,42),flags=RT_HALIGN_LEFT,text=0) ],
                 "fonts":[gFont("FHD",32) ],"itemHeight":50}
         </convert>
       </widget>
-      <widget name="config" position="130,520" size="1390,400" font="FHD; 32" itemHeight="50" foregroundColor="EL_Foreground" backgroundColor="EL_Background" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="10" />
+      <widget name="config" position="130,520" size="1360,400" font="FHD; 32" itemHeight="50" foregroundColor="EL_Foreground" backgroundColor="EL_Background" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="10" />
       <widget name="HelpWindow" position="125,600" size="1,1" zPosition="10" />
-      <widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="1576,center" size="160,620" alphatest="blend" transparent="1" zPosition="1" />
-      <widget name="arrowdown" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
-      <widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
-      <widget name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
-      <widget name="arrowup2" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
+      <widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="1580,center" size="130,505" alphatest="blend" transparent="1" zPosition="1" />
+      <widget name="arrowdown" pixmap="skin_default/arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
+      <widget name="arrowdown2" pixmap="skin_default/arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
+      <widget name="arrowup" pixmap="skin_default/arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
+      <widget name="arrowup2" pixmap="skin_default/arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
       <!-- Buttons -->
-      <eLabel backgroundColor="blue" foregroundColor="white" name="" position="center,930" size="1720,1" zPosition="-10" />
+      <eLabel backgroundColor="blue" foregroundColor="white" name="" position="100,930" size="1420,1" zPosition="-10" />
       <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="130,940" size="40,40" />
       <widget name="languagetext" render="Label" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="175,940" size="350,40" transparent="1" zPosition="1" />
       <!-- Clock -->
-      <eLabel backgroundColor="white" position="1672,103" size="1,50" transparent="0" zPosition="-1" />
-      <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1679,86" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <eLabel backgroundColor="white" position="1372,103" size="1,50" transparent="0" zPosition="-1" />
+      <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1379,86" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
         <convert type="ClockToText">Format:%H:%M</convert>
       </widget>
-      <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1519,126" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1219,126" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
         <convert type="ClockToText">Format:%e. %b</convert>
       </widget>
-      <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1519,98" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1219,98" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
         <convert type="ClockToText">Format:%A</convert>
       </widget>
 	</screen>
