@@ -4,7 +4,7 @@
   
   <!-- Extra Screens -->
   <!-- Extra Screens -->
-  <screen backgroundColor="transparent" flags="wfNoBorder" name="Extraspanel" title="Eight PANEL" position="0,center" size="1920,1080" transparent="0">
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="Extraspanel" title="Eight PANEL" position="center,center" size="1920,1080" transparent="0">
     <!-- Backg -->
     <eLabel backgroundColor="EL_Background" position="750,center" size="940,880" zPosition="-21" />
     <eLabel backgroundColor="EL_New" position="200,100" size="500,550" zPosition="-50" foregroundColor="white" />
@@ -25,6 +25,21 @@
       </convert>
     </widget>
     <widget name="label1" position="210,560" size="480,70" font="FHD; 28" backgroundColor="EL_Background" foregroundColor="white" transparent="1" valign="center" halign="center" />
+    <!-- Weather -->
+    <eLabel backgroundColor="EL_New" position="200,795" size="500,135" zPosition="-50" foregroundColor="white" />
+    <widget backgroundColor="background" font="FHD; 40" render="Label" position="430,862" size="120,55" source="session.MSNWeather" transparent="1" zPosition="8" halign="right" foregroundColor="white">
+      <convert type="MSNWeather">temperature_current</convert>
+    </widget>
+    <widget backgroundColor="background" font="FHD; 28" render="Label" position="210,871" size="220,45" source="session.MSNWeather" zPosition="8" halign="right" transparent="1" foregroundColor="EL_Blue">
+      <convert type="MSNWeather">temperature_heigh_low,current</convert>
+    </widget>
+    <widget backgroundColor="background" font="FHD; 32" render="Label" position="210,810" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
+      <convert type="MSNWeather">city</convert>
+    </widget>
+    <eLabel backgroundColor="blue" position="210,860" size="340,2" zPosition="-9" foregroundColor="white" />
+    <widget alphatest="blend" render="MSNWeatherPixmap" position="568,800" size="125,125" source="session.MSNWeather" transparent="1" zPosition="8">
+      <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/SmartLiteFHD/WeatherIcon/,png</convert>
+    </widget>
     <!-- Clock -->
     <eLabel backgroundColor="white" position="537,704" size="1,50" transparent="0" zPosition="-1" />
     <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="544,687" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
@@ -376,7 +391,7 @@
 
   <screen backgroundColor="transparent" flags="wfNoBorder" name="QuitMainloopScreen" position="center,center" size="1920,1080">
     <!-- Background -->
-    <eLabel backgroundColor="dark_2" name="" position="center,center" size="900,350" zPosition="-10" />
+    <eLabel backgroundColor="EL_New" name="" position="center,center" size="900,350" zPosition="-10" />
     <eLabel backgroundColor="Red" position="center,470" size="800,3" zPosition="-9" foregroundColor="white" />
     <!-- Background -->
     <ePixmap alphatest="blend" pixmap="SmartLiteFHD/icons/input_info.png" position="center,375" size="80,80" zPosition="4" />
@@ -573,7 +588,7 @@
     <eLabel backgroundColor="EL_Background" name="InfoBar" position="center,897" size="1920,183" zPosition="-11" />
     <eLabel backgroundColor="Red" name="" position="0,899" size="300,2" zPosition="-2" foregroundColor="Red" />
     <eLabel backgroundColor="Red" name="" position="1620,895" size="300,2" zPosition="-2" foregroundColor="white" />
-    <eLabel backgroundColor="dark_2" foregroundColor="EL_Background" name="" position="center,824" size="1320,185" zPosition="-10" />
+    <eLabel backgroundColor="EL_New" foregroundColor="EL_Background" name="" position="center,824" size="1320,185" zPosition="-10" />
     <!-- Widget -->
     <widget source="label" render="Label" position="751,1020" size="456,50" halign="center" font="Regular; 28" zPosition="2" backgroundColor="EL_Background" transparent="1" noWrap="1" foregroundColor="EL_Foreground" />
     <widget name="thumb0" position="420,879" size="128,128" zPosition="5" alphatest="on" backgroundColor="dark" transparent="1" />
@@ -614,6 +629,21 @@
     <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="1205,875" size="40,40" />
     <eLabel text="Cancel" backgroundColor="EL_Background" font="Regular2; 28" halign="left" position="925,875" size="280,40" transparent="1" zPosition="1" foregroundColor="white" />
     <eLabel text="Save" backgroundColor="EL_Background" font="Regular2; 28" halign="left" position="1250,875" size="280,40" transparent="1" zPosition="1" foregroundColor="white" />
+    <!-- Weather -->
+    <eLabel backgroundColor="EL_New" position="300,795" size="500,135" zPosition="-50" foregroundColor="white" />
+    <widget backgroundColor="background" font="FHD; 40" render="Label" position="530,862" size="120,55" source="session.MSNWeather" transparent="1" zPosition="8" halign="right" foregroundColor="white">
+      <convert type="MSNWeather">temperature_current</convert>
+    </widget>
+    <widget backgroundColor="background" font="FHD; 28" render="Label" position="310,871" size="220,45" source="session.MSNWeather" zPosition="8" halign="right" transparent="1" foregroundColor="EL_Blue">
+      <convert type="MSNWeather">temperature_heigh_low,current</convert>
+    </widget>
+    <widget backgroundColor="background" font="FHD; 32" render="Label" position="310,810" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
+      <convert type="MSNWeather">city</convert>
+    </widget>
+    <eLabel backgroundColor="blue" position="310,860" size="340,2" zPosition="-9" foregroundColor="white" />
+    <widget alphatest="blend" render="MSNWeatherPixmap" position="668,800" size="125,125" source="session.MSNWeather" transparent="1" zPosition="8">
+      <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/SmartLiteFHD/WeatherIcon/,png</convert>
+    </widget>
     <!-- Clock -->
     <eLabel backgroundColor="white" position="637,704" size="1,50" transparent="0" zPosition="-1" />
     <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="644,687" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
@@ -646,6 +676,21 @@
     <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="1205,875" size="40,40" />
     <eLabel text="Cancel" backgroundColor="EL_Background" font="Regular2; 28" halign="left" position="925,875" size="280,40" transparent="1" zPosition="1" foregroundColor="white" />
     <eLabel text="Save" backgroundColor="EL_Background" font="Regular2; 28" halign="left" position="1250,875" size="280,40" transparent="1" zPosition="1" foregroundColor="white" />
+    <!-- Weather -->
+    <eLabel backgroundColor="EL_New" position="300,795" size="500,135" zPosition="-50" foregroundColor="white" />
+    <widget backgroundColor="background" font="FHD; 40" render="Label" position="530,862" size="120,55" source="session.MSNWeather" transparent="1" zPosition="8" halign="right" foregroundColor="white">
+      <convert type="MSNWeather">temperature_current</convert>
+    </widget>
+    <widget backgroundColor="background" font="FHD; 28" render="Label" position="310,871" size="220,45" source="session.MSNWeather" zPosition="8" halign="right" transparent="1" foregroundColor="EL_Blue">
+      <convert type="MSNWeather">temperature_heigh_low,current</convert>
+    </widget>
+    <widget backgroundColor="background" font="FHD; 32" render="Label" position="310,810" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
+      <convert type="MSNWeather">city</convert>
+    </widget>
+    <eLabel backgroundColor="blue" position="310,860" size="340,2" zPosition="-9" foregroundColor="white" />
+    <widget alphatest="blend" render="MSNWeatherPixmap" position="668,800" size="125,125" source="session.MSNWeather" transparent="1" zPosition="8">
+      <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/SmartLiteFHD/WeatherIcon/,png</convert>
+    </widget>
     <!-- Clock -->
     <eLabel backgroundColor="white" position="637,704" size="1,50" transparent="0" zPosition="-1" />
     <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="644,687" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">

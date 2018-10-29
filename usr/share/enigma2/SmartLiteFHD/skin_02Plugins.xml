@@ -2,7 +2,208 @@
   <!--  Original Skin: SmartLiteFHD by SkinMania  -->
   <!--  Plugins -->
 
-  <!-- AutoBouquetsMaker  -->
+  <!-- AddStreamUrl  -->
+  <!-- AddStreamUrl  -->
+  <screen name="LiveStreamingLinksHeader" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <panel name="Backg" />
+    <panel name="Clock" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="menu" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="center,150" size="1300,800" transparent="1" />
+    <!-- Buttons -->
+    <eLabel backgroundColor="blue" foregroundColor="EL_Background" name="" position="260,978" size="1400,1" zPosition="-10" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="310,985" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="630,985" size="40,40" />
+    <eLabel text="Cancel" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="355,985" size="270,40" transparent="1" zPosition="1" />
+    <eLabel text="OK" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="675,985" size="270,40" transparent="1" zPosition="1" />
+  </screen>
+
+  <screen name="LiveStreamingLinks" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <panel name="Backg" />
+    <panel name="Clock" />
+    <panel name="BS2" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="menu" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="center,150" size="1300,750" transparent="1" />
+    <eLabel backgroundColor="white" position="center,910" size="1300,1" zPosition="-9" foregroundColor="white" />
+    <widget source="statusbar" render="Label" position="center,920" size="1300,50" font="FHD; 30" foregroundColor="EL_Foreground" backgroundColor="EL_Background" transparent="1" halign="left" valign="top" zPosition="1" />
+  </screen>
+
+
+  <!-- AiHDcontroler -->
+  <!-- AiHDcontroler -->
+  <screen name="AIHDsetup" title="Ai.HD Controler" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <panel name="Backg" />
+    <panel name="Clock" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="config" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="center,150" size="1300,800" transparent="1" />
+    <!-- Buttons -->
+    <eLabel backgroundColor="blue" foregroundColor="EL_Background" name="" position="260,978" size="1400,1" zPosition="-10" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="310,985" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="630,985" size="40,40" />
+    <eLabel text="Cancel" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="355,985" size="270,40" transparent="1" zPosition="1" />
+    <eLabel text="Save" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="675,985" size="270,40" transparent="1" zPosition="1" />
+  </screen>
+
+
+  <!-- AntiScrollbar -->
+  <!-- AntiScrollbar -->
+  <screen name="AntiScrollOverlay" title="AntiScrollOverlay" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <!-- Backg -->
+    <eLabel backgroundColor="EL_Background" name="" position="70,70" size="650,350" zPosition="-11" />
+    <!-- Widget -->
+    <widget name="label" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="90,90" size="610,310" transparent="1" zPosition="3" />
+  </screen>
+
+  <screen name="AntiScrollConfig" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <!-- Backg -->
+    <eLabel backgroundColor="EL_Background" name="" position="460,360" size="1000,360" zPosition="-11" />
+    <eLabel backgroundColor="Red" position="460,440" size="1000,3" zPosition="-9" foregroundColor="white" />
+    <!-- Widget -->
+    <eLabel text="Main Setup" position="center,370" size="960,58" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" transparent="1" halign="left" valign="center" />
+    <widget name="config" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="center,455" size="960,200" transparent="1" zPosition="3" />
+    <!-- Buttons -->
+    <eLabel backgroundColor="blue" foregroundColor="EL_Background" name="" position="460,660" size="1000,1" zPosition="-10" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="480,670" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="780,670" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/yellow.png" position="1080,670" size="40,40" />
+    <widget name="key_red" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="525,670" size="250,40" transparent="1" zPosition="1" />
+    <widget name="key_green" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="825,670" size="250,40" transparent="1" zPosition="1" />
+    <widget name="key_yellow" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="1125,670" size="290,40" transparent="1" zPosition="1" />
+  </screen>
+
+  <screen name="CurrentSeviceConfig" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <!-- Backg -->
+    <eLabel backgroundColor="EL_Background" name="" position="70,70" size="650,350" zPosition="-11" />
+    <!-- Widget -->
+    <widget name="label" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="90,90" size="610,310" transparent="1" zPosition="3" />
+  </screen>
+
+
+  <!-- AudioRestart -->
+  <!-- AudioRestart -->
+  <screen name="AudioRestartSetup" title="Audio Restart Setup" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
+    <panel name="Backg" />
+    <panel name="Clock" />
+    <panel name="BN4" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="config" font="FHD; 32" itemHeight="50" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="white" position="310,155" size="1300,750" transparent="1" />
+    <eLabel backgroundColor="white" position="310,915" size="1300,1" zPosition="-9" foregroundColor="white" />
+    <widget name="PluginInfo" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="310,920" size="1300,45" transparent="1" />
+  </screen>
+
+
+
+  <!-- AudioSync -->
+  <!-- AudioSync -->
+  <screen name="AC3LipSync" title="Audio Sync" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
+    <!-- Backg -->
+    <eLabel backgroundColor="EL_Background" position="60,50" size="1300,125" zPosition="-21" />
+    <eLabel backgroundColor="EL_New" position="60,175" size="145,550" zPosition="-21" />
+    <eLabel backgroundColor="Red" position="60,115" size="1300,3" zPosition="-9" foregroundColor="white" />
+    <!-- Widget -->
+    <widget name="ChannelLabel" zPosition="2" position="130,125" size="300,40" font="Regular2; 28" halign="left" valign="center" transparent="1" backgroundColor="EL_Background" foregroundColors="#ffffff,#fe6b1b" foregroundColor="EL_Red" />
+    <widget name="ChannelImg" pixmaps="~/img/OptionButtonOff.png,~/img/OptionButtonOn.png" position="100,140" zPosition="2" size="11,11" transparent="1" alphatest="blend" />
+    <widget name="GlobalLabel" zPosition="2" position="500,125" size="230,40" font="Regular2; 28" halign="left" valign="center" transparent="1" backgroundColor="EL_Background" foregroundColors="#ffffff,#fe6b1b" foregroundColor="white" />
+    <widget name="GlobalImg" pixmaps="~/img/OptionButtonOff.png,~/img/OptionButtonOn.png" position="475,140" zPosition="2" size="11,11" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="~/img/AudioSyncBarBGVert.png" zPosition="2" position="120,270" size="21,370" alphatest="on" transparent="1" />
+    <widget name="AudioSliderBar" pixmap="~/img/AudioSyncBarVert.png" zPosition="3" position="120,270" size="21,370" transparent="1" orientation="orBottomToTop" />
+    <widget name="AudioSlider" zPosition="4" position="68,445" size="130,50" font="Regular2; 32" halign="center" valign="center" backgroundColor="#232323" foregroundColor="#eeeeee" transparent="1" />
+    <widget name="ServiceInfoLabel" zPosition="4" position="80,60" size="150,45" font="Regular2; 32" backgroundColor="EL_Background" foregroundColor="white" transparent="1" />
+    <widget name="ServiceInfo" zPosition="4" position="230,60" size="500,45" font="Regular2; 32" backgroundColor="EL_Background" foregroundColor="white" transparent="1" />
+    <!-- Buttons -->
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="750,125" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="750,62" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/blue.png" position="1000,62" size="40,40" />
+    <widget name="key_red" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="795,125" size="270,40" transparent="1" zPosition="1" />
+    <widget name="key_green" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="795,62" size="200,40" transparent="1" zPosition="1" />
+    <widget name="key_blue" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="1045,62" size="300,40" transparent="1" zPosition="1" />
+    <!-- Widget -->
+  </screen>
+
+
+  <!-- AutoBouquets -->
+  <!-- AutoBouquets -->
+  <screen name="AutoBouquets" title="AutoBouquets E2" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <panel name="Backg" />
+    <panel name="Clock" />
+    <panel name="BN4" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="area" position="300,180" size="400,50" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="white" halign="left" zPosition="2" transparent="1" />
+    <widget name="areavalue" position="720,180" size="400,50" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="white" zPosition="2" transparent="1" />
+    <widget name="fta" position="300,240" size="400,50" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="white" halign="left" zPosition="2" transparent="1" />
+    <widget name="ftavalue" position="720,240" size="400,50" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="white" halign="left" zPosition="2" transparent="1" />		
+    <widget name="sort" position="300,300" size="400,50" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="white" halign="left" zPosition="2" transparent="1" />			
+    <widget name="sortvalue" position="720,300" size="400,50" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="white" halign="left" zPosition="2" transparent="1" />
+    <widget name="status" position="300,360" size="400,50" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="white" halign="left" zPosition="2" transparent="1" />
+    <widget name="status2" position="720,360" size="400,50" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="white" zPosition="5" transparent="1" />
+    <widget name="picons" position="300,420" size="400,50" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="white" halign="left" zPosition="2" transparent="1" />
+    <widget name="piconstyle" position="720,420" size="400,50" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="white" zPosition="5" transparent="1" />
+    <widget name="orderingcheck" position="355,605" size="35,35" alphatest="blend" zPosition="1" pixmaps="skin_default/icons/lock_off.png,skin_default/icons/lock_on.png" font="Regular2; 28" />
+    <widget name="ordering" position="400,600" size="350,45" font="Regular2; 30" backgroundColor="EL_Background" foregroundColor="white" halign="left" zPosition="2" transparent="1" />
+    <widget name="numcheck" position="870,605" size="35,35" alphatest="blend" zPosition="1" pixmaps="skin_default/icons/lock_off.png,skin_default/icons/lock_on.png" />
+    <widget name="num" position="915,600" size="350,45" font="Regular2; 30" backgroundColor="EL_Background" foregroundColor="white" halign="left" zPosition="2" transparent="1" />
+    <widget name="otherextra" position="355,660" size="35,35" alphatest="blend" zPosition="1" pixmaps="skin_default/icons/lock_off.png,skin_default/icons/lock_on.png" />			
+    <widget name="otherx" position="400,655" size="350,45" font="Regular2; 30" backgroundColor="EL_Background" foregroundColor="white" halign="left" zPosition="2" transparent="1" />
+    <widget name="parentalcheck" position="870,660" size="35,35" alphatest="blend" zPosition="1" pixmaps="skin_default/icons/lock_off.png,skin_default/icons/lock_on.png" />		
+    <widget name="parental" position="915,655" size="350,45" font="Regular2; 30" backgroundColor="EL_Background" foregroundColor="white" halign="left" zPosition="2" transparent="1" />	
+    <widget name="nitcheck" position="355,715" size="35,35" alphatest="blend" zPosition="1" pixmaps="skin_default/icons/lock_off.png,skin_default/icons/lock_on.png" />	
+    <widget name="nit" position="400,710" size="350,45" font="Regular2; 30" backgroundColor="EL_Background" foregroundColor="white" halign="left" zPosition="2" transparent="1" />
+    <widget name="scriptcheck" position="870,715" size="35,35" alphatest="blend" zPosition="1" pixmaps="skin_default/icons/lock_off.png,skin_default/icons/lock_on.png" />
+    <widget name="scriptc" position="915,710" size="350,45" font="Regular2; 30" backgroundColor="EL_Background" foregroundColor="white" halign="left" zPosition="2" transparent="1" />			
+    <widget name="placehcheck" position="355,770" size="35,35" alphatest="blend" zPosition="1" pixmaps="skin_default/icons/lock_off.png,skin_default/icons/lock_on.png" />
+    <widget name="placeh" position="400,765" size="350,45" font="Regular2; 30" backgroundColor="EL_Background" foregroundColor="white" halign="left" zPosition="2" transparent="1" />
+    <widget name="defcheck" position="870,770" size="35,35" alphatest="blend" zPosition="1" pixmaps="skin_default/icons/lock_off.png,skin_default/icons/lock_on.png" />
+    <widget name="def" position="915,765" size="350,45" font="Regular2; 30" backgroundColor="EL_Background" foregroundColor="white" halign="left" zPosition="2" transparent="1" />
+    <!-- Buttons -->
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_info.png" position="1510,934" size="64,38" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_menu.png" position="1580,934" size="64,38" />
+  </screen>
+
+  <screen name="AutoBouquetsMenu" title="AutoBouquets Setup" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
+    <panel name="Backg" />
+    <panel name="Clock" />
+    <panel name="BN2" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="config" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="310,155" size="1300,800" transparent="1" zPosition="3" />
+  </screen>
+
+  <screen name="AutoBouquetsLogView" title="Update Database Log" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
+    <panel name="Backg" />
+    <panel name="Clock" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="list" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="310,155" size="1300,800" transparent="1" zPosition="3" />
+  </screen>
+
+  <screen name="AutoBouquetsAbout" title="AutoBouquets E2 - About" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
+    <panel name="Backg" />
+    <panel name="Clock" />
+    <panel name="BN1" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="about" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="310,155" size="1300,800" transparent="1" zPosition="3" />
+    <widget name="oealogo" position="1386,791" size="200,135" zPosition="4" transparent="1" alphatest="blend" />
+  </screen>
+
+  <screen name="AutoBouquetsDownloader" title="AutoBouquets E2" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
+    <panel name="Backg" />
+    <panel name="Clock" />
+    <panel name="BN4" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="action" font="FHD; 32" itemHeight="50" backgroundColor="EL_Background" foregroundColor="white" position="310,155" size="1300,750" transparent="1" />
+    <eLabel backgroundColor="white" position="310,915" size="1300,1" zPosition="-9" foregroundColor="white" />
+    <widget ame="status" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="310,920" size="1300,45" transparent="1" />
+  </screen>
+
+
+  <!-- AutoBouquetsMaker -->
+  <!-- AutoBouquetsMaker -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoBouquetsMaker_Setup" position="center,center" size="1920,1080" title="AutoBouquetsMaker Setup">
     <panel name="Backg" />
     <panel name="Clock" />
@@ -12,8 +213,9 @@
     <widget name="config" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="310,155" size="1300,650" transparent="1" />
     <widget name="pleasewait" itemHeight="50" font="Bold; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="center" position="310,155" size="1300,650" transparent="1" valign="center" zPosition="2" />
     <eLabel backgroundColor="white" position="310,810" size="1300,1" zPosition="-9" foregroundColor="white" />
-    <widget name="description" position="310,820" size="1300,150" font="FHD; 30" foregroundColor="EL_Foreground" backgroundColor="EL_Background" transparent="1" halign="left" valign="top" zPosition="1" />
+    <widget source="statusbar" render="Label" position="310,820" size="1300,150" font="FHD; 30" foregroundColor="EL_Foreground" backgroundColor="EL_Background" transparent="1" halign="left" valign="top" zPosition="1" />
   </screen>
+
   <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoBouquetsMaker_ProvidersSetup" position="center,center" size="1920,1080" title="AutoBouquetsMaker ProvidersSetup">
     <panel name="Backg" />
     <panel name="Clock" />
@@ -25,10 +227,10 @@
     <eLabel backgroundColor="white" position="310,810" size="1300,1" zPosition="-9" foregroundColor="white" />
     <widget name="description" position="310,820" size="1300,150" font="FHD; 30" foregroundColor="EL_Foreground" backgroundColor="EL_Background" transparent="1" halign="left" valign="top" zPosition="1" />
   </screen>
+
   <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoBouquetsMaker_Menu" position="center,center" size="1920,1080" title="AutoBouquetsMaker Menu">
     <panel name="Backg" />
     <panel name="Clock" />
-    <!-- Widget -->
     <!-- Widget -->
     <eLabel text="AutoBouquetsMaker Menu" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
     <widget source="list" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="white" position="310,155" size="1300,850" transparent="1">
@@ -42,6 +244,7 @@
               </convert>
     </widget>
   </screen>
+
   <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoBouquetsMaker_Ordering" position="center,center" size="1920,1080" title="AutoBouquetsMaker Ordering">
     <panel name="Backg" />
     <panel name="Clock" />
@@ -60,6 +263,7 @@
     </widget>
     <widget name="pleasewait" itemHeight="50" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="center" position="310,155" size="1300,800" transparent="1" valign="center" zPosition="2" />
   </screen>
+
   <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoBouquetsMaker_Log" position="center,center" size="1920,1080" title="AutoBouquetsMaker Log">
     <panel name="Backg" />
     <panel name="Clock" />
@@ -68,6 +272,7 @@
     <eLabel text="AutoBouquetsMaker Log" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
     <widget name="list" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="310,155" size="1300,850" transparent="1" />
   </screen>
+
   <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoBouquetsMaker_About" position="center,center" size="1920,1080" title="AutoBouquetsMaker About">
     <panel name="Backg" />
     <panel name="Clock" />
@@ -79,6 +284,7 @@
     <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="310,985" size="40,40" />
     <widget source="key_red" render="Label" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="355,985" size="270,40" transparent="1" zPosition="1" />
   </screen>
+
   <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoBouquetsMaker_HideSections" position="center,center" size="1920,1080" title="AutoBouquetsMaker HideSections">
     <panel name="Backg" />
     <panel name="Clock" />
@@ -98,6 +304,145 @@
               </convert>
     </widget>
   </screen>
+
+
+  <!-- BabelZapper -->
+  <!-- BabelZapper -->
+  <screen name="BabelzapperConfiguration" title="Babelzapper Plugin" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
+    <panel name="Backg" />
+    <panel name="Clock" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="config" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="310,155" size="1300,800" transparent="1" zPosition="3" />
+    <ePixmap position="1513,854" size="100,100" pixmap="%s/babel.png" transparent="1" alphatest="on" />
+    <!-- Buttons -->
+    <eLabel backgroundColor="blue" foregroundColor="EL_Background" name="" position="260,978" size="1400,1" zPosition="-10" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="310,985" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="630,985" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/yellow.png" position="950,985" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/blue.png" position="1270,985" size="40,40" />
+    <widget name="buttonred" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="355,985" size="270,40" transparent="1" zPosition="1" />
+    <widget name="buttongreen" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="675,985" size="270,40" transparent="1" zPosition="1" />
+    <widget name="buttonyellow" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="995,985" size="270,40" transparent="1" zPosition="1" />
+    <widget name="buttonblue" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="1315,985" size="270,40" transparent="1" zPosition="1" />
+  </screen>
+  <screen name="BabelZapper" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <!-- Background -->
+    <eLabel backgroundColor="EL_Background" name="" position="center,60" size="940,180" zPosition="-11" />
+    <!-- Widget -->
+    <widget name="babelzapper" font="FHD; 32" backgroundColors="black,white,#00AAAAAA,red,green,yellow,blue" foregroundColors="black,white,#00AAAAAA,red,green,yellow,blue" position="center,75" size="900,150" transparent="1" zPosition="3" />
+  </screen>
+
+
+  <!-- BirthdayReminder -->
+  <!-- BirthdayReminder -->
+  <screen name="BirthdayReminder" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <panel name="Backg" />
+    <panel name="Clock" />
+    <panel name="BS4" />
+    <!-- Widget -->
+    <eLabel text="BirthdayReminder" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="name" font="FHD; 34" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="310,160" size="510,50" transparent="1" />
+    <widget name="birthday" font="FHD; 34" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="825,160" size="500,50" transparent="1" />
+    <widget name="age" font="FHD; 34" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="right" position="1310,160" size="280,50" transparent="1" />
+    <eLabel backgroundColor="white" position="center,215" size="1300,1" zPosition="-9" foregroundColor="white" />
+    <widget source="list" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="white" position="center,225" size="1300,700" transparent="1">
+      <convert type="TemplatedMultiContent">
+                {"template":[ 
+                MultiContentEntryText(pos = (10, 0), size = (500, 45), font=0, flags = RT_HALIGN_LEFT, text = 0),
+	        MultiContentEntryText(pos = (520, 0), size = (500, 45), font=0, flags = RT_HALIGN_LEFT, text = 1),
+	        MultiContentEntryText(pos = (1030, 0), size = (220, 45), font=0, flags = RT_HALIGN_RIGHT, text = 2),
+                ],
+                "fonts":[gFont("FHD",32) ],"itemHeight":50}
+            </convert>
+    </widget>
+  </screen>
+  <screen name="EditBirthdayScreen" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <panel name="Backg" />
+    <panel name="Clock" />
+    <panel name="BS2" />
+    <!-- Widget -->
+    <eLabel text="Edit Birthday" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="config" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="310,155" size="1300,750" transparent="1" />
+    <eLabel backgroundColor="white" position="310,915" size="1300,1" zPosition="-9" foregroundColor="white" />
+    <widget name="error" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="310,920" size="1300,45" transparent="1" />
+    <widget name="HelpWindow" position="275,550" size="1,1" zPosition="10" />
+  </screen>
+
+  <screen name="BirthdayReminderSettings" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <panel name="Backg" />
+    <panel name="Clock" />
+    <panel name="BS4" />
+    <!-- Widget -->
+    <eLabel text="BirthdayReminder Setup" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="config" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="310,155" size="1300,800" transparent="1" />
+  </screen>
+
+  <screen name="PathSelectionScreen" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <panel name="Backg" />
+    <panel name="Clock" />
+    <panel name="BS4" />
+    <!-- Widget -->
+    <eLabel text="Path Selection" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="target" font="Regular2; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="center,155" size="1300,45" transparent="1" />
+    <eLabel backgroundColor="white" position="center,205" size="1300,1" zPosition="-9" foregroundColor="white" />
+    <widget name="filelist" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="center,215" size="1300,750" transparent="1" />
+  </screen>
+
+
+  <!-- BitrateViewer -->
+  <!-- BitrateViewer -->
+  <screen name="BitrateViewerSetup" title="Bitrate viewer setup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <panel name="Backg" />
+    <panel name="Clock" />
+    <panel name="BN2" />
+    <!-- Widget -->
+    <eLabel text="Setup" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget source="Title" render="Label" font="FHD; 38" backgroundColor="EL_Background" foregroundColor="white" position="center,142" size="1300,55" transparent="1" />
+    <eLabel backgroundColor="white" position="310,205" size="1300,1" zPosition="-9" foregroundColor="white" />
+    <widget name="config" itemHeight="50" font="FHD; 32" backgroundColor="EL_Background" enableWrapAround="1" position="center,218" scrollbarMode="showOnDemand" size="1300,750" transparent="1" />
+  </screen>
+
+  <screen name="BitrateViewerExtra" title="Bitrate viewer" backgroundColor="transparent" flags="wfNoBorder" position="50,50" size="600,330">
+    <eLabel backgroundColor="EL_Background" position="0,0" size="600,330" zPosition="-21" />
+    <eLabel backgroundColor="Red" position="0,45" size="600,3" zPosition="-9" foregroundColor="white" />
+    <!-- Widget -->
+    <widget render="Label" source="Title" font="Regular2; 30" backgroundColor="EL_Background" foregroundColor="white" position="20,2" size="560,40" transparent="1" />
+    <eLabel position="40,60" size="120,40" text="video" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="green_light" transparent="1" />
+    <eLabel position="40,105" size="120,40" text="min" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="grey" transparent="1" />
+    <widget name="vmin" position="40,145" size="120,40" font="Regular2; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" transparent="1" />
+    <eLabel position="180,105" size="120,40" text="max" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="grey" transparent="1" />
+    <widget name="vmax" position="180,145" size="120,40" font="Regular2; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" transparent="1" />
+    <eLabel position="320,105" size="120,40" text="average" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="grey" transparent="1" />
+    <widget name="vavg" position="320,145" size="120,40" font="Regular2; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" transparent="1" />
+    <eLabel position="460,105" size="120,40" text="current" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="grey" transparent="1" />
+    <widget name="vcur" position="460,145" size="120,40" font="Regular2; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" transparent="1" />
+    <eLabel position="40,195" size="120,40" text="audio" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="blueCH" transparent="1" />
+    <eLabel position="40,240" size="120,40" text="min" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="grey" transparent="1" />
+    <widget name="amin" position="40,280" size="120,40" font="Regular2; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" transparent="1" />
+    <eLabel position="180,240" size="120,40" text="max" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="grey" transparent="1" />
+    <widget name="amax" position="180,280" size="120,40" font="Regular2; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" transparent="1" />
+    <eLabel position="320,240" size="120,40" text="average" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="grey" transparent="1" />
+    <widget name="aavg" position="320,280" size="120,40" font="Regular2; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" transparent="1" />
+    <eLabel position="460,240" size="120,40" text="current" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="grey" transparent="1" />
+    <widget name="acur" position="460,280" size="120,40" font="Regular2; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" transparent="1" />
+    <eLabel backgroundColor="green_light" name="" position="40,100" size="250,2" zPosition="-9" foregroundColor="green_light" />
+    <eLabel backgroundColor="blueCH" name="" position="40,235" size="250,2" zPosition="-9" foregroundColor="blueCH" />
+  </screen>
+
+
+  <!-- Blackout Blind -->
+  <!-- Blackout Blind -->
+  <screen name="BlindMenu" title="Blackout Blind" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <eLabel backgroundColor="EL_Background" position="center,center" size="1000,160" zPosition="-21" />
+    <eLabel backgroundColor="Red" position="center,center" size="1000,3" zPosition="-9" foregroundColor="white" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="center,468" size="900,58" transparent="1" />
+    <widget name="list" itemHeight="50" font="FHD; 32" backgroundColor="EL_Background" position="center,555" scrollbarMode="showOnDemand" size="900,50" transparent="1" />
+  </screen>
+
+
+  <!-- CrossEPG  -->
   <!-- CrossEPG  -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="CrossEPG_Menu" position="center,center" size="1920,1080" title="CrossEPG">
     <panel name="Backg" />
@@ -119,6 +464,7 @@
     <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_ok.png" position="310,986" size="64,38" />
     <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_exit.png" position="400,986" size="64,38" />
   </screen>
+
   <screen backgroundColor="transparent" flags="wfNoBorder" name="CrossEPG_Setup" title="CrossEPG - Configuration" position="center,center" size="1920,1080">
     <panel name="Backg" />
     <panel name="Clock" />
@@ -129,6 +475,7 @@
     <eLabel backgroundColor="white" position="310,725" size="1300,1" zPosition="-9" foregroundColor="white" />
     <widget name="information" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="310,740" size="1300,230" transparent="1" valign="top" />
   </screen>
+
   <screen backgroundColor="transparent" flags="wfNoBorder" name="CrossEPG_Providers" title="CrossEPG - Providers" position="center,center" size="1920,1080">
     <panel name="Backg" />
     <panel name="Clock" />
@@ -145,6 +492,7 @@
         </convert>
     </widget>
   </screen>
+
   <screen backgroundColor="transparent" flags="wfNoBorder" name="CrossEPG_Ordering" title="CrossEPG - Providers" position="center,center" size="1920,1080">
     <panel name="Backg" />
     <panel name="Clock" />
@@ -161,6 +509,7 @@
         </convert>
     </widget>
   </screen>
+
   <screen backgroundColor="transparent" flags="wfNoBorder" name="CrossEPG_Info" title="CrossEPG - Info" position="center,center" size="1920,1080">
     <panel name="Backg" />
     <panel name="Clock" />
@@ -179,6 +528,7 @@
     <widget name="events_count" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="310,605" size="1300,50" transparent="1" />
     <widget name="hashes_count" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="310,655" size="1300,50" transparent="1" />
   </screen>
+
   <screen backgroundColor="transparent" flags="wfNoBorder" name="CrossEPG_About" title="CrossEPG - About" position="center,center" size="1920,1080">
     <panel name="Backg" />
     <panel name="Clock" />
@@ -187,6 +537,7 @@
     <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
     <widget name="about" itemHeight="50" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="white" position="310,155" size="1300,800" transparent="1" />
   </screen>
+
   <screen backgroundColor="transparent" flags="wfNoBorder" name="CrossEPG_Converter" title="CrossEPG" position="center,center" size="1920,1080" transparent="0">
     <!-- Background -->
     <eLabel backgroundColor="EL_Background" name="" position="460,420" size="1000,240" zPosition="-11" />
@@ -198,6 +549,7 @@
     <ePixmap position="510,630" size="600,10" pixmap="SmartLiteFHD/skin_default/crossepg/activitysliderback.png" alphatest="blend" zPosition="-1" />
     <widget name="progress" position="510,630" size="600,10" pixmap="SmartLiteFHD/skin_default/crossepg/activityslider.png" transparent="1" zPosition="1" />
   </screen>
+
   <screen backgroundColor="transparent" flags="wfNoBorder" name="CrossEPG_Defragmenter" title="CrossEPG" position="0,center" size="1920,1080" transparent="0">
     <!-- Background -->
     <eLabel backgroundColor="EL_Background" name="" position="460,420" size="1000,240" zPosition="-11" />
@@ -209,6 +561,7 @@
     <ePixmap position="510,630" size="600,10" pixmap="SmartLiteFHD/skin_default/crossepg/activitysliderback.png" alphatest="blend" zPosition="-1" />
     <widget name="progress" position="510,630" size="600,10" pixmap="SmartLiteFHD/skin_default/crossepg/activityslider.png" transparent="1" zPosition="1" />
   </screen>
+
   <screen backgroundColor="transparent" flags="wfNoBorder" name="CrossEPG_Downloader" title="CrossEPG" position="0,center" size="1920,1080" transparent="0">
     <!-- Background -->
     <eLabel backgroundColor="EL_Background" name="" position="460,420" size="1000,240" zPosition="-11" />
@@ -220,6 +573,7 @@
     <ePixmap position="510,630" size="600,10" pixmap="SmartLiteFHD/skin_default/crossepg/activitysliderback.png" alphatest="blend" zPosition="-1" />
     <widget name="progress" position="510,630" size="600,10" pixmap="SmartLiteFHD/skin_default/crossepg/activityslider.png" transparent="1" zPosition="1" />
   </screen>
+
   <screen backgroundColor="transparent" flags="wfNoBorder" name="CrossEPG_Importer" title="CrossEPG" position="0,center" size="1920,1080" transparent="0">
     <!-- Background -->
     <eLabel backgroundColor="EL_Background" name="" position="460,420" size="1000,240" zPosition="-11" />
@@ -231,6 +585,7 @@
     <ePixmap position="510,630" size="600,10" pixmap="SmartLiteFHD/skin_default/crossepg/activitysliderback.png" alphatest="blend" zPosition="-1" />
     <widget name="progress" position="510,630" size="600,10" pixmap="SmartLiteFHD/skin_default/crossepg/activityslider.png" transparent="1" zPosition="1" />
   </screen>
+
   <screen backgroundColor="transparent" flags="wfNoBorder" name="CrossEPG_Loader" title="CrossEPG" position="0,center" size="1920,1080" transparent="0">
     <!-- Background -->
     <eLabel backgroundColor="EL_Background" name="" position="460,420" size="1000,240" zPosition="-11" />
@@ -242,6 +597,7 @@
     <ePixmap position="510,630" size="600,10" pixmap="SmartLiteFHD/skin_default/crossepg/activitysliderback.png" alphatest="blend" zPosition="-1" />
     <widget name="progress" position="510,630" size="600,10" pixmap="SmartLiteFHD/skin_default/crossepg/activityslider.png" transparent="1" zPosition="1" />
   </screen>
+
   <screen backgroundColor="transparent" flags="wfNoBorder" name="CrossEPG_Rytec_Update" title="CrossEPG" position="0,center" size="1920,1080" transparent="0">
     <!-- Background -->
     <eLabel backgroundColor="EL_Background" name="" position="460,420" size="1000,240" zPosition="-11" />
@@ -253,6 +609,7 @@
     <ePixmap position="510,630" size="600,10" pixmap="SmartLiteFHD/skin_default/crossepg/activitysliderback.png" alphatest="blend" zPosition="-1" />
     <widget name="progress" position="510,630" size="600,10" pixmap="SmartLiteFHD/skin_default/crossepg/activityslider.png" transparent="1" zPosition="1" />
   </screen>
+
   <screen backgroundColor="transparent" flags="wfNoBorder" name="CrossEPG_Xepgdb_Update" title="CrossEPG" position="0,center" size="1920,1080" transparent="0">
     <!-- Background -->
     <eLabel backgroundColor="EL_Background" name="" position="460,420" size="1000,240" zPosition="-11" />
@@ -264,6 +621,96 @@
     <ePixmap position="510,630" size="600,10" pixmap="SmartLiteFHD/skin_default/crossepg/activitysliderback.png" alphatest="blend" zPosition="-1" />
     <widget name="progress" position="510,630" size="600,10" pixmap="SmartLiteFHD/skin_default/crossepg/activityslider.png" transparent="1" zPosition="1" />
   </screen>
+
+
+  <!-- EPGImport -->
+  <!-- EPGImport -->
+  <screen name="EPGImportConfig" title="EPG Import Configuration" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
+    <panel name="Backg" />
+    <panel name="Clock" />
+    <panel name="BN4" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="config" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="center,155" size="1300,650" transparent="1" zPosition="3" />
+    <eLabel backgroundColor="white" position="center,820" size="1300,1" zPosition="-9" foregroundColor="white" />
+    <widget name="status" font="Regular2; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="310,830" size="1300,90" transparent="1" />
+    <widget name="statusbar" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="310,925" size="1100,45" transparent="1" />
+    <ePixmap alphatest="on" pixmap="SmartLiteFHD/plugins_png/clock.png" position="1450,930" size="40,40" zPosition="3" />
+    <!-- Extra Buttons -->
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_menu.png" position="1580,986" size="64,38" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_info.png" position="1500,986" size="64,38" />
+    <!-- Extra Clock -->
+    <ePixmap alphatest="on" pixmap="SmartLiteFHD/plugins_png/clock.png" position="1450,930" size="40,40" zPosition="3" />
+    <widget font="Regular2;32" halign="center" position="1500,925" render="Label" size="110,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+  </screen>
+
+  <screen name="filtersServicesSetup" title="Ignore services list" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
+    <panel name="Backg" />
+    <panel name="Clock" />
+    <panel name="BN4" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget source="list" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="center,155" size="1300,720" transparent="1" zPosition="3">
+      <convert type="TemplatedMultiContent">
+	         {"template": [
+	         MultiContentEntryText(pos = (10, 0), size = (820, 45), font = 0, flags = RT_HALIGN_LEFT, text = 0),
+	         MultiContentEntryText(pos = (80, 45), size = (800, 42), font = 1, flags = RT_HALIGN_LEFT, text = 1),
+	         MultiContentEntryText(pos = (120, 45), size = (400, 42), font = 2, flags = RT_HALIGN_LEFT, text = 2),
+	         ],
+	         "fonts": [gFont("FHD", 30), gFont("Regular2", 28), gFont("Regular2", 28)],
+	         "itemHeight": 90}
+      </convert>
+    </widget>
+    <eLabel backgroundColor="white" position="center,920" size="1300,1" zPosition="-9" foregroundColor="white" />
+    <widget name="introduction" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="310,925" size="1100,45" transparent="1" />
+    <ePixmap alphatest="on" pixmap="SmartLiteFHD/plugins_png/clock.png" position="1450,930" size="40,40" zPosition="3" />
+    <!-- Extra Clock -->
+    <ePixmap alphatest="on" pixmap="SmartLiteFHD/plugins_png/clock.png" position="1450,930" size="40,40" zPosition="3" />
+    <widget font="Regular2;32" halign="center" position="1500,925" render="Label" size="110,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+  </screen>
+
+  <screen name="EPGImportSources" title="EPG Import Sources" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
+    <panel name="Backg" />
+    <panel name="Clock" />
+    <panel name="BN4" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="list" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="center,155" size="1300,800" transparent="1" zPosition="3" />
+  </screen>
+
+  <screen name="filtersServicesSelection" title="Select service to add..." backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
+    <panel name="Backg" />
+    <panel name="Clock" />
+    <panel name="BN4" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="list" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="center,155" size="1300,800" transparent="1" zPosition="3" />
+  </screen>
+
+  <screen name="EPGImportProfile" title="EPGImportProfile" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
+    <panel name="Backg" />
+    <panel name="Clock" />
+    <panel name="BN4" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="config" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="center,155" size="1300,800" transparent="1" zPosition="3" />
+  </screen>
+
+  <screen name="EPGImportLog" title="EPG Import Log" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
+    <panel name="Backg" />
+    <panel name="Clock" />
+    <panel name="BN4" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="list" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="center,155" size="1300,800" transparent="1" zPosition="3" />
+  </screen>
+
+
+  <!-- EPGSearch  -->
   <!-- EPGSearch  -->
   <screen name="EPGSearch" title="EPG Search" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <!-- Backg -->
@@ -301,6 +748,7 @@
       <convert type="ClockToText">Format:%A</convert>
     </widget>
   </screen>
+
   <screen name="EPGSearchSetup" title="EPGSearch Setup" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
     <panel name="Backg" />
     <panel name="Clock" />
@@ -311,6 +759,428 @@
     <eLabel backgroundColor="white" position="310,810" size="1300,1" zPosition="-9" foregroundColor="white" />
     <widget source="help" render="Label" font="FHD; 30" foregroundColor="EL_Foreground" backgroundColor="EL_Background" position="310,820" size="1300,150" transparent="1" halign="left" valign="top" zPosition="1" />
   </screen>
+
+
+  <!-- DiseqcTester -->
+  <!-- DiseqcTester -->
+  <screen name="DiseqcTesterNimSelection" title="Choose Tuner" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
+    <panel name="Backg" />
+    <panel name="Clock" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget source="nimlist" render="Listbox" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="310,155" size="1300,750" transparent="1" zPosition="3">
+      <convert type="TemplatedMultiContent">
+                        {"template": [
+                        MultiContentEntryText(pos = (10,0),size = (1220,50),flags = RT_HALIGN_LEFT,text = 1),# index 1 is the nim name,
+                        MultiContentEntryText(pos = (50,45),size = (1200,100),font = 1,flags = RT_HALIGN_LEFT,text = 2),# index 2 is a description of the nim settings,
+                        ],
+                        "fonts": [gFont("FHD",32),gFont("Regular",26)],
+                        "itemHeight": 150
+                        }
+        </convert>
+    </widget>
+  </screen>
+
+  <screen name="DiseqcTester" title="DiSEqC Tester" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <panel name="Backg" />
+    <panel name="Clock" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget source="progress_list" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="EL_Foreground" position="310,155" size="1300,300" transparent="1" zPosition="2">
+      <convert type="TemplatedMultiContent">
+		{"template": [
+		MultiContentEntryText(pos = (15, 0), size = (750, 37), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the index name,
+		MultiContentEntryText(pos = (750, 0), size = (450, 37), flags = RT_HALIGN_RIGHT, text = 2) # index 2 is the status,
+		],
+		"fonts": [gFont("FHD", 32)],
+		"itemHeight": 50
+		}
+	</convert>
+    </widget>
+    <eLabel backgroundColor="blue" position="310,470" size="1220,3" zPosition="-9" foregroundColor="white" />
+    <eLabel name="" text="Overall progress:" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="310,490" size="300,45" transparent="1" />
+    <widget source="overall_progress" render="Progress" borderColor="grey" borderWidth="1" foregroundColor="green_light" position="310,540" size="950,30" transparent="1" />
+    <eLabel name="" text="Progress:" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="310,585" size="300,45" transparent="1" />
+    <widget source="sub_progress" render="Progress" borderColor="grey" borderWidth="1" foregroundColor="green_light" position="310,635" size="950,30" transparent="1" />
+    <eLabel name="" text="Failed:" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="310,770" size="170,45" transparent="1" />
+    <eLabel name="" text="Succeeded:" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="310,820" size="180,45" transparent="1" />
+    <eLabel name="" text="With errors:" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="310,870" size="190,45" transparent="1" />
+    <eLabel name="" text="Not tested:" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="310,920" size="180,45" transparent="1" />
+    <widget source="failed_counter" render="Label" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="500,770" size="300,45" transparent="1" />
+    <widget source="succeeded_counter" render="Label" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="500,820" size="300,45" transparent="1" />
+    <widget source="witherrors_counter" render="Label" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="500,870" size="300,45" transparent="1" />
+    <widget source="untestable_counter" render="Label" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="500,920" size="300,45" transparent="1" />
+    <widget source="CmdText" render="Label" font="Regular; 28" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="950,683" size="700,340" transparent="1" />
+  </screen>
+
+
+  <!-- FritzCall -->
+  <!-- FritzCall -->
+  <screen name="FritzCallSetup" title="FritzCallSetup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <panel name="Backg" />
+    <panel name="Clock" />
+    <panel name="BN4" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="consideration" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="310,155" size="1300,45" transparent="1" />
+    <eLabel backgroundColor="white" position="310,205" size="1300,1" zPosition="-9" foregroundColor="white" />
+    <widget name="config" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="310,220" size="1300,750" transparent="1" />
+    <widget name="HelpWindow" position="275,550" size="1,1" zPosition="10" />
+    <!-- Buttons -->
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_menu.png" position="1590,986" size="64,38" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_info.png" position="1515,986" size="64,38" />
+  </screen>
+
+  <screen name="FritzDisplayCalls" title="Fritz Display Calls" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <!-- Backg -->
+    <eLabel backgroundColor="EL_Background" position="160,50" size="1600,980" zPosition="-21" />
+    <eLabel backgroundColor="Red" position="160,130" size="1600,3" zPosition="-9" foregroundColor="white" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" position="210,60" size="1230,58" font="FHD; 42" backgroundColor="EL_Background" transparent="1" foregroundColor="white" />
+    <widget name="statusbar" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="210,155" size="1500,45" transparent="1" />
+    <eLabel backgroundColor="white" position="center,207" size="1500,1" zPosition="-9" foregroundColor="white" />
+    <widget source="entries" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="white" position="210,220" size="1500,750" zPosition="3" transparent="1">
+      <convert type="TemplatedMultiContent">
+			{"template": [
+			MultiContentEntryText(pos = (10,0),size = (220,50),flags = RT_HALIGN_LEFT,text = 1),# index 0 is the MenuText,
+			MultiContentEntryPixmapAlphaTest(pos = (220,15),size = (25,25),png = 2),# index 1 i direction pixmap
+			MultiContentEntryText(pos = (270,0),size = (480,50),flags = RT_HALIGN_LEFT,text = 3),# index 2 is remote name/number
+			MultiContentEntryText(pos = (775,0),size = (120,50),flags = RT_HALIGN_LEFT,text = 4),# index 3 is length of call
+			MultiContentEntryText(pos = (900,0),size = (600,50),flags = RT_HALIGN_LEFT,text = 5),# index 4 is my number/name for number
+			],
+			"fonts": [gFont("FHD",32)],
+			"itemHeight": 50
+			}
+		</convert>
+    </widget>
+    <!-- Buttons -->
+    <eLabel backgroundColor="blue" foregroundColor="white" name="" position="160,978" size="1600,1" zPosition="-10" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="210,985" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="530,985" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/yellow.png" position="850,985" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/blue.png" position="1170,985" size="40,40" />
+    <widget backgroundColor="EL_Background" font="Regular2; 28" halign="left" position="255,985" size="270,40" name="key_red" transparent="1" zPosition="1" foregroundColor="white" />
+    <widget backgroundColor="EL_Background" font="Regular2; 28" halign="left" position="575,985" size="270,40" name="key_green" transparent="1" zPosition="1" foregroundColor="white" />
+    <widget backgroundColor="EL_Background" font="Regular2; 28" halign="left" position="895,985" size="270,40" name="key_yellow" transparent="1" zPosition="1" foregroundColor="white" />
+    <widget backgroundColor="EL_Background" font="Regular2; 28" halign="left" position="1215,985" size="270,40" name="key_blue" transparent="1" zPosition="1" foregroundColor="white" />
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="1597,63" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1604,47" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="white" halign="right" position="1444,86" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="white" halign="right" position="1444,58" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+  </screen>
+
+  <screen name="FritzDisplayPhonebook" title="Fritz Display Phonebook" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <panel name="Backg" />
+    <panel name="Clock" />
+    <panel name="BN2" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget source="entries" render="Listbox" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="310,155" size="1300,800" zPosition="3" transparent="1">
+      <convert type="TemplatedMultiContent">
+			{"template": [
+			MultiContentEntryText(pos = (10,0),size = (630,50),flags = RT_HALIGN_LEFT,text = 1),# index 0 is the name,index 1 is shortname
+			MultiContentEntryText(pos = (620,0),size = (670,50),flags = RT_HALIGN_LEFT,text = 2),# index 2 is number
+			],
+			"fonts": [gFont("FHD",32)],
+			"itemHeight": 50
+			}
+		</convert>
+    </widget>
+  </screen>
+
+  <screen name="AddScreen" title="Add Screen" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <panel name="Backg" />
+    <panel name="Clock" />
+    <panel name="BN4" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="config" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="310,155" size="1300,800" transparent="1" />
+  </screen>
+  <screen name="FritzMenu" title="Fritz Menu" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <panel name="Backg" />
+    <panel name="Clock" />
+    <panel name="BN3" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="FBFInfo" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="310,155" size="1300,120" transparent="1" valign="top" />
+    <eLabel backgroundColor="blue" position="310,280" size="1300,3" zPosition="-9" foregroundColor="white" />
+    <widget name="FBFInternet" position="380,322" size="1230,150" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" transparent="1" valign="top" />
+    <widget name="FBFDsl" position="380,479" size="1230,48" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" transparent="1" />
+    <widget name="FBFWlan" position="380,544" size="1230,48" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" transparent="1" />
+    <widget name="FBFRufuml" position="380,609" size="1230,48" font="FHD; 33" backgroundColor="EL_Background" foregroundColor="EL_Foreground" transparent="1" />
+    <widget name="FBFFax" position="380,674" size="1230,48" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" transparent="1" />
+    <widget name="FBFDect" position="380,739" size="1230,48" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" transparent="1" />
+    <widget name="FBFGast" position="380,804" size="1230,48" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" transparent="1" />
+    <widget name="internet_active" pixmap="SmartLiteFHD/buttons/green.png" size="40,40" position="310,325" alphatest="blend" />
+    <widget name="internet_inactive" pixmap="SmartLiteFHD/buttons/grey.png" size="40,40" position="310,325" alphatest="blend" />
+    <widget name="dsl_active" pixmap="SmartLiteFHD/buttons/green.png" size="40,40" position="310,482" alphatest="blend" />
+    <widget name="dsl_inactive" pixmap="SmartLiteFHD/buttons/grey.png" size="40,40" position="310,482" alphatest="blend" />
+    <widget name="wlan_active" pixmap="SmartLiteFHD/buttons/green.png" size="40,40" position="310,547" alphatest="blend" />
+    <widget name="wlan_inactive" pixmap="SmartLiteFHD/buttons/grey.png" size="40,40" position="310,547" alphatest="blend" />
+    <widget name="rufuml_active" pixmap="SmartLiteFHD/buttons/green.png" size="40,40" position="310,612" alphatest="blend" />
+    <widget name="rufuml_inactive" pixmap="SmartLiteFHD/buttons/grey.png" size="40,40" position="310,612" alphatest="blend" />
+    <widget name="fax_active" pixmap="SmartLiteFHD/buttons/green.png" size="40,40" position="310,677" alphatest="blend" />
+    <widget name="fax_inactive" pixmap="SmartLiteFHD/buttons/grey.png" size="40,40" position="310,677" alphatest="blend" />
+    <widget name="dect_active" pixmap="SmartLiteFHD/buttons/green.png" size="40,40" position="310,742" alphatest="blend" />
+    <widget name="dect_inactive" pixmap="SmartLiteFHD/buttons/grey.png" size="40,40" position="310,742" alphatest="blend" />
+    <widget name="gast_active" pixmap="SmartLiteFHD/buttons/green.png" size="40,40" position="310,807" alphatest="blend" />
+    <widget name="gast_inactive" pixmap="SmartLiteFHD/buttons/grey.png" size="40,40" position="310,807" alphatest="blend" />
+  </screen>
+
+  <screen name="FritzAbout" title="About Fritz Call" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <!-- Back -->
+    <eLabel backgroundColor="EL_Background" foregroundColor="EL_Background" name="" position="285,260" size="1350,560" zPosition="-20" />
+    <eLabel backgroundColor="Red" position="center,340" size="1350,3" zPosition="-14" foregroundColor="white" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" position="335,270" size="1250,58" font="FHD; 42" backgroundColor="EL_Background" transparent="1" />
+    <widget name="text" font="FHD; 32" backgroundColor="EL_Background" position="525,360" size="1060,300" transparent="1" valign="top" halign="left" />
+    <widget name="url" font="FHD; 32" backgroundColor="EL_Background" position="525,695" size="1060,45" transparent="1" valign="center" halign="left" foregroundColor="white" />
+    <ePixmap position="335,635" size="175,175" zPosition="4" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/FritzCall/images/website.png" alphatest="blend" />
+    <ePixmap position="335,360" size="150,110" zPosition="4" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/FritzCall/images/fritz.png" alphatest="blend" />
+  </screen>
+
+  <screen name="FritzOfferAction" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <!-- Back -->
+    <eLabel backgroundColor="EL_Background" foregroundColor="EL_Background" name="" position="285,240" size="1350,600" zPosition="-20" />
+    <eLabel backgroundColor="Red" position="285,320" size="1350,3" zPosition="-14" foregroundColor="white" />
+    <!-- Widget -->
+    <eLabel text="Fritz Offer Action" position="335,250" size="1250,58" font="FHD; 42" backgroundColor="EL_Background" transparent="1" />
+    <widget name="text" font="FHD; 32" backgroundColor="EL_Background" position="335,350" size="830,400" transparent="1" halign="left" valign="top" foregroundColor="white" />
+    <widget name="FacePixmap" position="1180,350" size="400,400" alphatest="blend" transparent="1" />
+    <!-- Button -->
+    <eLabel backgroundColor="blue" foregroundColor="EL_Background" name="" position="285,780" size="1350,1" zPosition="-10" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="335,790" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="670,790" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/yellow.png" position="1000,790" size="40,40" />
+    <widget backgroundColor="EL_Background" font="Regular2; 28" halign="left" name="key_red" position="380,790" size="280,40" transparent="1" zPosition="1" foregroundColor="white" />
+    <widget backgroundColor="EL_Background" font="Regular2; 28" halign="left" name="key_green" position="715,790" size="280,40" transparent="1" zPosition="1" foregroundColor="white" />
+    <widget backgroundColor="EL_Background" font="Regular2; 28" halign="left" name="key_yellow" position="1045,790" size="280,40" transparent="1" zPosition="1" foregroundColor="white" />
+  </screen>
+
+  <screen name="MessageBoxPixmap" title="New Call" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <!-- Backg -->
+    <eLabel backgroundColor="EL_Background" foregroundColor="EL_Background" name="" position="410,330" size="1100,420" zPosition="-20" />
+    <eLabel backgroundColor="Red" position="410,410" size="1100,3" zPosition="-14" foregroundColor="white" />
+    <!-- Widget -->
+    <eLabel text="New Call" position="460,340" size="1000,58" font="FHD; 42" backgroundColor="EL_Background" transparent="1" halign="left" valign="center" />
+    <widget name="text" font="FHD; 32" backgroundColor="EL_Background" position="460,435" size="1000,300" transparent="1" halign="left" valign="center" foregroundColor="white" />
+    <widget name="FacePixmap" position="1515,340" size="400,400" alphatest="blend" transparent="1" />
+  </screen>
+
+
+  <!-- Greek Net Radio -->
+  <!-- Greek Net Radio -->
+  <screen name="GreekMenuscrn" title="Greek NetRadio" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
+    <panel name="Backg" />
+    <panel name="Clock" />
+    <!-- Widget -->
+    <eLabel text="Greek NetRadio" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <ePixmap alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GreekNetRadio/icons/musique.png" position="310,155" size="40,40" zPosition="-1" />
+    <ePixmap alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GreekNetRadio/icons/musique.png" position="310,205" size="40,40" zPosition="-1" />
+    <ePixmap alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GreekNetRadio/icons/musique.png" position="310,255" size="40,40" zPosition="-1" />
+    <ePixmap alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GreekNetRadio/icons/musique.png" position="310,305" size="40,40" zPosition="-1" />
+    <ePixmap alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GreekNetRadio/icons/downloads.png" position="310,355" size="40,40" zPosition="-1" />
+    <ePixmap alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GreekNetRadio/icons/about.png" position="310,405" size="40,40" zPosition="-1" />
+    <widget name="menu" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="375,150" size="1185,600" transparent="1" zPosition="3" />
+    <ePixmap alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GreekNetRadio/icons/radio.png" position="1305,764" size="256,256" zPosition="-1" />
+  </screen>
+
+  <screen name="Favscreen" title="Greek NetRadio" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
+    <panel name="Backg" />
+    <panel name="Clock" />
+    <!-- Widget -->
+    <eLabel text="Greek NetRadio" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="stationmenu" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="310,155" size="1300,800" transparent="1" zPosition="3" />
+    <!-- Buttons -->
+    <eLabel backgroundColor="EL_Selection" foregroundColor="EL_Background" name="" position="260,978" size="1400,1" zPosition="-10" />
+    <widget name="ButtonGeen" alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="310,985" size="40,40" />
+    <widget name="ButtonGeentext" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="355,985" size="750,40" transparent="1" zPosition="1" />
+  </screen>
+
+  <screen name="Playscreen" title="Greek NetRadio" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
+    <panel name="Backg" />
+    <panel name="Clock" />
+    <!-- Widget -->
+    <eLabel text="Greek NetRadio" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="station" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="310,155" size="1300,50" transparent="1" zPosition="3" />
+    <widget name="titel" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="white" position="310,285" zPosition="1" size="1300,250" transparent="1" />
+    <ePixmap position="310,220" zPosition="4" size="40,40" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GreekNetRadio/icons/arrows.png" transparent="1" alphatest="blend" />
+    <widget name="leagueNumberWidget" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="white" position="360,215" size="300,50" transparent="1" zPosition="4" halign="left" />
+    <ePixmap alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GreekNetRadio/icons/radio.png" position="310,675" size="256,256" zPosition="-1" />
+    <!-- Buttons -->
+    <eLabel backgroundColor="EL_Selection" foregroundColor="EL_Background" name="" position="260,978" size="1400,1" zPosition="-10" />
+    <widget name="ButtonGeen" alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="310,985" size="40,40" />
+    <widget name="ButtonGeentext" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="355,985" size="750,40" transparent="1" zPosition="1" />
+  </screen>
+
+  <screen name="GreekStationsScreen" title="Greek NetRadio" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
+    <panel name="Backg" />
+    <panel name="Clock" />
+    <!-- Widget -->
+    <eLabel text="Greek NetRadio" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="stationmenu" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="310,155" size="1300,800" transparent="1" zPosition="3" />
+    <!-- Buttons -->
+    <eLabel backgroundColor="EL_Selection" foregroundColor="EL_Background" name="" position="260,978" size="1400,1" zPosition="-10" />
+    <widget name="ButtonYellow" alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="310,985" size="40,40" />
+    <widget name="ButtonYellowtext" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="355,985" size="750,40" transparent="1" zPosition="1" />
+  </screen>
+
+  <screen name="WebStationsScreen" title="Greek NetRadio" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
+    <panel name="Backg" />
+    <panel name="Clock" />
+    <!-- Widget -->
+    <eLabel text="Greek NetRadio" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="stationmenu" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="310,155" size="1300,800" transparent="1" zPosition="3" />
+    <!-- Buttons -->
+    <eLabel backgroundColor="EL_Selection" foregroundColor="EL_Background" name="" position="260,978" size="1400,1" zPosition="-10" />
+    <widget name="ButtonYellow" alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="310,985" size="40,40" />
+    <widget name="ButtonYellowtext" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="355,985" size="750,40" transparent="1" zPosition="1" />
+  </screen>
+
+  <screen name="InterStationsScreen" title="Greek NetRadio" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
+    <panel name="Backg" />
+    <panel name="Clock" />
+    <!-- Widget -->
+    <eLabel text="Greek NetRadio" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="stationmenu" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="310,155" size="1300,800" transparent="1" zPosition="3" />
+    <!-- Buttons -->
+    <eLabel backgroundColor="EL_Selection" foregroundColor="EL_Background" name="" position="260,978" size="1400,1" zPosition="-10" />
+    <widget name="ButtonYellow" alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="310,985" size="40,40" />
+    <widget name="ButtonYellowtext" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="355,985" size="750,40" transparent="1" zPosition="1" />
+  </screen>
+
+  <screen name="classicAboutScreen" title="Greek NetRadio" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
+    <panel name="Backg" />
+    <panel name="Clock" />
+    <!-- Widget -->
+    <eLabel text="Greek NetRadio" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="text" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="310,155" size="1300,800" transparent="1" zPosition="3" />
+  </screen>
+
+
+  <!-- HistoryZapSelector -->
+  <!-- HistoryZapSelector -->
+  <screen name="HistoryZapSelector" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <panel name="Backg" />
+    <panel name="Clock" />
+    <!-- Widget -->
+    <eLabel text="History Zap..." font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget source="menu" render="Listbox" scrollbarMode="showNever" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="310,155" size="1300,840" transparent="1">
+      <convert type="TemplatedMultiContent">
+		       {"template": [
+		       MultiContentEntryText(pos = (192, 33), size = (15, 45), font = 1, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1), # Current Service
+		       MultiContentEntryText(pos = (225, 3), size = (555, 45), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2), # Servicename
+		       MultiContentEntryText(pos = (225, 36), size = (555, 33), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER | RT_WRAP, text = 3), # Eventname
+		       MultiContentEntryText(pos = (225, 69), size = (555, 32), font = 3, flags = RT_HALIGN_LEFT, text = 5), # Eventtime
+		       MultiContentEntryPixmapAlphaBlend(pos = (45, 14), size = (128, 77), png=6, flags = BT_SCALE) # picon
+		       ],
+		      "fonts": [gFont("FHD", 32), gFont("Regular", 28), gFont("Regular", 27), gFont("Regular", 24)],
+		      "itemHeight": 105
+		      }
+	  </convert>
+    </widget>
+  </screen>
+
+
+  <!-- MSNWeather -->
+  <!-- MSNWeather -->
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="MSNWeatherPluginEntriesListConfigScreen" position="center,center" size="1920,1080" title="">
+    <panel name="Backg" />
+    <panel name="Clock" />
+    <panel name="BS4" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget source="city" render="Label" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="310,155" size="650,50" transparent="1" />
+    <widget source="degreetype" render="Label" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="960,155" size="650,50" transparent="1" />
+    <eLabel backgroundColor="white" position="310,210" size="1300,3" zPosition="-9" foregroundColor="white" />
+    <widget name="entrylist" font="FHD; 32" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="310,220" size="1300,700" transparent="1" zPosition="3" />
+  </screen>
+
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="MSNWeatherPluginEntryConfigScreen" position="center,center" size="1920,1080" title="">
+    <panel name="Backg" />
+    <panel name="Clock" />
+    <panel name="BS4" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="config" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="310,155" size="1300,800" transparent="1" zPosition="3" />
+  </screen>
+
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="MSNWeatherPluginSearch" position="center,center" size="1920,1080" title="">
+    <panel name="Backg" />
+    <panel name="Clock" />
+    <panel name="BS2" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="entrylist" font="FHD; 32" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="310,155" size="1300,800" transparent="1" zPosition="3" />
+  </screen>
+
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="MSNWeatherPlugin" position="center,center" size="1920,1080" title="">
+    <!-- Backg -->
+    <eLabel backgroundColor="EL_Background" position="160,50" size="1600,980" zPosition="-21" />
+    <eLabel backgroundColor="Red" position="center,130" size="1600,3" zPosition="-9" foregroundColor="white" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="210,60" size="1230,58" transparent="1" />
+    <widget render="Label" source="caption" position="210,155" zPosition="1" size="900,50" font="FHD; 38" transparent="1" foregroundColor="white" backgroundColor="background" />
+    <widget render="Label" source="observationtime" position="195,975" zPosition="1" size="220,45" font="FHD; 30" transparent="1" halign="left" foregroundColor="white" backgroundColor="background" />
+    <widget render="Label" source="observationpoint" position="415,975" zPosition="1" size="1250,45" font="FHD; 30" transparent="1" halign="left" foregroundColor="white" backgroundColor="background" />
+    <widget alphatest="blend" render="MSNWeatherPixmap" position="210,224" size="125,125" source="session.MSNWeather" transparent="1" zPosition="8">
+      <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/SmartLiteFHD/WeatherIcon/,png</convert>
+    </widget>
+    <widget render="Label" source="currentTemp" position="355,230" zPosition="1" size="150,55" font="FHD; 38" transparent="1" foregroundColor="white" backgroundColor="background" />
+    <widget render="Label" source="feelsliketemp" position="355,285" zPosition="1" size="750,45" font="Regular2; 30" transparent="1" foregroundColor="white" backgroundColor="background" />
+    <widget render="Label" source="condition" position="210,360" zPosition="1" size="695,50" font="Regular2; 32" transparent="1" foregroundColor="white" backgroundColor="background" />
+    <widget render="Label" source="wind_condition" position="210,420" zPosition="1" size="695,45" font="Regular2; 30" transparent="1" foregroundColor="white" backgroundColor="background" />
+    <widget render="Label" source="humidity" position="210,475" zPosition="1" size="695,45" font="Regular2; 30" valign="bottom" transparent="1" foregroundColor="white" backgroundColor="background" />
+    <eLabel backgroundColor="white" position="center,550" size="1520,1" zPosition="-9" foregroundColor="white" />
+    <!-- WeekWeather -->
+    <widget render="Label" source="weekday2" position="1195,150" zPosition="1" size="250,100" halign="center" valign="bottom" font="FHD; 32" transparent="1" foregroundColor="white" backgroundColor="background" />
+    <widget alphatest="blend" render="MSNWeatherPixmap" position="1280,260" size="80,80" source="session.MSNWeather" transparent="1" zPosition="5">
+      <convert type="MSNWeather">weathericon,day2,/usr/share/enigma2/SmartLiteFHD/WeatherIcon/,png</convert>
+    </widget>
+    <widget render="Label" source="weekday2_temp" position="1195,350" zPosition="1" size="250,150" halign="center" valign="top" font="FHD; 32" transparent="1" foregroundColor="white" backgroundColor="background" />
+    <widget render="Label" source="weekday3" position="215,590" zPosition="1" size="250,100" halign="center" valign="bottom" font="FHD; 32" transparent="1" foregroundColor="white" backgroundColor="background" />
+    <widget alphatest="blend" render="MSNWeatherPixmap" position="300,700" size="80,80" source="session.MSNWeather" transparent="1" zPosition="5">
+      <convert type="MSNWeather">weathericon,day3,/usr/share/enigma2/SmartLiteFHD/WeatherIcon/,png</convert>
+    </widget>
+    <widget render="Label" source="weekday3_temp" position="215,790" zPosition="1" size="250,150" halign="center" valign="top" font="FHD; 32" transparent="1" foregroundColor="white" backgroundColor="background" />
+    <widget render="Label" source="weekday4" position="535,590" zPosition="1" size="250,100" halign="center" valign="bottom" font="FHD; 32" transparent="1" foregroundColor="white" backgroundColor="background" />
+    <widget alphatest="blend" render="MSNWeatherPixmap" position="620,700" size="80,80" source="session.MSNWeather" transparent="1" zPosition="5">
+      <convert type="MSNWeather">weathericon,day4,/usr/share/enigma2/SmartLiteFHD/WeatherIcon/,png</convert>
+    </widget>
+    <widget render="Label" source="weekday4_temp" position="535,790" zPosition="1" size="250,150" halign="center" valign="top" font="FHD; 32" transparent="1" />
+    <widget render="Label" source="weekday5" position="855,590" zPosition="1" size="250,100" halign="center" valign="bottom" font="FHD; 32" transparent="1" foregroundColor="white" backgroundColor="background" />
+    <widget alphatest="blend" render="MSNWeatherPixmap" position="940,700" size="80,80" source="session.MSNWeather" transparent="1" zPosition="5">
+      <convert type="MSNWeather">weathericon,day5,/usr/share/enigma2/SmartLiteFHD/WeatherIcon/,png</convert>
+    </widget>
+    <widget render="Label" source="weekday5_temp" position="855,790" zPosition="1" size="250,150" halign="center" valign="top" font="FHD; 32" transparent="1" foregroundColor="white" backgroundColor="background" />
+    <widget render="Label" source="statustext" position="center,145" zPosition="0" size="1520,400" font="FHD; 36" halign="center" valign="center" transparent="1" foregroundColor="white" backgroundColor="background" />
+    <!-- png -->
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/plugins_png/Weather Logo.png" position="1232,570" size="500,380" />
+    <!-- BExtra -->
+    <eLabel backgroundColor="blue" foregroundColor="white" name="" position="center,968" size="1600,1" zPosition="-10" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_menu.png" position="1680,980" size="64,38" />
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="1597,63" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1604,47" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="white" halign="right" position="1444,86" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="white" halign="right" position="1444,58" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+  </screen>
+
+
+  <!-- Picon Manager  -->
   <!-- Picon Manager  -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="PiconManagerScreen" position="center,center" size="1920,1080" title="">
     <!-- Backg -->
@@ -361,6 +1231,7 @@
       <convert type="ClockToText">Format:%A</convert>
     </widget>
   </screen>
+
   <screen backgroundColor="transparent" flags="wfNoBorder" name="PiconManagerFolderScreen" position="center,center" size="1920,1080" title="PiconManagerFolder" transparent="0">
     <panel name="Backg" />
     <panel name="Clock" />
@@ -371,6 +1242,7 @@
     <eLabel backgroundColor="white" position="310,210" size="1300,1" zPosition="-9" foregroundColor="white" />
     <widget name="folderlist" font="FHD; 32" itemHeight="50" position="310,220" size="1300,750" foregroundColor="EL_Foreground" backgroundColor="EL_Background" scrollbarMode="showOnDemand" transparent="1" zPosition="3" />
   </screen>
+
   <screen backgroundColor="transparent" flags="wfNoBorder" name="pm_conf" position="center,center" size="1920,1080" title="PiconManager Setup" transparent="0">
     <panel name="Backg" />
     <panel name="Clock" />
@@ -379,6 +1251,9 @@
     <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
     <widget name="config" font="FHD; 32" itemHeight="50" position="310,155" size="1300,800" foregroundColor="EL_Foreground" backgroundColor="EL_Background" scrollbarMode="showOnDemand" transparent="1" zPosition="3" />
   </screen>
+
+
+  <!-- PiconsUpdater  -->
   <!-- PiconsUpdater  -->
   <screen name="PiconsUpdaterView" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <panel name="Backg" />
@@ -401,6 +1276,7 @@
     <!-- Clock -->
     <panel name="Clock" />
   </screen>
+
   <screen name="JobProgressView" title="Job Progress" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <!-- Back -->
     <eLabel backgroundColor="EL_Background" foregroundColor="EL_Background" name="" position="center,center" size="1050,300" zPosition="-20" />
@@ -411,6 +1287,9 @@
     <widget name="downloadProgress" backgroundColor="EL_Background" borderColor="grey" borderWidth="1" foregroundColor="blue" position="460,560" size="750,25" transparent="1" />
     <widget source="downloadProgressText" backgroundColor="EL_Background" font="FHD; 32" foregroundColor="EL_Foreground" position="460,610" size="1000,50" transparent="1" />
   </screen>
+
+
+  <!-- Yahoo Weather  -->
   <!-- Yahoo Weather  -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="YahooWeather" title="Yahoo Weather" position="0,center" size="1920,1080" transparent="0">
     <!-- Backg -->
@@ -548,6 +1427,7 @@
       <convert type="ClockToText">Format:%A</convert>
     </widget>
   </screen>
+
   <screen backgroundColor="transparent" flags="wfNoBorder" name="YahooWeatherList" position="center,center" size="1920,1080" title="Yahoo Weather list">
     <!-- Backg -->
     <eLabel backgroundColor="EL_Background" position="160,50" size="1600,980" zPosition="-21" />
@@ -573,6 +1453,9 @@
       <convert type="ClockToText">Format:%A</convert>
     </widget>
   </screen>
+
+
+  <!-- YouTube -->
   <!-- YouTube -->
   <screen name="YouTubeMain" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" transparent="0">
     <!-- Backg -->
@@ -605,6 +1488,7 @@
     <!-- Clock -->
     <panel name="Clock" />
   </screen>
+
   <screen name="YouTubeSearch" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" transparent="0">
     <!-- Backg -->
     <panel name="Backg" />
@@ -633,6 +1517,7 @@
     <!-- Clock -->
     <panel name="Clock" />
   </screen>
+
   <screen name="YouTubeInfo" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <!-- Backg -->
     <panel name="Backg" />
@@ -655,6 +1540,7 @@
     <!-- Clock -->
     <panel name="Clock" />
   </screen>
+
   <screen name="YouTubeDownloadList" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" transparent="0">
     <!-- Backg -->
     <panel name="Backg" />
@@ -679,6 +1565,7 @@
     <!-- Clock -->
     <panel name="Clock" />
   </screen>
+
   <screen name="YoutubeTVSettings" title="YouTube TV Settings" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" transparent="0">
     <!-- Backg -->
     <panel name="Backg" />
@@ -698,6 +1585,7 @@
     <!-- Clock -->
     <panel name="Clock" />
   </screen>
+
   <screen name="YoutubeTVWindow" title="Start YouTube TV" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" transparent="0">
     <!-- Backg -->
     <panel name="Backg" />
@@ -720,108 +1608,9 @@
     <!-- Clock -->
     <panel name="Clock" />
   </screen>
-  <!-- Greek Net Radio -->
-  <screen name="GreekMenuscrn" title="Greek NetRadio" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
-    <panel name="Backg" />
-    <panel name="Clock" />
-    <!-- Widget -->
-    <eLabel text="Greek NetRadio" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
-    <ePixmap alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GreekNetRadio/icons/musique.png" position="310,155" size="40,40" zPosition="-1" />
-    <ePixmap alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GreekNetRadio/icons/musique.png" position="310,205" size="40,40" zPosition="-1" />
-    <ePixmap alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GreekNetRadio/icons/musique.png" position="310,255" size="40,40" zPosition="-1" />
-    <ePixmap alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GreekNetRadio/icons/musique.png" position="310,305" size="40,40" zPosition="-1" />
-    <ePixmap alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GreekNetRadio/icons/downloads.png" position="310,355" size="40,40" zPosition="-1" />
-    <ePixmap alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GreekNetRadio/icons/about.png" position="310,405" size="40,40" zPosition="-1" />
-    <widget name="menu" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="375,150" size="1185,600" transparent="1" zPosition="3" />
-    <ePixmap alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GreekNetRadio/icons/radio.png" position="1305,764" size="256,256" zPosition="-1" />
-  </screen>
-  <screen name="Favscreen" title="Greek NetRadio" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
-    <panel name="Backg" />
-    <panel name="Clock" />
-    <!-- Widget -->
-    <eLabel text="Greek NetRadio" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
-    <widget name="stationmenu" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="310,155" size="1300,800" transparent="1" zPosition="3" />
-    <!-- Buttons -->
-    <eLabel backgroundColor="EL_Selection" foregroundColor="EL_Background" name="" position="260,978" size="1400,1" zPosition="-10" />
-    <widget name="ButtonGeen" alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="310,985" size="40,40" />
-    <widget name="ButtonGeentext" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="355,985" size="750,40" transparent="1" zPosition="1" />
-  </screen>
-  <screen name="Playscreen" title="Greek NetRadio" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
-    <panel name="Backg" />
-    <panel name="Clock" />
-    <!-- Widget -->
-    <eLabel text="Greek NetRadio" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
-    <widget name="station" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="310,155" size="1300,50" transparent="1" zPosition="3" />
-    <widget name="titel" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="white" position="310,285" zPosition="1" size="1300,250" transparent="1" />
-    <ePixmap position="310,220" zPosition="4" size="40,40" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GreekNetRadio/icons/arrows.png" transparent="1" alphatest="blend" />
-    <widget name="leagueNumberWidget" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="white" position="360,215" size="300,50" transparent="1" zPosition="4" halign="left" />
-    <ePixmap alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GreekNetRadio/icons/radio.png" position="310,675" size="256,256" zPosition="-1" />
-    <!-- Buttons -->
-    <eLabel backgroundColor="EL_Selection" foregroundColor="EL_Background" name="" position="260,978" size="1400,1" zPosition="-10" />
-    <widget name="ButtonGeen" alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="310,985" size="40,40" />
-    <widget name="ButtonGeentext" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="355,985" size="750,40" transparent="1" zPosition="1" />
-  </screen>
-  <screen name="GreekStationsScreen" title="Greek NetRadio" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
-    <panel name="Backg" />
-    <panel name="Clock" />
-    <!-- Widget -->
-    <eLabel text="Greek NetRadio" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
-    <widget name="stationmenu" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="310,155" size="1300,800" transparent="1" zPosition="3" />
-    <!-- Buttons -->
-    <eLabel backgroundColor="EL_Selection" foregroundColor="EL_Background" name="" position="260,978" size="1400,1" zPosition="-10" />
-    <widget name="ButtonYellow" alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="310,985" size="40,40" />
-    <widget name="ButtonYellowtext" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="355,985" size="750,40" transparent="1" zPosition="1" />
-  </screen>
-  <screen name="WebStationsScreen" title="Greek NetRadio" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
-    <panel name="Backg" />
-    <panel name="Clock" />
-    <!-- Widget -->
-    <eLabel text="Greek NetRadio" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
-    <widget name="stationmenu" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="310,155" size="1300,800" transparent="1" zPosition="3" />
-    <!-- Buttons -->
-    <eLabel backgroundColor="EL_Selection" foregroundColor="EL_Background" name="" position="260,978" size="1400,1" zPosition="-10" />
-    <widget name="ButtonYellow" alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="310,985" size="40,40" />
-    <widget name="ButtonYellowtext" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="355,985" size="750,40" transparent="1" zPosition="1" />
-  </screen>
-  <screen name="InterStationsScreen" title="Greek NetRadio" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
-    <panel name="Backg" />
-    <panel name="Clock" />
-    <!-- Widget -->
-    <eLabel text="Greek NetRadio" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
-    <widget name="stationmenu" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="310,155" size="1300,800" transparent="1" zPosition="3" />
-    <!-- Buttons -->
-    <eLabel backgroundColor="EL_Selection" foregroundColor="EL_Background" name="" position="260,978" size="1400,1" zPosition="-10" />
-    <widget name="ButtonYellow" alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="310,985" size="40,40" />
-    <widget name="ButtonYellowtext" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="355,985" size="750,40" transparent="1" zPosition="1" />
-  </screen>
-  <screen name="classicAboutScreen" title="Greek NetRadio" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
-    <panel name="Backg" />
-    <panel name="Clock" />
-    <!-- Widget -->
-    <eLabel text="Greek NetRadio" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
-    <widget name="text" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="310,155" size="1300,800" transparent="1" zPosition="3" />
-  </screen>
-  <!-- HistoryZapSelector -->
-  <screen name="HistoryZapSelector" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-    <panel name="Backg" />
-    <panel name="Clock" />
-    <!-- Widget -->
-    <eLabel text="History Zap..." font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
-    <widget source="menu" render="Listbox" scrollbarMode="showNever" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="310,155" size="1300,840" transparent="1">
-      <convert type="TemplatedMultiContent">
-		       {"template": [
-		       MultiContentEntryText(pos = (192, 33), size = (15, 45), font = 1, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1), # Current Service
-		       MultiContentEntryText(pos = (225, 3), size = (555, 45), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2), # Servicename
-		       MultiContentEntryText(pos = (225, 36), size = (555, 33), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER | RT_WRAP, text = 3), # Eventname
-		       MultiContentEntryText(pos = (225, 69), size = (555, 32), font = 3, flags = RT_HALIGN_LEFT, text = 5), # Eventtime
-		       MultiContentEntryPixmapAlphaBlend(pos = (45, 14), size = (128, 77), png=6, flags = BT_SCALE) # picon
-		       ],
-		      "fonts": [gFont("FHD", 32), gFont("Regular", 28), gFont("Regular", 27), gFont("Regular", 24)],
-		      "itemHeight": 105
-		      }
-	  </convert>
-    </widget>
-  </screen>
+
+
+  <!-- ZapHistoryBrowser -->
   <!-- ZapHistoryBrowser -->
   <screen name="ZapHistoryConfigurator" title="Zap-History Configurator" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
     <panel name="Backg" />
@@ -831,6 +1620,7 @@
     <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
     <widget name="config" itemHeight="50" font="FHD;32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="310,155" size="1300,800" transparent="1" zPosition="3" />
   </screen>
+
   <screen name="ZapHistoryBrowser" title="Zap-History Browser" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <panel name="Backg" />
     <panel name="Clock" />
@@ -838,296 +1628,6 @@
     <!-- Widget -->
     <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
     <widget name="list" itemHeight="85" font="FHD;32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="310,155" size="1300,765" transparent="1" zPosition="3" />
-  </screen>
-  <!-- DiseqcTester -->
-  <screen name="DiseqcTesterNimSelection" title="Choose Tuner" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
-    <panel name="Backg" />
-    <panel name="Clock" />
-    <!-- Widget -->
-    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
-    <widget source="nimlist" render="Listbox" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="310,155" size="1300,750" transparent="1" zPosition="3">
-      <convert type="TemplatedMultiContent">
-                        {"template": [
-                        MultiContentEntryText(pos = (10,0),size = (1220,50),flags = RT_HALIGN_LEFT,text = 1),# index 1 is the nim name,
-                        MultiContentEntryText(pos = (50,45),size = (1200,100),font = 1,flags = RT_HALIGN_LEFT,text = 2),# index 2 is a description of the nim settings,
-                        ],
-                        "fonts": [gFont("FHD",32),gFont("Regular",26)],
-                        "itemHeight": 150
-                        }
-        </convert>
-    </widget>
-  </screen>
-  <screen name="DiseqcTester" title="DiSEqC Tester" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-    <panel name="Backg" />
-    <panel name="Clock" />
-    <!-- Widget -->
-    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
-    <widget source="progress_list" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="EL_Foreground" position="310,155" size="1300,300" transparent="1" zPosition="2">
-      <convert type="TemplatedMultiContent">
-		{"template": [
-		MultiContentEntryText(pos = (15, 0), size = (750, 37), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the index name,
-		MultiContentEntryText(pos = (750, 0), size = (450, 37), flags = RT_HALIGN_RIGHT, text = 2) # index 2 is the status,
-		],
-		"fonts": [gFont("FHD", 32)],
-		"itemHeight": 50
-		}
-	</convert>
-    </widget>
-    <eLabel backgroundColor="blue" position="310,470" size="1220,3" zPosition="-9" foregroundColor="white" />
-    <eLabel name="" text="Overall progress:" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="310,490" size="300,45" transparent="1" />
-    <widget source="overall_progress" render="Progress" borderColor="grey" borderWidth="1" foregroundColor="green_light" position="310,540" size="950,30" transparent="1" />
-    <eLabel name="" text="Progress:" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="310,585" size="300,45" transparent="1" />
-    <widget source="sub_progress" render="Progress" borderColor="grey" borderWidth="1" foregroundColor="green_light" position="310,635" size="950,30" transparent="1" />
-    <eLabel name="" text="Failed:" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="310,770" size="170,45" transparent="1" />
-    <eLabel name="" text="Succeeded:" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="310,820" size="180,45" transparent="1" />
-    <eLabel name="" text="With errors:" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="310,870" size="190,45" transparent="1" />
-    <eLabel name="" text="Not tested:" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="310,920" size="180,45" transparent="1" />
-    <widget source="failed_counter" render="Label" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="500,770" size="300,45" transparent="1" />
-    <widget source="succeeded_counter" render="Label" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="500,820" size="300,45" transparent="1" />
-    <widget source="witherrors_counter" render="Label" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="500,870" size="300,45" transparent="1" />
-    <widget source="untestable_counter" render="Label" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="500,920" size="300,45" transparent="1" />
-    <widget source="CmdText" render="Label" font="Regular; 28" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="950,683" size="700,340" transparent="1" />
-  </screen>
-  <!-- FritzCall -->
-  <screen name="FritzCallSetup" title="FritzCallSetup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-    <panel name="Backg" />
-    <panel name="Clock" />
-    <panel name="BN4" />
-    <!-- Widget -->
-    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
-    <widget name="consideration" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="310,155" size="1300,45" transparent="1" />
-    <eLabel backgroundColor="white" position="310,205" size="1300,1" zPosition="-9" foregroundColor="white" />
-    <widget name="config" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="310,220" size="1300,750" transparent="1" />
-    <widget name="HelpWindow" position="275,550" size="1,1" zPosition="10" />
-    <!-- Buttons -->
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_menu.png" position="1590,986" size="64,38" />
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_info.png" position="1515,986" size="64,38" />
-  </screen>
-  <screen name="FritzDisplayCalls" title="Fritz Display Calls" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-    <!-- Backg -->
-    <eLabel backgroundColor="EL_Background" position="160,50" size="1600,980" zPosition="-21" />
-    <eLabel backgroundColor="Red" position="160,130" size="1600,3" zPosition="-9" foregroundColor="white" />
-    <!-- Widget -->
-    <widget source="Title" render="Label" position="210,60" size="1230,58" font="FHD; 42" backgroundColor="EL_Background" transparent="1" foregroundColor="white" />
-    <widget name="statusbar" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="210,155" size="1500,45" transparent="1" />
-    <eLabel backgroundColor="white" position="center,207" size="1500,1" zPosition="-9" foregroundColor="white" />
-    <widget source="entries" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="white" position="210,220" size="1500,750" zPosition="3" transparent="1">
-      <convert type="TemplatedMultiContent">
-			{"template": [
-			MultiContentEntryText(pos = (10,0),size = (220,50),flags = RT_HALIGN_LEFT,text = 1),# index 0 is the MenuText,
-			MultiContentEntryPixmapAlphaTest(pos = (220,15),size = (25,25),png = 2),# index 1 i direction pixmap
-			MultiContentEntryText(pos = (270,0),size = (480,50),flags = RT_HALIGN_LEFT,text = 3),# index 2 is remote name/number
-			MultiContentEntryText(pos = (775,0),size = (120,50),flags = RT_HALIGN_LEFT,text = 4),# index 3 is length of call
-			MultiContentEntryText(pos = (900,0),size = (600,50),flags = RT_HALIGN_LEFT,text = 5),# index 4 is my number/name for number
-			],
-			"fonts": [gFont("FHD",32)],
-			"itemHeight": 50
-			}
-		</convert>
-    </widget>
-    <!-- Buttons -->
-    <eLabel backgroundColor="blue" foregroundColor="white" name="" position="160,978" size="1600,1" zPosition="-10" />
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="210,985" size="40,40" />
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="530,985" size="40,40" />
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/yellow.png" position="850,985" size="40,40" />
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/blue.png" position="1170,985" size="40,40" />
-    <widget backgroundColor="EL_Background" font="Regular2; 28" halign="left" position="255,985" size="270,40" name="key_red" transparent="1" zPosition="1" foregroundColor="white" />
-    <widget backgroundColor="EL_Background" font="Regular2; 28" halign="left" position="575,985" size="270,40" name="key_green" transparent="1" zPosition="1" foregroundColor="white" />
-    <widget backgroundColor="EL_Background" font="Regular2; 28" halign="left" position="895,985" size="270,40" name="key_yellow" transparent="1" zPosition="1" foregroundColor="white" />
-    <widget backgroundColor="EL_Background" font="Regular2; 28" halign="left" position="1215,985" size="270,40" name="key_blue" transparent="1" zPosition="1" foregroundColor="white" />
-    <!-- Clock -->
-    <eLabel backgroundColor="white" position="1597,63" size="1,50" transparent="0" zPosition="-1" />
-    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1604,47" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
-      <convert type="ClockToText">Format:%H:%M</convert>
-    </widget>
-    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="white" halign="right" position="1444,86" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%e. %b</convert>
-    </widget>
-    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="white" halign="right" position="1444,58" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%A</convert>
-    </widget>
-  </screen>
-  <screen name="FritzDisplayPhonebook" title="Fritz Display Phonebook" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-    <panel name="Backg" />
-    <panel name="Clock" />
-    <panel name="BN2" />
-    <!-- Widget -->
-    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
-    <widget source="entries" render="Listbox" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="310,155" size="1300,800" zPosition="3" transparent="1">
-      <convert type="TemplatedMultiContent">
-			{"template": [
-			MultiContentEntryText(pos = (10,0),size = (630,50),flags = RT_HALIGN_LEFT,text = 1),# index 0 is the name,index 1 is shortname
-			MultiContentEntryText(pos = (620,0),size = (670,50),flags = RT_HALIGN_LEFT,text = 2),# index 2 is number
-			],
-			"fonts": [gFont("FHD",32)],
-			"itemHeight": 50
-			}
-		</convert>
-    </widget>
-  </screen>
-  <screen name="AddScreen" title="Add Screen" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-    <panel name="Backg" />
-    <panel name="Clock" />
-    <panel name="BN4" />
-    <!-- Widget -->
-    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
-    <widget name="config" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="310,155" size="1300,800" transparent="1" />
-  </screen>
-  <screen name="FritzMenu" title="Fritz Menu" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-    <panel name="Backg" />
-    <panel name="Clock" />
-    <panel name="BN3" />
-    <!-- Widget -->
-    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
-    <widget name="FBFInfo" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="310,155" size="1300,120" transparent="1" valign="top" />
-    <eLabel backgroundColor="blue" position="310,280" size="1300,3" zPosition="-9" foregroundColor="white" />
-    <widget name="FBFInternet" position="380,322" size="1230,150" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" transparent="1" valign="top" />
-    <widget name="FBFDsl" position="380,479" size="1230,48" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" transparent="1" />
-    <widget name="FBFWlan" position="380,544" size="1230,48" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" transparent="1" />
-    <widget name="FBFRufuml" position="380,609" size="1230,48" font="FHD; 33" backgroundColor="EL_Background" foregroundColor="EL_Foreground" transparent="1" />
-    <widget name="FBFFax" position="380,674" size="1230,48" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" transparent="1" />
-    <widget name="FBFDect" position="380,739" size="1230,48" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" transparent="1" />
-    <widget name="FBFGast" position="380,804" size="1230,48" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" transparent="1" />
-    <widget name="internet_active" pixmap="SmartLiteFHD/buttons/green.png" size="40,40" position="310,325" alphatest="blend" />
-    <widget name="internet_inactive" pixmap="SmartLiteFHD/buttons/grey.png" size="40,40" position="310,325" alphatest="blend" />
-    <widget name="dsl_active" pixmap="SmartLiteFHD/buttons/green.png" size="40,40" position="310,482" alphatest="blend" />
-    <widget name="dsl_inactive" pixmap="SmartLiteFHD/buttons/grey.png" size="40,40" position="310,482" alphatest="blend" />
-    <widget name="wlan_active" pixmap="SmartLiteFHD/buttons/green.png" size="40,40" position="310,547" alphatest="blend" />
-    <widget name="wlan_inactive" pixmap="SmartLiteFHD/buttons/grey.png" size="40,40" position="310,547" alphatest="blend" />
-    <widget name="rufuml_active" pixmap="SmartLiteFHD/buttons/green.png" size="40,40" position="310,612" alphatest="blend" />
-    <widget name="rufuml_inactive" pixmap="SmartLiteFHD/buttons/grey.png" size="40,40" position="310,612" alphatest="blend" />
-    <widget name="fax_active" pixmap="SmartLiteFHD/buttons/green.png" size="40,40" position="310,677" alphatest="blend" />
-    <widget name="fax_inactive" pixmap="SmartLiteFHD/buttons/grey.png" size="40,40" position="310,677" alphatest="blend" />
-    <widget name="dect_active" pixmap="SmartLiteFHD/buttons/green.png" size="40,40" position="310,742" alphatest="blend" />
-    <widget name="dect_inactive" pixmap="SmartLiteFHD/buttons/grey.png" size="40,40" position="310,742" alphatest="blend" />
-    <widget name="gast_active" pixmap="SmartLiteFHD/buttons/green.png" size="40,40" position="310,807" alphatest="blend" />
-    <widget name="gast_inactive" pixmap="SmartLiteFHD/buttons/grey.png" size="40,40" position="310,807" alphatest="blend" />
-  </screen>
-  <screen name="FritzAbout" title="About Fritz Call" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-    <!-- Back -->
-    <eLabel backgroundColor="EL_Background" foregroundColor="EL_Background" name="" position="285,260" size="1350,560" zPosition="-20" />
-    <eLabel backgroundColor="Red" position="center,340" size="1350,3" zPosition="-14" foregroundColor="white" />
-    <!-- Widget -->
-    <widget source="Title" render="Label" position="335,270" size="1250,58" font="FHD; 42" backgroundColor="EL_Background" transparent="1" />
-    <widget name="text" font="FHD; 32" backgroundColor="EL_Background" position="525,360" size="1060,300" transparent="1" valign="top" halign="left" />
-    <widget name="url" font="FHD; 32" backgroundColor="EL_Background" position="525,695" size="1060,45" transparent="1" valign="center" halign="left" foregroundColor="white" />
-    <ePixmap position="335,635" size="175,175" zPosition="4" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/FritzCall/images/website.png" alphatest="blend" />
-    <ePixmap position="335,360" size="150,110" zPosition="4" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/FritzCall/images/fritz.png" alphatest="blend" />
-  </screen>
-  <screen name="FritzOfferAction" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-    <!-- Back -->
-    <eLabel backgroundColor="EL_Background" foregroundColor="EL_Background" name="" position="285,240" size="1350,600" zPosition="-20" />
-    <eLabel backgroundColor="Red" position="285,320" size="1350,3" zPosition="-14" foregroundColor="white" />
-    <!-- Widget -->
-    <eLabel text="Fritz Offer Action" position="335,250" size="1250,58" font="FHD; 42" backgroundColor="EL_Background" transparent="1" />
-    <widget name="text" font="FHD; 32" backgroundColor="EL_Background" position="335,350" size="830,400" transparent="1" halign="left" valign="top" foregroundColor="white" />
-    <widget name="FacePixmap" position="1180,350" size="400,400" alphatest="blend" transparent="1" />
-    <!-- Button -->
-    <eLabel backgroundColor="blue" foregroundColor="EL_Background" name="" position="285,780" size="1350,1" zPosition="-10" />
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="335,790" size="40,40" />
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="670,790" size="40,40" />
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/yellow.png" position="1000,790" size="40,40" />
-    <widget backgroundColor="EL_Background" font="Regular2; 28" halign="left" name="key_red" position="380,790" size="280,40" transparent="1" zPosition="1" foregroundColor="white" />
-    <widget backgroundColor="EL_Background" font="Regular2; 28" halign="left" name="key_green" position="715,790" size="280,40" transparent="1" zPosition="1" foregroundColor="white" />
-    <widget backgroundColor="EL_Background" font="Regular2; 28" halign="left" name="key_yellow" position="1045,790" size="280,40" transparent="1" zPosition="1" foregroundColor="white" />
-  </screen>
-  <screen name="MessageBoxPixmap" title="New Call" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-    <!-- Backg -->
-    <eLabel backgroundColor="EL_Background" foregroundColor="EL_Background" name="" position="410,330" size="1100,420" zPosition="-20" />
-    <eLabel backgroundColor="Red" position="410,410" size="1100,3" zPosition="-14" foregroundColor="white" />
-    <!-- Widget -->
-    <eLabel text="New Call" position="460,340" size="1000,58" font="FHD; 42" backgroundColor="EL_Background" transparent="1" halign="left" valign="center" />
-    <widget name="text" font="FHD; 32" backgroundColor="EL_Background" position="460,435" size="1000,300" transparent="1" halign="left" valign="center" foregroundColor="white" />
-    <widget name="FacePixmap" position="1515,340" size="400,400" alphatest="blend" transparent="1" />
-  </screen>
-
-  <!-- MSNWeather -->
-  <screen backgroundColor="transparent" flags="wfNoBorder" name="MSNWeatherPluginEntriesListConfigScreen" position="center,center" size="1920,1080" title="">
-    <panel name="Backg" />
-    <panel name="Clock" />
-    <panel name="BS4" />
-    <!-- Widget -->
-    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
-    <widget source="city" render="Label" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="310,155" size="650,50" transparent="1" />
-    <widget source="degreetype" render="Label" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="960,155" size="650,50" transparent="1" />
-    <eLabel backgroundColor="white" position="310,210" size="1300,3" zPosition="-9" foregroundColor="white" />
-    <widget name="entrylist" font="FHD; 32" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="310,220" size="1300,700" transparent="1" zPosition="3" />
-  </screen>
-
-  <screen backgroundColor="transparent" flags="wfNoBorder" name="MSNWeatherPluginEntryConfigScreen" position="center,center" size="1920,1080" title="">
-    <panel name="Backg" />
-    <panel name="Clock" />
-    <panel name="BS4" />
-    <!-- Widget -->
-    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
-    <widget name="config" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="310,155" size="1300,800" transparent="1" zPosition="3" />
-  </screen>
-
-  <screen backgroundColor="transparent" flags="wfNoBorder" name="MSNWeatherPluginSearch" position="center,center" size="1920,1080" title="">
-    <panel name="Backg" />
-    <panel name="Clock" />
-    <panel name="BS2" />
-    <!-- Widget -->
-    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
-    <widget name="entrylist" font="FHD; 32" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="310,155" size="1300,800" transparent="1" zPosition="3" />
-  </screen>
-
-  <screen backgroundColor="transparent" flags="wfNoBorder" name="MSNWeatherPlugin" position="center,center" size="1920,1080" title="">
-    <!-- Backg -->
-    <eLabel backgroundColor="EL_Background" position="160,50" size="1600,980" zPosition="-21" />
-    <eLabel backgroundColor="Red" position="center,130" size="1600,3" zPosition="-9" foregroundColor="white" />
-    <!-- Widget -->
-    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="210,60" size="1230,58" transparent="1" />
-    <widget render="Label" source="caption" position="210,155" zPosition="1" size="900,50" font="FHD; 38" transparent="1" foregroundColor="white" backgroundColor="background" />
-    <widget render="Label" source="observationtime" position="195,975" zPosition="1" size="220,45" font="FHD; 30" transparent="1" halign="left" foregroundColor="white" backgroundColor="background" />
-    <widget render="Label" source="observationpoint" position="415,975" zPosition="1" size="1250,45" font="FHD; 30" transparent="1" halign="left" foregroundColor="white" backgroundColor="background" />
-    <widget alphatest="blend" render="MSNWeatherPixmap" position="210,224" size="125,125" source="session.MSNWeather" transparent="1" zPosition="8">
-      <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/SmartLiteFHD/WeatherIcon/,png</convert>
-    </widget>
-    <widget render="Label" source="currentTemp" position="355,230" zPosition="1" size="150,55" font="FHD; 38" transparent="1" foregroundColor="white" backgroundColor="background" />
-    <widget render="Label" source="feelsliketemp" position="355,285" zPosition="1" size="750,45" font="Regular2; 30" transparent="1" foregroundColor="white" backgroundColor="background" />
-    <widget render="Label" source="condition" position="210,360" zPosition="1" size="695,50" font="Regular2; 32" transparent="1" foregroundColor="white" backgroundColor="background" />
-    <widget render="Label" source="wind_condition" position="210,420" zPosition="1" size="695,45" font="Regular2; 30" transparent="1" foregroundColor="white" backgroundColor="background" />
-    <widget render="Label" source="humidity" position="210,475" zPosition="1" size="695,45" font="Regular2; 30" valign="bottom" transparent="1" foregroundColor="white" backgroundColor="background" />
-    <eLabel backgroundColor="white" position="center,550" size="1520,1" zPosition="-9" foregroundColor="white" />
-    <!-- WeekWeather -->
-    <widget render="Label" source="weekday2" position="1195,150" zPosition="1" size="250,100" halign="center" valign="bottom" font="FHD; 32" transparent="1" foregroundColor="white" backgroundColor="background" />
-    <widget alphatest="blend" render="MSNWeatherPixmap" position="1280,260" size="80,80" source="session.MSNWeather" transparent="1" zPosition="5">
-      <convert type="MSNWeather">weathericon,day2,/usr/share/enigma2/SmartLiteFHD/WeatherIcon/,png</convert>
-    </widget>
-    <widget render="Label" source="weekday2_temp" position="1195,350" zPosition="1" size="250,150" halign="center" valign="top" font="FHD; 32" transparent="1" foregroundColor="white" backgroundColor="background" />
-    <widget render="Label" source="weekday3" position="215,590" zPosition="1" size="250,100" halign="center" valign="bottom" font="FHD; 32" transparent="1" foregroundColor="white" backgroundColor="background" />
-    <widget alphatest="blend" render="MSNWeatherPixmap" position="300,700" size="80,80" source="session.MSNWeather" transparent="1" zPosition="5">
-      <convert type="MSNWeather">weathericon,day3,/usr/share/enigma2/SmartLiteFHD/WeatherIcon/,png</convert>
-    </widget>
-    <widget render="Label" source="weekday3_temp" position="215,790" zPosition="1" size="250,150" halign="center" valign="top" font="FHD; 32" transparent="1" foregroundColor="white" backgroundColor="background" />
-    <widget render="Label" source="weekday4" position="535,590" zPosition="1" size="250,100" halign="center" valign="bottom" font="FHD; 32" transparent="1" foregroundColor="white" backgroundColor="background" />
-    <widget alphatest="blend" render="MSNWeatherPixmap" position="620,700" size="80,80" source="session.MSNWeather" transparent="1" zPosition="5">
-      <convert type="MSNWeather">weathericon,day4,/usr/share/enigma2/SmartLiteFHD/WeatherIcon/,png</convert>
-    </widget>
-    <widget render="Label" source="weekday4_temp" position="535,790" zPosition="1" size="250,150" halign="center" valign="top" font="FHD; 32" transparent="1" />
-    <widget render="Label" source="weekday5" position="855,590" zPosition="1" size="250,100" halign="center" valign="bottom" font="FHD; 32" transparent="1" foregroundColor="white" backgroundColor="background" />
-    <widget alphatest="blend" render="MSNWeatherPixmap" position="940,700" size="80,80" source="session.MSNWeather" transparent="1" zPosition="5">
-      <convert type="MSNWeather">weathericon,day5,/usr/share/enigma2/SmartLiteFHD/WeatherIcon/,png</convert>
-    </widget>
-    <widget render="Label" source="weekday5_temp" position="855,790" zPosition="1" size="250,150" halign="center" valign="top" font="FHD; 32" transparent="1" foregroundColor="white" backgroundColor="background" />
-    <widget render="Label" source="statustext" position="center,145" zPosition="0" size="1520,400" font="FHD; 36" halign="center" valign="center" transparent="1" foregroundColor="white" backgroundColor="background" />
-    <!-- png -->
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/plugins_png/Weather Logo.png" position="1232,570" size="500,380" />
-    <!-- BExtra -->
-    <eLabel backgroundColor="blue" foregroundColor="white" name="" position="center,968" size="1600,1" zPosition="-10" />
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_menu.png" position="1680,980" size="64,38" />
-    <!-- Clock -->
-    <eLabel backgroundColor="white" position="1597,63" size="1,50" transparent="0" zPosition="-1" />
-    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1604,47" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
-      <convert type="ClockToText">Format:%H:%M</convert>
-    </widget>
-    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="white" halign="right" position="1444,86" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%e. %b</convert>
-    </widget>
-    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="white" halign="right" position="1444,58" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%A</convert>
-    </widget>
   </screen>
 
 
