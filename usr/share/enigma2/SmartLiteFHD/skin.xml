@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <skin>
-  <!-- SmartLiteFHD Skin V1.75 by SkinMania for Octagon -->
+  <!-- SmartLiteFHD Skin V1.85 by SkinMania for Octagon -->
   <!-- Recommended to use with XPicons (220x132) -->
   <!-- You are not allowed to modify and redistribute SmartLiteFHD Skin and all graphics -->
   <output id="0">
@@ -4187,6 +4187,29 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
       <convert type="ClockToText">Format:%A</convert>
     </widget>
   </screen>
+  <screen name="MessageBoxWizard" title="Message Wizard..." backgroundColor="ABackground" position="center,450" size="850,10" zPosition="10" flags="wfBorder">&gt;
+    <eLabel name="underline" position="0,0" size="1480,1" backgroundColor="Red" /><widget name="text" position="90,0" size="900,0" font="Regular2;32" valign="center" halign="left" backgroundColor="ABackground" foregroundColor="AForeground" /><widget name="ErrorPixmap" pixmap="SmartLiteFHD/border/attention-53.png" position="15,20" size="80,80" alphatest="blend" /><widget name="QuestionPixmap" pixmap="SmartLiteFHD/border/question-53.png" position="15,20" size="80,80" alphatest="blend" /><widget name="InfoPixmap" pixmap="SmartLiteFHD/border/info-53.png" position="15,20" size="80,80" alphatest="blend" /><widget name="list" position="30,100" size="900,350" itemHeight="47" font="Regular2;30" scrollbarMode="showOnDemand" backgroundColorSelected="blue" foregroundColorSelected="AForeground" backgroundColor="ABackground" foregroundColor="AForeground" transparent="1" /><applet type="onLayoutFinish">
+from enigma import eSize, ePoint, quitMainloop
+orgwidth = self.instance.size().width()
+orgpos = self.instance.position()
+textsize = self["text"].getSize()
+textsize = (textsize[0] + 80, textsize[1] + 80)
+offset = 30
+if self.type == self.TYPE_YESNO:
+	offset = 100
+wsizex = textsize[0] + 80
+wsizey = textsize[1] + offset
+if (700 &gt; wsizex):
+	wsizex = 800
+wsize = (wsizex, wsizey)
+self.instance.resize(eSize(*wsize))
+self["text"].instance.resize(eSize(*textsize))
+listsize = (wsizex + 30, 200)
+self["list"].instance.move(ePoint(10, textsize[1]))
+self["list"].instance.resize(eSize(*listsize))
+newwidth = wsize[0]
+self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
+</applet></screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="NetworkWizard" position="center,center" size="1920,1080" title="Network Wizard...">
     <panel name="Wizard" />
   </screen>
