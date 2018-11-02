@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <skin>
-  <!-- SmartLiteFHD Skin V1.80 by SkinMania for Octagon -->
+  <!-- SmartLiteFHD Skin V1.90 by SkinMania for Octagon -->
   <!-- Recommended to use with XPicons (220x132) -->
   <!-- You are not allowed to modify and redistribute SmartLiteFHD Skin and all graphics -->
   <output id="0">
@@ -4371,21 +4371,21 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   <!-- MultiBoot -->
   <screen name="MultiBootStartup" title="MultiBoot STARTUP Selector" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <!-- Background -->
-    <eLabel backgroundColor="EL_Background" name="" position="center,center" size="1100,410" zPosition="-11" />
-    <eLabel backgroundColor="Red" position="center,400" size="1100,3" zPosition="-9" foregroundColor="white" />
+    <eLabel backgroundColor="EL_Background" name="" position="center,center" size="1040,410" zPosition="-11" />
+    <eLabel backgroundColor="Red" position="center,400" size="1040,3" zPosition="-9" foregroundColor="white" />
     <!-- Widget -->
-    <widget source="Title" render="Label" position="center,340" size="1050,55" font="FHD; 38" backgroundColor="EL_Background" foregroundColor="white" transparent="1" halign="left" valign="center" />
-    <widget source="config" render="Label" itemHeight="50" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="center,425" size="1050,250" transparent="1" zPosition="3" />
+    <widget source="Title" render="Label" position="center,340" size="990,55" font="FHD; 38" backgroundColor="EL_Background" foregroundColor="white" transparent="1" halign="left" valign="center" />
+    <widget source="config" render="Label" itemHeight="50" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="center,420" size="990,250" transparent="1" zPosition="3" />
     <!-- ButtonExtra -->
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_leftright.png" position="1421,695" size="64,38" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_leftright.png" position="1391,695" size="64,38" />
     <!-- Buttons -->
     <eLabel backgroundColor="blue" foregroundColor="EL_Background" name="" position="center,685" size="1050,1" zPosition="-10" />
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="435,695" size="40,40" />
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="755,695" size="40,40" />
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/yellow.png" position="1075,695" size="40,40" />
-    <widget source="key_red" render="Label" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="480,695" size="270,40" transparent="1" zPosition="1" />
-    <widget source="key_green" render="Label" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="800,695" size="270,40" transparent="1" zPosition="1" />
-    <widget source="key_yellow" render="Label" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="1120,695" size="270,40" transparent="1" zPosition="1" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="465,695" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="765,695" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/yellow.png" position="1065,695" size="40,40" />
+    <widget source="key_red" render="Label" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="510,695" size="250,40" transparent="1" zPosition="1" />
+    <widget source="key_green" render="Label" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="810,695" size="250,40" transparent="1" zPosition="1" />
+    <widget source="key_yellow" render="Label" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="1110,695" size="260,40" transparent="1" zPosition="1" />
   </screen>
   <screen name="MultiBootStartupOPT" title="MultiBoot STARTUP Selector" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <!-- Background -->
