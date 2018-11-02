@@ -221,7 +221,7 @@ class MSNWeatherPlugin(Screen):
 					self["weekday%s" % index].text = "%s\n%s" % (item.day, time.strftime("%d. %b",c))
 					lowTemp = item.low
 					highTemp = item.high
-					self["weekday%s_temp" % index].text = "%s°%s|%s°%s\n%s" % (highTemp, self.weatherData.degreetype, lowTemp, self.weatherData.degreetype, item.skytextday)
+					self["weekday%s_temp" % index].text = "%s°%s | %s°%s\n%s" % (highTemp, self.weatherData.degreetype, lowTemp, self.weatherData.degreetype, item.skytextday)
 		
 		if self.weatherPluginEntryIndex == 1 and WeatherMSNComp is not None:
 			WeatherMSNComp.updateWeather(self.weatherData, result, errortext)

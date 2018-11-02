@@ -146,7 +146,6 @@
 
 
     <!-- <panel name="Wizard" /> -->
-	<screen name="Wizard">
       <!-- Backg -->
       <eLabel backgroundColor="EL_Background" position="100,center" size="1420,900" zPosition="-20" />
       <eLabel backgroundColor="EL_New" position="1560,center" size="170,560" zPosition="-50" foregroundColor="white" />
@@ -168,6 +167,8 @@
       <widget name="arrowdown2" pixmap="skin_default/arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
       <widget name="arrowup" pixmap="skin_default/arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
       <widget name="arrowup2" pixmap="skin_default/arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
+      <!-- other -->
+      <ePixmap alphatest="blend" pixmap="SmartLiteFHD/openeight.png" position="1290,939" size="202,45" />
       <!-- Buttons -->
       <eLabel backgroundColor="blue" foregroundColor="white" name="" position="100,930" size="1420,1" zPosition="-10" />
       <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="130,940" size="40,40" />
