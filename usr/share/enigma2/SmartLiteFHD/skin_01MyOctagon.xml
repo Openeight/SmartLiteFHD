@@ -188,10 +188,10 @@
     <eLabel backgroundColor="blue" position="310,545" size="1240,3" zPosition="-9" foregroundColor="white" />
     <widget name="info-local" font="FHD; 32" itemHeight="50" backgroundColor="EL_Background" foregroundColor="white" position="310,580" size="1300,350" transparent="1" zPosition="1" />
     <!-- Buttons -->
-    <widget name="key_red" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="355,985" size="270,40" transparent="1" zPosition="1" />
-    <widget name="key_green" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="675,985" size="270,40" transparent="1" zPosition="1" />
-    <widget name="key_yellow" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="995,985" size="270,40" transparent="1" zPosition="1" />
-    <widget name="key_blue" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="1315,985" size="270,40" transparent="1" zPosition="1" />
+    <widget source="key_red" render="Label" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="355,985" size="270,40" transparent="1" zPosition="1" />
+    <widget source="key_green" render="Label" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="675,985" size="270,40" transparent="1" zPosition="1" />
+    <widget source="key_yellow" render="Label" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="995,985" size="270,40" transparent="1" zPosition="1" />
+    <widget source="key_blue" render="Label" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="1315,985" size="270,40" transparent="1" zPosition="1" />
   </screen>
 
 
@@ -203,10 +203,10 @@
     <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
     <widget name="imageList" font="FHD; 32" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="EL_Foreground" backgroundColor="EL_Background" position="310,155" size="1300,800" transparent="1" zPosition="1" />
     <!-- Buttons -->
-    <widget name="key_red" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="355,985" size="270,40" transparent="1" zPosition="1" />
-    <widget name="key_green" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="675,985" size="270,40" transparent="1" zPosition="1" />
-    <widget name="key_yellow" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="995,985" size="270,40" transparent="1" zPosition="1" />
-    <widget name="key_blue" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="1315,985" size="270,40" transparent="1" zPosition="1" />
+    <widget source="key_red" render="Label" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="355,985" size="270,40" transparent="1" zPosition="1" />
+    <widget source="key_green" render="Label" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="675,985" size="270,40" transparent="1" zPosition="1" />
+    <widget source="key_yellow" render="Label" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="995,985" size="270,40" transparent="1" zPosition="1" />
+    <widget source="key_blue" render="Label" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="1315,985" size="270,40" transparent="1" zPosition="1" />
   </screen>
 
 
