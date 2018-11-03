@@ -146,6 +146,7 @@
 
 
     <!-- <panel name="Wizard" /> -->
+	<screen name="Wizard">
       <!-- Backg -->
       <eLabel backgroundColor="EL_Background" position="100,center" size="1420,900" zPosition="-20" />
       <eLabel backgroundColor="EL_New" position="1560,center" size="170,560" zPosition="-50" foregroundColor="white" />
