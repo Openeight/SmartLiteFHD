@@ -488,6 +488,239 @@
   <!-- CCCCCCCCCCCCCCCCCCCC -->
 
 
+  <!-- CCCam,OsCam -->
+  <!-- CCCam,OsCam -->
+  <screen name="OscamInfoMenu" title="OscamInfo Menu" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080" transparent="0">
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/menu/softcam.png" position="375,165" size="350,350" />
+    <!-- Backg -->
+    <eLabel backgroundColor="EL_Background" position="850,center" size="700,800" zPosition="-21" />
+    <eLabel backgroundColor="EL_New" position="300,140" size="500,520" zPosition="-50" foregroundColor="white" />
+    <eLabel backgroundColor="EL_New" position="300,679" size="500,100" zPosition="-50" foregroundColor="white" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 38" backgroundColor="EL_Background" foregroundColor="white" position="310,505" size="480,145" transparent="1" halign="center" valign="center" />
+    <widget name="mainmenu" itemHeight="50" font="Regular; 32" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="white" backgroundColor="background" position="870,center" size="660,750" zPosition="1" transparent="1" />
+    <!-- Weather -->
+    <eLabel backgroundColor="EL_New" position="300,805" size="500,135" zPosition="-50" foregroundColor="white" />
+    <widget backgroundColor="background" font="FHD; 40" render="Label" position="530,872" size="120,55" source="session.MSNWeather" transparent="1" zPosition="8" halign="right" foregroundColor="white">
+      <convert type="MSNWeather">temperature_current</convert>
+    </widget>
+    <widget backgroundColor="background" font="FHD; 28" render="Label" position="310,881" size="220,45" source="session.MSNWeather" zPosition="8" halign="right" transparent="1" foregroundColor="EL_Blue">
+      <convert type="MSNWeather">temperature_heigh_low,current</convert>
+    </widget>
+    <widget backgroundColor="background" font="FHD; 32" render="Label" position="310,820" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
+      <convert type="MSNWeather">city</convert>
+    </widget>
+    <eLabel backgroundColor="blue" position="310,870" size="340,2" zPosition="-9" foregroundColor="white" />
+    <widget alphatest="blend" render="MSNWeatherPixmap" position="668,810" size="125,125" source="session.MSNWeather" transparent="1" zPosition="8">
+      <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/SmartLiteFHD/WeatherIcon/,png</convert>
+    </widget>
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="637,704" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="644,687" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="484,727" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="484,699" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+  </screen>
+
+  <screen name="OscamInfoConfigScreen" title="OscamInfo Menu" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <!-- Background -->
+    <eLabel backgroundColor="EL_Background" name="" position="center,center" size="1200,660" zPosition="-11" />
+    <eLabel backgroundColor="Red" position="center,290" size="1200,3" zPosition="-9" foregroundColor="white" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" position="center,220" size="1140,58" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" transparent="1" halign="left" valign="center" />
+    <widget name="config" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="center,305" size="1140,350" transparent="1" zPosition="3" />
+    <widget name="status" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="center,665" size="1140,140" transparent="1" valign="center" />
+    <!-- Buttons -->
+    <eLabel backgroundColor="blue" foregroundColor="EL_Background" name="" position="center,810" size="1200,1" zPosition="-10" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="410,820" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="710,820" size="40,40" />
+    <widget source="key_red" render="Label" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="455,820" size="250,40" transparent="1" zPosition="1" />
+    <widget source="key_green" render="Label" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="755,820" size="250,40" transparent="1" zPosition="1" />
+  </screen>
+
+  <screen name="oscInfo" title="Client Info" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080" transparent="0">
+    <!-- Backg -->
+    <eLabel backgroundColor="EL_Background" position="160,50" size="1600,980" zPosition="-21" />
+    <eLabel backgroundColor="Red" position="160,130" size="1600,3" zPosition="-9" foregroundColor="white" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="210,60" size="1200,58" halign="left" transparent="1" />
+    <widget name="output" itemHeight="50" font="Regular; 32" scrollbarMode="showOnDemand" foregroundColor="white" backgroundColor="background" position="210,center" size="1500,750" zPosition="1" transparent="1" />
+    <!-- Buttons -->
+    <eLabel backgroundColor="blue" foregroundColor="EL_Background" name="" position="160,978" size="1600,1" zPosition="-10" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_ok.png" position="1550,986" size="64,38" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_exit.png" position="1645,986" size="64,38" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="210,985" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="530,985" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/yellow.png" position="850,985" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/blue.png" position="1170,985" size="40,40" />
+    <widget backgroundColor="EL_Background" font="Regular2; 28" halign="left" position="255,985" size="270,40" name="key_red" transparent="1" zPosition="1" foregroundColor="white" />
+    <widget backgroundColor="EL_Background" font="Regular2; 28" halign="left" position="575,985" size="270,40" name="key_green" transparent="1" zPosition="1" foregroundColor="white" />
+    <widget backgroundColor="EL_Background" font="Regular2; 28" halign="left" position="895,985" size="270,40" name="key_yellow" transparent="1" zPosition="1" foregroundColor="white" />
+    <widget backgroundColor="EL_Background" font="Regular2; 28" halign="left" position="1215,985" size="270,40" name="key_blue" transparent="1" zPosition="1" foregroundColor="white" />
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="1597,63" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1604,47" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="white" halign="right" position="1444,86" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="white" halign="right" position="1444,58" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+  </screen>
+
+  <screen name="oscECMInfo" title="OscamECM Info" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080" transparent="0">
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/menu/softcam.png" position="375,165" size="350,350" />
+    <!-- Backg -->
+    <eLabel backgroundColor="EL_Background" position="850,center" size="900,800" zPosition="-21" />
+    <eLabel backgroundColor="EL_New" position="300,140" size="500,520" zPosition="-50" foregroundColor="white" />
+    <eLabel backgroundColor="EL_New" position="300,679" size="500,100" zPosition="-50" foregroundColor="white" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 38" backgroundColor="EL_Background" foregroundColor="white" position="310,505" size="480,145" transparent="1" halign="center" valign="center" />
+    <widget name="output" itemHeight="50" font="Regular; 32" scrollbarMode="showOnDemand" foregroundColor="white" backgroundColor="background" position="870,center" size="850,750" zPosition="1" transparent="1" />
+    <!-- Weather -->
+    <eLabel backgroundColor="EL_New" position="300,805" size="500,135" zPosition="-50" foregroundColor="white" />
+    <widget backgroundColor="background" font="FHD; 40" render="Label" position="530,872" size="120,55" source="session.MSNWeather" transparent="1" zPosition="8" halign="right" foregroundColor="white">
+      <convert type="MSNWeather">temperature_current</convert>
+    </widget>
+    <widget backgroundColor="background" font="FHD; 28" render="Label" position="310,881" size="220,45" source="session.MSNWeather" zPosition="8" halign="right" transparent="1" foregroundColor="EL_Blue">
+      <convert type="MSNWeather">temperature_heigh_low,current</convert>
+    </widget>
+    <widget backgroundColor="background" font="FHD; 32" render="Label" position="310,820" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
+      <convert type="MSNWeather">city</convert>
+    </widget>
+    <eLabel backgroundColor="blue" position="310,870" size="340,2" zPosition="-9" foregroundColor="white" />
+    <widget alphatest="blend" render="MSNWeatherPixmap" position="668,810" size="125,125" source="session.MSNWeather" transparent="1" zPosition="8">
+      <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/SmartLiteFHD/WeatherIcon/,png</convert>
+    </widget>
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="637,704" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="644,687" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="484,727" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="484,699" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+  </screen>
+
+  <screen name="oscReaderStats" title="Client Info" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
+    <!-- Backg1 -->
+    <eLabel backgroundColor="EL_Background" position="center,center" size="1800,960" zPosition="-20" />
+    <eLabel backgroundColor="Red" position="center,140" size="1800,3" zPosition="-9" foregroundColor="white" />
+    <eLabel backgroundColor="blue" foregroundColor="white" name="" position="60,955" size="1800,1" zPosition="-10" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" position="80,70" size="1470,65" font="FHD; 42" halign="left" backgroundColor="EL_Background" foregroundColor="white" transparent="1" />
+    <widget source="output" render="Listbox" backgroundColor="EL_Background" foregroundColor="white" position="center,165" size="1740,765" scrollbarMode="showOnDemand" transparent="1">
+      <convert type="TemplatedMultiContent">
+			{"templates":
+				{"default": (45,[
+					MultiContentEntryText(pos = (5, 1), size = (190, 45), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is caid
+					MultiContentEntryText(pos = (200, 1), size = (100, 24), font=0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is csystem
+					MultiContentEntryText(pos = (305, 1), size = (250, 24), font=0, flags = RT_HALIGN_LEFT, text = 2), # index 2 is hop 1
+					MultiContentEntryText(pos = (560, 1), size = (160, 24), font=0, flags = RT_HALIGN_LEFT, text = 3), # index 3 is hop 2
+					MultiContentEntryText(pos = (720, 1), size = (160, 24), font=0, flags = RT_HALIGN_LEFT, text = 4), # index 4 is hop 3
+					MultiContentEntryText(pos = (880, 1), size = (180, 24), font=0, flags = RT_HALIGN_LEFT, text = 5), # index 5 is hop 4
+					MultiContentEntryText(pos = (1240, 1), size = (180, 24), font=0, flags = RT_HALIGN_LEFT, text = 6), # index 6 is hop 5
+					MultiContentEntryText(pos = (1420, 1), size = (180, 24), font=0, flags = RT_HALIGN_LEFT, text = 7), # index 7 is sum of cards for caid
+					]),
+				"HD": (45,[
+				        MultiContentEntryText(pos = (5, 1), size = (200, 24), font=1, flags = RT_HALIGN_LEFT, text = 0), # index 0 is caid
+					MultiContentEntryText(pos = (200, 1), size = (70, 24), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 1 is csystem
+					MultiContentEntryText(pos = (300, 1), size = (220, 24), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is hop 1
+					MultiContentEntryText(pos = (540, 1), size = (80, 24), font=1, flags = RT_HALIGN_LEFT, text = 3), # index 3 is hop 2
+					MultiContentEntryText(pos = (630, 1), size = (80, 24), font=1, flags = RT_HALIGN_LEFT, text = 4), # index 4 is hop 3
+					MultiContentEntryText(pos = (720, 1), size = (130, 24), font=1, flags = RT_HALIGN_LEFT, text = 5), # index 5 is hop 4
+					MultiContentEntryText(pos = (840, 1), size = (130, 24), font=1, flags = RT_HALIGN_LEFT, text = 6), # index 6 is hop 5
+					MultiContentEntryText(pos = (970, 1), size = (100, 24), font=1, flags = RT_HALIGN_LEFT, text = 7), # index 7 is sum of cards for caid
+				]),
+				},
+				"fonts": [gFont("Regular", 24),gFont("Regular", 26),gFont("Regular", 30),gFont("Regular", 28)],
+				"itemHeight": 45
+				}
+      </convert>
+    </widget>
+    <!-- Buttons -->
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_exit.png" position="1754,971" size="64,38" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_ok.png" position="1680,971" size="64,38" />
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="1707,74" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1714,57" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1554,97" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1554,69" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+  </screen>
+
+  <screen name="oscEntitlements" title="Client Info" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
+    <!-- Backg1 -->
+    <eLabel backgroundColor="EL_Background" position="center,center" size="1800,960" zPosition="-20" />
+    <eLabel backgroundColor="Red" position="center,140" size="1800,3" zPosition="-9" foregroundColor="white" />
+    <eLabel backgroundColor="blue" foregroundColor="white" name="" position="60,955" size="1800,1" zPosition="-10" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" position="80,70" size="1470,65" font="FHD; 42" halign="left" backgroundColor="EL_Background" foregroundColor="white" transparent="1" />
+    <widget source="output" render="Listbox" backgroundColor="EL_Background" foregroundColor="white" position="center,165" size="1740,765" scrollbarMode="showOnDemand" transparent="1">
+      <convert type="TemplatedMultiContent">
+				{"templates":
+					{"default": (60,[
+							MultiContentEntryText(pos = (0, 1), size = (80, 24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is caid
+							MultiContentEntryText(pos = (90, 1), size = (150, 24), font=0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is csystem
+							MultiContentEntryText(pos = (250, 1), size = (40, 24), font=0, flags = RT_HALIGN_LEFT, text = 2), # index 2 is hop 1
+							MultiContentEntryText(pos = (290, 1), size = (40, 24), font=0, flags = RT_HALIGN_LEFT, text = 3), # index 3 is hop 2
+							MultiContentEntryText(pos = (330, 1), size = (40, 24), font=0, flags = RT_HALIGN_LEFT, text = 4), # index 4 is hop 3
+							MultiContentEntryText(pos = (370, 1), size = (40, 24), font=0, flags = RT_HALIGN_LEFT, text = 5), # index 5 is hop 4
+							MultiContentEntryText(pos = (410, 1), size = (40, 24), font=0, flags = RT_HALIGN_LEFT, text = 6), # index 6 is hop 5
+							MultiContentEntryText(pos = (480, 1), size = (70, 24), font=0, flags = RT_HALIGN_LEFT, text = 7), # index 7 is sum of cards for caid
+							MultiContentEntryText(pos = (550, 1), size = (80, 24), font=0, flags = RT_HALIGN_LEFT, text = 8), # index 8 is reshare
+							MultiContentEntryText(pos = (0, 25), size = (700, 24), font=1, flags = RT_HALIGN_LEFT, text = 9), # index 9 is providers
+							]),
+					"HD": (60,[
+							MultiContentEntryText(pos = (0, 1), size = (80, 24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is caid
+							MultiContentEntryText(pos = (90, 1), size = (150, 24), font=0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is csystem
+							MultiContentEntryText(pos = (250, 1), size = (40, 24), font=0, flags = RT_HALIGN_LEFT, text = 2), # index 2 is hop 1
+							MultiContentEntryText(pos = (290, 1), size = (40, 24), font=0, flags = RT_HALIGN_LEFT, text = 3), # index 3 is hop 2
+							MultiContentEntryText(pos = (330, 1), size = (40, 24), font=0, flags = RT_HALIGN_LEFT, text = 4), # index 4 is hop 3
+							MultiContentEntryText(pos = (370, 1), size = (40, 24), font=0, flags = RT_HALIGN_LEFT, text = 5), # index 5 is hop 4
+							MultiContentEntryText(pos = (410, 1), size = (40, 24), font=0, flags = RT_HALIGN_LEFT, text = 6), # index 6 is hop 5
+							MultiContentEntryText(pos = (480, 1), size = (70, 24), font=0, flags = RT_HALIGN_LEFT, text = 7), # index 7 is sum of cards for caid
+							MultiContentEntryText(pos = (550, 1), size = (80, 24), font=0, flags = RT_HALIGN_LEFT, text = 8), # index 8 is reshare
+							MultiContentEntryText(pos = (630, 1), size = (1024, 50), font=1, flags = RT_HALIGN_LEFT, text = 9), # index 9 is providers
+							]),
+					},
+					"fonts": [gFont("Regular",18),gFont("Regular",14),gFont("Regular",24),gFont("Regular",20)],
+					"itemHeight": 60
+				}
+				</convert>
+    </widget>
+    <!-- Buttons -->
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_exit.png" position="1754,971" size="64,38" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_ok.png" position="1680,971" size="64,38" />
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="1707,74" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1714,57" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1554,97" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1554,69" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+  </screen>
+
+
   <!-- CacheFlush -->
   <!-- CacheFlush -->
   <screen name="CacheFlushSetupMenu" title="" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
@@ -1939,13 +2172,12 @@
 
   <screen name="JobProgressView" title="Job Progress" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <!-- Back -->
-    <eLabel backgroundColor="EL_Background" foregroundColor="EL_Background" name="" position="center,center" size="1050,300" zPosition="-20" />
-    <eLabel backgroundColor="Red" position="435,470" size="1050,3" zPosition="-14" foregroundColor="white" />
+    <eLabel backgroundColor="EL_Background" foregroundColor="EL_Background" name="" position="center,center" size="1050,240" zPosition="-20" />
+    <eLabel backgroundColor="Red" position="center,500" size="1050,3" zPosition="-14" foregroundColor="white" />
     <!-- Widget -->
-    <widget source="Title" render="Label" position="460,400" size="1000,58" font="FHD; 42" backgroundColor="EL_Background" transparent="1" />
-    <widget source="titleText" backgroundColor="EL_Background" font="FHD; 32" foregroundColor="EL_Foreground" position="460,485" size="1000,50" transparent="1" />
-    <widget name="downloadProgress" backgroundColor="EL_Background" borderColor="grey" borderWidth="1" foregroundColor="blue" position="460,560" size="750,25" transparent="1" />
-    <widget source="downloadProgressText" backgroundColor="EL_Background" font="FHD; 32" foregroundColor="EL_Foreground" position="460,610" size="1000,50" transparent="1" />
+    <widget source="titleText" render="Label" position="center,430" size="1000,58" font="FHD; 42" backgroundColor="EL_Background" transparent="1" />
+    <widget name="downloadProgress" backgroundColor="EL_Background" borderColor="grey" borderWidth="1" foregroundColor="blue" position="460,530" size="750,30" transparent="1" />
+    <widget source="downloadProgressText" render="Label" backgroundColor="EL_Background" font="Regular2; 32" foregroundColor="EL_Foreground" position="center,580" size="1000,50" transparent="1" />
   </screen>
 
 
