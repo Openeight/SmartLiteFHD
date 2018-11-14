@@ -122,7 +122,7 @@
     <panel name="Backg" />
     <panel name="Clock" />
     <!-- Widget -->
-    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="400,60" size="950,58" transparent="1" />
     <widget source="list" render="Listbox" font="EL_Standard; 30" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="white" position="310,155" size="1300,595" transparent="1">
       <convert type="TemplatedMultiContent">
                     {"template": [
@@ -150,6 +150,8 @@
     <eLabel text="Open Source :" font="FHD; 38" backgroundColor="EL_Background" foregroundColor="white" halign="right" position="1260,785" size="350,50" transparent="1" />
     <eLabel text="https://github.com/Openeight" font="FHD; 26" backgroundColor="EL_Background" foregroundColor="white" halign="right" position="1160,845" size="450,45" transparent="1" />
     <eLabel text="https://github.com/oe-alliance" font="FHD; 26" backgroundColor="EL_Background" foregroundColor="white" halign="right" position="1160,890" size="450,45" transparent="1" />
+    <!-- icon -->
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/menu/oc_mini.png" position="310,58" size="68,65" />
     <!-- Buttons -->
     <eLabel backgroundColor="EL_Selection" foregroundColor="EL_Background" name="" position="260,978" size="1400,1" zPosition="-10" />
     <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="310,985" size="40,40" />
@@ -181,7 +183,7 @@
   <screen name="FlashOnline" title="Flash Online" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <panel name="Backg" />
     <panel name="Clock" />
-    <panel name="BS4" />
+    <panel name="BN4" />
     <!-- Widget -->
     <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
     <widget name="info-online" font="FHD; 32" itemHeight="50" backgroundColor="EL_Background" foregroundColor="white" position="310,155" size="1300,350" transparent="1" zPosition="1" />
@@ -198,7 +200,7 @@
   <screen name="doFlashImage" title="Flash On the fly (select a image)" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <panel name="Backg" />
     <panel name="Clock" />
-    <panel name="BS4" />
+    <panel name="BN4" />
     <!-- Widget -->
     <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
     <widget name="imageList" font="FHD; 32" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="EL_Foreground" backgroundColor="EL_Background" position="310,155" size="1300,800" transparent="1" zPosition="1" />
