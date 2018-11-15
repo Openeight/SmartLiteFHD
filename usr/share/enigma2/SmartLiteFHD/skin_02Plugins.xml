@@ -825,8 +825,8 @@
   </screen>
 
 
-  <!--  Cool TV  -->
-  <!--  Cool TV  -->
+  <!-- Cool TV -->
+  <!-- Cool TV -->
   <screen name="CoolChannelGuide" position="0,0" size="1920,1080" backgroundColor="transparent" title="Cool Channel Guide" flags="wfNoBorder">
     <panel name="clock_buttons_icons" />
     <!-- Backg -->
@@ -2520,64 +2520,6 @@
     <!-- Widget -->
     <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
     <widget name="list" itemHeight="85" font="FHD;32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="310,155" size="1300,765" transparent="1" zPosition="3" />
-  </screen>
-
-
-  <!-- OsCam,CCCam -->
-  <screen name="OscamInfoMenu" title="OscamInfo Menu" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080" transparent="0">
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/menu/setup2.png" position="375,175" size="350,350" />
-    <!-- Backg -->
-    <eLabel backgroundColor="EL_Background" position="850,center" size="700,780" zPosition="-21" />
-    <eLabel backgroundColor="EL_New" position="300,150" size="500,500" zPosition="-50" foregroundColor="white" />
-    <eLabel backgroundColor="EL_New" position="300,679" size="500,100" zPosition="-50" foregroundColor="white" />
-    <!-- Widget -->
-    <widget source="Title" render="Label" font="FHD; 45" backgroundColor="EL_Background" foregroundColor="white" position="310,515" size="480,125" transparent="1" halign="center" valign="center" />
-    <widget name="mainmenu" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="white" backgroundColor="background" position="870,188" size="660,700" zPosition="1" transparent="1" />
-    <!-- Clock -->
-    <eLabel backgroundColor="white" position="637,704" size="1,50" transparent="0" zPosition="-1" />
-    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="644,687" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
-      <convert type="ClockToText">Format:%H:%M</convert>
-    </widget>
-    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="484,727" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%e. %b</convert>
-    </widget>
-    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="484,699" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%A</convert>
-    </widget>
-  </screen>
-
-  <screen name="OscamInfoConfigScreen" title="OscamInfo Menu" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-    <!-- Background -->
-    <eLabel backgroundColor="EL_Background" name="" position="center,center" size="1200,660" zPosition="-11" />
-    <eLabel backgroundColor="Red" position="center,290" size="1200,3" zPosition="-9" foregroundColor="white" />
-    <!-- Widget -->
-    <widget source="Title" render="Label" position="center,220" size="1140,58" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" transparent="1" halign="left" valign="center" />
-    <widget name="config" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="center,305" size="1140,350" transparent="1" zPosition="3" />
-    <widget name="status" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="center,665" size="1140,140" transparent="1" valign="center" />
-    <!-- Buttons -->
-    <eLabel backgroundColor="blue" foregroundColor="EL_Background" name="" position="center,810" size="1200,1" zPosition="-10" />
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="410,820" size="40,40" />
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="710,820" size="40,40" />
-    <widget source="key_red" render="Label" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="455,820" size="250,40" transparent="1" zPosition="1" />
-    <widget source="key_green" render="Label" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="755,820" size="250,40" transparent="1" zPosition="1" />
-  </screen>
-
-  <screen name="oscInfo" title="Client Info" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080" transparent="0">
-    <!-- Background -->
-    <eLabel backgroundColor="EL_Background" name="" position="center,center" size="1200,660" zPosition="-11" />
-    <eLabel backgroundColor="Red" position="center,290" size="1200,3" zPosition="-9" foregroundColor="white" />
-    <!-- Widget -->
-    <widget source="Title" render="Label" position="center,220" size="1140,58" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" transparent="1" halign="left" valign="center" />
-    <widget name="output" itemHeight="50" font="FHD; 32" scrollbarMode="showNever" foregroundColor="white" backgroundColor="background" position="center,305" size="1140,550" zPosition="1" transparent="1" />
-  </screen>
-
-  <screen name="oscECMInfo" title="OscamECM Info" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080" transparent="0">
-    <!-- Background -->
-    <eLabel backgroundColor="EL_Background" name="" position="center,center" size="1200,660" zPosition="-11" />
-    <eLabel backgroundColor="Red" position="center,290" size="1200,3" zPosition="-9" foregroundColor="white" />
-    <!-- Widget -->
-    <widget source="Title" render="Label" position="center,220" size="1140,58" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" transparent="1" halign="left" valign="center" />
-    <widget name="output" itemHeight="50" font="FHD; 32" scrollbarMode="showNever" foregroundColor="white" backgroundColor="background" position="center,305" size="1140,550" zPosition="1" transparent="1" />
   </screen>
 
 
