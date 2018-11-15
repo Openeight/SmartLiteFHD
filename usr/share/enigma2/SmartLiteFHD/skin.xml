@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <skin>
-  <!-- SmartLiteFHD Skin V2.20 by SkinMania for Octagon -->
+  <!-- SmartLiteFHD Skin V2.20a by SkinMania for Octagon -->
   <!-- Recommended to use with XPicons (220x132) -->
   <!-- You are not allowed to modify and redistribute SmartLiteFHD Skin and all graphics -->
   <output id="0">
@@ -1725,24 +1725,9 @@
     <widget alphatest="off" name="Dishpixmap" pixmap="SmartLiteFHD/skin_default/icons/dish.png" position="0,0" size="256,256" />
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="DVDPlayer" position="0,0" size="1920,1080" title="InfoBar">
-    <!-- Clock -->
-    <eLabel backgroundColor="EL_Background" position="1687,73" size="150,68" transparent="0" zPosition="-12" />
-    <eLabel backgroundColor="dark" position="1530,73" size="157,68" transparent="0" zPosition="-12" foregroundColor="white" />
-    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1694,65" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
-      <convert type="ClockToText">Format:%H:%M</convert>
-    </widget>
-    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="white" halign="right" position="1534,106" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%e. %b</convert>
-    </widget>
-    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="white" halign="right" position="1534,78" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%A</convert>
-    </widget>
     <!-- Background -->
-    <eLabel backgroundColor="EL_Background" name="InfoBar" position="center,902" size="1720,128" zPosition="-11" />
-    <eLabel backgroundColor="white" name="" position="center,900" size="1720,2" zPosition="-10" />
-    <eLabel backgroundColor="white" name="" position="100,900" size="2,132" zPosition="-10" />
-    <eLabel backgroundColor="white" name="" position="center,1030" size="1720,2" zPosition="-10" />
-    <eLabel backgroundColor="white" name="" position="1820,900" size="2,132" zPosition="-10" />
+    <eLabel backgroundColor="EL_Background" name="InfoBar" position="center,895" size="1920,185" zPosition="-11" />
+    <eLabel backgroundColor="Red" name="" position="center,897" size="1920,1" zPosition="-10" foregroundColor="white" />
     <!-- Widget -->
     <widget backgroundColor="EL_Background" font="Bold; 34" halign="center" noWrap="1" position="270,915" render="Label" size="1200,55" source="session.CurrentService" transparent="1">
       <convert type="ServiceName">Name</convert>
@@ -1766,6 +1751,8 @@
     <widget name="audioLabel" position="270,987" size="200,40" font="Regular; 28" backgroundColor="EL_Background" foregroundColor="EL_Foreground" transparent="1" halign="center" />
     <widget name="subtitleLabel" position="470,987" size="200,40" font="Regular; 28" backgroundColor="EL_Background" foregroundColor="EL_Foreground" transparent="1" halign="center" />
     <widget name="chapterLabel" position="700,987" size="350,40" font="Regular; 28" backgroundColor="EL_Background" foregroundColor="EL_Foreground" transparent="1" halign="center" />
+    <!-- Clock -->
+    <panel name="Clock2" />
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="EventView" position="center,center" size="1920,1080" title="Eventview">
     <panel name="Backg" />
