@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <skin>
-  <!-- SmartLiteFHD Skin V3.10 by SkinMania for Octagon -->
+  <!-- SmartLiteFHD Skin V3.20 by SkinMania for Octagon -->
   <!-- Recommended to use with XPicons (220x132) -->
   <!-- You are not allowed to modify and redistribute SmartLiteFHD Skin and all graphics -->
   <output id="0">
@@ -1767,33 +1767,55 @@
     <panel name="Clock2" />
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="EventView" position="center,center" size="1920,1080" title="Eventview">
-    <panel name="Backg" />
-    <panel name="Clock" />
-    <panel name="BS4" />
+    <!-- Backg -->
+    <eLabel backgroundColor="EL_Background" position="160,50" size="1600,980" zPosition="-21" />
+    <eLabel backgroundColor="Red" position="160,130" size="1600,3" zPosition="-9" foregroundColor="white" />
     <!-- Widget -->
-    <eLabel text="EventView" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1000,58" transparent="1" />
-    <widget name="epg_description" itemHeight="50" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="white" position="310,250" size="1300,700" transparent="1" />
-    <widget name="datetime" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="center" position="1026,192" size="200,45" transparent="1" valign="center" />
-    <widget source="Event" render="Label" backgroundColor="EL_Background" font="FHD; 30" foregroundColor="white" halign="right" noWrap="1" position="1265,192" size="90,45" transparent="1" valign="center">
+    <eLabel text="EventView" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="210,60" size="1000,58" transparent="1" />
+    <widget name="epg_description" itemHeight="50" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="white" position="center,250" size="1500,700" transparent="1" />
+    <widget name="datetime" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="center" position="1076,192" size="250,45" transparent="1" valign="center" />
+    <widget source="Event" render="Label" backgroundColor="EL_Background" font="FHD; 30" foregroundColor="white" halign="right" noWrap="1" position="1365,192" size="90,45" transparent="1" valign="center">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Format:%H:%M</convert>
     </widget>
-    <eLabel backgroundColor="EL_Background" font="Regular2; 34" foregroundColor="EL_Blue" halign="center" noWrap="1" position="1360,192" size="15,45" text="-" transparent="1" valign="center" />
-    <widget source="Event" render="Label" backgroundColor="EL_Background" font="FHD; 30" foregroundColor="white" halign="left" noWrap="1" position="1380,192" size="90,45" transparent="1" valign="center">
+    <eLabel backgroundColor="EL_Background" font="Regular2; 34" foregroundColor="EL_Blue" halign="center" noWrap="1" position="1460,192" size="15,45" text="-" transparent="1" valign="center" />
+    <widget source="Event" render="Label" backgroundColor="EL_Background" font="FHD; 30" foregroundColor="white" halign="left" noWrap="1" position="1480,192" size="90,45" transparent="1" valign="center">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Format:%H:%M</convert>
     </widget>
-    <widget backgroundColor="EL_Background" font="FHD; 38" halign="left" name="channel" position="310,143" size="950,55" transparent="1" foregroundColor="white" />
-    <widget source="Event" render="Label" position="1470,193" size="140,45" transparent="1" zPosition="1" backgroundColor="EL_Background" font="FHD; 30" halign="right" foregroundColor="white">
+    <widget backgroundColor="EL_Background" font="FHD; 38" halign="left" name="channel" position="210,143" size="950,55" transparent="1" foregroundColor="white" />
+    <widget source="Event" render="Label" position="1570,193" size="140,45" transparent="1" zPosition="1" backgroundColor="EL_Background" font="FHD; 30" halign="right" foregroundColor="white">
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
-    <widget source="Event" render="Progress" borderColor="white" borderWidth="1" backgroundColor="blue" foregroundColor="blue" position="310,208" size="650,15" transparent="1" zPosition="1">
+    <widget source="Event" render="Progress" borderColor="white" borderWidth="1" backgroundColor="blue" foregroundColor="blue" position="210,208" size="800,15" transparent="1" zPosition="1">
       <convert type="EventTime">Progress</convert>
     </widget>
     <!-- ButtonExtra -->
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/left.png" position="1000,202" size="26,26" />
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/right.png" position="1226,202" size="26,26" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/left.png" position="1050,202" size="26,26" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/right.png" position="1326,202" size="26,26" />
+    <!-- Buttons -->
+    <eLabel backgroundColor="blue" foregroundColor="EL_Background" name="" position="160,978" size="1600,1" zPosition="-10" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_epg.png" position="1645,986" size="64,38" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="210,985" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="530,985" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/yellow.png" position="850,985" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/blue.png" position="1170,985" size="40,40" />
+    <widget backgroundColor="EL_Background" font="Regular2; 28" halign="left" position="255,985" size="270,40" source="key_red" render="Label" transparent="1" zPosition="1" foregroundColor="white" />
+    <widget backgroundColor="EL_Background" font="Regular2; 28" halign="left" position="575,985" size="270,40" source="key_green" render="Label" transparent="1" zPosition="1" foregroundColor="white" />
+    <widget backgroundColor="EL_Background" font="Regular2; 28" halign="left" position="895,985" size="270,40" source="key_yellow" render="Label" transparent="1" zPosition="1" foregroundColor="white" />
+    <widget backgroundColor="EL_Background" font="Regular2; 28" halign="left" position="1215,985" size="270,40" source="key_blue" render="Label" transparent="1" zPosition="1" foregroundColor="white" />
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="1597,63" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1604,47" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="white" halign="right" position="1444,86" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="white" halign="right" position="1444,58" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="EPGSelection" position="center,center" size="1920,1080" title="EPG Selection">
     <!-- Backg -->
@@ -3347,8 +3369,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <eLabel backgroundColor="EL_New" position="200,679" size="500,100" zPosition="-50" foregroundColor="white" />
     <ePixmap alphatest="blend" pixmap="SmartLiteFHD/menu/plugin.png" position="275,125" size="350,350" />
     <!-- Widget -->
-    <widget render="Label" source="Title" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="210,425" size="480,125" transparent="1" valign="center" zPosition="3" halign="center" />
-    <widget name="text" position="210,555" size="480,90" font="Regular2; 26" backgroundColor="EL_Background" foregroundColor="green_light" transparent="1" halign="center" valign="top" zPosition="1" />
+    <widget render="Label" source="Title" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="210,465" size="480,175" transparent="1" valign="center" zPosition="3" halign="center" />
+    <widget name="text" position="770,122" size="960,120" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="white" transparent="1" halign="center" valign="center" zPosition="-1" />
     <widget name="list" itemHeight="75" font="EL_Standard; 24" backgroundColor="EL_Background" enableWrapAround="1" position="770,center" scrollbarMode="showOnDemand" size="960,836" transparent="1" zPosition="10" />
     <!-- Extra -->
     <eLabel backgroundColor="EL_Background" position="750,990" size="1000,45" zPosition="-50" />
@@ -3852,7 +3874,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget source="Title" render="Label" font="FHD; 38" backgroundColor="EL_Background" foregroundColor="white" position="center,142" size="1300,55" transparent="1" />
     <widget name="config" itemHeight="50" font="FHD; 32" backgroundColor="EL_Background" enableWrapAround="1" position="center,218" scrollbarMode="showOnDemand" size="1300,750" transparent="1" />
     <eLabel backgroundColor="white" position="310,205" size="1300,1" zPosition="-9" foregroundColor="white" />
-    <widget name="HelpWindow" position="275,550" size="1,1" zPosition="10" />
+    <widget name="HelpWindow" position="275,600" size="1,1" zPosition="10" />
   </screen>
   <screen name="SkinSelector" title="Skin Selector" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <!-- Backg -->
@@ -3972,7 +3994,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   <screen backgroundColor="transparent" flags="wfNoBorder" name="TimerEditList" position="center,center" size="1920,1080" title="Timer Editor">
     <panel name="Backg" />
     <panel name="Clock" />
-    <panel name="BN4" />
+    <panel name="BS4" />
     <!-- Widget -->
     <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
     <widget name="timerlist" itemHeight="90" font="FHD; 32" rowSplit="45" setEventNameFont="FHD; 32" setServiceNameFont="FHD;30" setFont="FHD;30" satPosLeft="270" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="white" position="310,155" size="1300,630" transparent="1" />
@@ -3984,15 +4006,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   <screen backgroundColor="transparent" flags="wfNoBorder" name="TimerEntry" position="center,center" size="1920,1080" title="Timer entry">
     <panel name="Backg" />
     <panel name="Clock" />
+    <panel name="BS4" />
     <!-- Widget -->
     <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
     <widget name="config" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="310,155" size="1300,800" transparent="1" />
-    <!-- Buttons -->
-    <eLabel backgroundColor="blue" foregroundColor="white" name="" position="260,978" size="1400,1" zPosition="-10" />
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="310,985" size="40,40" />
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="630,985" size="40,40" />
-    <widget name="canceltext" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="355,985" size="270,40" transparent="1" zPosition="1" />
-    <widget name="oktext" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="675,985" size="270,40" transparent="1" zPosition="1" />
+    <widget name="HelpWindow" position="275,620" size="1,1" zPosition="10" />
   </screen>
   <screen name="TimeDateInput" title="TimeDateInput" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
     <!-- Background -->
@@ -4011,23 +4029,34 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   <screen backgroundColor="transparent" flags="wfNoBorder" name="TimerLog" position="center,center" size="1920,1080" title="Timer log">
     <panel name="Backg" />
     <panel name="Clock" />
-    <panel name="BN4" />
+    <panel name="BS4" />
     <!-- Widget -->
     <eLabel text="Timer log" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
-    <widget name="loglist" itemHeight="90" font="FHD; 32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="310,155" size="1300,630" transparent="1" />
+    <widget name="loglist" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="310,155" size="1300,630" transparent="1" />
     <eLabel backgroundColor="white" position="310,845" size="1300,1" zPosition="-9" foregroundColor="white" />
-    <widget name="logentry" position="310,850" size="1300,120" font="FHD; 30" foregroundColor="EL_Foreground" backgroundColor="EL_Background" transparent="1" halign="left" valign="center" zPosition="1" />
+    <widget name="logentry" position="310,850" size="1300,120" font="FHD; 30" foregroundColor="EL_Foreground" backgroundColor="EL_Background" transparent="1" halign="left" valign="top" zPosition="1" />
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="TimerSanityConflict" position="center,center" size="1920,1080" title="Timer sanity error">
     <panel name="Backg" />
     <panel name="Clock" />
-    <panel name="BN4" />
     <!-- Widget -->
     <eLabel text="Timer sanity error" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
-    <widget name="list" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="white" position="310,155" size="1300,450" transparent="1" />
-    <eLabel backgroundColor="white" position="310,620" size="1300,1" zPosition="-9" foregroundColor="white" />
-    <widget name="timer1" itemHeight="75" rowSplit="40" setEventNameFont="Bold; 30" setServiceNameFont="Bold; 30" setFont="Regular; 28" satPosLeft="250" scrollbarMode="showNever" position="310,630" size="1300,150" foregroundColor="green_light" backgroundColor="EL_Background" transparent="1" zPosition="1" font="FHD; 30" />
-    <widget name="timer2" itemHeight="75" rowSplit="40" setEventNameFont="Bold; 30" setServiceNameFont="Bold; 30" setFont="Regular; 28" satPosLeft="250" scrollbarMode="showNever" position="310,815" size="1300,150" foregroundColor="unff00" backgroundColor="EL_Background" transparent="1" zPosition="1" font="FHD; 30" />
+    <!-- Timer1 -->
+    <widget name="timer1" itemHeight="85" rowSplit="60" setEventNameFont="Regular2; 28" setServiceNameFont="Regular2; 28" setFont="Regular2; 28" satPosLeft="280" scrollbarMode="showNever" position="center,160" size="1300,255" foregroundColor="white" backgroundColor="EL_Background" transparent="1" zPosition="1" font="Regular2; 28" />
+    <widget source="key_red" alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="310,430" size="40,40" />
+    <widget source="key_green" alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="710,430" size="40,40" />
+    <widget name="key_red" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="355,430" size="350,40" transparent="1" zPosition="1" />
+    <widget name="key_green" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="755,430" size="350,40" transparent="1" zPosition="1" />
+    <eLabel backgroundColor="white" position="center,480" size="1300,5" zPosition="-9" foregroundColor="white" />
+    <!-- Timer2 -->
+    <widget name="timer2" itemHeight="85" rowSplit="60" setEventNameFont="Regular2; 28" setServiceNameFont="Regular2; 28" setFont="Regular2; 28" satPosLeft="280" scrollbarMode="showNever" position="center,500" size="1300,255" foregroundColor="white" backgroundColor="EL_Background" transparent="1" zPosition="1" font="Regular2; 28" />
+    <widget source="key_yellow" alphatest="blend" pixmap="SmartLiteFHD/buttons/yellow.png" position="310,770" size="40,40" />
+    <widget source="key_blue" alphatest="blend" pixmap="SmartLiteFHD/buttons/blue.png" position="710,770" size="40,40" />
+    <widget name="key_yellow" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="355,770" size="350,40" transparent="1" zPosition="1" />
+    <widget name="key_blue" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="755,770" size="350,40" transparent="1" zPosition="1" />
+    <eLabel backgroundColor="white" foregroundColor="white" name="" position="center,820" size="1300,5" zPosition="-10" />
+    <!-- List -->
+    <widget name="list" itemHeight="45" font="Regular2; 28" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="white" position="center,840" size="1300,180" transparent="1" />
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="TimerSelection" position="center,center" size="1920,1080" title="Timer selection">
     <panel name="Backg" />
@@ -4437,8 +4466,23 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="config" backgroundColor="EL_Background" enableWrapAround="1" font="FHD; 30" foregroundColor="EL_Foreground" position="center,685" size="1100,45" transparent="1" zPosition="4" />
     <!-- Buttons -->
     <eLabel backgroundColor="blue" foregroundColor="EL_Background" name="" position="center,748" size="1200,1" zPosition="-10" />
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="410,755" size="40,40" />
+    <widget source="cancelable" render="Pixmap" alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="410,755" size="40,40">
+      <convert type="ConditionalShowHide" />
+    </widget>
     <widget source="cancelable" render="FixedLabel" text="Cancel" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="455,755" size="300,40" transparent="1" zPosition="1">
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <!-- ButtonsNew -->
+    <widget source="finished" render="Pixmap" alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="760,755" size="40,40">
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="finished" render="FixedLabel" text="OK" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="805,755" size="300,40" transparent="1" zPosition="1">
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="backgroundable" render="Pixmap" alphatest="blend" pixmap="SmartLiteFHD/buttons/blue.png" position="1110,755" size="40,40">
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="backgroundable" render="FixedLabel" text="Continue in background" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="1155,755" size="400,40" transparent="1" zPosition="1">
       <convert type="ConditionalShowHide" />
     </widget>
   </screen>
