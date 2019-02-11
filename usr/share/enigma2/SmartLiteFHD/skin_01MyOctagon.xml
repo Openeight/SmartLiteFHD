@@ -119,11 +119,12 @@
 
 
   <screen backgroundColor="transparent" flags="wfNoBorder" name="SoftwarePanel" position="center,center" size="1920,1080" title="Update Manager">
-    <panel name="Backg" />
-    <panel name="Clock" />
+    <!-- Backg1 -->
+    <eLabel backgroundColor="EL_Background" position="center,center" size="1800,960" zPosition="-20" />
+    <eLabel backgroundColor="Red" position="center,130" size="1800,3" zPosition="-9" foregroundColor="white" />
     <!-- Widget -->
-    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="400,60" size="950,58" transparent="1" />
-    <widget source="list" render="Listbox" font="EL_Standard; 30" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="white" position="310,155" size="1300,595" transparent="1">
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="100,62" size="1450,58" transparent="1" />
+    <widget source="list" render="Listbox" font="EL_Standard; 30" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="white" position="100,165" size="1100,765" transparent="1">
       <convert type="TemplatedMultiContent">
                     {"template": [
                     MultiContentEntryText(pos = (100, 1), size = (1000, 43), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
@@ -137,29 +138,41 @@
         </convert>
     </widget>
     <!-- Widget 2 -->
-    <eLabel backgroundColor="blue" position="310,770" size="1300,5" zPosition="-9" foregroundColor="white" />
-    <widget name="packagetext" font="FHD; 34" backgroundColor="EL_New" foregroundColor="white" position="310,785" size="330,50" transparent="1" zPosition="4" halign="left" />
-    <widget name="packagenr" font="FHD; 38" foregroundColor="white" backgroundColor="EL_Background" halign="left" position="640,785" size="110,50" transparent="1" zPosition="4" />
-    <widget name="a_red" pixmap="SmartLiteFHD/icons/ared.png" alphatest="blend" position="310,850" size="44,111" zPosition="1" />
-    <widget name="a_off" pixmap="SmartLiteFHD/icons/aoff.png" alphatest="blend" position="310,850" size="44,111" zPosition="1" />
-    <widget name="a_yellow" pixmap="SmartLiteFHD/icons/ayellow.png" alphatest="blend" position="310,850" size="44,111" zPosition="1" />
-    <widget name="a_green" pixmap="SmartLiteFHD/icons/agreen.png" alphatest="blend" position="310,850" size="44,111" zPosition="1" />
-    <widget backgroundColor="EL_Background" font="Regular2; 26" foregroundColor="EL_Foreground" halign="left" name="feedstatusRED" position="370,855" size="190,40" transparent="1" zPosition="1" />
-    <widget backgroundColor="EL_Background" font="Regular2; 26" foregroundColor="EL_Foreground" halign="left" name="feedstatusYELLOW" position="370,888" size="190,40" transparent="1" zPosition="2" />
-    <widget backgroundColor="EL_Background" font="Regular2; 26" foregroundColor="EL_Foreground" halign="left" name="feedstatusGREEN" position="370,922" size="190,40" transparent="1" zPosition="2" />
-    <eLabel text="Open Source :" font="FHD; 38" backgroundColor="EL_Background" foregroundColor="white" halign="right" position="1260,785" size="350,50" transparent="1" />
-    <eLabel text="https://github.com/Openeight" font="FHD; 26" backgroundColor="EL_Background" foregroundColor="white" halign="right" position="1160,845" size="450,45" transparent="1" />
-    <eLabel text="https://github.com/oe-alliance" font="FHD; 26" backgroundColor="EL_Background" foregroundColor="white" halign="right" position="1160,890" size="450,45" transparent="1" />
+    <eLabel backgroundColor="blue" position="1260,500" size="540,5" zPosition="-2" foregroundColor="white" />
+    <widget name="packagetext" font="FHD; 34" backgroundColor="EL_Background" foregroundColor="white" position="1260,440" size="330,50" transparent="1" zPosition="4" halign="left" />
+    <widget name="packagenr" font="FHD; 38" foregroundColor="white" backgroundColor="EL_Background" halign="left" position="1590,440" size="110,50" transparent="1" zPosition="4" />
+    <widget name="a_red" pixmap="SmartLiteFHD/menu/oc_mini2.png" alphatest="blend" position="1260,520" size="47,45" zPosition="1" />
+    <widget name="a_off" pixmap="SmartLiteFHD/menu/oc_mini5.png" alphatest="blend" position="1260,520" size="47,45" zPosition="1" />
+    <widget name="a_yellow" pixmap="SmartLiteFHD/menu/oc_mini3.png" alphatest="blend" position="1260,520" size="47,45" zPosition="1" />
+    <widget name="a_green" pixmap="SmartLiteFHD/menu/oc_mini4.png" alphatest="blend" position="1260,520" size="47,45" zPosition="1" />
+    <widget backgroundColor="EL_Background" font="Regular2; 26" foregroundColor="EL_Foreground" halign="left" name="feedstatusRED" position="1327,520" size="280,45" transparent="1" zPosition="2" />
+    <widget backgroundColor="EL_Background" font="Regular2; 26" foregroundColor="EL_Foreground" halign="left" name="feedstatusYELLOW" position="1327,520" size="280,45" transparent="1" zPosition="2" />
+    <widget backgroundColor="EL_Background" font="Regular2; 32" foregroundColor="EL_Foreground" halign="left" name="feedstatusGREEN" position="1327,520" size="280,45" transparent="1" zPosition="2" />
+    <eLabel text="Open Source :" font="FHD; 34" backgroundColor="EL_Background" foregroundColor="white" halign="center" position="1260,785" size="540,50" transparent="1" />
+    <eLabel text="https://github.com/Openeight" font="FHD; 26" backgroundColor="EL_Background" foregroundColor="white" halign="center" position="1260,835" size="540,45" transparent="1" />
+    <eLabel text="https://github.com/oe-alliance" font="FHD; 26" backgroundColor="EL_Background" foregroundColor="white" halign="center" position="1260,880" size="540,45" transparent="1" />
+    <ePixmap name="" position="1230,165" size="600,450" borderWidth="1" borderColor="white" zPosition="-5" />
     <!-- icon -->
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/menu/oc_mini.png" position="310,58" size="68,65" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/menu/octagon3.png" position="1405,175" size="250,250" />
     <!-- Buttons -->
-    <eLabel backgroundColor="EL_Selection" foregroundColor="EL_Background" name="" position="260,978" size="1400,1" zPosition="-10" />
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="310,985" size="40,40" />
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="630,985" size="40,40" />
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/yellow.png" position="950,985" size="40,40" />
-    <widget name="key_red" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="355,985" size="270,40" transparent="1" zPosition="1" />
-    <widget name="key_green" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="675,985" size="270,40" transparent="1" zPosition="1" />
-    <eLabel text="Latest Commits" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="995,985" size="270,40" transparent="1" zPosition="1" />
+    <eLabel backgroundColor="blue" foregroundColor="white" name="" position="60,955" size="1800,1" zPosition="-10" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="90,970" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="425,970" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/yellow.png" position="760,970" size="40,40" />
+    <widget name="key_red" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="140,970" size="280,40" transparent="1" zPosition="1" />
+    <widget name="key_green" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="475,970" size="280,40" transparent="1" zPosition="1" />
+    <eLabel text="Latest Commits" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="810,970" size="280,40" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="1707,70" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1714,53" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1554,93" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1554,65" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
   </screen>
 
 
@@ -469,26 +482,49 @@
 
 
   <screen backgroundColor="transparent" flags="wfNoBorder" name="SundtekControlCenter" position="center,center" size="1920,1080" title="SundtekControlCenter">
-    <panel name="Backg" />
-    <panel name="Clock" />
+    <!-- Backg1 -->
+    <eLabel backgroundColor="EL_Background" position="center,center" size="1800,960" zPosition="-20" />
+    <eLabel backgroundColor="Red" position="center,140" size="1800,2" zPosition="-9" />
     <!-- Widget -->
-    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
-    <widget name="config" font="FHD; 32" itemHeight="50" position="310,165" size="1300,500" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="EL_Foreground" backgroundColor="EL_Background" transparent="1" zPosition="1" />
-    <eLabel backgroundColor="blue" position="310,700" size="1300,3" zPosition="-9" foregroundColor="white" />
-    <widget name="ok" position="310,730" zPosition="1" size="1300,45" font="FHD; 30" halign="left" valign="center" transparent="1" backgroundColor="EL_Background" foregroundColor="EL_Foreground" />
-    <widget name="infos" position="310,780" zPosition="1" size="1300,45" font="FHD; 30" halign="left" valign="center" transparent="1" backgroundColor="EL_Background" foregroundColor="EL_Foreground" />
-    <widget name="bouquets" position="310,830" zPosition="1" size="1300,45" font="FHD; 30" halign="left" valign="center" transparent="1" backgroundColor="EL_Background" foregroundColor="EL_Foreground" />
-    <widget name="netservers" position="310,880" zPosition="1" size="1300,45" font="FHD; 30" halign="left" valign="center" transparent="1" backgroundColor="EL_Background" foregroundColor="EL_Foreground" />
+    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ExtrasPanel/pics/bg.png" position="1085,165" size="750,124" alphatest="on" zPosition="1" />
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="100,70" size="1000,58" transparent="1" />
+    <widget name="config" font="FHD; 32" itemHeight="50" position="100,160" size="950,650" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="EL_Foreground" backgroundColor="EL_Background" transparent="1" zPosition="1" />
+    <eLabel backgroundColor="blue" position="1065,165" size="5,770" zPosition="-9" foregroundColor="white" />
+    <eLabel backgroundColor="white" foregroundColor="white" name="" position="100,815" size="950,2" zPosition="-10" />
+    <widget name="ok" position="1095,350" zPosition="1" size="750,45" font="FHD; 30" halign="left" valign="center" transparent="1" backgroundColor="EL_Background" foregroundColor="EL_Foreground" />
+    <widget name="menu" position="1095,410" zPosition="1" size="750,45" font="FHD; 30" halign="left" valign="center" transparent="1" backgroundColor="EL_Background" foregroundColor="EL_Foreground" />
+    <widget name="infos" position="1095,470" zPosition="1" size="750,45" font="FHD; 30" halign="left" valign="center" transparent="1" backgroundColor="EL_Background" foregroundColor="EL_Foreground" />
+    <widget name="bouquets" position="1095,530" zPosition="1" size="750,45" font="FHD; 30" halign="left" valign="center" transparent="1" backgroundColor="EL_Background" foregroundColor="EL_Foreground" />
+    <widget name="netservers" position="1095,590" zPosition="1" size="750,45" font="FHD; 30" halign="left" valign="center" transparent="1" backgroundColor="EL_Background" foregroundColor="EL_Foreground" />
+    <widget name="tunerone" position="210,830" zPosition="1" size="840,45" font="FHD; 32" halign="left" valign="center" transparent="1" foregroundColor="white" backgroundColor="EL_Background" />
+    <widget name="tunertwo" position="210,900" zPosition="1" size="840,45" font="FHD; 32" halign="left" valign="center" transparent="1" foregroundColor="white" backgroundColor="EL_Background" />
+    <widget name="driverupdateavail" position="1085,900" zPosition="1" size="750,45" font="Regular2; 28" halign="right" valign="center" transparent="1" foregroundColor="white" backgroundColor="EL_Background" />
+    <widget name="updateavail" position="1085,850" zPosition="1" size="750,45" font="Regular2; 28" halign="right" valign="center" transparent="1" foregroundColor="#00ffffff" backgroundColor="EL_Background" />
+    <widget name="version" position="1455,970" zPosition="1" size="270,40" font="Regular2; 28" halign="right" valign="center" transparent="1" foregroundColor="white" backgroundColor="EL_Background" />
+    <ePixmap position="100,825" size="96,58" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ExtrasPanel/icons/sundtek_dvbc.png" transparent="1" alphatest="blend" />
+    <ePixmap position="100,895" size="96,58" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ExtrasPanel/icons/sundtek_dvbs.png" transparent="1" alphatest="blend" />
+    <ePixmap position="1735,970" size="100,40" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ExtrasPanel/icons/sundtek.png" transparent="1" alphatest="blend" />
     <!-- Buttons -->
-    <eLabel backgroundColor="EL_Selection" foregroundColor="EL_Background" name="" position="260,978" size="1400,1" zPosition="-10" />
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="310,985" size="40,40" />
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="630,985" size="40,40" />
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/yellow.png" position="950,985" size="40,40" />
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/blue.png" position="1270,985" size="40,40" />
-    <widget name="btt_red" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="355,985" size="270,40" transparent="1" zPosition="1" />
-    <widget name="btt_green" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="675,985" size="270,40" transparent="1" zPosition="1" />
-    <widget name="btt_yellow" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="995,985" size="270,40" transparent="1" zPosition="1" />
-    <widget name="btt_blue" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="1315,985" size="270,40" transparent="1" zPosition="1" />
+    <eLabel backgroundColor="blue" foregroundColor="white" name="" position="center,958" size="1800,1" zPosition="-10" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="100,970" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="430,970" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/yellow.png" position="760,970" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/blue.png" position="1090,970" size="40,40" />
+    <widget name="btt_red" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="150,970" size="270,40" transparent="1" zPosition="1" />
+    <widget name="btt_green" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="480,970" size="270,40" transparent="1" zPosition="1" />
+    <widget name="btt_yellow" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="810,970" size="270,40" transparent="1" zPosition="1" />
+    <widget name="btt_blue" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="1140,970" size="270,40" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="1707,74" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1714,57" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1554,97" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1554,69" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
   </screen>
 
 
