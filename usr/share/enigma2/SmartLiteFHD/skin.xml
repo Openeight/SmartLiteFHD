@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <skin>
-  <!-- SmartLiteFHD Skin V3.25 by SkinMania for Octagon -->
+  <!-- SmartLiteFHD Skin V3.30 by SkinMania for Octagon -->
   <!-- Recommended to use with XPicons (220x132) -->
   <!-- You are not allowed to modify and redistribute SmartLiteFHD Skin and all graphics -->
   <output id="0">
@@ -112,7 +112,7 @@
     <alias name="PluginBrowser0" font="FHD" size="30" height="76"/>
     <alias name="PluginBrowser1" font="Regular" size="22"/>
     <alias name="ServiceInfo" font="FHD" size="30" height="45"/>
-    <alias name="SelectionList" font="FHD" size="28" height="50"/>
+    <alias name="SelectionList" font="FHD" size="30" height="50"/>
     <alias name="VirtualKeyboard" font="FHD" size="34" height="68"/>
     <alias name="HelpMenuList" font="FHD" size="30" height="45"/>
     <alias name="HelpMenuListExt0" font="FHD" size="32" height="75"/>
@@ -211,6 +211,11 @@
     <eLabel backgroundColor="unff0000" name="" position="center,909" size="1920,1" zPosition="-10" foregroundColor="white" />
     <eLabel backgroundColor="blue" position="315,976" size="215,6" zPosition="-9" foregroundColor="white" />
     <!-- Widget -->
+    <widget source="session.CurrentService" render="ChannelNumber" font="Regular2; 75" borderColor="black" backgroundColor="transparent" foregroundColor="white" position="50,810" size="220,90" transparent="1" halign="center" valign="center" zPosition="1" borderWidth="3" />
+    <widget source="session.CurrentService" render="Label" font="Regular2; 75" borderColor="black" backgroundColor="transparent" foregroundColor="white" position="310,810" size="1520,90" transparent="1" halign="left" valign="center" zPosition="1" borderWidth="3">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+    <!-- picon -->
     <widget alphatest="blend" position="50,914" render="SL_XPicon" size="220,132" source="session.CurrentService" transparent="1" zPosition="4">
       <convert type="ServiceName">Reference</convert>
     </widget>
@@ -278,47 +283,43 @@
       <convert type="ConditionalShowHide" />
     </widget>
     <!-- boxinfo -->
-    <widget source="session.CurrentService" render="Label" font="Bold; 31" backgroundColor="background" foregroundColor="white" noWrap="1" position="1360,1000" size="125,42" transparent="1" zPosition="10" halign="right" text="42,5° E">
-      <convert type="ServiceOrbitalPosition" />
+    <widget source="session.CurrentService" render="Label" position="1515,1000" size="135,42" halign="right" font="Bold; 31" zPosition="4" transparent="1" foregroundColor="white" backgroundColor="background" noWrap="1" valign="center">
+      <convert type="SL_ServiceName">%s</convert>
     </widget>
     <!-- tuner -->
-    <widget source="session.TunerInfo" render="FixedLabel" text="A" position="1500,1005" zPosition="3" size="30,30" font="Bold; 24" halign="center" backgroundColor="EL_Blue" transparent="0" valign="center" foregroundColor="blue">
+    <widget source="session.TunerInfo" render="FixedLabel" text="A" position="1680,1005" zPosition="3" size="30,30" font="Bold; 24" halign="center" backgroundColor="EL_Blue" transparent="0" valign="center" foregroundColor="blue">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">1</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.TunerInfo" render="FixedLabel" text="B" position="1540,1005" zPosition="3" size="30,30" font="Bold; 24" halign="center" backgroundColor="EL_Blue" transparent="0" valign="center" foregroundColor="blue">
+    <widget source="session.TunerInfo" render="FixedLabel" text="B" position="1725,1005" zPosition="3" size="30,30" font="Bold; 24" halign="center" backgroundColor="EL_Blue" transparent="0" valign="center" foregroundColor="blue">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">2</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.TunerInfo" render="FixedLabel" text="C" position="1580,1005" zPosition="3" size="30,30" font="Bold; 24" halign="center" backgroundColor="EL_Blue" transparent="0" valign="center" foregroundColor="blue">
+    <widget source="session.TunerInfo" render="FixedLabel" text="C" position="1770,1005" zPosition="3" size="30,30" font="Bold; 24" halign="center" backgroundColor="EL_Blue" transparent="0" valign="center" foregroundColor="blue">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">4</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.TunerInfo" render="FixedLabel" text="D" position="1620,1005" zPosition="3" size="30,30" font="Bold; 24" halign="center" backgroundColor="EL_Blue" transparent="0" valign="center" foregroundColor="blue">
+    <widget source="session.TunerInfo" render="FixedLabel" text="D" position="1815,1005" zPosition="3" size="30,30" font="Bold; 24" halign="center" backgroundColor="EL_Blue" transparent="0" valign="center" foregroundColor="blue">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">8</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <eLabel backgroundColor="un444444" font="Regular2; 28" halign="center" noWrap="1" position="1500,1005" size="30,30" transparent="0" valign="center" zPosition="1" foregroundColor="darkgrey" />
-    <eLabel backgroundColor="un444444" font="Regular2; 28" halign="center" noWrap="1" position="1540,1005" size="30,30" transparent="0" valign="center" zPosition="1" foregroundColor="darkgrey" />
-    <eLabel backgroundColor="un444444" font="Regular2; 28" halign="center" noWrap="1" position="1580,1005" size="30,30" transparent="0" valign="center" zPosition="1" foregroundColor="darkgrey" />
-    <eLabel backgroundColor="un444444" font="Regular2; 28" halign="center" noWrap="1" position="1620,1005" size="30,30" transparent="0" valign="center" zPosition="1" foregroundColor="darkgrey" />
+    <eLabel backgroundColor="un444444" font="Regular2; 28" halign="center" noWrap="1" position="1680,1005" size="30,30" transparent="0" valign="center" zPosition="1" foregroundColor="darkgrey" />
+    <eLabel backgroundColor="un444444" font="Regular2; 28" halign="center" noWrap="1" position="1725,1005" size="30,30" transparent="0" valign="center" zPosition="1" foregroundColor="darkgrey" />
+    <eLabel backgroundColor="un444444" font="Regular2; 28" halign="center" noWrap="1" position="1770,1005" size="30,30" transparent="0" valign="center" zPosition="1" foregroundColor="darkgrey" />
+    <eLabel backgroundColor="un444444" font="Regular2; 28" halign="center" noWrap="1" position="1815,1005" size="30,30" transparent="0" valign="center" zPosition="1" foregroundColor="darkgrey" />
     <!-- snr - agc -->
-    <widget source="session.FrontendStatus" render="Label" position="1120,1000" size="140,42" backgroundColor="background" foregroundColor="un56c856" transparent="1" halign="right" font="Bold; 31" valign="center">
+    <widget source="session.FrontendStatus" render="Label" position="1275,1000" size="140,42" backgroundColor="background" foregroundColor="un56c856" transparent="1" halign="right" font="Bold; 31" valign="center">
       <convert type="FrontendInfo">SNR</convert>
     </widget>
-    <widget source="session.FrontendStatus" render="Label" position="1250,1000" size="105,42" backgroundColor="background" foregroundColor="blueCH" transparent="1" halign="right" font="Bold; 31" valign="center">
+    <widget source="session.FrontendStatus" render="Label" position="1405,1000" size="105,42" backgroundColor="background" foregroundColor="blueCH" transparent="1" halign="right" font="Bold; 31" valign="center">
       <convert type="FrontendInfo">AGC</convert>
     </widget>
-    <widget backgroundColor="EL_Background" font="Bold; 31" foregroundColor="EL_Blue" halign="right" position="1660,1000" render="Label" size="90,42" source="session.CurrentService" transparent="1" valign="center" zPosition="1">
-      <convert type="ServiceInfo">VideoWidth</convert>
-    </widget>
-    <eLabel backgroundColor="EL_Background" font="Bold; 31" halign="center" noWrap="1" position="1750,1000" size="25,42" text="x" transparent="1" valign="center" zPosition="2" foregroundColor="EL_Blue" />
-    <widget backgroundColor="EL_Background" font="Bold; 31" foregroundColor="EL_Blue" halign="left" position="1775,1000" render="Label" size="90,42" source="session.CurrentService" transparent="1" valign="center" zPosition="3">
-      <convert type="ServiceInfo">VideoHeight</convert>
+    <widget backgroundColor="EL_Background" font="Bold; 31" foregroundColor="EL_Blue" halign="left" position="940,996" render="Label" size="300,46" source="session.CurrentService" transparent="1" valign="center" zPosition="1" text="1280x720p25">
+      <convert type="PliExtraInfo">ResolutionString</convert>
     </widget>
     <!-- Clock -->
     <panel name="Clock2" />
@@ -433,12 +434,8 @@
     <widget source="session.FrontendStatus" render="Label" position="1725,735" size="105,42" backgroundColor="background" foregroundColor="blueCH" transparent="1" halign="right" font="Bold; 31" valign="center">
       <convert type="FrontendInfo">AGC</convert>
     </widget>
-    <widget backgroundColor="EL_Background" font="Bold; 30" foregroundColor="EL_Blue" halign="right" position="305,496" render="Label" size="90,40" source="session.CurrentService" transparent="1" valign="center" zPosition="1">
-      <convert type="ServiceInfo">VideoWidth</convert>
-    </widget>
-    <eLabel backgroundColor="EL_Background" font="Bold; 30" halign="center" noWrap="1" position="395,496" size="30,40" text="x" transparent="1" valign="center" zPosition="2" foregroundColor="EL_Blue" />
-    <widget backgroundColor="EL_Background" font="Bold; 30" foregroundColor="EL_Blue" halign="left" position="425,496" render="Label" size="90,40" source="session.CurrentService" transparent="1" valign="center" zPosition="3">
-      <convert type="ServiceInfo">VideoHeight</convert>
+    <widget backgroundColor="EL_Background" font="Bold; 30" foregroundColor="EL_Blue" halign="right" position="280,495" render="Label" size="230,40" source="session.CurrentService" transparent="1" valign="center" zPosition="1" text="1280x720p25">
+      <convert type="PliExtraInfo">ResolutionString</convert>
     </widget>
     <!-- Clock -->
     <panel name="Clock2" />
@@ -476,7 +473,7 @@
     <widget source="session.Event_Now" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" render="SL_RunningText" position="90,173" size="830,307" font="Regular; 30" zPosition="1" backgroundColor="EL_Background" foregroundColor="white" transparent="1" halign="left">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
-    <eLabel backgroundColor="blue" position="90,545" size="400,4" zPosition="-9" foregroundColor="white" />
+    <eLabel backgroundColor="blue" position="90,545" size="420,4" zPosition="-9" foregroundColor="white" />
     <widget backgroundColor="EL_Background" font="Bold; 32" halign="left" position="90,550" render="Label" size="830,48" source="session.Event_Next" transparent="1" valign="center" foregroundColor="grey">
       <convert type="EventName">Name</convert>
     </widget>
@@ -493,6 +490,7 @@
     <widget source="session.CurrentService" render="Label" position="990,678" size="300,42" font="Bold; 30" backgroundColor="EL_Background" halign="left" transparent="1" foregroundColor="EL_Foreground" zPosition="1">
       <convert type="SL_Crypt">CryptoBar</convert>
     </widget>
+    <!-- Info -->
     <!-- WeatherMSN -->
     <widget backgroundColor="background" font="FHD; 42" render="Label" position="960,183" size="480,54" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
       <convert type="MSNWeather">city</convert>
