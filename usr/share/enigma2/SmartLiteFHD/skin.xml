@@ -2366,7 +2366,7 @@
   <screen backgroundColor="transparent" flags="wfNoBorder" name="LocationBox" position="center,center" size="1920,1080" title="Location Box">
     <panel name="Backg" />
     <panel name="Clock" />
-    <panel name="BS4" />
+    <panel name="BN4" />
     <!-- Widget -->
     <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
     <widget name="text" backgroundColor="EL_Background" font="FHD; 30" foregroundColor="EL_Foreground" position="310,155" size="1300,45" transparent="1" />

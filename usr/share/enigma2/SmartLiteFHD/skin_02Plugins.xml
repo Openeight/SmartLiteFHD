@@ -2396,7 +2396,7 @@
     <eLabel backgroundColor="EL_Background" position="center,center" size="1780,960" zPosition="-21" />
     <eLabel backgroundColor="Red" position="center,140" size="1780,3" zPosition="-9" foregroundColor="white" />
     <!-- Widget -->
-    <widget source="Title" render="Label" position="100,70" size="1400,65" font="FHD; 42" halign="left" backgroundColor="EL_Background" foregroundColor="white" transparent="1" />
+    <widget source="Titel" render="Label" position="100,70" size="1400,65" font="FHD; 42" halign="left" backgroundColor="EL_Background" foregroundColor="white" transparent="1" />
     <widget source="Titel2" render="Label" font="Regular2; 32" backgroundColor="EL_Background" foregroundColor="white" halign="center" position="1440,165" size="385,500" transparent="1" valign="top" />
     <widget name="MainList" itemHeight="190" foregroundColorSelected="white" backgroundColorSelected="blue" font0="FHD;28" font1="FHD;26" font2="FHD;28" font3="FHD;28" setTime="0,80,100,45" setPict="100,65,70,70" setPictScale="0" setTemp="200,55,90,40" setTempUnits="200,95,90,40" setWindPict="300,75,35,35" setWindPictScale="1" setWind="330,55,95,40" setWindUnits="330,95,120,40" text1Pos="480,0,800,42" text2Pos="480,45,800,42" text3Pos="480,90,800,42" text4Pos="480,135,800,42" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="white" position="98,165" size="1300,760" transparent="1" />
     <eLabel backgroundColor="white" position="1426,160" size="2,780" zPosition="-9" foregroundColor="white" />
@@ -3038,8 +3038,8 @@
   <!-- HHHHHHHHHHHHHHHHHH -->
 
 
-  <!-- HeetWeer -->
-  <!-- HeetWeer -->
+  <!-- HetWeer -->
+  <!-- HetWeer -->
   <screen name="startScreen" title="HetWeer" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080" transparent="0">
     <ePixmap alphatest="blend" pixmap="SmartLiteFHD/menu/plugin.png" position="375,165" size="350,350" />
     <!-- Backg -->
@@ -3050,10 +3050,10 @@
     <widget source="Title" render="Label" font="FHD; 45" backgroundColor="EL_Background" foregroundColor="white" position="310,505" size="480,145" transparent="1" halign="center" valign="center" />
     <widget name="list" itemHeight="63" font="FHD; 35" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="980,160" size="600,375" transparent="1" />
     <widget name="mess1" font="Console;28" backgroundColor="EL_Background" foregroundColor="green_light" position="870,700" size="710,150" transparent="1" valign="top" halign="left" />
-    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HetWeer/Images/lo/nlflaghd.png" position="870,164" size="71,49" alphatest="blend" />
-    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HetWeer/Images/lo/beflaghd.png" position="870,227" size="71,49" alphatest="blend" />
-    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HetWeer/Images/lo/euflaghd.png" position="870,290" size="71,49" alphatest="blend" />
-    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HetWeer/Images/lo/lokaalhd.png" position="870,353" size="71,49" alphatest="blend" />
+    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HetWeer/Images/lo/lokaalhd.png" position="870,164" size="71,49" alphatest="blend" />
+    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HetWeer/Images/lo/nlflaghd.png" position="870,227" size="71,49" alphatest="blend" />
+    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HetWeer/Images/lo/beflaghd.png" position="870,290" size="71,49" alphatest="blend" />
+    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HetWeer/Images/lo/euflaghd.png" position="870,353" size="71,49" alphatest="blend" />
     <!-- Buttons -->
     <eLabel backgroundColor="blue" foregroundColor="EL_Background" name="" position="850,888" size="750,1" zPosition="-10" />
     <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="875,895" size="40,40" />
@@ -3976,8 +3976,8 @@
     <!-- Widget -->
     <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="210,60" size="1230,58" transparent="1" />
     <widget render="Label" source="caption" position="210,155" zPosition="1" size="900,50" font="FHD; 38" transparent="1" foregroundColor="white" backgroundColor="background" />
-    <widget render="Label" source="observationtime" position="195,975" zPosition="1" size="220,45" font="FHD; 30" transparent="1" halign="left" foregroundColor="white" backgroundColor="background" />
-    <widget render="Label" source="observationpoint" position="415,975" zPosition="1" size="1250,45" font="FHD; 30" transparent="1" halign="left" foregroundColor="white" backgroundColor="background" />
+    <widget render="Label" source="observationtime" position="195,975" zPosition="1" size="420,45" font="FHD; 30" transparent="1" halign="left" foregroundColor="white" backgroundColor="background" />
+    <widget render="Label" source="observationpoint" position="615,975" zPosition="1" size="1230,45" font="FHD; 30" transparent="1" halign="left" foregroundColor="white" backgroundColor="background" />
     <widget alphatest="blend" render="MSNWeatherPixmap" position="210,224" size="125,125" source="session.MSNWeather" transparent="1" zPosition="8">
       <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/SmartLiteFHD/WeatherIcon/,png</convert>
     </widget>
