@@ -7943,5 +7943,12 @@
     <widget name="list" itemHeight="42" font="Regular2; 28" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="310,155" size="1300,800" transparent="1" zPosition="3" />
   </screen>
 
-
+<!-- Netflix -->
+	<screen name="NetflixEd" title="Netflix Setup" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
+	       <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1920,1080" transparent="1" />
+ 	      <widget name="config" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="center,150" size="1300,800" transparent="1" />
+	      <panel name="Backg" />
+       <panel name="Clock" />
+	</screen>
+	<!-- Netflix -->
 </skin>
