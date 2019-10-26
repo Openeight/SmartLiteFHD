@@ -177,7 +177,7 @@ class SL_ServiceName(Converter, object):
 				else:
 					result += type
 			elif f == 'F':	# %F - frequency (dvb-s/s2/c/t) in KHz
-				result += '%d'%(self.tpdata.get('frequency', 0) / 1000)
+				result += '%d'%(self.tpdata.get('frequency', 0) / 1000.0)
 			elif f == 'f':	# %f - fec_inner (dvb-s/s2/c/t)
 				if type in ('DVB-S','DVB-C'):
 					x = self.tpdata.get('fec_inner', 15)
