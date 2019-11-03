@@ -4604,7 +4604,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="sublist" itemHeight="75" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="980,155" size="640,685" transparent="1" zPosition="3" />
     <eLabel backgroundColor="blue" position="center,165" size="3,675" zPosition="-9" foregroundColor="blue" />
     <eLabel backgroundColor="white" position="center,865" size="1300,1" zPosition="-9" foregroundColor="white" />
-    <widget name="description" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="center,875" size="1300,95" transparent="1" />
+    <widget name="description" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="center" valign="center" position="center,875" size="1300,95" transparent="1" />
   </screen>
   <screen name="QuickMenuDevices" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080" transparent="0">
     <panel name="Backg" />
