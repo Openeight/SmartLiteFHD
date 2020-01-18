@@ -875,7 +875,7 @@
     <widget source="Event" render="Label" position="90,725" size="1420,45" font="Bold; 28" backgroundColor="EL_Background" transparent="1" halign="left" foregroundColor="blueCH">
       <convert type="EventName">Name</convert>
     </widget>
-    <eLabel backgroundColor="EL_Background" font="Bold; 28" halign="left" position="1515,720" size="128,45" text="Laufzeit:" transparent="1" valign="center" zPosition="1" />
+    <eLabel backgroundColor="EL_Background" font="Bold; 28" halign="left" position="1515,720" size="128,45" text="Duration:" transparent="1" valign="center" zPosition="1" />
     <widget source="Event" render="Label" position="1655,725" size="85,45" font="Bold; 28" backgroundColor="EL_Background" halign="left" transparent="1">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Format:%H:%M</convert>
@@ -913,7 +913,7 @@
     <widget source="Event" render="Label" position="90,725" size="1420,45" font="Bold; 28" backgroundColor="EL_Background" transparent="1" halign="left" foregroundColor="blueCH">
       <convert type="EventName">Name</convert>
     </widget>
-    <eLabel backgroundColor="EL_Background" font="Bold; 28" halign="left" position="1515,720" size="128,45" text="Laufzeit:" transparent="1" valign="center" zPosition="1" />
+    <eLabel backgroundColor="EL_Background" font="Bold; 28" halign="left" position="1515,720" size="128,45" text="Duration:" transparent="1" valign="center" zPosition="1" />
     <widget source="Event" render="Label" position="1655,725" size="85,45" font="Bold; 28" backgroundColor="EL_Background" halign="left" transparent="1">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Format:%H:%M</convert>
