@@ -1234,15 +1234,6 @@
     </widget>
   </screen>
 
-  <screen name="vEditor" title="File-Explorer" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-    <!-- Back -->
-    <eLabel backgroundColor="EL_Background" foregroundColor="EL_Background" name="" position="center,center" size="1400,190" zPosition="-20" />
-    <eLabel backgroundColor="Red" position="center,525" size="1400,3" zPosition="-9" foregroundColor="white" />
-    <!-- Widget -->
-    <widget source="Title" render="Label" position="center,455" size="1320,58" font="FHD; 42" backgroundColor="EL_Background" transparent="1" foregroundColor="white" />
-    <widget name="filedata" font="FHD; 32" itemHeight="50" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="center,550" size="1320,50" transparent="1" />
-  </screen>
-
   <screen name="vInputBox" title="File-Explorer" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <!-- Back -->
     <eLabel backgroundColor="EL_Background" foregroundColor="EL_Background" name="" position="center,center" size="1400,250" zPosition="-20" />
