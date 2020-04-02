@@ -246,7 +246,7 @@
       <convert type="TemplatedMultiContent">
                 {"template": [
                         MultiContentEntryText(pos = (100, 0), size = (750, 50), color = 0x0058bcff, color_sel = 0x00ffc000, font=0, text = 0),
-			MultiContentEntryText(pos = (120, 50), size = (650, 80), font=1, flags = RT_VALIGN_TOP, text = 1),
+			MultiContentEntryText(pos = (120, 50), size = (1150, 80), font=1, flags = RT_VALIGN_TOP, text = 1),
                         MultiContentEntryText(pos = (780, 0), size = (200, 50), font=2,color = 0x00999999, color_sel = 0x00999999, flags = RT_VALIGN_CENTER, text = 3),
 		        MultiContentEntryPixmapAlphaBlend(pos = (10, 5), size = (80, 80), png = 2),
                         ],
