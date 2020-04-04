@@ -4770,4 +4770,17 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <!-- Clock -->
     <panel name="Clock" />
   </screen>
+   <screen name="NetworkOpenvpn" title="VPN Setup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <panel name="Backg" />
+    <panel name="BS4" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="lab1" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="310,155" size="320,50" transparent="1" />
+    <widget name="labactive" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="635,155" size="300,50" transparent="1" />
+    <widget name="lab2" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="310,225" size="320,50" transparent="1" />
+    <widget name="labstop" font="FHD; 32" backgroundColor="EL_Red" foregroundColor="EL_Foreground" position="635,225" size="300,50" halign="center" />
+    <widget name="labrun" font="FHD; 32" backgroundColor="green" foregroundColor="EL_Foreground" position="635,225" size="300,50" halign="center" />
+    <!-- Clock -->
+    <panel name="Clock" />
+  </screen>
 </skin>
