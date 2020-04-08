@@ -4783,4 +4783,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <!-- Clock -->
     <panel name="Clock" />
   </screen>
+     <!-- SelectImage -->
+	<screen name="SelectImage" title="" position="fill" flags="wfNoBorder">
+		<panel name="ChoiceBox"/>
+        <panel name="BS4" />
+	</screen>
+  
 </skin>
