@@ -205,6 +205,7 @@
     <parameter name="PiconManagerList" value="15,0,1500,50" />
     <parameter name="ProgrammlistenUpdaterList" value="15,12,720,300,60" />
     <parameter name="ProgrammlistenUpdaterListFont" value="Bold;30" />
+    <parameter name= "ChoicelistNameSingle" value ="7,3,1000,50" />
   </parameters>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="InfoBar" position="center,center" size="1920,1080" title="InfoBar">
     <eLabel backgroundColor="EL_Background" name="InfoBar" position="center,905" size="1920,175" zPosition="-11" />
