@@ -2472,26 +2472,40 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="InfoPixmap" pixmap="SmartLiteFHD/border/info-53.png" position="15,20" size="80,80" alphatest="blend" />
     <widget name="list" position="30,100" size="900,350" itemHeight="47" font="Regular2;30" scrollbarMode="showOnDemand" backgroundColorSelected="blue" foregroundColorSelected="AForeground" backgroundColor="ABackground" foregroundColor="AForeground" transparent="1" />
     <applet type="onLayoutFinish">
-from enigma import eSize, ePoint, quitMainloop
+from enigma import eSize, ePoint
+titleheight = 0
 orgwidth = self.instance.size().width()
+orgheight = self.instance.size().height()
 orgpos = self.instance.position()
-textsize = self["text"].getSize()
-textsize = (textsize[0] + 80, textsize[1] + 80)
-offset = 30
+textsize = self[&quot;text&quot;].getSize()
+textsize = (textsize[0] + 50, textsize[1] + 20)
+wsizex = textsize[0] + 140
+wsizey = textsize[1]
+lenlist = len(self.list)*47
+if (lenlist &gt; 200):
+	lenlist = 200
+if (64 &gt; wsizey):
+	wsizey = 64
 if self.type == self.TYPE_YESNO:
-	offset = 100
-wsizex = textsize[0] + 80
-wsizey = textsize[1] + offset
-if (700 &gt; wsizex):
-	wsizex = 800
-wsize = (wsizex, wsizey)
+	wsizey += lenlist + 10
+if (280 &gt; wsizex):
+	wsizex = 280
+wsize = (wsizex, wsizey + titleheight)
 self.instance.resize(eSize(*wsize))
-self["text"].instance.resize(eSize(*textsize))
-listsize = (wsizex + 30, 200)
-self["list"].instance.move(ePoint(10, textsize[1]))
-self["list"].instance.resize(eSize(*listsize))
+self[&quot;text&quot;].instance.move(ePoint(65, 8 + titleheight))
+self[&quot;text&quot;].instance.resize(eSize(*textsize))
+self[&quot;ErrorPixmap&quot;].instance.move(ePoint(5, 5 + titleheight))
+self[&quot;ErrorPixmap&quot;].instance.resize(eSize(53,53))
+self[&quot;QuestionPixmap&quot;].instance.move(ePoint(5, 5 + titleheight))
+self[&quot;QuestionPixmap&quot;].instance.resize(eSize(53,53))
+self[&quot;InfoPixmap&quot;].instance.move(ePoint(5, 5 + titleheight))
+self[&quot;InfoPixmap&quot;].instance.resize(eSize(53,53))
+if self.type == self.TYPE_YESNO:
+	listsize = (wsizex-4, lenlist)
+	self[&quot;list&quot;].instance.move(ePoint(2, wsizey - lenlist + titleheight + 10))
+	self[&quot;list&quot;].instance.resize(eSize(*listsize))
 newwidth = wsize[0]
-self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
+self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (orgheight - wsizey)/2))
 </applet>
   </screen>
   <screen name="MessageBoxExt" title="Message" backgroundColor="ABackground" position="center,450" size="850,10" zPosition="10" flags="wfBorder">
