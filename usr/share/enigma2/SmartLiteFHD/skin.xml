@@ -112,8 +112,8 @@
     <alias name="PluginBrowser0" font="FHD" size="30" height="76"/>
     <alias name="PluginBrowser1" font="Regular" size="22"/>
     <alias name="ServiceInfo" font="FHD" size="30" height="45"/>
-    <alias name="SelectionList" font="FHD" size="30" height="50"/>
-    <alias name="VirtualKeyboard" font="FHD" size="34" height="68"/>
+    <alias name="SelectionList" font="FHD" size="30" height="70"/>
+    <alias name="VirtualKeyBoard" font="DejaVuSans" size="42" height="68"/>
     <alias name="HelpMenuList" font="FHD" size="30" height="45"/>
     <alias name="HelpMenuListExt0" font="FHD" size="32" height="75"/>
     <alias name="HelpMenuListExt1" font="FHD" size="28"/>
@@ -169,6 +169,7 @@
   <include filename="/usr/share/enigma2/SmartLiteFHD/skin_04SystemPlugins.xml" />
   <include filename="/usr/share/enigma2/SmartLiteFHD/skin_templates.xml" />
   <parameters>
+    <parameter name="ConfigListSlider" value="22,0"/>
     <parameter name="ConfigListSeperator" value="380" />
     <parameter name="ChoicelistDash" value="10,3,1000,50" />
     <parameter name="ChoicelistName" value="85,3,1000,50" />
@@ -190,6 +191,7 @@
     <parameter name="SelectionListDescr" value="55, 3, 1000, 50" />
     <parameter name="SelectionListLock" value="10, 7, 50, 50" />
     <parameter name="VirtualKeyboard" value="68, 68" />
+    <parameter name="VirtualKeyBoardShiftColors" value="0x00ffffff,0x00ffffff,0x0000ffff,0x00ff00ff"/>
     <parameter name="ProgrammlistenUpdaterList" value="10,8,480,200,40" />
     <parameter name="ProgrammlistenUpdaterListFont" value="Bold;28" />
     <parameter name="HelpMenuListHlp" value="0, 0, 900, 42" />
@@ -4383,26 +4385,24 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   <screen backgroundColor="transparent" flags="wfNoBorder" name="VirtualKeyBoard" position="center,center" size="1920,1080" title="Virtual KeyBoard" zPosition="99">
     <panel name="Backg" />
     <panel name="Clock" />
+     <panel name="BS4" />
     <!-- Widget -->
     <eLabel text="Virtual KeyBoard" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
     <widget name="header" backgroundColor="EL_Background" font="FHD; 35" foregroundColor="EL_Foreground" halign="left" noWrap="1" position="310,155" size="1300,120" transparent="1" valign="center" />
     <eLabel backgroundColor="dark" position="312,282" size="1236,56" zPosition="2" font="Regular; 24" />
     <widget backgroundColor="EL_Background" font="Bold; 33" foregroundColor="EL_Foreground" halign="right" name="text" noWrap="1" position="324,286" size="1212,50" zPosition="3" />
-    <widget name="list" position="480,360" size="960,540" selectionDisabled="1" transparent="1" />
+    <widget name="list" position="480,360" size="952,340"  backgroundColor="EL_Background" foregroundColor="white"  selectionDisabled="1" transparent="1" />
     <widget source="country" render="Pixmap" position="1590,985" size="60,40" alphatest="blend" borderWidth="1" borderColor="white" zPosition="2">
       <convert type="ValueToPixmap">LanguageCode</convert>
     </widget>
     <!-- Buttons -->
-    <eLabel backgroundColor="EL_Selection" foregroundColor="EL_Background" name="" position="260,978" size="1400,1" zPosition="-10" />
+    <ePixmap pixmap="SmartLiteFHD/buttons/key_text.png" alphatest="blend" position="1575,986" size="64,38"/>
+  <eLabel backgroundColor="EL_Selection" foregroundColor="EL_Background" name="" position="260,978" size="1400,1" zPosition="-10" />
     <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="310,985" size="40,40" />
     <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="630,985" size="40,40" />
     <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/yellow.png" position="950,985" size="40,40" />
     <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/blue.png" position="1270,985" size="40,40" />
-    <eLabel text="Delete" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="355,985" size="270,40" transparent="1" zPosition="1" />
-    <eLabel text="OK/Enter" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="675,985" size="270,40" transparent="1" zPosition="1" />
-    <eLabel text="Keyboard" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="995,985" size="270,40" transparent="1" zPosition="1" />
-    <eLabel text="to shift" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="1315,985" size="270,40" transparent="1" zPosition="1" />
-  </screen>
+ </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="VirtualKeyBoardmod" position="center,center" size="1920,1080" title="VirtualKeyBoardmod" zPosition="99">
     <panel name="Backg" />
     <panel name="Clock" />
@@ -4411,8 +4411,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="header" backgroundColor="EL_Background" font="FHD; 35" foregroundColor="EL_Foreground" halign="left" noWrap="1" position="310,155" size="1300,120" transparent="1" valign="center" />
     <eLabel backgroundColor="dark" position="312,282" size="1236,56" zPosition="2" font="Regular; 24" />
     <widget backgroundColor="EL_Background" font="Bold; 33" foregroundColor="EL_Foreground" halign="right" name="text" noWrap="1" position="324,286" size="1212,50" zPosition="3" />
-    <widget name="list" position="480,360" size="960,540" selectionDisabled="1" transparent="1" />
-    <widget source="country" render="Pixmap" position="1590,985" size="60,40" alphatest="blend" borderWidth="1" borderColor="white" zPosition="2">
+    <widget name="list" position="480,360" size="1960,1740" selectionDisabled="1" transparent="1" />
+    <widget source="country" render="Pixmap" position="1590,985" size="90,90" alphatest="blend" borderWidth="1" borderColor="white" zPosition="2">
       <convert type="ValueToPixmap">LanguageCode</convert>
     </widget>
   </screen>
@@ -4802,6 +4802,15 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	<screen name="SelectImage" title="" position="fill" flags="wfNoBorder">
 		<panel name="ChoiceBox"/>
         <panel name="BS4" />
+	</screen>
+	<!-- AutoBackup -->
+
+	<screen name="Config" position="fill" flags="wfNoBorder">
+    	<panel name="ChoiceBox"/>
+        <panel name="BS4" />	<widget name="config" position="780,105" size="1110,300" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
+		<widget name="statusbar" position="795,495" size="1095,35" font="Regular;32"/>
+		<widget name="status" position="795,540" size="1095,450" font="Console;22"/>
+		<ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_menu.png" position="1590,986" size="64,38" />
 	</screen>
   
 </skin>
