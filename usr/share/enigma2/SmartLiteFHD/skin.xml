@@ -4838,8 +4838,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
             <panel name="Clock" />
 			<panel name="BS4" />
 
-			<ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_text.png" position="1545,986" size="64,38" />
-
+			<ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_text.png" position="1569,986" size="64,38" />
+            <ePixmap alphatest="blend" pixmap="SmartLiteFHD/skin_default/buttons/key_board.png" position="1565,922" size="84,50" />
            <widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="center,center" size="1170,600" transparent="1" zPosition="3" />
   </screen>
  
