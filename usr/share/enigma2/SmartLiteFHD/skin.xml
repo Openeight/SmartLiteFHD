@@ -4830,5 +4830,18 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="key_green" render="Label" position="200,200" size="150,30" noWrap="1" zPosition="1" valign="center" font="Regular; 20" halign="left" backgroundColor="#00000000" foregroundColor="#00ffffff" />
 		<eLabel position="20,200" size="6,40" backgroundColor="#00e61700" /> <!-- Should be a pixmap -->
 		<eLabel position="190,200" size="6,40" backgroundColor="#0061e500" /> <!-- Should be a pixmap -->
-	</screen>"""
+	</screen>
+	
+			<screen name="NetflixEd" position="center,center" size="1920,1080" title="Netflix Setup">
+			 <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+			 <panel name="Backg" />
+            <panel name="Clock" />
+			<panel name="BS4" />
+
+			<ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_text.png" position="1545,986" size="64,38" />
+
+           <widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="center,center" size="1170,600" transparent="1" zPosition="3" />
+  </screen>
+ 
 </skin>
+ 
