@@ -2782,10 +2782,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="915,970" size="40,40" />
     <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/yellow.png" position="1190,970" size="40,40" />
     <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/blue.png" position="1485,970" size="40,40" />
-    <widget name="key_red" font="Regular; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="690,970" size="220,40" transparent="1" zPosition="1" />
-    <widget name="key_green" font="Regular; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="965,970" size="220,40" transparent="1" zPosition="1" />
-    <widget name="key_yellow" font="Regular; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="1240,970" size="240,40" transparent="1" zPosition="1" />
-    <widget name="key_blue" font="Regular; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="1535,970" size="220,40" transparent="1" zPosition="1" />
+    <widget source="key_red" render="Label" font="Regular; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="690,970" size="220,40" transparent="1" zPosition="1" />
+    <widget source="key_green" render="Label" font="Regular; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="965,970" size="220,40" transparent="1" zPosition="1" />
+    <widget source="key_yellow" render="Label" font="Regular; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="1240,970" size="240,40" transparent="1" zPosition="1" />
+    <widget source="key_blue" render="Label" font="Regular; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="1535,970" size="220,40" transparent="1" zPosition="1" />
     <!-- Clock -->
     <eLabel backgroundColor="white" position="1707,74" size="1,50" transparent="0" zPosition="-1" />
     <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1714,57" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
