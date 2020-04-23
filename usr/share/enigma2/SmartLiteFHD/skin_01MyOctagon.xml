@@ -54,12 +54,26 @@
   </screen>
 
 
-  <screen backgroundColor="transparent" flags="wfNoBorder" name="ScNewSelection" position="center,center" size="1920,1080" title="Softcam Setup">
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="SoftcamSetup" position="center,center" size="1920,1080" title="Softcam Setup">
+    <panel name="Backg" />
+    <panel name="Clock" />
+    <panel name="BS4" />
+    <!-- Widget -->
+    <eLabel text="Softcam Setup" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="server" font="FHD; 36" foregroundColor="EL_Foreground" backgroundColor="EL_Background" position="710,155" size="900,50" transparent="1" halign="right" />
+    <eLabel backgroundColor="blue" position="310,210" size="1300,3" zPosition="-9" foregroundColor="white" />
+    <widget name="config" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="310,235" size="1300,300" transparent="1" />
+    <eLabel backgroundColor="white" position="310,500" size="1300,1" zPosition="-9" foregroundColor="white" />
+    <widget name="info" backgroundColor="EL_Background" font="FHD; 28" position="310,525" size="670,460" transparent="1" zPosition="2" foregroundColor="EL_Foreground" halign="left" />
+  </screen>
+
+
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="ScNewSelection" position="center,center" size="1920,1080" title="Cam Setup">
     <panel name="Backg" />
     <panel name="Clock" />
     <panel name="BN4" />
     <!-- Widget -->
-    <eLabel text="Softcam Configuration" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <eLabel text="Cam Setup" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
     <widget name="cam" font="FHD; 36" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="310,155" size="900,50" transparent="1" />
     <widget name="server" font="FHD; 36" foregroundColor="EL_Foreground" backgroundColor="EL_Background" position="710,155" size="900,50" transparent="1" halign="right" />
     <eLabel backgroundColor="blue" position="310,210" size="1300,3" zPosition="-9" foregroundColor="white" />
