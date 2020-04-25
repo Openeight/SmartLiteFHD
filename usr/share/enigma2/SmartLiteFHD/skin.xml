@@ -1978,7 +1978,7 @@
     <!-- Widget -->
     <eLabel text="FlashImage..." position="490,355" size="1000,58" font="FHD; 42" backgroundColor="EL_Background" transparent="1" foregroundColor="white" />
     <widget name="header" backgroundColor="EL_Background" font="Regular2; 28" foregroundColor="EL_Foreground" position="center,445" size="1100,90" transparent="1" valign="top" />
-    <widget name="info" backgroundColor="EL_Background" font="FHD; 30" foregroundColor="EL_Foreground" position="center,545" size="1100,110" transparent="1" valign="top" />
+    <widget name="info" backgroundColor="EL_Background" font="FHD; 30" foregroundColor="EL_Foreground" position="center,545" size="1100,410" transparent="1" valign="top" />
     <widget name="progress" backgroundColor="EL_Background" borderColor="grey" borderWidth="2" foregroundColor="blue" position="center,665" size="1100,40" transparent="1" />
     <!-- icon -->
     <ePixmap alphatest="blend" pixmap="SmartLiteFHD/menu/oc_mini.png" position="410,353" size="68,65" />
