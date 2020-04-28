@@ -4812,7 +4812,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="statusbar" position="795,495" backgroundColor="EL_Background"  size="1095,35" font="Regular;32"/>
 		<widget name="status" position="795,540" backgroundColor="EL_Background"  size="900,190" font="Console;22"/>
 		<ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_menu.png" position="1590,986" size="64,38" />
-        <eLabel text="Press Menu for more options" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="925,895" size="440,40" transparent="1" zPosition="1" />
+        <eLabel text="Press MENU on your remote control for additional options" font="Regular2; 22" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="925,895" size="440,60" transparent="1" zPosition="1" />
    
 	</screen>
 
