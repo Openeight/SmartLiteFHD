@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <skin>
-  <!-- SmartLiteFHD Skin V3.30 by SkinMania for Octagon -->
+  <!-- SmartLiteFHD Skin V6.70 by SkinMania for Octagon -->
   <!-- Recommended to use with XPicons (220x132) -->
   <!-- You are not allowed to modify and redistribute SmartLiteFHD Skin and all graphics -->
   <output id="0">
@@ -4798,53 +4798,60 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <!-- Clock -->
     <panel name="Clock" />
   </screen>
-     <!-- SelectImage -->
-	<screen name="SelectImage" title="" position="fill" flags="wfNoBorder">
-		<panel name="ChoiceBox"/>
-        <panel name="BS4" />
-	</screen>
-	<!-- AutoBackup -->
-
-		<screen name="Config" position="fill" flags="wfNoBorder">
-       	<panel name="ChoiceBox"/>
-        <panel name="BS4" />	
-        <widget name="config" position="780,105" backgroundColor="EL_Background"  size="900,250" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
-		<widget name="statusbar" position="795,495" backgroundColor="EL_Background"  size="1095,35" font="Regular;32"/>
-		<widget name="status" position="795,540" backgroundColor="EL_Background"  size="900,190" font="Console;22"/>
-		<ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_menu.png" position="1590,986" size="64,38" />
-        <eLabel text="Press MENU on your remote control for additional options" font="Regular2; 22" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="925,895" size="440,60" transparent="1" zPosition="1" />
-   
-	</screen>
-
-	
-	<!-- imageBackup -->
-	
-	<screen name="ImageBackup" title=" == OpenEight Image Backup Tool == " position="center,center" size="750,900" flags="wfNoBorder" backgroundColor="transparent" foregroundColor="EL_Foreground">
-	    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/menu/oc_mini2.png" position="20,10" size="47,45" />
-		<ePixmap alphatest="blend" pixmap="SmartLiteFHD/menu/oc_mini2.png" position="680,10" size="47,45" />
-		<eLabel name="b" position="0,0" size="750,700" backgroundColor="EL_Background" zPosition="-2" />
-		<eLabel name="a" position="1,1" size="748,698" backgroundColor="#00000000" zPosition="-1" />
-		<widget source="Title" render="Label" position="150,10" foregroundColor="#00ffffff" size="480,50" halign="left" font="Regular; 28" backgroundColor="#00000000" />
-		<eLabel name="line" position="1,60" size="748,1" backgroundColor="Red" zPosition="1" />
-		<eLabel name="line2" position="1,250" size="748,4" backgroundColor="Red" zPosition="1" />
-		<widget name="config" position="2,280" size="730,380" halign="center" font="Regular; 22" backgroundColor="#00000000" foregroundColor="#00e5b243" />
-		<widget source="description" render="Label" position="2,80" size="730,50" halign="center" font="Regular; 22" backgroundColor="#00000000" foregroundColor="#00ffffff" />
-		<widget source="options" render="Label" position="2,130" size="730,60" halign="center" font="Regular; 22" backgroundColor="#00000000" foregroundColor="#00ffffff" />
-		<widget source="key_red" render="Label" position="30,200" size="150,30" noWrap="1" zPosition="1" valign="center" font="Regular; 20" halign="left" backgroundColor="#00000000" foregroundColor="#00ffffff" />
-		<widget source="key_green" render="Label" position="200,200" size="150,30" noWrap="1" zPosition="1" valign="center" font="Regular; 20" halign="left" backgroundColor="#00000000" foregroundColor="#00ffffff" />
-		<eLabel position="20,200" size="6,40" backgroundColor="#00e61700" /> <!-- Should be a pixmap -->
-		<eLabel position="190,200" size="6,40" backgroundColor="#0061e500" /> <!-- Should be a pixmap -->
-	</screen>
-	
-			<screen name="NetflixEd" position="center,center" size="1920,1080" title="Netflix Setup">
-			 <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
-			 <panel name="Backg" />
-            <panel name="Clock" />
-			<panel name="BS4" />
-
-			<ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_text.png" position="1569,986" size="64,38" />
-            <ePixmap alphatest="blend" pixmap="SmartLiteFHD/skin_default/buttons/key_board.png" position="1565,922" size="84,50" />
-           <widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="center,center" size="1170,600" transparent="1" zPosition="3" />
+  <!-- NewScreens -->
+  <!-- Open8 image 01.05.2020 -->
+  <!-- NewScreens -->
+  <screen name="SelectImage" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <panel name="Backg" />
+    <panel name="Clock" />
+    <panel name="BS2" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="list" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="white" position="center,155" size="1300,700" transparent="1" zPosition="1" halign="center" />
+  </screen>
+  <screen name="FlashImage" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <!-- Back -->
+    <eLabel backgroundColor="EL_Background" foregroundColor="EL_Background" name="" position="360,345" size="1200,390" zPosition="-20" />
+    <eLabel backgroundColor="Red" position="360,425" size="1200,3" zPosition="-9" foregroundColor="white" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" position="490,355" size="1000,58" backgroundColor="EL_Background" transparent="1" foregroundColor="white" />
+    <widget name="header" backgroundColor="EL_Background" font="FHD; 32" foregroundColor="EL_Foreground" position="410,455" size="1100,50" transparent="1" />
+    <widget name="info" backgroundColor="EL_Background" font="FHD; 32" foregroundColor="EL_Foreground" position="center,510" size="1100,95" transparent="1" />
+    <widget name="progress" backgroundColor="EL_Background" borderColor="grey" borderWidth="2" foregroundColor="blue" position="center,635" size="1100,25" transparent="1" />
+    <!-- icon -->
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/menu/oc_mini.png" position="410,353" size="68,65" />
+  </screen>
+  <screen name="ImageBackup" title="Image Backup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <panel name="Backg" />
+    <panel name="Clock" />
+    <panel name="BS2" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget source="description" render="Label" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="white" position="310,155" size="1300,200" transparent="1" zPosition="1" halign="center" />
+    <eLabel backgroundColor="white" position="center,360" size="1300,3" zPosition="-9" foregroundColor="white" />
+    <widget name="config" font="FHD; 32" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="white" position="center,380" size="1300,250" transparent="1" zPosition="1" />
+    <widget source="options" render="Label" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="white" position="center,680" size="1300,250" transparent="1" zPosition="1" />
+  </screen>
+  <screen name="Config" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <panel name="Backg" />
+    <panel name="Clock" />
+    <panel name="BS4" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="config" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="center,center" size="1300,650" transparent="1" />
+    <eLabel backgroundColor="blue" position="center,207" size="1300,2" zPosition="-9" foregroundColor="blue" />
+    <widget name="status" font="FHD; 33" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="center,155" size="1300,50" transparent="1" />
+    <eLabel backgroundColor="white" position="center,870" size="1300,2" zPosition="-9" foregroundColor="dark" />
+    <eLabel text="Press MENU on your remote control for additional options" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="center,875" size="1300,60" transparent="1" zPosition="1" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_menu.png" position="1590,986" size="64,38" />
+  </screen>
+  <screen name="NetflixEd" title="Netflix Setup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <panel name="Backg" />
+    <panel name="Clock" />
+    <panel name="BS4" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="config" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="center,155" size="1300,800" transparent="1" />
   </screen>
  
 </skin>
