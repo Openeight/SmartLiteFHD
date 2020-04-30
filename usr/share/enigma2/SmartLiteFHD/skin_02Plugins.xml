@@ -7946,8 +7946,11 @@
     <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
     <widget name="list" itemHeight="42" font="Regular2; 28" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="310,155" size="1300,800" transparent="1" zPosition="3" />
   </screen>
+<<<<<<< HEAD
  
   <screen name="NetflixTVWindow" position="center,center" size="1280,720" backgroundColor="transparent" flags="wfNoBorder" title="Netflix Plugin">
   </screen>
+=======
+>>>>>>> c337c52f19440a15b6cee95c90f0813f39af272a
 
 </skin>
