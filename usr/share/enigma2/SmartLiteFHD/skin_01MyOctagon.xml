@@ -756,71 +756,16 @@
     </widget>
   </screen>
 
-  <screen name="NetworkSamba" title="Samba Setup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+
+  <screen name="Config" title="Wake-On-LAN Configuration" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <panel name="Backg" />
-    <panel name="BS4" />
-    <!-- Widget -->
-    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
-    <widget name="lab1" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="310,155" size="320,50" transparent="1" />
-    <widget name="labactive" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="635,155" size="300,50" transparent="1" />
-    <widget name="lab2" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="310,225" size="320,50" transparent="1" />
-    <widget name="labstop" font="FHD; 32" backgroundColor="EL_Red" foregroundColor="EL_Foreground" position="635,225" size="300,50" halign="center" />
-    <widget name="labrun" font="FHD; 32" backgroundColor="green" foregroundColor="EL_Foreground" position="635,225" size="300,50" halign="center" />
-    <!-- Clock -->
     <panel name="Clock" />
-  </screen>
-
-
-  <screen name="NetworkSambaLog" title="Samba Log" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
-    <panel name="Backg" />
+    <panel name="BN4" />
     <!-- Widget -->
-    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
-    <widget name="infotext" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" position="310,155" size="1300,800" transparent="1" zPosition="3" backgroundColor="EL_Background" />
-    <!-- Clock -->
-    <panel name="Clock" />
-  </screen>
-  <screen name="NetworkFtp" title="FTP Setup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-    <panel name="Backg" />
-    <panel name="BS2" />
-    <!-- Widget -->
-    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
-    <widget name="lab1" font="Regular2; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="center,245" size="1300,550" transparent="1" />
-    <widget name="lab2" font="Bold; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="310,155" size="300,50" transparent="1" />
-    <widget name="labstop" font="Bold; 30" backgroundColor="EL_Red" foregroundColor="EL_Foreground" position="630,155" size="300,50" halign="center" />
-    <widget name="labrun" font="Bold; 30" backgroundColor="green" foregroundColor="EL_Foreground" position="630,155" size="300,50" halign="center" />
-    <eLabel backgroundColor="white" position="center,230" size="1300,1" zPosition="-9" foregroundColor="white" />
-    <!-- Clock -->
-    <panel name="Clock" />
-  </screen>
-
-
-  <screen name="NetworkTelnet" title="Telnet Setup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-    <panel name="Backg" />
-    <panel name="BS2" />
-    <!-- Widget -->
-    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
-    <widget name="lab1" font="Regular2; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="center,245" size="1300,550" transparent="1" />
-    <widget name="lab2" font="Bold; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="310,155" size="300,50" transparent="1" />
-    <widget name="labstop" font="Bold; 30" backgroundColor="EL_Red" foregroundColor="EL_Foreground" position="630,155" size="300,50" halign="center" />
-    <widget name="labrun" font="Bold; 30" backgroundColor="green" foregroundColor="EL_Foreground" position="630,155" size="300,50" halign="center" />
-    <eLabel backgroundColor="white" position="center,230" size="1300,1" zPosition="-9" foregroundColor="white" />
-    <!-- Clock -->
-    <panel name="Clock" />
-  </screen>
-
-
-   <screen name="NetworkOpenvpn" title="VPN Setup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-    <panel name="Backg" />
-    <panel name="BS4" />
-    <!-- Widget -->
-    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
-    <widget name="lab1" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="310,155" size="320,50" transparent="1" />
-    <widget name="labactive" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="635,155" size="300,50" transparent="1" />
-    <widget name="lab2" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="310,225" size="320,50" transparent="1" />
-    <widget name="labstop" font="FHD; 32" backgroundColor="EL_Red" foregroundColor="EL_Foreground" position="635,225" size="300,50" halign="center" />
-    <widget name="labrun" font="FHD; 32" backgroundColor="green" foregroundColor="EL_Foreground" position="635,225" size="300,50" halign="center" />
-    <!-- Clock -->
-    <panel name="Clock" />
+    <eLabel text="Wake-On-LAN Configuration" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="config" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="310,155" size="1300,750" transparent="1" />
+    <eLabel backgroundColor="white" position="310,915" size="1300,1" zPosition="-9" foregroundColor="dark" />
+    <widget name="status" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="310,920" size="1300,45" transparent="1" />
   </screen>
 
   
