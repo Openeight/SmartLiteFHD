@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <skin>
-  <!-- SmartLiteFHD Skin V6.7a by SkinMania for Octagon -->
+  <!-- SmartLiteFHD Skin V6.70 by SkinMania for Octagon -->
   <!-- Recommended to use with XPicons (220x132) -->
   <!-- You are not allowed to modify and redistribute SmartLiteFHD Skin and all graphics -->
   <output id="0">
@@ -169,7 +169,7 @@
   <include filename="/usr/share/enigma2/SmartLiteFHD/skin_04SystemPlugins.xml" />
   <include filename="/usr/share/enigma2/SmartLiteFHD/skin_templates.xml" />
   <parameters>
-    <parameter name="ConfigListSlider" value="22,0" />
+    <parameter name="ConfigListSlider" value="22,0"/>
     <parameter name="ConfigListSeperator" value="380" />
     <parameter name="ChoicelistDash" value="10,3,1000,50" />
     <parameter name="ChoicelistName" value="85,3,1000,50" />
@@ -191,7 +191,7 @@
     <parameter name="SelectionListDescr" value="55, 3, 1000, 50" />
     <parameter name="SelectionListLock" value="10, 7, 50, 50" />
     <parameter name="VirtualKeyboard" value="68, 68" />
-    <parameter name="VirtualKeyBoardShiftColors" value="0x00ffffff,0x00ffffff,0x0000ffff,0x00ff00ff" />
+    <parameter name="VirtualKeyBoardShiftColors" value="0x00ffffff,0x00ffffff,0x0000ffff,0x00ff00ff"/>
     <parameter name="ProgrammlistenUpdaterList" value="10,8,480,200,40" />
     <parameter name="ProgrammlistenUpdaterListFont" value="Bold;28" />
     <parameter name="HelpMenuListHlp" value="0, 0, 900, 42" />
@@ -207,279 +207,237 @@
     <parameter name="PiconManagerList" value="15,0,1500,50" />
     <parameter name="ProgrammlistenUpdaterList" value="15,12,720,300,60" />
     <parameter name="ProgrammlistenUpdaterListFont" value="Bold;30" />
-    <parameter name="ChoicelistNameSingle" value="7,3,1000,50" />
+    <parameter name= "ChoicelistNameSingle" value ="7,3,1000,50" />
   </parameters>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="InfoBar" position="center,center" size="1920,1080" title="InfoBar">
-    <eLabel backgroundColor="EL_Background" name="InfoBar" position="center,895" size="1920,185" zPosition="-11" />
-    <eLabel backgroundColor="unff0000" name="" position="center,899" size="1920,1" zPosition="-10" foregroundColor="white" />
+    <eLabel backgroundColor="EL_Background" name="InfoBar" position="center,905" size="1920,175" zPosition="-11" />
+    <eLabel backgroundColor="unff0000" name="" position="center,909" size="1920,1" zPosition="-10" foregroundColor="white" />
+    <eLabel backgroundColor="blue" position="315,976" size="215,6" zPosition="-9" foregroundColor="white" />
     <!-- Widget -->
-    <widget source="session.CurrentService" render="ChannelNumber" font="Regular2; 75" borderColor="black" backgroundColor="transparent" foregroundColor="white" position="50,800" size="250,90" transparent="1" halign="center" valign="center" zPosition="1" borderWidth="3" />
-    <widget source="session.CurrentService" render="Label" font="Regular2; 75" borderColor="black" backgroundColor="transparent" foregroundColor="white" position="310,800" size="1520,90" transparent="1" halign="left" valign="center" zPosition="1" borderWidth="3">
+    <widget source="session.CurrentService" render="ChannelNumber" font="Regular2; 75" borderColor="black" backgroundColor="transparent" foregroundColor="white" position="50,810" size="220,90" transparent="1" halign="center" valign="center" zPosition="1" borderWidth="3" />
+    <widget source="session.CurrentService" render="Label" font="Regular2; 75" borderColor="black" backgroundColor="transparent" foregroundColor="white" position="310,810" size="1520,90" transparent="1" halign="left" valign="center" zPosition="1" borderWidth="3">
       <convert type="ServiceName">Name</convert>
     </widget>
     <!-- picon -->
-    <widget alphatest="blend" position="50,912" render="SL_XPicon" size="250,150" source="session.CurrentService" transparent="1" zPosition="4">
+    <widget alphatest="blend" position="50,914" render="SL_XPicon" size="220,132" source="session.CurrentService" transparent="1" zPosition="4">
       <convert type="ServiceName">Reference</convert>
     </widget>
     <!-- EventNow -->
-    <widget source="session.Event_Now" font="FHD; 40" render="SL_RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" backgroundColor="EL_Background" foregroundColor="white" position="620,903" size="980,54" halign="left" valign="center" noWrap="1" transparent="1">
+    <widget source="session.Event_Now" font="FHD; 40" render="SL_RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" backgroundColor="EL_Background" foregroundColor="white" position="570,915" size="1080,54" halign="left" valign="center" noWrap="1" transparent="1">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget backgroundColor="EL_Background" font="FHD; 38" halign="right" position="350,905" render="Label" size="110,50" source="session.Event_Now" transparent="1" foregroundColor="white">
+    <widget backgroundColor="EL_Background" font="FHD; 38" halign="right" position="300,917" render="Label" size="110,50" source="session.Event_Now" transparent="1" foregroundColor="white">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Format:%H:%M</convert>
     </widget>
-    <eLabel backgroundColor="EL_Background" font="FHD; 38" halign="center" position="460,903" size="25,50" text="-" transparent="1" foregroundColor="white" />
-    <widget backgroundColor="EL_Background" font="FHD; 38" halign="left" position="485,905" render="Label" size="110,50" source="session.Event_Now" transparent="1" foregroundColor="white">
+    <eLabel backgroundColor="EL_Background" font="FHD; 38" halign="center" position="410,915" size="25,50" text="-" transparent="1" foregroundColor="white" />
+    <widget backgroundColor="EL_Background" font="FHD; 38" halign="left" position="435,917" render="Label" size="110,50" source="session.Event_Now" transparent="1" foregroundColor="white">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Format:%H:%M</convert>
     </widget>
-    <widget backgroundColor="EL_Background" font="FHD; 38" halign="right" position="1605,905" render="Label" size="240,50" source="session.Event_Now" transparent="1" foregroundColor="white">
+    <widget backgroundColor="EL_Background" font="FHD; 38" halign="right" position="1655,917" render="Label" size="190,50" source="session.Event_Now" transparent="1" foregroundColor="white">
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
-    <widget source="session.Event_Now" render="Progress" position="370,966" size="1230,6" backgroundColor="blue" foregroundColor="blue" transparent="1" zPosition="7">
+    <widget source="session.Event_Now" render="Progress" position="570,976" size="1080,6" backgroundColor="blue" foregroundColor="blue" transparent="1" zPosition="7">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <eLabel backgroundColor="blue" position="1630,966" size="215,6" zPosition="-9" foregroundColor="white" />
-    <eLabel backgroundColor="EL_Accent1" foregroundColor="EL_Accent1" name="new eLabel" position="370,968" size="1230,2" />
-    <!-- EventNext -->
-    <widget backgroundColor="EL_Background" font="Regular; 35" foregroundColor="white" halign="right" noWrap="1" position="350,972" render="Label" size="110,50" source="session.Event_Next" transparent="1" valign="center">
-      <convert type="EventTime">StartTime</convert>
-      <convert type="ClockToText">Format:%H:%M</convert>
-    </widget>
-    <eLabel backgroundColor="EL_Background" font="FHD; 38" foregroundColor="white" halign="center" noWrap="1" position="460,970" size="25,50" text="-" transparent="1" valign="center" />
-    <widget backgroundColor="EL_Background" font="Regular; 35" foregroundColor="white" halign="left" noWrap="1" position="485,972" render="Label" size="110,50" source="session.Event_Next" transparent="1" valign="center">
-      <convert type="EventTime">EndTime</convert>
-      <convert type="ClockToText">Format:%H:%M</convert>
-    </widget>
-    <widget source="session.Event_Next" render="SL_RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" font="Regular; 35" backgroundColor="EL_Background" foregroundColor="white" position="620,972" size="980,50" transparent="1" halign="left" valign="center">
-      <convert type="EventName">Name</convert>
-    </widget>
-    <widget backgroundColor="EL_Background" font="Regular; 35" foregroundColor="white" halign="right" position="1605,972" render="Label" size="240,50" source="session.Event_Next" transparent="1">
-      <convert type="EventTime">Duration</convert>
-      <convert type="ClockToText">InMinutes</convert>
-    </widget>
+    <eLabel backgroundColor="blue" position="1680,976" size="165,6" zPosition="-9" foregroundColor="white" />
+    <eLabel backgroundColor="EL_Accent1" foregroundColor="EL_Accent1" name="new eLabel" position="570,978" size="1080,2" />
     <!-- icons -->
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/my_icons/dolby_off2.png" position="1739,1035" size="50,30" zPosition="1" />
-    <widget alphatest="blend" pixmap="SmartLiteFHD/my_icons/dolby_on.png" position="1739,1035" render="Pixmap" size="50,30" source="session.CurrentService" zPosition="2">
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/my_icons/dolby_off2.png" position="459,1005" size="50,30" zPosition="1" />
+    <widget alphatest="blend" pixmap="SmartLiteFHD/my_icons/dolby_on.png" position="459,1005" render="Pixmap" size="50,30" source="session.CurrentService" zPosition="2">
       <convert type="ServiceInfo">IsMultichannel</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/my_icons/format_off2.png" position="1675,1035" size="52,30" zPosition="1" />
-    <widget alphatest="blend" pixmap="SmartLiteFHD/my_icons/format_on.png" position="1675,1035" render="Pixmap" size="52,30" source="session.CurrentService" zPosition="2">
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/my_icons/format_off2.png" position="395,1005" size="52,30" zPosition="1" />
+    <widget alphatest="blend" pixmap="SmartLiteFHD/my_icons/format_on.png" position="395,1005" render="Pixmap" size="52,30" source="session.CurrentService" zPosition="2">
       <convert type="ServiceInfo">IsWidescreen</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/my_icons/hd_off.png" position="1608,1035" size="63,30" zPosition="1" />
-    <widget source="session.CurrentService" render="Pixmap" alphatest="blend" pixmap="SmartLiteFHD/my_icons/hd_on.png" position="1608,1035" size="63,30" zPosition="2">
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/my_icons/hd_off.png" position="328,1005" size="63,30" zPosition="1" />
+    <widget source="session.CurrentService" render="Pixmap" alphatest="blend" pixmap="SmartLiteFHD/my_icons/hd_on.png" position="328,1005" size="63,30" zPosition="2">
       <convert type="ServiceInfo">VideoWidth</convert>
       <convert type="ValueRange">721,3841</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/my_icons/rec_off.png" position="1313,1035" size="78,30" zPosition="1" />
-    <widget alphatest="blend" pixmap="SmartLiteFHD/my_icons/rec_on.png" position="1313,1035" render="Pixmap" size="78,30" source="session.RecordState" zPosition="2">
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/my_icons/rec_off.png" position="780,1005" size="78,30" zPosition="1" />
+    <widget alphatest="blend" pixmap="SmartLiteFHD/my_icons/rec_on.png" position="780,1005" render="Pixmap" size="78,30" source="session.RecordState" zPosition="2">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/my_icons/crypt_off.png" position="1800,1035" size="45,30" zPosition="1" />
-    <widget alphatest="blend" pixmap="SmartLiteFHD/my_icons/crypt_on.png" position="1800,1035" render="Pixmap" size="45,30" source="session.CurrentService" zPosition="2">
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/my_icons/crypt_off.png" position="868,1005" size="45,30" zPosition="1" />
+    <widget alphatest="blend" pixmap="SmartLiteFHD/my_icons/crypt_on.png" position="868,1005" render="Pixmap" size="45,30" source="session.CurrentService" zPosition="2">
       <convert type="ServiceInfo">IsCrypted</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/my_icons/hbbtv_off.png" position="1465,1033" size="80,30" zPosition="1" />
-    <widget alphatest="blend" pixmap="SmartLiteFHD/my_icons/hbbtv_on.png" position="1465,1033" render="Pixmap" size="80,30" source="session.CurrentService" zPosition="10">
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/my_icons/hbbtv_off.png" position="634,1005" size="80,30" zPosition="1" />
+    <widget alphatest="blend" pixmap="SmartLiteFHD/my_icons/hbbtv_on.png" position="634,1005" render="Pixmap" size="80,30" source="session.CurrentService" zPosition="10">
       <convert type="ServiceInfo">HasHBBTV</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/my_icons/txt_off.png" position="1555,1035" size="46,30" zPosition="1" />
-    <widget alphatest="blend" pixmap="SmartLiteFHD/my_icons/txt_on.png" position="1555,1035" render="Pixmap" size="46,30" source="session.CurrentService" zPosition="2">
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/my_icons/txt_off.png" position="724,1005" size="46,30" zPosition="1" />
+    <widget alphatest="blend" pixmap="SmartLiteFHD/my_icons/txt_on.png" position="724,1005" render="Pixmap" size="46,30" source="session.CurrentService" zPosition="2">
       <convert type="ServiceInfo">HasTelext</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/my_icons/sub_off.png" position="1401,1035" size="54,30" zPosition="1" />
-    <widget alphatest="blend" pixmap="SmartLiteFHD/my_icons/sub_on.png" position="1401,1035" render="Pixmap" size="54,30" source="session.CurrentService" zPosition="2">
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/my_icons/sub_off.png" position="570,1005" size="54,30" zPosition="1" />
+    <widget alphatest="blend" pixmap="SmartLiteFHD/my_icons/sub_on.png" position="570,1005" render="Pixmap" size="54,30" source="session.CurrentService" zPosition="2">
       <convert type="ServiceInfo">SubtitlesAvailable</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <!-- boxinfo -->
-    <widget source="session.CurrentService" render="Label" position="683,1027" size="135,42" halign="right" font="FHD; 30" zPosition="4" transparent="1" foregroundColor="white" backgroundColor="background" noWrap="1" valign="center">
+    <widget source="session.CurrentService" render="Label" position="1515,1000" size="135,42" halign="right" font="Bold; 31" zPosition="4" transparent="1" foregroundColor="white" backgroundColor="background" noWrap="1" valign="center">
       <convert type="SL_ServiceName">%s</convert>
     </widget>
     <!-- tuner -->
-    <widget source="session.TunerInfo" render="FixedLabel" text="A" position="375,1027" zPosition="3" size="42,42" font="FHD; 30" halign="center" backgroundColor="EL_Background" transparent="1" valign="center" foregroundColor="blue">
+    <widget source="session.TunerInfo" render="FixedLabel" text="A" position="1680,1005" zPosition="3" size="30,30" font="Bold; 24" halign="center" backgroundColor="EL_Blue" transparent="0" valign="center" foregroundColor="blue">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">1</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.TunerInfo" render="FixedLabel" text="B" position="417,1027" zPosition="3" size="42,42" font="FHD; 30" halign="center" backgroundColor="EL_Background" transparent="1" valign="center" foregroundColor="blue">
+    <widget source="session.TunerInfo" render="FixedLabel" text="B" position="1725,1005" zPosition="3" size="30,30" font="Bold; 24" halign="center" backgroundColor="EL_Blue" transparent="0" valign="center" foregroundColor="blue">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">2</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.TunerInfo" render="FixedLabel" text="C" position="459,1027" zPosition="3" size="42,42" font="FHD; 30" halign="center" backgroundColor="EL_Background" transparent="1" valign="center" foregroundColor="blue">
+    <widget source="session.TunerInfo" render="FixedLabel" text="C" position="1770,1005" zPosition="3" size="30,30" font="Bold; 24" halign="center" backgroundColor="EL_Blue" transparent="0" valign="center" foregroundColor="blue">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">4</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.TunerInfo" render="FixedLabel" text="D" position="501,1027" zPosition="3" size="42,42" font="FHD; 30" halign="center" backgroundColor="EL_Background" transparent="1" valign="center" foregroundColor="blue">
+    <widget source="session.TunerInfo" render="FixedLabel" text="D" position="1815,1005" zPosition="3" size="30,30" font="Bold; 24" halign="center" backgroundColor="EL_Blue" transparent="0" valign="center" foregroundColor="blue">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">8</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <eLabel backgroundColor="EL_Background" font="FHD; 30" halign="center" position="375,1027" size="42,42" transparent="1" valign="center" zPosition="1" foregroundColor="un444444" text="A" />
-    <eLabel backgroundColor="EL_Background" font="FHD; 30" halign="center" position="417,1027" size="42,42" transparent="1" valign="center" zPosition="1" foregroundColor="un444444" text="B" />
-    <eLabel backgroundColor="EL_Background" font="FHD; 30" halign="center" position="459,1027" size="42,42" transparent="1" valign="center" zPosition="1" foregroundColor="un444444" text="C" />
-    <eLabel backgroundColor="EL_Background" font="FHD; 30" halign="center" position="501,1027" size="42,42" transparent="1" valign="center" zPosition="1" foregroundColor="un444444" text="D" />
+    <eLabel backgroundColor="un444444" font="Regular2; 28" halign="center" noWrap="1" position="1680,1005" size="30,30" transparent="0" valign="center" zPosition="1" foregroundColor="darkgrey" />
+    <eLabel backgroundColor="un444444" font="Regular2; 28" halign="center" noWrap="1" position="1725,1005" size="30,30" transparent="0" valign="center" zPosition="1" foregroundColor="darkgrey" />
+    <eLabel backgroundColor="un444444" font="Regular2; 28" halign="center" noWrap="1" position="1770,1005" size="30,30" transparent="0" valign="center" zPosition="1" foregroundColor="darkgrey" />
+    <eLabel backgroundColor="un444444" font="Regular2; 28" halign="center" noWrap="1" position="1815,1005" size="30,30" transparent="0" valign="center" zPosition="1" foregroundColor="darkgrey" />
     <!-- snr - agc -->
-    <widget source="session.FrontendStatus" render="Label" position="543,1027" size="140,42" backgroundColor="EL_Background" foregroundColor="white" transparent="1" halign="center" font="FHD; 30" valign="center">
+    <widget source="session.FrontendStatus" render="Label" position="1275,1000" size="140,42" backgroundColor="background" foregroundColor="un56c856" transparent="1" halign="right" font="Bold; 31" valign="center">
       <convert type="FrontendInfo">SNR</convert>
     </widget>
-    <widget backgroundColor="EL_Background" font="FHD; 30" foregroundColor="white" halign="right" position="880,1027" render="Label" size="150,42" source="session.CurrentService" transparent="1" valign="center" zPosition="1">
-      <convert type="ServiceInfo">VideoWidth</convert>
+    <widget source="session.FrontendStatus" render="Label" position="1405,1000" size="105,42" backgroundColor="background" foregroundColor="blueCH" transparent="1" halign="right" font="Bold; 31" valign="center">
+      <convert type="FrontendInfo">AGC</convert>
     </widget>
-    <eLabel backgroundColor="EL_Background" font="FHD; 30" foregroundColor="white" position="1030,1027" size="30,42" text="x" transparent="1" valign="center" zPosition="2" halign="center" />
-    <widget backgroundColor="EL_Background" font="FHD; 30" foregroundColor="white" halign="left" position="1060,1027" render="Label" size="145,42" source="session.CurrentService" transparent="1" valign="center" zPosition="3">
-      <convert type="ServiceInfo">VideoHeight</convert>
-    </widget>
-    <!-- WeatherSmall -->
-    <eLabel backgroundColor="blue" position="200,68" size="160,80" transparent="0" zPosition="-12" foregroundColor="white" />
-    <eLabel backgroundColor="EL_Background" position="50,68" size="150,80" transparent="0" zPosition="-12" />
-    <widget backgroundColor="background" font="FHD; 42" render="Label" position="57,77" size="136,54" source="session.MSNWeather" transparent="1" zPosition="8" halign="center" foregroundColor="white">
-      <convert type="MSNWeather">temperature_current</convert>
-    </widget>
-    <widget alphatest="blend" render="MSNWeatherPixmap" position="200,68" size="80,80" source="session.MSNWeather" transparent="1" zPosition="5">
-      <convert type="MSNWeather">weathericon,day2,/usr/share/enigma2/SmartLiteFHD/WeatherIcon/,png</convert>
-    </widget>
-    <widget backgroundColor="background" font="Bold; 28" render="Label" position="280,68" size="80,40" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" valign="center" foregroundColor="white">
-      <convert type="MSNWeather">temperature_high,day2</convert>
-    </widget>
-    <widget backgroundColor="background" font="Bold; 28" render="Label" position="280,108" size="80,40" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1" foregroundColor="white">
-      <convert type="MSNWeather">temperature_low,day2</convert>
+    <widget backgroundColor="EL_Background" font="Bold; 31" foregroundColor="EL_Blue" halign="left" position="940,996" render="Label" size="300,46" source="session.CurrentService" transparent="1" valign="center" zPosition="1" text="1280x720p25">
+      <convert type="PliExtraInfo">ResolutionString</convert>
     </widget>
     <!-- Clock -->
     <panel name="Clock2" />
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="SecondInfoBar" position="0,0" size="1920,1080" title="InfoBar">
-    <eLabel backgroundColor="EL_Background" name="InfoBar" position="center,895" size="1920,185" zPosition="-11" />
-    <eLabel backgroundColor="unff0000" name="" position="center,899" size="1920,1" zPosition="-10" foregroundColor="white" />
-    <!-- picon -->
-    <widget alphatest="blend" position="50,912" render="SL_XPicon" size="250,150" source="session.CurrentService" transparent="1" zPosition="4">
+    <eLabel backgroundColor="EL_Background" name="InfoBar" position="center,905" size="1920,175" zPosition="-11" />
+    <eLabel backgroundColor="unff0000" name="" position="center,909" size="1920,1" zPosition="-10" foregroundColor="white" />
+    <eLabel backgroundColor="blue" position="315,976" size="215,6" zPosition="-9" foregroundColor="white" />
+    <!-- Widget -->
+    <widget alphatest="blend" position="50,914" render="SL_XPicon" size="220,132" source="session.CurrentService" transparent="1" zPosition="4">
       <convert type="ServiceName">Reference</convert>
     </widget>
     <!-- EventNow -->
-    <widget source="session.Event_Now" font="FHD; 40" render="SL_RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" backgroundColor="EL_Background" foregroundColor="white" position="620,903" size="980,54" halign="left" valign="center" noWrap="1" transparent="1">
+    <widget source="session.Event_Now" font="FHD; 40" render="SL_RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" backgroundColor="EL_Background" foregroundColor="white" position="570,915" size="1080,54" halign="left" valign="center" noWrap="1" transparent="1">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget backgroundColor="EL_Background" font="FHD; 38" halign="right" position="350,905" render="Label" size="110,50" source="session.Event_Now" transparent="1" foregroundColor="white">
+    <widget backgroundColor="EL_Background" font="FHD; 38" halign="right" position="300,917" render="Label" size="110,50" source="session.Event_Now" transparent="1" foregroundColor="white">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Format:%H:%M</convert>
     </widget>
-    <eLabel backgroundColor="EL_Background" font="FHD; 38" halign="center" position="460,903" size="25,50" text="-" transparent="1" foregroundColor="white" />
-    <widget backgroundColor="EL_Background" font="FHD; 38" halign="left" position="485,905" render="Label" size="110,50" source="session.Event_Now" transparent="1" foregroundColor="white">
+    <eLabel backgroundColor="EL_Background" font="FHD; 38" halign="center" position="410,915" size="25,50" text="-" transparent="1" foregroundColor="white" />
+    <widget backgroundColor="EL_Background" font="FHD; 38" halign="left" position="435,917" render="Label" size="110,50" source="session.Event_Now" transparent="1" foregroundColor="white">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Format:%H:%M</convert>
     </widget>
-    <widget backgroundColor="EL_Background" font="FHD; 38" halign="right" position="1605,905" render="Label" size="240,50" source="session.Event_Now" transparent="1" foregroundColor="white">
+    <widget backgroundColor="EL_Background" font="FHD; 38" halign="right" position="1655,917" render="Label" size="190,50" source="session.Event_Now" transparent="1" foregroundColor="white">
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
-    <widget source="session.Event_Now" render="Progress" position="370,966" size="1230,6" backgroundColor="blue" foregroundColor="blue" transparent="1" zPosition="7">
+    <widget source="session.Event_Now" render="Progress" position="570,976" size="1080,6" backgroundColor="blue" foregroundColor="blue" transparent="1" zPosition="7">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <eLabel backgroundColor="blue" position="1630,966" size="215,6" zPosition="-9" foregroundColor="white" />
-    <eLabel backgroundColor="EL_Accent1" foregroundColor="EL_Accent1" name="new eLabel" position="370,968" size="1230,2" />
-    <!-- EventNext -->
-    <widget backgroundColor="EL_Background" font="Regular; 35" foregroundColor="white" halign="right" noWrap="1" position="350,972" render="Label" size="110,50" source="session.Event_Next" transparent="1" valign="center">
-      <convert type="EventTime">StartTime</convert>
-      <convert type="ClockToText">Format:%H:%M</convert>
-    </widget>
-    <eLabel backgroundColor="EL_Background" font="FHD; 38" foregroundColor="white" halign="center" noWrap="1" position="460,970" size="25,50" text="-" transparent="1" valign="center" />
-    <widget backgroundColor="EL_Background" font="Regular; 35" foregroundColor="white" halign="left" noWrap="1" position="485,972" render="Label" size="110,50" source="session.Event_Next" transparent="1" valign="center">
-      <convert type="EventTime">EndTime</convert>
-      <convert type="ClockToText">Format:%H:%M</convert>
-    </widget>
-    <widget source="session.Event_Next" render="SL_RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" font="Regular; 35" backgroundColor="EL_Background" foregroundColor="white" position="620,972" size="980,50" transparent="1" halign="left" valign="center">
-      <convert type="EventName">Name</convert>
-    </widget>
-    <widget backgroundColor="EL_Background" font="Regular; 35" foregroundColor="white" halign="right" position="1605,972" render="Label" size="240,50" source="session.Event_Next" transparent="1">
-      <convert type="EventTime">Duration</convert>
-      <convert type="ClockToText">InMinutes</convert>
-    </widget>
+    <eLabel backgroundColor="blue" position="1680,976" size="165,6" zPosition="-9" foregroundColor="white" />
+    <eLabel backgroundColor="EL_Accent1" foregroundColor="EL_Accent1" name="new eLabel" position="570,978" size="1080,2" />
     <!-- icons -->
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/my_icons/dolby_off2.png" position="1739,1035" size="50,30" zPosition="1" />
-    <widget alphatest="blend" pixmap="SmartLiteFHD/my_icons/dolby_on.png" position="1739,1035" render="Pixmap" size="50,30" source="session.CurrentService" zPosition="2">
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/my_icons/dolby_off2.png" position="221,500" size="50,30" zPosition="1" />
+    <widget alphatest="blend" pixmap="SmartLiteFHD/my_icons/dolby_on.png" position="221,500" render="Pixmap" size="50,30" source="session.CurrentService" zPosition="2">
       <convert type="ServiceInfo">IsMultichannel</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/my_icons/format_off2.png" position="1675,1035" size="52,30" zPosition="1" />
-    <widget alphatest="blend" pixmap="SmartLiteFHD/my_icons/format_on.png" position="1675,1035" render="Pixmap" size="52,30" source="session.CurrentService" zPosition="2">
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/my_icons/format_off2.png" position="157,500" size="52,30" zPosition="1" />
+    <widget alphatest="blend" pixmap="SmartLiteFHD/my_icons/format_on.png" position="157,500" render="Pixmap" size="52,30" source="session.CurrentService" zPosition="2">
       <convert type="ServiceInfo">IsWidescreen</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/my_icons/hd_off.png" position="1608,1035" size="63,30" zPosition="1" />
-    <widget source="session.CurrentService" render="Pixmap" alphatest="blend" pixmap="SmartLiteFHD/my_icons/hd_on.png" position="1608,1035" size="63,30" zPosition="2">
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/my_icons/hd_off.png" position="90,500" size="63,30" zPosition="1" />
+    <widget source="session.CurrentService" render="Pixmap" alphatest="blend" pixmap="SmartLiteFHD/my_icons/hd_on.png" position="90,500" size="63,30" zPosition="2">
       <convert type="ServiceInfo">VideoWidth</convert>
       <convert type="ValueRange">721,3841</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/my_icons/rec_off.png" position="1313,1035" size="78,30" zPosition="1" />
-    <widget alphatest="blend" pixmap="SmartLiteFHD/my_icons/rec_on.png" position="1313,1035" render="Pixmap" size="78,30" source="session.RecordState" zPosition="2">
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/my_icons/rec_off.png" position="787,500" size="78,30" zPosition="1" />
+    <widget alphatest="blend" pixmap="SmartLiteFHD/my_icons/rec_on.png" position="787,500" render="Pixmap" size="78,30" source="session.RecordState" zPosition="2">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/my_icons/crypt_off.png" position="1800,1035" size="45,30" zPosition="1" />
-    <widget alphatest="blend" pixmap="SmartLiteFHD/my_icons/crypt_on.png" position="1800,1035" render="Pixmap" size="45,30" source="session.CurrentService" zPosition="2">
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/my_icons/crypt_off.png" position="875,500" size="45,30" zPosition="1" />
+    <widget alphatest="blend" pixmap="SmartLiteFHD/my_icons/crypt_on.png" position="875,500" render="Pixmap" size="45,30" source="session.CurrentService" zPosition="2">
       <convert type="ServiceInfo">IsCrypted</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/my_icons/hbbtv_off.png" position="1465,1033" size="80,30" zPosition="1" />
-    <widget alphatest="blend" pixmap="SmartLiteFHD/my_icons/hbbtv_on.png" position="1465,1033" render="Pixmap" size="80,30" source="session.CurrentService" zPosition="10">
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/my_icons/hbbtv_off.png" position="641,500" size="80,30" zPosition="1" />
+    <widget alphatest="blend" pixmap="SmartLiteFHD/my_icons/hbbtv_on.png" position="641,500" render="Pixmap" size="80,30" source="session.CurrentService" zPosition="10">
       <convert type="ServiceInfo">HasHBBTV</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/my_icons/txt_off.png" position="1555,1035" size="46,30" zPosition="1" />
-    <widget alphatest="blend" pixmap="SmartLiteFHD/my_icons/txt_on.png" position="1555,1035" render="Pixmap" size="46,30" source="session.CurrentService" zPosition="2">
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/my_icons/txt_off.png" position="731,500" size="46,30" zPosition="1" />
+    <widget alphatest="blend" pixmap="SmartLiteFHD/my_icons/txt_on.png" position="731,500" render="Pixmap" size="46,30" source="session.CurrentService" zPosition="2">
       <convert type="ServiceInfo">HasTelext</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/my_icons/sub_off.png" position="1401,1035" size="54,30" zPosition="1" />
-    <widget alphatest="blend" pixmap="SmartLiteFHD/my_icons/sub_on.png" position="1401,1035" render="Pixmap" size="54,30" source="session.CurrentService" zPosition="2">
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/my_icons/sub_off.png" position="577,500" size="54,30" zPosition="1" />
+    <widget alphatest="blend" pixmap="SmartLiteFHD/my_icons/sub_on.png" position="577,500" render="Pixmap" size="54,30" source="session.CurrentService" zPosition="2">
       <convert type="ServiceInfo">SubtitlesAvailable</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <!-- boxinfo -->
-    <widget source="session.CurrentService" render="Label" position="683,1027" size="135,42" halign="right" font="FHD; 30" zPosition="4" transparent="1" foregroundColor="white" backgroundColor="background" noWrap="1" valign="center">
+    <widget source="session.CurrentService" render="Label" font="Bold; 31" backgroundColor="background" foregroundColor="white" noWrap="1" position="1300,735" size="125,42" transparent="1" zPosition="10" halign="right">
+      <convert type="ServiceOrbitalPosition" />
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="1165,735" size="135,42" halign="left" font="Bold; 31" zPosition="4" transparent="1" foregroundColor="white" backgroundColor="background" noWrap="1" valign="center">
       <convert type="SL_ServiceName">%s</convert>
     </widget>
     <!-- tuner -->
-    <widget source="session.TunerInfo" render="FixedLabel" text="A" position="375,1027" zPosition="3" size="42,42" font="FHD; 30" halign="center" backgroundColor="EL_Background" transparent="1" valign="center" foregroundColor="blue">
+    <widget source="session.TunerInfo" render="FixedLabel" text="A" position="990,740" zPosition="3" size="30,30" font="Bold; 24" halign="center" backgroundColor="EL_Blue" transparent="0" valign="center" foregroundColor="blue">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">1</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.TunerInfo" render="FixedLabel" text="B" position="417,1027" zPosition="3" size="42,42" font="FHD; 30" halign="center" backgroundColor="EL_Background" transparent="1" valign="center" foregroundColor="blue">
+    <widget source="session.TunerInfo" render="FixedLabel" text="B" position="1032,740" zPosition="3" size="30,30" font="Bold; 24" halign="center" backgroundColor="EL_Blue" transparent="0" valign="center" foregroundColor="blue">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">2</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.TunerInfo" render="FixedLabel" text="C" position="459,1027" zPosition="3" size="42,42" font="FHD; 30" halign="center" backgroundColor="EL_Background" transparent="1" valign="center" foregroundColor="blue">
+    <widget source="session.TunerInfo" render="FixedLabel" text="C" position="1078,740" zPosition="3" size="30,30" font="Bold; 24" halign="center" backgroundColor="EL_Blue" transparent="0" valign="center" foregroundColor="blue">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">4</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.TunerInfo" render="FixedLabel" text="D" position="501,1027" zPosition="3" size="42,42" font="FHD; 30" halign="center" backgroundColor="EL_Background" transparent="1" valign="center" foregroundColor="blue">
+    <widget source="session.TunerInfo" render="FixedLabel" text="D" position="1120,740" zPosition="3" size="30,30" font="Bold; 24" halign="center" backgroundColor="EL_Blue" transparent="0" valign="center" foregroundColor="blue">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">8</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <eLabel backgroundColor="EL_Background" font="FHD; 30" halign="center" position="375,1027" size="42,42" transparent="1" valign="center" zPosition="1" foregroundColor="un444444" text="A" />
-    <eLabel backgroundColor="EL_Background" font="FHD; 30" halign="center" position="417,1027" size="42,42" transparent="1" valign="center" zPosition="1" foregroundColor="un444444" text="B" />
-    <eLabel backgroundColor="EL_Background" font="FHD; 30" halign="center" position="459,1027" size="42,42" transparent="1" valign="center" zPosition="1" foregroundColor="un444444" text="C" />
-    <eLabel backgroundColor="EL_Background" font="FHD; 30" halign="center" position="501,1027" size="42,42" transparent="1" valign="center" zPosition="1" foregroundColor="un444444" text="D" />
+    <eLabel backgroundColor="un444444" font="Regular2; 28" halign="center" noWrap="1" position="990,740" size="30,30" transparent="0" valign="center" zPosition="1" foregroundColor="darkgrey" />
+    <eLabel backgroundColor="un444444" font="Regular2; 28" halign="center" noWrap="1" position="1032,740" size="30,30" transparent="0" valign="center" zPosition="1" foregroundColor="darkgrey" />
+    <eLabel backgroundColor="un444444" font="Regular2; 28" halign="center" noWrap="1" position="1078,740" size="30,30" transparent="0" valign="center" zPosition="1" foregroundColor="darkgrey" />
+    <eLabel backgroundColor="un444444" font="Regular2; 28" halign="center" noWrap="1" position="1120,740" size="30,30" transparent="0" valign="center" zPosition="1" foregroundColor="darkgrey" />
     <!-- snr - agc -->
-    <widget source="session.FrontendStatus" render="Label" position="543,1027" size="140,42" backgroundColor="EL_Background" foregroundColor="white" transparent="1" halign="center" font="FHD; 30" valign="center">
+    <widget source="session.FrontendStatus" render="Label" position="1590,735" size="140,42" backgroundColor="background" foregroundColor="un56c856" transparent="1" halign="right" font="Bold; 31" valign="center">
       <convert type="FrontendInfo">SNR</convert>
     </widget>
-    <widget backgroundColor="EL_Background" font="FHD; 30" foregroundColor="white" halign="center" position="818,1027" render="Label" size="420,42" source="session.CurrentService" transparent="1" valign="center" zPosition="1" text="1280x720p25">
+    <widget source="session.FrontendStatus" render="Label" position="1725,735" size="105,42" backgroundColor="background" foregroundColor="blueCH" transparent="1" halign="right" font="Bold; 31" valign="center">
+      <convert type="FrontendInfo">AGC</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 30" foregroundColor="EL_Blue" halign="right" position="280,495" render="Label" size="230,40" source="session.CurrentService" transparent="1" valign="center" zPosition="1" text="1280x720p25">
       <convert type="PliExtraInfo">ResolutionString</convert>
     </widget>
     <!-- Clock -->
@@ -491,6 +449,22 @@
     <eLabel backgroundColor="unff0000" position="90,116" size="830,3" zPosition="-9" foregroundColor="white" />
     <eLabel backgroundColor="blueCH" name="" position="990,725" size="840,1" zPosition="-10" foregroundColor="white" />
     <!-- EventNext -->
+    <widget backgroundColor="EL_Background" font="Regular; 36" foregroundColor="white" halign="right" noWrap="1" position="300,994" render="Label" size="110,50" source="session.Event_Next" transparent="1" valign="center">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <eLabel backgroundColor="EL_Background" font="FHD; 38" foregroundColor="white" halign="center" noWrap="1" position="410,992" size="25,50" text="-" transparent="1" valign="center" />
+    <widget backgroundColor="EL_Background" font="Regular; 36" foregroundColor="white" halign="left" noWrap="1" position="435,994" render="Label" size="110,50" source="session.Event_Next" transparent="1" valign="center">
+      <convert type="EventTime">EndTime</convert>
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget source="session.Event_Next" render="SL_RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" font="Regular; 36" backgroundColor="EL_Background" foregroundColor="white" position="570,994" size="1080,50" transparent="1" halign="left" valign="center">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Regular; 36" foregroundColor="white" halign="right" position="1655,994" render="Label" size="190,50" source="session.Event_Next" transparent="1">
+      <convert type="EventTime">Duration</convert>
+      <convert type="ClockToText">InMinutes</convert>
+    </widget>
     <!-- Widget -->
     <widget source="session.CurrentService" render="Label" font="Bold; 36" borderColor="white" backgroundColor="EL_Background" foregroundColor="EL_Blue" position="90,62" size="830,50" transparent="1" halign="right" valign="center" zPosition="1">
       <convert type="SL_ServiceInfo">ServiceNumberName</convert>
@@ -499,24 +473,24 @@
     <widget source="session.Event_Now" render="Label" font="Bold; 32" backgroundColor="EL_Background" foregroundColor="white" position="90,119" size="830,50" transparent="1" halign="left" valign="center">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="session.Event_Now" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" render="SL_RunningText" position="90,173" size="830,347" font="Regular; 30" zPosition="1" backgroundColor="EL_Background" foregroundColor="white" transparent="1" halign="left">
+    <widget source="session.Event_Now" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" render="SL_RunningText" position="90,173" size="830,307" font="Regular; 30" zPosition="1" backgroundColor="EL_Background" foregroundColor="white" transparent="1" halign="left">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
-    <eLabel backgroundColor="blue" position="90,535" size="420,4" zPosition="-9" foregroundColor="white" />
+    <eLabel backgroundColor="blue" position="90,545" size="420,4" zPosition="-9" foregroundColor="white" />
     <widget backgroundColor="EL_Background" font="Bold; 32" halign="left" position="90,550" render="Label" size="830,48" source="session.Event_Next" transparent="1" valign="center" foregroundColor="grey">
       <convert type="EventName">Name</convert>
     </widget>
     <widget source="session.Event_Next" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" render="SL_RunningText" position="90,600" size="830,268" font="Regular; 30" zPosition="1" backgroundColor="dark" transparent="1" halign="left" foregroundColor="grey">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="1330,735" size="500,42" font="Bold; 31" backgroundColor="EL_Background" foregroundColor="white" halign="right" valign="center" zPosition="4" transparent="1">
+    <widget source="session.CurrentService" render="Label" position="1330,676" size="500,42" font="Bold; 31" backgroundColor="EL_Background" foregroundColor="white" halign="right" valign="center" zPosition="4" transparent="1">
       <convert type="SL_ServiceName">%F %p %Y %f %M</convert>
     </widget>
     <!-- CryptInfo -->
-    <widget source="session.CurrentService" render="Label" font="Regular2; 28" position="990,615" size="840,100" halign="right" zPosition="50" backgroundColor="EL_Background" transparent="1" noWrap="1" valign="bottom" foregroundColor="white">
+    <widget source="session.CurrentService" render="Label" font="Bold; 30" position="990,800" size="840,42" halign="left" zPosition="50" backgroundColor="EL_Background" transparent="1" noWrap="1" valign="bottom" foregroundColor="white">
       <convert type="CryptoInfo">VerboseInfo</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="990,735" size="300,42" font="Bold; 30" backgroundColor="EL_Background" halign="left" transparent="1" foregroundColor="EL_Foreground" zPosition="1">
+    <widget source="session.CurrentService" render="Label" position="990,678" size="300,42" font="Bold; 30" backgroundColor="EL_Background" halign="left" transparent="1" foregroundColor="EL_Foreground" zPosition="1">
       <convert type="SL_Crypt">CryptoBar</convert>
     </widget>
     <!-- Info -->
@@ -606,7 +580,7 @@
     <eLabel backgroundColor="EL_New" position="300,679" size="500,100" zPosition="-50" foregroundColor="white" />
     <!-- Widget -->
     <widget source="title" render="Label" font="FHD; 45" backgroundColor="EL_Background" foregroundColor="white" position="310,505" size="480,145" transparent="1" halign="center" valign="center" />
-    <widget source="menu" render="Listbox" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="840,170" size="720,700" transparent="1">
+    <widget source="menu" render="Listbox" scrollbarMode="showNever" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="840,170" size="720,700" transparent="1">
       <convert type="TemplatedMultiContent">
                    {"template": [ MultiContentEntryText(pos = (45, 5), size = (700, 60), flags = RT_HALIGN_LEFT, text = 0) ], 
                    "fonts": [gFont("FHD", 40)], 
@@ -629,6 +603,10 @@
     <widget alphatest="blend" render="MSNWeatherPixmap" position="668,810" size="125,125" source="session.MSNWeather" transparent="1" zPosition="8">
       <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/SmartLiteFHD/WeatherIcon/,png</convert>
     </widget>
+    <!-- Buttons -->
+    <eLabel backgroundColor="blue" foregroundColor="EL_Background" name="" position="850,888" size="700,1" zPosition="-10" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/blue.png" position="875,895" size="40,40" />
+    <eLabel text="MenuSort" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="925,895" size="240,40" transparent="1" zPosition="1" />
     <!-- Clock -->
     <eLabel backgroundColor="white" position="637,704" size="1,50" transparent="0" zPosition="-1" />
     <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="644,687" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
@@ -649,7 +627,7 @@
     <eLabel backgroundColor="EL_New" position="300,679" size="500,100" zPosition="-50" foregroundColor="white" />
     <!-- Widget -->
     <widget source="title" render="Label" font="FHD; 45" backgroundColor="EL_Background" foregroundColor="white" position="310,505" size="480,145" transparent="1" halign="center" valign="center" />
-    <widget source="menu" render="Listbox" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="840,170" size="720,700" transparent="1">
+    <widget source="menu" render="Listbox" scrollbarMode="showNever" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="840,170" size="720,700" transparent="1">
       <convert type="TemplatedMultiContent">
                    {"template": [ MultiContentEntryText(pos = (45, 5), size = (700, 60), flags = RT_HALIGN_LEFT, text = 0) ], 
                    "fonts": [gFont("FHD", 40)], 
@@ -672,6 +650,10 @@
     <widget alphatest="blend" render="MSNWeatherPixmap" position="668,810" size="125,125" source="session.MSNWeather" transparent="1" zPosition="8">
       <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/SmartLiteFHD/WeatherIcon/,png</convert>
     </widget>
+    <!-- Buttons -->
+    <eLabel backgroundColor="blue" foregroundColor="EL_Background" name="" position="850,888" size="700,1" zPosition="-10" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/blue.png" position="875,895" size="40,40" />
+    <eLabel text="MenuSort" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="925,895" size="240,40" transparent="1" zPosition="1" />
     <!-- Clock -->
     <eLabel backgroundColor="white" position="637,704" size="1,50" transparent="0" zPosition="-1" />
     <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="644,687" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
@@ -692,7 +674,7 @@
     <eLabel backgroundColor="EL_New" position="300,679" size="500,100" zPosition="-50" foregroundColor="white" />
     <!-- Widget -->
     <widget source="title" render="Label" font="FHD; 45" backgroundColor="EL_Background" foregroundColor="white" position="310,505" size="480,145" transparent="1" halign="center" valign="center" />
-    <widget source="menu" render="Listbox" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="840,170" size="720,700" transparent="1">
+    <widget source="menu" render="Listbox" scrollbarMode="showNever" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="840,170" size="720,700" transparent="1">
       <convert type="TemplatedMultiContent">
                    {"template": [ MultiContentEntryText(pos = (45, 5), size = (700, 60), flags = RT_HALIGN_LEFT, text = 0) ], 
                    "fonts": [gFont("FHD", 40)], 
@@ -715,6 +697,10 @@
     <widget alphatest="blend" render="MSNWeatherPixmap" position="668,810" size="125,125" source="session.MSNWeather" transparent="1" zPosition="8">
       <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/SmartLiteFHD/WeatherIcon/,png</convert>
     </widget>
+    <!-- Buttons -->
+    <eLabel backgroundColor="blue" foregroundColor="EL_Background" name="" position="850,888" size="700,1" zPosition="-10" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/blue.png" position="875,895" size="40,40" />
+    <eLabel text="MenuSort" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="925,895" size="240,40" transparent="1" zPosition="1" />
     <!-- Clock -->
     <eLabel backgroundColor="white" position="637,704" size="1,50" transparent="0" zPosition="-1" />
     <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="644,687" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
@@ -735,7 +721,7 @@
     <eLabel backgroundColor="EL_New" position="300,679" size="500,100" zPosition="-50" foregroundColor="white" />
     <!-- Widget -->
     <widget source="title" render="Label" font="FHD; 45" backgroundColor="EL_Background" foregroundColor="white" position="310,505" size="480,145" transparent="1" halign="center" valign="center" />
-    <widget source="menu" render="Listbox" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="840,170" size="720,700" transparent="1">
+    <widget source="menu" render="Listbox" scrollbarMode="showNever" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="840,170" size="720,700" transparent="1">
       <convert type="TemplatedMultiContent">
                    {"template": [ MultiContentEntryText(pos = (45, 5), size = (700, 60), flags = RT_HALIGN_LEFT, text = 0) ], 
                    "fonts": [gFont("FHD", 40)], 
@@ -758,6 +744,10 @@
     <widget alphatest="blend" render="MSNWeatherPixmap" position="668,810" size="125,125" source="session.MSNWeather" transparent="1" zPosition="8">
       <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/SmartLiteFHD/WeatherIcon/,png</convert>
     </widget>
+    <!-- Buttons -->
+    <eLabel backgroundColor="blue" foregroundColor="EL_Background" name="" position="850,888" size="700,1" zPosition="-10" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/blue.png" position="875,895" size="40,40" />
+    <eLabel text="MenuSort" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="925,895" size="240,40" transparent="1" zPosition="1" />
     <!-- Clock -->
     <eLabel backgroundColor="white" position="637,704" size="1,50" transparent="0" zPosition="-1" />
     <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="644,687" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
@@ -778,7 +768,7 @@
     <eLabel backgroundColor="EL_New" position="300,679" size="500,100" zPosition="-50" foregroundColor="white" />
     <!-- Widget -->
     <widget source="title" render="Label" font="FHD; 45" backgroundColor="EL_Background" foregroundColor="white" position="310,505" size="480,145" transparent="1" halign="center" valign="center" />
-    <widget source="menu" render="Listbox" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="840,170" size="720,700" transparent="1">
+    <widget source="menu" render="Listbox" scrollbarMode="showNever" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="840,170" size="720,700" transparent="1">
       <convert type="TemplatedMultiContent">
                    {"template": [ MultiContentEntryText(pos = (45, 5), size = (700, 60), flags = RT_HALIGN_LEFT, text = 0) ], 
                    "fonts": [gFont("FHD", 40)], 
@@ -801,6 +791,10 @@
     <widget alphatest="blend" render="MSNWeatherPixmap" position="668,810" size="125,125" source="session.MSNWeather" transparent="1" zPosition="8">
       <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/SmartLiteFHD/WeatherIcon/,png</convert>
     </widget>
+    <!-- Buttons -->
+    <eLabel backgroundColor="blue" foregroundColor="EL_Background" name="" position="850,888" size="700,1" zPosition="-10" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/blue.png" position="875,895" size="40,40" />
+    <eLabel text="MenuSort" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="925,895" size="240,40" transparent="1" zPosition="1" />
     <!-- Clock -->
     <eLabel backgroundColor="white" position="637,704" size="1,50" transparent="0" zPosition="-1" />
     <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="644,687" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
@@ -821,7 +815,7 @@
     <eLabel backgroundColor="EL_New" position="300,679" size="500,100" zPosition="-50" foregroundColor="white" />
     <!-- Widget -->
     <widget source="title" render="Label" font="FHD; 45" backgroundColor="EL_Background" foregroundColor="white" position="310,505" size="480,145" transparent="1" halign="center" valign="center" />
-    <widget source="menu" render="Listbox" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="840,170" size="720,700" transparent="1">
+    <widget source="menu" render="Listbox" scrollbarMode="showNever" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="840,170" size="720,700" transparent="1">
       <convert type="TemplatedMultiContent">
                    {"template": [ MultiContentEntryText(pos = (45, 5), size = (700, 60), flags = RT_HALIGN_LEFT, text = 0) ], 
                    "fonts": [gFont("FHD", 40)], 
@@ -844,6 +838,10 @@
     <widget alphatest="blend" render="MSNWeatherPixmap" position="668,810" size="125,125" source="session.MSNWeather" transparent="1" zPosition="8">
       <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/SmartLiteFHD/WeatherIcon/,png</convert>
     </widget>
+    <!-- Buttons -->
+    <eLabel backgroundColor="blue" foregroundColor="EL_Background" name="" position="850,888" size="700,1" zPosition="-10" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/blue.png" position="875,895" size="40,40" />
+    <eLabel text="MenuSort" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="925,895" size="240,40" transparent="1" zPosition="1" />
     <!-- Clock -->
     <eLabel backgroundColor="white" position="637,704" size="1,50" transparent="0" zPosition="-1" />
     <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="644,687" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
@@ -864,7 +862,7 @@
     <eLabel backgroundColor="EL_New" position="300,679" size="500,100" zPosition="-50" foregroundColor="white" />
     <!-- Widget -->
     <widget source="title" render="Label" font="FHD; 45" backgroundColor="EL_Background" foregroundColor="white" position="310,505" size="480,145" transparent="1" halign="center" valign="center" />
-    <widget source="menu" render="Listbox" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="840,170" size="720,700" transparent="1">
+    <widget source="menu" render="Listbox" scrollbarMode="showNever" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="840,170" size="720,700" transparent="1">
       <convert type="TemplatedMultiContent">
                    {"template": [ MultiContentEntryText(pos = (45, 5), size = (700, 60), flags = RT_HALIGN_LEFT, text = 0) ], 
                    "fonts": [gFont("FHD", 40)], 
@@ -887,6 +885,10 @@
     <widget alphatest="blend" render="MSNWeatherPixmap" position="668,810" size="125,125" source="session.MSNWeather" transparent="1" zPosition="8">
       <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/SmartLiteFHD/WeatherIcon/,png</convert>
     </widget>
+    <!-- Buttons -->
+    <eLabel backgroundColor="blue" foregroundColor="EL_Background" name="" position="850,888" size="700,1" zPosition="-10" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/blue.png" position="875,895" size="40,40" />
+    <eLabel text="MenuSort" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="925,895" size="240,40" transparent="1" zPosition="1" />
     <!-- Clock -->
     <eLabel backgroundColor="white" position="637,704" size="1,50" transparent="0" zPosition="-1" />
     <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="644,687" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
@@ -907,7 +909,7 @@
     <eLabel backgroundColor="EL_New" position="300,679" size="500,100" zPosition="-50" foregroundColor="white" />
     <!-- Widget -->
     <widget source="title" render="Label" font="FHD; 45" backgroundColor="EL_Background" foregroundColor="white" position="310,505" size="480,145" transparent="1" halign="center" valign="center" />
-    <widget source="menu" render="Listbox" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="840,170" size="720,700" transparent="1">
+    <widget source="menu" render="Listbox" scrollbarMode="showNever" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="840,170" size="720,700" transparent="1">
       <convert type="TemplatedMultiContent">
                    {"template": [ MultiContentEntryText(pos = (45, 5), size = (700, 60), flags = RT_HALIGN_LEFT, text = 0) ], 
                    "fonts": [gFont("FHD", 40)], 
@@ -930,6 +932,10 @@
     <widget alphatest="blend" render="MSNWeatherPixmap" position="668,810" size="125,125" source="session.MSNWeather" transparent="1" zPosition="8">
       <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/SmartLiteFHD/WeatherIcon/,png</convert>
     </widget>
+    <!-- Buttons -->
+    <eLabel backgroundColor="blue" foregroundColor="EL_Background" name="" position="850,888" size="700,1" zPosition="-10" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/blue.png" position="875,895" size="40,40" />
+    <eLabel text="MenuSort" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="925,895" size="240,40" transparent="1" zPosition="1" />
     <!-- Clock -->
     <eLabel backgroundColor="white" position="637,704" size="1,50" transparent="0" zPosition="-1" />
     <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="644,687" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
@@ -945,14 +951,14 @@
   <screen backgroundColor="transparent" flags="wfNoBorder" name="menu_harddisk" position="0,0" size="1920,1080" title="Main menu" transparent="0">
     <ePixmap alphatest="blend" pixmap="SmartLiteFHD/menu/harddisk.png" position="375,165" size="350,350" />
     <!-- Backg -->
-    <eLabel backgroundColor="EL_Background" position="850,center" size="700,800" zPosition="-21" />
+    <eLabel backgroundColor="EL_Background" position="850,center" size="750,800" zPosition="-21" />
     <eLabel backgroundColor="EL_New" position="300,140" size="500,520" zPosition="-50" foregroundColor="white" />
     <eLabel backgroundColor="EL_New" position="300,679" size="500,100" zPosition="-50" foregroundColor="white" />
     <!-- Widget -->
     <widget source="title" render="Label" font="FHD; 45" backgroundColor="EL_Background" foregroundColor="white" position="310,505" size="480,145" transparent="1" halign="center" valign="center" />
-    <widget source="menu" render="Listbox" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="840,170" size="720,700" transparent="1">
+    <widget source="menu" render="Listbox" scrollbarMode="showNever" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="840,170" size="770,700" transparent="1">
       <convert type="TemplatedMultiContent">
-                   {"template": [ MultiContentEntryText(pos = (45, 5), size = (700, 60), flags = RT_HALIGN_LEFT, text = 0) ], 
+                   {"template": [ MultiContentEntryText(pos = (45, 5), size = (750, 60), flags = RT_HALIGN_LEFT, text = 0) ], 
                    "fonts": [gFont("FHD", 40)], 
                    "itemHeight": 70
                    }
@@ -973,6 +979,10 @@
     <widget alphatest="blend" render="MSNWeatherPixmap" position="668,810" size="125,125" source="session.MSNWeather" transparent="1" zPosition="8">
       <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/SmartLiteFHD/WeatherIcon/,png</convert>
     </widget>
+    <!-- Buttons -->
+    <eLabel backgroundColor="blue" foregroundColor="EL_Background" name="" position="850,888" size="750,1" zPosition="-10" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/blue.png" position="875,895" size="40,40" />
+    <eLabel text="MenuSort" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="925,895" size="240,40" transparent="1" zPosition="1" />
     <!-- Clock -->
     <eLabel backgroundColor="white" position="637,704" size="1,50" transparent="0" zPosition="-1" />
     <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="644,687" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
@@ -1165,8 +1175,7 @@
     <panel name="BS4" />
     <!-- Widget -->
     <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1000,58" transparent="1" />
-    <widget name="config" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="310,155" size="1300,800" transparent="1" />
-    <widget name="HelpWindow" position="275,600" size="1,1" zPosition="10" />
+    <widget name="config" itemHeight="80" font="FHD; 32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="310,155" size="1300,800" transparent="1" />
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoTimerServiceEditor" position="center,center" size="1920,1080" title="AutoTimerServiceEditor">
     <panel name="Backg" />
@@ -1174,7 +1183,7 @@
     <panel name="BS4" />
     <!-- Widget -->
     <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1000,58" transparent="1" />
-    <widget name="config" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="310,155" size="1300,800" transparent="1" />
+    <widget name="config" itemHeight="80" font="FHD; 32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="310,155" size="1300,800" transparent="1" />
   </screen>
   <screen name="AutoResSetupMenu" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" transparent="0">
     <panel name="Backg" />
@@ -1353,10 +1362,10 @@
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Format:- %H:%M</convert>
     </widget>
-    <widget font="Regular2; 31" backgroundColor="EL_Background" foregroundColor="blueCH" halign="left" position="760,831" render="Label" size="630,45" source="ServiceEvent" transparent="1" valign="center">
+    <widget font="Regular2; 31" backgroundColor="EL_Background" foregroundColor="blueCH" halign="left" position="760,831" render="Label" size="650,45" source="ServiceEvent" transparent="1" valign="center">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="Event" render="Label" backgroundColor="EL_Background" foregroundColor="blueCH" font="Regular2; 28" halign="right" position="1390,835" size="188,45" transparent="1">
+    <widget source="Event" render="Label" backgroundColor="EL_Background" foregroundColor="blueCH" font="Regular2; 28" halign="right" position="1418,835" size="160,45" transparent="1">
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
@@ -1829,7 +1838,7 @@
     <widget source="Service" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="360,60" size="1080,58" halign="left" transparent="1">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <widget name="list" itemHeight="50" scrollbarMode="showNever" setEventItemFont="FHD; 34" setColWidths="130,220" setColGap="40" setIconDistance="10" position="210,155" size="1500,600" backgroundColor="EL_Background" transparent="1" />
+    <widget name="list" itemHeight="50" scrollbarMode="showNever" setEventItemFont="FHD; 34" setColWidths="120,220" setColGap="40" setIconDistance="10" position="210,155" size="1500,600" backgroundColor="EL_Background" transparent="1" />
     <widget backgroundColor="EL_Background" font="FHD; 32" foregroundColor="EL_Blue" halign="left" position="210,790" render="SL_RunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" size="1500,176" source="Event" transparent="1" valign="top">
       <convert type="EventName">FullDescription</convert>
     </widget>
@@ -2314,35 +2323,35 @@
     <widget name="text" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="310,155" size="1300,800" transparent="1" />
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="LanguageSelection" title="Language selection" position="0,center" size="1920,1080" transparent="0">
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/menu/language.png" position="375,165" size="350,350" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/menu/language.png" position="375,175" size="350,350" />
     <!-- Backg -->
-    <eLabel backgroundColor="EL_Background" position="850,center" size="700,800" zPosition="-21" />
-    <eLabel backgroundColor="EL_New" position="300,140" size="500,520" zPosition="-50" foregroundColor="white" />
+    <eLabel backgroundColor="EL_Background" position="850,center" size="700,780" zPosition="-21" />
+    <eLabel backgroundColor="EL_New" position="300,150" size="500,500" zPosition="-50" foregroundColor="white" />
     <eLabel backgroundColor="EL_New" position="300,679" size="500,100" zPosition="-50" foregroundColor="white" />
     <!-- Widget -->
-    <eLabel text="Language selection" font="FHD; 45" backgroundColor="EL_Background" foregroundColor="white" position="310,505" size="480,145" transparent="1" halign="center" valign="center" />
+    <eLabel text="Language selection" font="FHD; 45" backgroundColor="EL_Background" foregroundColor="white" position="310,515" size="480,125" transparent="1" halign="center" valign="center" />
     <widget backgroundColor="EL_Background" position="840,180" size="720,715" render="Listbox" scrollbarMode="showNever" source="languages" transparent="1">
       <convert type="TemplatedMultiContent">
             {"template":[
-            MultiContentEntryText(pos=(120,5),size=(870,55),flags=RT_HALIGN_LEFT,text=1),# index 1 is the language name,
+            MultiContentEntryText(pos=(120,3),size=(870,55),flags=RT_HALIGN_LEFT,text=1),# index 1 is the language name,
             MultiContentEntryPixmap(pos=(30,12),size=(90,60),png=2),# index 2 is the pixmap 
             ],
-            "fonts":[gFont("FHD",36) ],"itemHeight":65}
+            "fonts":[gFont("FHD",40) ],"itemHeight":65}
               </convert>
     </widget>
     <!-- Weather -->
-    <eLabel backgroundColor="EL_New" position="300,805" size="500,135" zPosition="-50" foregroundColor="white" />
-    <widget backgroundColor="background" font="FHD; 40" render="Label" position="530,872" size="120,55" source="session.MSNWeather" transparent="1" zPosition="8" halign="right" foregroundColor="white">
+    <eLabel backgroundColor="EL_New" position="300,795" size="500,135" zPosition="-50" foregroundColor="white" />
+    <widget backgroundColor="background" font="FHD; 40" render="Label" position="530,862" size="120,55" source="session.MSNWeather" transparent="1" zPosition="8" halign="right" foregroundColor="white">
       <convert type="MSNWeather">temperature_current</convert>
     </widget>
-    <widget backgroundColor="background" font="FHD; 28" render="Label" position="310,881" size="220,45" source="session.MSNWeather" zPosition="8" halign="right" transparent="1" foregroundColor="EL_Blue">
+    <widget backgroundColor="background" font="FHD; 28" render="Label" position="310,871" size="220,45" source="session.MSNWeather" zPosition="8" halign="right" transparent="1" foregroundColor="EL_Blue">
       <convert type="MSNWeather">temperature_heigh_low,current</convert>
     </widget>
-    <widget backgroundColor="background" font="FHD; 32" render="Label" position="310,820" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
+    <widget backgroundColor="background" font="FHD; 32" render="Label" position="310,810" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
       <convert type="MSNWeather">city</convert>
     </widget>
-    <eLabel backgroundColor="blue" position="310,870" size="340,2" zPosition="-9" foregroundColor="white" />
-    <widget alphatest="blend" render="MSNWeatherPixmap" position="668,810" size="125,125" source="session.MSNWeather" transparent="1" zPosition="8">
+    <eLabel backgroundColor="blue" position="310,860" size="340,2" zPosition="-9" foregroundColor="white" />
+    <widget alphatest="blend" render="MSNWeatherPixmap" position="668,800" size="125,125" source="session.MSNWeather" transparent="1" zPosition="8">
       <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/SmartLiteFHD/WeatherIcon/,png</convert>
     </widget>
     <!-- Clock -->
@@ -2427,13 +2436,13 @@
       <convert type="ClockToText">Format:%A</convert>
     </widget>
   </screen>
-  <screen name="MessageBox" title="Message" backgroundColor="ABackground" position="center,450" size="1200,600" zPosition="10" flags="wfBorder">
+  <screen name="MessageBox" title="Message" backgroundColor="ABackground" position="center,450" size="850,10" zPosition="10" flags="wfBorder">
     <eLabel name="underline" position="0,0" size="1480,1" backgroundColor="Red" />
     <widget name="text" position="90,0" size="900,0" font="Regular2;32" valign="center" halign="left" backgroundColor="ABackground" foregroundColor="AForeground" />
     <widget name="ErrorPixmap" pixmap="SmartLiteFHD/border/attention-53.png" position="15,20" size="80,80" alphatest="blend" />
     <widget name="QuestionPixmap" pixmap="SmartLiteFHD/border/question-53.png" position="15,20" size="80,80" alphatest="blend" />
     <widget name="InfoPixmap" pixmap="SmartLiteFHD/border/info-53.png" position="15,20" size="80,80" alphatest="blend" />
-    <widget name="list" position="30,100" size="1100,400" itemHeight="47" font="Regular2;30" scrollbarMode="showOnDemand" backgroundColorSelected="blue" foregroundColorSelected="AForeground" backgroundColor="ABackground" foregroundColor="AForeground" transparent="1" />
+    <widget name="list" position="30,100" size="900,350" itemHeight="47" font="Regular2;30" scrollbarMode="showOnDemand" backgroundColorSelected="blue" foregroundColorSelected="AForeground" backgroundColor="ABackground" foregroundColor="AForeground" transparent="1" />
     <applet type="onLayoutFinish">
 from enigma import eSize, ePoint, quitMainloop
 orgwidth = self.instance.size().width()
@@ -2457,13 +2466,57 @@ newwidth = wsize[0]
 self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 </applet>
   </screen>
-  <screen name="MessageBoxSimple" title="Message" backgroundColor="ABackground" position="center,450" size="1200,600" zPosition="10" flags="wfBorder">
+  <screen name="MessageBoxSimple" title="Message" backgroundColor="ABackground" position="center,450" size="850,10" zPosition="10" flags="wfBorder">
     <eLabel name="underline" position="0,0" size="1480,1" backgroundColor="Red" />
     <widget name="text" position="90,0" size="900,0" font="Regular2;32" valign="center" halign="left" backgroundColor="ABackground" foregroundColor="AForeground" />
     <widget name="ErrorPixmap" pixmap="SmartLiteFHD/border/attention-53.png" position="15,20" size="80,80" alphatest="blend" />
     <widget name="QuestionPixmap" pixmap="SmartLiteFHD/border/question-53.png" position="15,20" size="80,80" alphatest="blend" />
     <widget name="InfoPixmap" pixmap="SmartLiteFHD/border/info-53.png" position="15,20" size="80,80" alphatest="blend" />
-    <widget name="list" position="30,100" size="1100,400" itemHeight="47" font="Regular2;30" scrollbarMode="showOnDemand" backgroundColorSelected="blue" foregroundColorSelected="AForeground" backgroundColor="ABackground" foregroundColor="AForeground" transparent="1" />
+    <widget name="list" position="30,100" size="900,350" itemHeight="47" font="Regular2;30" scrollbarMode="showOnDemand" backgroundColorSelected="blue" foregroundColorSelected="AForeground" backgroundColor="ABackground" foregroundColor="AForeground" transparent="1" />
+    <applet type="onLayoutFinish">
+from enigma import eSize, ePoint
+titleheight = 0
+orgwidth = self.instance.size().width()
+orgheight = self.instance.size().height()
+orgpos = self.instance.position()
+textsize = self[&quot;text&quot;].getSize()
+textsize = (textsize[0] + 50, textsize[1] + 20)
+wsizex = textsize[0] + 140
+wsizey = textsize[1]
+lenlist = len(self.list)*47
+if (lenlist &gt; 200):
+	lenlist = 200
+if (64 &gt; wsizey):
+	wsizey = 64
+if self.type == self.TYPE_YESNO:
+	wsizey += lenlist + 10
+if (280 &gt; wsizex):
+	wsizex = 280
+wsize = (wsizex, wsizey + titleheight)
+self.instance.resize(eSize(*wsize))
+self[&quot;text&quot;].instance.move(ePoint(65, 8 + titleheight))
+self[&quot;text&quot;].instance.resize(eSize(*textsize))
+self[&quot;ErrorPixmap&quot;].instance.move(ePoint(5, 5 + titleheight))
+self[&quot;ErrorPixmap&quot;].instance.resize(eSize(53,53))
+self[&quot;QuestionPixmap&quot;].instance.move(ePoint(5, 5 + titleheight))
+self[&quot;QuestionPixmap&quot;].instance.resize(eSize(53,53))
+self[&quot;InfoPixmap&quot;].instance.move(ePoint(5, 5 + titleheight))
+self[&quot;InfoPixmap&quot;].instance.resize(eSize(53,53))
+if self.type == self.TYPE_YESNO:
+	listsize = (wsizex-4, lenlist)
+	self[&quot;list&quot;].instance.move(ePoint(2, wsizey - lenlist + titleheight + 10))
+	self[&quot;list&quot;].instance.resize(eSize(*listsize))
+newwidth = wsize[0]
+self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (orgheight - wsizey)/2))
+</applet>
+  </screen>
+  <screen name="MessageBoxExt" title="Message" backgroundColor="ABackground" position="center,450" size="850,10" zPosition="10" flags="wfBorder">
+    <eLabel name="underline" position="0,0" size="1480,1" backgroundColor="Red" />
+    <widget name="text" position="90,0" size="900,0" font="Regular2;32" valign="center" halign="left" backgroundColor="ABackground" foregroundColor="AForeground" />
+    <widget name="ErrorPixmap" pixmap="SmartLiteFHD/border/attention-53.png" position="15,20" size="80,80" alphatest="blend" />
+    <widget name="QuestionPixmap" pixmap="SmartLiteFHD/border/question-53.png" position="15,20" size="80,80" alphatest="blend" />
+    <widget name="InfoPixmap" pixmap="SmartLiteFHD/border/info-53.png" position="15,20" size="80,80" alphatest="blend" />
+    <widget name="list" position="30,100" size="900,350" itemHeight="47" font="Regular2;30" scrollbarMode="showOnDemand" backgroundColorSelected="blue" foregroundColorSelected="AForeground" backgroundColor="ABackground" foregroundColor="AForeground" transparent="1" />
     <applet type="onLayoutFinish">
 from enigma import eSize, ePoint, quitMainloop
 orgwidth = self.instance.size().width()
@@ -2487,43 +2540,13 @@ newwidth = wsize[0]
 self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 </applet>
   </screen>
-  <screen name="MessageBoxExt" title="Message" backgroundColor="ABackground" position="center,450" size="1200,600" zPosition="10" flags="wfBorder">
+  <screen name="RemoveTimerQuestion" title="Message" backgroundColor="ABackground" position="center,450" size="850,10" zPosition="10" flags="wfBorder">
     <eLabel name="underline" position="0,0" size="1480,1" backgroundColor="Red" />
     <widget name="text" position="90,0" size="900,0" font="Regular2;32" valign="center" halign="left" backgroundColor="ABackground" foregroundColor="AForeground" />
     <widget name="ErrorPixmap" pixmap="SmartLiteFHD/border/attention-53.png" position="15,20" size="80,80" alphatest="blend" />
     <widget name="QuestionPixmap" pixmap="SmartLiteFHD/border/question-53.png" position="15,20" size="80,80" alphatest="blend" />
     <widget name="InfoPixmap" pixmap="SmartLiteFHD/border/info-53.png" position="15,20" size="80,80" alphatest="blend" />
-    <widget name="list" position="30,100" size="1100,400" itemHeight="47" font="Regular2;30" scrollbarMode="showOnDemand" backgroundColorSelected="blue" foregroundColorSelected="AForeground" backgroundColor="ABackground" foregroundColor="AForeground" transparent="1" />
-    <applet type="onLayoutFinish">
-from enigma import eSize, ePoint, quitMainloop
-orgwidth = self.instance.size().width()
-orgpos = self.instance.position()
-textsize = self["text"].getSize()
-textsize = (textsize[0] + 80, textsize[1] + 80)
-offset = 30
-if self.type == self.TYPE_YESNO:
-	offset = 100
-wsizex = textsize[0] + 80
-wsizey = textsize[1] + offset
-if (700 &gt; wsizex):
-	wsizex = 800
-wsize = (wsizex, wsizey)
-self.instance.resize(eSize(*wsize))
-self["text"].instance.resize(eSize(*textsize))
-listsize = (wsizex + 30, 200)
-self["list"].instance.move(ePoint(10, textsize[1]))
-self["list"].instance.resize(eSize(*listsize))
-newwidth = wsize[0]
-self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
-</applet>
-  </screen>
-  <screen name="RemoveTimerQuestion" title="Message" backgroundColor="ABackground" position="center,450" size="1200,600" zPosition="10" flags="wfBorder">
-    <eLabel name="underline" position="0,0" size="1480,1" backgroundColor="Red" />
-    <widget name="text" position="90,0" size="900,0" font="Regular2;32" valign="center" halign="left" backgroundColor="ABackground" foregroundColor="AForeground" />
-    <widget name="ErrorPixmap" pixmap="SmartLiteFHD/border/attention-53.png" position="15,20" size="80,80" alphatest="blend" />
-    <widget name="QuestionPixmap" pixmap="SmartLiteFHD/border/question-53.png" position="15,20" size="80,80" alphatest="blend" />
-    <widget name="InfoPixmap" pixmap="SmartLiteFHD/border/info-53.png" position="15,20" size="80,80" alphatest="blend" />
-    <widget name="list" position="30,100" size="1100,400" itemHeight="47" font="Regular2;30" scrollbarMode="showOnDemand" backgroundColorSelected="blue" foregroundColorSelected="AForeground" backgroundColor="ABackground" foregroundColor="AForeground" transparent="1" />
+    <widget name="list" position="30,100" size="900,350" itemHeight="47" font="Regular2;30" scrollbarMode="showOnDemand" backgroundColorSelected="blue" foregroundColorSelected="AForeground" backgroundColor="ABackground" foregroundColor="AForeground" transparent="1" />
     <applet type="onLayoutFinish">
 from enigma import eSize, ePoint, quitMainloop
 orgwidth = self.instance.size().width()
@@ -4362,24 +4385,24 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   <screen backgroundColor="transparent" flags="wfNoBorder" name="VirtualKeyBoard" position="center,center" size="1920,1080" title="Virtual KeyBoard" zPosition="99">
     <panel name="Backg" />
     <panel name="Clock" />
-    <panel name="BS4" />
+     <panel name="BS4" />
     <!-- Widget -->
     <eLabel text="Virtual KeyBoard" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
     <widget name="header" backgroundColor="EL_Background" font="FHD; 35" foregroundColor="EL_Foreground" halign="left" noWrap="1" position="310,155" size="1300,120" transparent="1" valign="center" />
     <eLabel backgroundColor="dark" position="312,282" size="1236,56" zPosition="2" font="Regular; 24" />
     <widget backgroundColor="EL_Background" font="Bold; 33" foregroundColor="EL_Foreground" halign="right" name="text" noWrap="1" position="324,286" size="1212,50" zPosition="3" />
-    <widget name="list" position="480,360" size="952,340" backgroundColor="EL_Background" foregroundColor="white" selectionDisabled="1" transparent="1" />
+    <widget name="list" position="480,360" size="952,340"  backgroundColor="EL_Background" foregroundColor="white"  selectionDisabled="1" transparent="1" />
     <widget source="country" render="Pixmap" position="1590,985" size="60,40" alphatest="blend" borderWidth="1" borderColor="white" zPosition="2">
       <convert type="ValueToPixmap">LanguageCode</convert>
     </widget>
     <!-- Buttons -->
-    <ePixmap pixmap="SmartLiteFHD/buttons/key_text.png" alphatest="blend" position="1575,986" size="64,38" />
-    <eLabel backgroundColor="EL_Selection" foregroundColor="EL_Background" name="" position="260,978" size="1400,1" zPosition="-10" />
+    <ePixmap pixmap="SmartLiteFHD/buttons/key_text.png" alphatest="blend" position="1575,986" size="64,38"/>
+  <eLabel backgroundColor="EL_Selection" foregroundColor="EL_Background" name="" position="260,978" size="1400,1" zPosition="-10" />
     <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="310,985" size="40,40" />
     <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="630,985" size="40,40" />
     <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/yellow.png" position="950,985" size="40,40" />
     <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/blue.png" position="1270,985" size="40,40" />
-  </screen>
+ </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="VirtualKeyBoardmod" position="center,center" size="1920,1080" title="VirtualKeyBoardmod" zPosition="99">
     <panel name="Backg" />
     <panel name="Clock" />
@@ -4762,7 +4785,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <!-- Clock -->
     <panel name="Clock" />
   </screen>
-  <screen name="NetworkOpenvpn" title="VPN Setup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+   <screen name="NetworkOpenvpn" title="VPN Setup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <panel name="Backg" />
     <panel name="BS4" />
     <!-- Widget -->
@@ -4830,22 +4853,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
     <widget name="config" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="center,155" size="1300,800" transparent="1" />
   </screen>
-  <screen name="ServerEditor" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-    <panel name="Backg" />
-    <panel name="Clock" />
-    <panel name="BS4" />
-    <!-- Widget -->
-    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
-    <widget name="config" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="center,155" size="1300,800" transparent="1" />
-  </screen>
-  <screen name="StreamingChannelFromServerScreen" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-    <panel name="Backg" />
-    <panel name="Clock" />
-    <panel name="BS4" />
-    <!-- Widget -->
-    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
-    <widget name="list" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="center,155" size="1300,700" transparent="1" />
-    <eLabel backgroundColor="white" position="center,870" size="1300,2" zPosition="-9" foregroundColor="dark" />
-    <widget source="statusbar" render="Label" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="center,875" size="1300,60" transparent="1" zPosition="1" />
-  </screen>
+ 
 </skin>
+ 
