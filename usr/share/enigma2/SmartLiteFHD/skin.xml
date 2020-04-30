@@ -1829,7 +1829,7 @@
     <widget source="Service" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="360,60" size="1080,58" halign="left" transparent="1">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <widget name="list" itemHeight="50" scrollbarMode="showNever" setEventItemFont="FHD; 34" setColWidths="120,220" setColGap="40" setIconDistance="10" position="210,155" size="1500,600" backgroundColor="EL_Background" transparent="1" />
+    <widget name="list" itemHeight="50" scrollbarMode="showNever" setEventItemFont="FHD; 34" setColWidths="130,220" setColGap="40" setIconDistance="10" position="210,155" size="1500,600" backgroundColor="EL_Background" transparent="1" />
     <widget backgroundColor="EL_Background" font="FHD; 32" foregroundColor="EL_Blue" halign="left" position="210,790" render="SL_RunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" size="1500,176" source="Event" transparent="1" valign="top">
       <convert type="EventName">FullDescription</convert>
     </widget>
@@ -4829,5 +4829,23 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <!-- Widget -->
     <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
     <widget name="config" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="center,155" size="1300,800" transparent="1" />
+  </screen>
+  <screen name="ServerEditor" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <panel name="Backg" />
+    <panel name="Clock" />
+    <panel name="BS4" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="config" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="center,155" size="1300,800" transparent="1" />
+  </screen>
+  <screen name="StreamingChannelFromServerScreen" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <panel name="Backg" />
+    <panel name="Clock" />
+    <panel name="BS4" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="list" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="center,155" size="1300,700" transparent="1" />
+    <eLabel backgroundColor="white" position="center,870" size="1300,2" zPosition="-9" foregroundColor="dark" />
+    <widget source="statusbar" render="Label" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="center,875" size="1300,60" transparent="1" zPosition="1" />
   </screen>
 </skin>
