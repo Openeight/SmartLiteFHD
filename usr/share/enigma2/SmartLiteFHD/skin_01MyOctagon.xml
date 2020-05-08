@@ -757,16 +757,5 @@
   </screen>
 
 
-  <screen name="Config" title="Wake-On-LAN Configuration" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-    <panel name="Backg" />
-    <panel name="Clock" />
-    <panel name="BN4" />
-    <!-- Widget -->
-    <eLabel text="Wake-On-LAN Configuration" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
-    <widget name="config" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="310,155" size="1300,750" transparent="1" />
-    <eLabel backgroundColor="white" position="310,915" size="1300,1" zPosition="-9" foregroundColor="dark" />
-    <widget name="status" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="310,920" size="1300,45" transparent="1" />
-  </screen>
-
   
 </skin>
