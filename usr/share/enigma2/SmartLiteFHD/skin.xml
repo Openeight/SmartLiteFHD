@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <skin>
-  <!-- SmartLiteFHD Skin V6.7d by SkinMania for Octagon -->
+  <!-- SmartLiteFHD Skin V6.7e by SkinMania for Octagon -->
   <!-- Recommended to use with XPicons (220x132) -->
   <!-- You are not allowed to modify and redistribute SmartLiteFHD Skin and all graphics -->
   <output id="0">
@@ -2617,7 +2617,7 @@
     <eLabel name="underline" position="center,95" size="1920,2" backgroundColor="Red" />
     <!-- Widget -->
     <widget source="Title" render="Label" font="FHD; 42" backgroundColor="ABackground" foregroundColor="AForeground" position="112,4" size="1075,75" noWrap="1" valign="bottom" transparent="1" />
-    <widget name="text" position="15,115" size="1170,85" font="Regular2;32" valign="center" halign="left" backgroundColor="ABackground" foregroundColor="AForeground" />
+    <widget name="text" position="15,115" size="1170,85" font="Regular2;32" valign="center" halign="center" backgroundColor="ABackground" foregroundColor="AForeground" />
     <widget name="ErrorPixmap" pixmap="SmartLiteFHD/border/message/attention-53.png" position="15,7" size="80,80" alphatest="blend" />
     <widget name="QuestionPixmap" pixmap="SmartLiteFHD/border/message/question-53.png" position="15,7" size="80,80" alphatest="blend" />
     <widget name="InfoPixmap" pixmap="SmartLiteFHD/border/message/info-53.png" position="15,7" size="80,80" alphatest="blend" />
@@ -2704,7 +2704,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <eLabel name="underline" position="center,95" size="1920,2" backgroundColor="Red" />
     <!-- Widget -->
     <widget source="Title" render="Label" font="FHD; 42" backgroundColor="ABackground" foregroundColor="AForeground" position="112,4" size="1075,75" noWrap="1" valign="bottom" transparent="1" />
-    <widget name="text" position="15,115" size="1170,85" font="Regular2;32" valign="center" halign="left" backgroundColor="ABackground" foregroundColor="AForeground" />
+    <widget name="text" position="15,115" size="1170,85" font="Regular2;32" valign="center" halign="center" backgroundColor="ABackground" foregroundColor="AForeground" />
     <widget name="ErrorPixmap" pixmap="SmartLiteFHD/border/message/attention-53.png" position="15,7" size="80,80" alphatest="blend" />
     <widget name="QuestionPixmap" pixmap="SmartLiteFHD/border/message/question-53.png" position="15,7" size="80,80" alphatest="blend" />
     <widget name="InfoPixmap" pixmap="SmartLiteFHD/border/message/info-53.png" position="15,7" size="80,80" alphatest="blend" />
@@ -2791,7 +2791,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <eLabel name="underline" position="center,95" size="1920,2" backgroundColor="Red" />
     <!-- Widget -->
     <widget source="Title" render="Label" font="FHD; 42" backgroundColor="ABackground" foregroundColor="AForeground" position="112,4" size="1075,75" noWrap="1" valign="bottom" transparent="1" />
-    <widget name="text" position="15,115" size="1170,85" font="Regular2;32" valign="center" halign="left" backgroundColor="ABackground" foregroundColor="AForeground" />
+    <widget name="text" position="15,115" size="1170,85" font="Regular2;32" valign="center" halign="center" backgroundColor="ABackground" foregroundColor="AForeground" />
     <widget name="ErrorPixmap" pixmap="SmartLiteFHD/border/message/attention-53.png" position="15,7" size="80,80" alphatest="blend" />
     <widget name="QuestionPixmap" pixmap="SmartLiteFHD/border/message/question-53.png" position="15,7" size="80,80" alphatest="blend" />
     <widget name="InfoPixmap" pixmap="SmartLiteFHD/border/message/info-53.png" position="15,7" size="80,80" alphatest="blend" />
@@ -2878,7 +2878,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <eLabel name="underline" position="center,95" size="1920,2" backgroundColor="Red" />
     <!-- Widget -->
     <widget source="Title" render="Label" font="FHD; 42" backgroundColor="ABackground" foregroundColor="AForeground" position="112,4" size="1075,75" noWrap="1" valign="bottom" transparent="1" />
-    <widget name="text" position="15,115" size="1170,85" font="Regular2;32" valign="center" halign="left" backgroundColor="ABackground" foregroundColor="AForeground" />
+    <widget name="text" position="15,115" size="1170,85" font="Regular2;32" valign="center" halign="center" backgroundColor="ABackground" foregroundColor="AForeground" />
     <widget name="ErrorPixmap" pixmap="SmartLiteFHD/border/message/attention-53.png" position="15,7" size="80,80" alphatest="blend" />
     <widget name="QuestionPixmap" pixmap="SmartLiteFHD/border/message/question-53.png" position="15,7" size="80,80" alphatest="blend" />
     <widget name="InfoPixmap" pixmap="SmartLiteFHD/border/message/info-53.png" position="15,7" size="80,80" alphatest="blend" />
