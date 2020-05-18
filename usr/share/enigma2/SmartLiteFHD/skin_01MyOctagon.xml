@@ -609,17 +609,35 @@
 
 
   <screen backgroundColor="transparent" flags="wfNoBorder" name="TranscodingSetup" position="center,center" size="1920,1080" title="Transcoding Setup">
-    <panel name="Backg" />
-    <panel name="Clock" />
-    <panel name="BS2" />
+    <!-- Backg1 -->
+    <eLabel backgroundColor="EL_Background" position="center,center" size="1800,960" zPosition="-20" />
+    <eLabel backgroundColor="Red" position="center,140" size="1800,2" zPosition="-9" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/menu/setup2.png" position="1455,105" size="350,310" />
     <!-- Widget -->
-    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
-    <widget name="config" itemHeight="50" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="white" position="310,155" scrollbarMode="showOnDemand" size="1300,250" transparent="1" />
-    <widget name="description" position="310,415" size="1300,50" font="Bold; 30" halign="center" valign="center" transparent="0" backgroundColor="EL_Background3" foregroundColor="white" />
-    <widget name="HelpTextHeader1" position="310,485" size="1300,50" font="FHD; 32" halign="center" valign="center" foregroundColor="green_light" backgroundColor="white" transparent="1" />
-    <widget name="HelpText1" position="310,540" size="1300,250" font="FHD; 32" halign="center" valign="center" foregroundColor="white" transparent="1" backgroundColor="EL_Background" />
-    <widget name="HelpTextHeader2" position="310,805" size="1300,50" font="FHD; 32" halign="center" valign="center" foregroundColor="green_light" backgroundColor="white" transparent="1" />
-    <widget name="HelpText2" position="310,860" size="1300,110" font="FHD; 32" halign="center" valign="center" foregroundColor="white" transparent="1" backgroundColor="EL_Background" />
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="90,70" size="1460,65" transparent="1" />
+    <widget name="config" itemHeight="50" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="white" position="80,155" scrollbarMode="showOnDemand" size="1350,250" transparent="1" />
+    <widget name="description" position="80,415" size="1760,85" font="Bold; 30" halign="center" valign="center" transparent="0" backgroundColor="EL_Background3" foregroundColor="white" />
+    <widget name="HelpTextHeader1" position="center,525" size="1760,50" font="FHD; 34" halign="center" valign="center" foregroundColor="green_light" backgroundColor="white" transparent="1" />
+    <widget name="HelpText1" position="center,575" size="1760,250" font="Regular2; 30" halign="center" valign="center" foregroundColor="white" transparent="1" backgroundColor="EL_Background" />
+    <widget name="HelpTextHeader2" position="center,850" size="1760,50" font="FHD; 34" halign="center" valign="center" foregroundColor="blueCH" backgroundColor="white" transparent="1" />
+    <widget name="HelpText2" position="center,900" size="1760,50" font="Regular2; 30" halign="center" valign="center" foregroundColor="white" transparent="1" backgroundColor="EL_Background" />
+    <!-- Buttons -->
+    <eLabel backgroundColor="blue" foregroundColor="white" name="" position="60,955" size="1800,1" zPosition="-10" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="90,970" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="425,970" size="40,40" />
+    <widget source="key_red" render="Label" font="Regular; 28" backgroundColor="EL_Background" halign="left" position="140,970" size="280,40" transparent="1" zPosition="1" />
+    <widget source="key_green" render="Label" font="Regular; 28" backgroundColor="EL_Background" halign="left" position="475,970" size="280,40" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="1707,74" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1714,57" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1554,97" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1554,69" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
   </screen>
 
 
