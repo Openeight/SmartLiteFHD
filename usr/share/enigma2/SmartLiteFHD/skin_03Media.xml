@@ -94,6 +94,7 @@
       <convert type="ClockToText">Format:%A</convert>
     </widget>
   </screen>
+
   <screen backgroundColor="transparent" flags="wfNoBorder" name="EMCMediaCenter" position="0,0" size="1920,1080" title="InfoBar">
     <!-- Background -->
     <eLabel backgroundColor="EL_Background" name="InfoBar" position="center,950" size="1920,130" zPosition="-11" />
@@ -119,11 +120,11 @@
       <convert type="EMCServicePosition">Position</convert>
     </widget>
     <!-- icons -->
-    <widget backgroundColor="EL_Background" font="Bold; 32" foregroundColor="EL_Blue" halign="right" position="1575,958" render="Label" size="90,45" source="session.CurrentService" transparent="1" valign="center" zPosition="1">
+    <widget backgroundColor="EL_Background" font="Bold; 32" foregroundColor="EL_Blue" halign="right" position="1555,958" render="Label" size="110,45" source="session.CurrentService" transparent="1" valign="center" zPosition="1">
       <convert type="ServiceInfo">VideoWidth</convert>
     </widget>
     <eLabel backgroundColor="EL_Background" font="Bold; 32" halign="center" noWrap="1" position="1665,958" size="30,45" text="x" transparent="1" valign="center" zPosition="2" foregroundColor="EL_Blue" />
-    <widget backgroundColor="EL_Background" font="Bold; 32" foregroundColor="EL_Blue" halign="left" position="1695,958" render="Label" size="90,45" source="session.CurrentService" transparent="1" valign="center" zPosition="3">
+    <widget backgroundColor="EL_Background" font="Bold; 32" foregroundColor="EL_Blue" halign="left" position="1695,958" render="Label" size="110,45" source="session.CurrentService" transparent="1" valign="center" zPosition="3">
       <convert type="ServiceInfo">VideoHeight</convert>
     </widget>
     <ePixmap alphatest="blend" pixmap="SmartLiteFHD/my_icons/dolby_off2.png" position="1728,1020" size="50,30" zPosition="1" />
@@ -136,10 +137,24 @@
       <convert type="ServiceInfo">IsWidescreen</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/my_icons/hd_off.png" position="1580,1020" size="63,30" zPosition="1" />
+    <widget source="session.CurrentService" render="Pixmap" alphatest="blend" pixmap="SmartLiteFHD/my_icons/sd_on.png" position="1580,1020" size="63,30" zPosition="1">
+      <convert type="ServiceInfo">VideoWidth</convert>
+      <convert type="ValueRange">0,720</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
     <widget source="session.CurrentService" render="Pixmap" alphatest="blend" pixmap="SmartLiteFHD/my_icons/hd_on.png" position="1580,1020" size="63,30" zPosition="2">
       <convert type="ServiceInfo">VideoWidth</convert>
-      <convert type="ValueRange">721,3841</convert>
+      <convert type="ValueRange">721,1280</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" alphatest="blend" pixmap="SmartLiteFHD/my_icons/fhd_on.png" position="1580,1020" size="63,30" zPosition="2">
+      <convert type="ServiceInfo">VideoWidth</convert>
+      <convert type="ValueRange">1281,1920</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" alphatest="blend" pixmap="SmartLiteFHD/my_icons/uhd_on.png" position="1580,1020" size="63,30" zPosition="2">
+      <convert type="ServiceInfo">VideoWidth</convert>
+      <convert type="ValueRange">1921,3841</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget alphatest="blend" pixmap="SmartLiteFHD/my_icons/rec_on.png" position="1430,970" render="Pixmap" size="78,30" source="session.RecordState" zPosition="2">
@@ -159,6 +174,7 @@
       <convert type="ClockToText">Format:%A</convert>
     </widget>
   </screen>
+
   <screen name="EventViewSimple" title="" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
     <!-- Backg -->
     <eLabel backgroundColor="EL_Background" name="InfoBar" position="0,850" size="1920,230" zPosition="-11" />

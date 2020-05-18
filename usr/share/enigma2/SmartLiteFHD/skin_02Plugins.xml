@@ -501,7 +501,7 @@
       <convert type="MSNWeather">temperature_current</convert>
     </widget>
     <widget backgroundColor="background" font="FHD; 28" render="Label" position="310,881" size="220,45" source="session.MSNWeather" zPosition="8" halign="right" transparent="1" foregroundColor="EL_Blue">
-      <convert type="MSNWeather">temperature_heigh_low,current</convert>
+      <convert type="MSNWeather">temperature_heigh_low,day2</convert>
     </widget>
     <widget backgroundColor="background" font="FHD; 32" render="Label" position="310,820" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
       <convert type="MSNWeather">city</convert>
@@ -586,7 +586,7 @@
       <convert type="MSNWeather">temperature_current</convert>
     </widget>
     <widget backgroundColor="background" font="FHD; 28" render="Label" position="310,881" size="220,45" source="session.MSNWeather" zPosition="8" halign="right" transparent="1" foregroundColor="EL_Blue">
-      <convert type="MSNWeather">temperature_heigh_low,current</convert>
+      <convert type="MSNWeather">temperature_heigh_low,day2</convert>
     </widget>
     <widget backgroundColor="background" font="FHD; 32" render="Label" position="310,820" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
       <convert type="MSNWeather">city</convert>
@@ -1716,7 +1716,7 @@
       <convert type="MSNWeather">temperature_current</convert>
     </widget>
     <widget backgroundColor="background" font="FHD; 28" render="Label" position="310,881" size="220,45" source="session.MSNWeather" zPosition="8" halign="right" transparent="1" foregroundColor="EL_Blue">
-      <convert type="MSNWeather">temperature_heigh_low,current</convert>
+      <convert type="MSNWeather">temperature_heigh_low,day2</convert>
     </widget>
     <widget backgroundColor="background" font="FHD; 32" render="Label" position="310,820" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
       <convert type="MSNWeather">city</convert>
@@ -1754,7 +1754,7 @@
       <convert type="MSNWeather">temperature_current</convert>
     </widget>
     <widget backgroundColor="background" font="FHD; 28" render="Label" position="310,881" size="220,45" source="session.MSNWeather" zPosition="8" halign="right" transparent="1" foregroundColor="EL_Blue">
-      <convert type="MSNWeather">temperature_heigh_low,current</convert>
+      <convert type="MSNWeather">temperature_heigh_low,day2</convert>
     </widget>
     <widget backgroundColor="background" font="FHD; 32" render="Label" position="310,820" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
       <convert type="MSNWeather">city</convert>
@@ -2583,6 +2583,7 @@
     <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
     <widget name="config" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="310,155" size="1300,800" transparent="1" />
   </screen>
+
   <screen name="FritzMenu" title="Fritz Menu" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <panel name="Backg" />
     <panel name="Clock" />
@@ -2591,27 +2592,27 @@
     <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
     <widget name="FBFInfo" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="310,155" size="1300,120" transparent="1" valign="top" />
     <eLabel backgroundColor="blue" position="310,280" size="1300,3" zPosition="-9" foregroundColor="white" />
-    <widget name="FBFInternet" position="380,322" size="1230,150" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" transparent="1" valign="top" />
-    <widget name="FBFDsl" position="380,479" size="1230,48" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" transparent="1" />
-    <widget name="FBFWlan" position="380,544" size="1230,48" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" transparent="1" />
-    <widget name="FBFRufuml" position="380,609" size="1230,48" font="FHD; 33" backgroundColor="EL_Background" foregroundColor="EL_Foreground" transparent="1" />
-    <widget name="FBFFax" position="380,674" size="1230,48" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" transparent="1" />
-    <widget name="FBFDect" position="380,739" size="1230,48" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" transparent="1" />
-    <widget name="FBFGast" position="380,804" size="1230,48" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" transparent="1" />
+    <widget name="FBFInternet" position="370,322" size="1230,150" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" transparent="1" valign="top" />
+    <widget name="FBFDsl" position="370,479" size="1230,48" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" transparent="1" />
+    <widget name="FBFWlan" position="370,544" size="1230,48" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" transparent="1" />
+    <widget name="FBFRufuml" position="370,609" size="1230,48" font="FHD; 33" backgroundColor="EL_Background" foregroundColor="EL_Foreground" transparent="1" />
+    <widget name="FBFFax" position="370,674" size="1230,48" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" transparent="1" />
+    <widget name="FBFDect" position="370,739" size="1230,48" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" transparent="1" />
+    <widget name="FBFGast" position="370,804" size="1230,48" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" transparent="1" />
     <widget name="internet_active" pixmap="SmartLiteFHD/buttons/green.png" size="40,40" position="310,325" alphatest="blend" />
-    <widget name="internet_inactive" pixmap="SmartLiteFHD/buttons/grey.png" size="40,40" position="310,325" alphatest="blend" />
+    <widget name="internet_inactive" pixmap="SmartLiteFHD/buttons/grey1.png" size="40,40" position="310,325" alphatest="blend" />
     <widget name="dsl_active" pixmap="SmartLiteFHD/buttons/green.png" size="40,40" position="310,482" alphatest="blend" />
-    <widget name="dsl_inactive" pixmap="SmartLiteFHD/buttons/grey.png" size="40,40" position="310,482" alphatest="blend" />
+    <widget name="dsl_inactive" pixmap="SmartLiteFHD/buttons/grey1.png" size="40,40" position="310,482" alphatest="blend" />
     <widget name="wlan_active" pixmap="SmartLiteFHD/buttons/green.png" size="40,40" position="310,547" alphatest="blend" />
-    <widget name="wlan_inactive" pixmap="SmartLiteFHD/buttons/grey.png" size="40,40" position="310,547" alphatest="blend" />
+    <widget name="wlan_inactive" pixmap="SmartLiteFHD/buttons/grey1.png" size="40,40" position="310,547" alphatest="blend" />
     <widget name="rufuml_active" pixmap="SmartLiteFHD/buttons/green.png" size="40,40" position="310,612" alphatest="blend" />
-    <widget name="rufuml_inactive" pixmap="SmartLiteFHD/buttons/grey.png" size="40,40" position="310,612" alphatest="blend" />
+    <widget name="rufuml_inactive" pixmap="SmartLiteFHD/buttons/grey1.png" size="40,40" position="310,612" alphatest="blend" />
     <widget name="fax_active" pixmap="SmartLiteFHD/buttons/green.png" size="40,40" position="310,677" alphatest="blend" />
-    <widget name="fax_inactive" pixmap="SmartLiteFHD/buttons/grey.png" size="40,40" position="310,677" alphatest="blend" />
+    <widget name="fax_inactive" pixmap="SmartLiteFHD/buttons/grey1.png" size="40,40" position="310,677" alphatest="blend" />
     <widget name="dect_active" pixmap="SmartLiteFHD/buttons/green.png" size="40,40" position="310,742" alphatest="blend" />
-    <widget name="dect_inactive" pixmap="SmartLiteFHD/buttons/grey.png" size="40,40" position="310,742" alphatest="blend" />
+    <widget name="dect_inactive" pixmap="SmartLiteFHD/buttons/grey1.png" size="40,40" position="310,742" alphatest="blend" />
     <widget name="gast_active" pixmap="SmartLiteFHD/buttons/green.png" size="40,40" position="310,807" alphatest="blend" />
-    <widget name="gast_inactive" pixmap="SmartLiteFHD/buttons/grey.png" size="40,40" position="310,807" alphatest="blend" />
+    <widget name="gast_inactive" pixmap="SmartLiteFHD/buttons/grey1.png" size="40,40" position="310,807" alphatest="blend" />
   </screen>
 
   <screen name="FritzAbout" title="About Fritz Call" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -2812,7 +2813,7 @@
       <convert type="MSNWeather">temperature_current</convert>
     </widget>
     <widget backgroundColor="background" font="FHD; 28" render="Label" position="210,871" size="220,45" source="session.MSNWeather" zPosition="8" halign="right" transparent="1" foregroundColor="EL_Blue">
-      <convert type="MSNWeather">temperature_heigh_low,current</convert>
+      <convert type="MSNWeather">temperature_heigh_low,day2</convert>
     </widget>
     <widget backgroundColor="background" font="FHD; 32" render="Label" position="210,810" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
       <convert type="MSNWeather">city</convert>
@@ -2849,7 +2850,7 @@
       <convert type="MSNWeather">temperature_current</convert>
     </widget>
     <widget backgroundColor="background" font="FHD; 28" render="Label" position="210,871" size="220,45" source="session.MSNWeather" zPosition="8" halign="right" transparent="1" foregroundColor="EL_Blue">
-      <convert type="MSNWeather">temperature_heigh_low,current</convert>
+      <convert type="MSNWeather">temperature_heigh_low,day2</convert>
     </widget>
     <widget backgroundColor="background" font="FHD; 32" render="Label" position="210,810" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
       <convert type="MSNWeather">city</convert>
@@ -2888,7 +2889,7 @@
       <convert type="MSNWeather">temperature_current</convert>
     </widget>
     <widget backgroundColor="background" font="FHD; 28" render="Label" position="210,871" size="220,45" source="session.MSNWeather" zPosition="8" halign="right" transparent="1" foregroundColor="EL_Blue">
-      <convert type="MSNWeather">temperature_heigh_low,current</convert>
+      <convert type="MSNWeather">temperature_heigh_low,day2</convert>
     </widget>
     <widget backgroundColor="background" font="FHD; 32" render="Label" position="210,810" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
       <convert type="MSNWeather">city</convert>
@@ -3057,7 +3058,7 @@
       <convert type="MSNWeather">temperature_current</convert>
     </widget>
     <widget backgroundColor="background" font="FHD; 28" render="Label" position="310,881" size="220,45" source="session.MSNWeather" zPosition="8" halign="right" transparent="1" foregroundColor="EL_Blue">
-      <convert type="MSNWeather">temperature_heigh_low,current</convert>
+      <convert type="MSNWeather">temperature_heigh_low,day2</convert>
     </widget>
     <widget backgroundColor="background" font="FHD; 32" render="Label" position="310,820" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
       <convert type="MSNWeather">city</convert>
@@ -5171,7 +5172,7 @@
       <convert type="MSNWeather">temperature_current</convert>
     </widget>
     <widget backgroundColor="background" font="FHD; 28" render="Label" position="310,881" size="220,45" source="session.MSNWeather" zPosition="8" halign="right" transparent="1" foregroundColor="EL_Blue">
-      <convert type="MSNWeather">temperature_heigh_low,current</convert>
+      <convert type="MSNWeather">temperature_heigh_low,day2</convert>
     </widget>
     <widget backgroundColor="background" font="FHD; 32" render="Label" position="310,820" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
       <convert type="MSNWeather">city</convert>
@@ -5404,7 +5405,7 @@
       <convert type="MSNWeather">temperature_current</convert>
     </widget>
     <widget backgroundColor="background" font="FHD; 28" render="Label" position="210,871" size="220,45" source="session.MSNWeather" zPosition="8" halign="right" transparent="1" foregroundColor="EL_Blue">
-      <convert type="MSNWeather">temperature_heigh_low,current</convert>
+      <convert type="MSNWeather">temperature_heigh_low,day2</convert>
     </widget>
     <widget backgroundColor="background" font="FHD; 32" render="Label" position="210,810" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
       <convert type="MSNWeather">city</convert>
@@ -6056,7 +6057,7 @@
       <convert type="MSNWeather">temperature_current</convert>
     </widget>
     <widget backgroundColor="background" font="FHD; 28" render="Label" position="310,881" size="220,45" source="session.MSNWeather" zPosition="8" halign="right" transparent="1" foregroundColor="EL_Blue">
-      <convert type="MSNWeather">temperature_heigh_low,current</convert>
+      <convert type="MSNWeather">temperature_heigh_low,day2</convert>
     </widget>
     <widget backgroundColor="background" font="FHD; 32" render="Label" position="310,820" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
       <convert type="MSNWeather">city</convert>
@@ -8002,7 +8003,7 @@
       <convert type="MSNWeather">temperature_current</convert>
     </widget>
     <widget backgroundColor="background" font="FHD; 28" render="Label" position="310,881" size="220,45" source="session.MSNWeather" zPosition="8" halign="right" transparent="1" foregroundColor="EL_Blue">
-      <convert type="MSNWeather">temperature_heigh_low,current</convert>
+      <convert type="MSNWeather">temperature_heigh_low,day2</convert>
     </widget>
     <widget backgroundColor="background" font="FHD; 32" render="Label" position="310,820" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
       <convert type="MSNWeather">city</convert>
