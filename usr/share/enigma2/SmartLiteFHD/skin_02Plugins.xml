@@ -717,6 +717,178 @@
   </screen>
 
 
+  <!-- CCCamScreens -->
+  <!-- CCCamScreens -->
+
+  <screen name="CCcamInfoMain" title="CCcam Info" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080" transparent="0">
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/menu/softcam.png" position="275,125" size="350,350" />
+    <!-- Backg -->
+    <eLabel backgroundColor="EL_Background" position="750,100" size="1000,830" zPosition="-21" />
+    <eLabel backgroundColor="EL_New" position="200,100" size="500,550" zPosition="-50" foregroundColor="white" />
+    <eLabel backgroundColor="EL_New" position="200,679" size="500,100" zPosition="-50" foregroundColor="white" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 45" backgroundColor="EL_Background" foregroundColor="white" position="210,465" size="480,175" transparent="1" valign="center" zPosition="3" halign="center" />
+    <widget name="menu" font="EL_Standard; 40" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="770,130" size="960,760" transparent="1" />
+    <!-- Weather -->
+    <eLabel backgroundColor="EL_New" position="200,795" size="500,135" zPosition="-50" foregroundColor="white" />
+    <widget backgroundColor="background" font="FHD; 40" render="Label" position="430,862" size="120,55" source="session.MSNWeather" transparent="1" zPosition="8" halign="right" foregroundColor="white">
+      <convert type="MSNWeather">temperature_current</convert>
+    </widget>
+    <widget backgroundColor="background" font="FHD; 28" render="Label" position="210,871" size="220,45" source="session.MSNWeather" zPosition="8" halign="right" transparent="1" foregroundColor="EL_Blue">
+      <convert type="MSNWeather">temperature_heigh_low,day2</convert>
+    </widget>
+    <widget backgroundColor="background" font="FHD; 32" render="Label" position="210,810" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
+      <convert type="MSNWeather">city</convert>
+    </widget>
+    <eLabel backgroundColor="blue" position="210,860" size="340,2" zPosition="-9" foregroundColor="white" />
+    <widget alphatest="blend" render="MSNWeatherPixmap" position="568,800" size="125,125" source="session.MSNWeather" transparent="1" zPosition="8">
+      <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/SmartLiteFHD/WeatherIcon/,png</convert>
+    </widget>
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="537,704" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="544,687" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="384,727" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="384,699" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+  </screen>
+
+  <screen name="CCcamInfoRemoteBoxMenu" title="CCcam Remote Info" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
+    <panel name="Backg" />
+    <panel name="BN4" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="list" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="310,155" size="1300,800" transparent="1" zPosition="3" />
+    <!-- Clock -->
+    <panel name="Clock" />
+  </screen>
+
+  <screen name="CCcamInfoSubMenu" title="CCcamInfo SubMenu" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
+    <panel name="Backg" />
+    <!-- Extra -->
+    <eLabel backgroundColor="blue" foregroundColor="EL_Background" name="" position="260,978" size="1400,1" zPosition="-10" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_ok.png" position="1491,986" size="64,38" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_exit.png" position="1555,986" size="64,38" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="list" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="310,155" size="1300,550" transparent="1" zPosition="3" />
+    <widget name="info" font="Regular2; 30" backgroundColor="EL_Background" foregroundColor="blueCH" halign="left" position="center,725" size="1300,245" transparent="1" />
+    <!-- Clock -->
+    <panel name="Clock" />
+  </screen>
+
+  <screen name="CCcamInfoServerMenu" title="CCcam Server Info" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
+    <panel name="Backg" />
+    <!-- Extra -->
+    <eLabel backgroundColor="blue" foregroundColor="EL_Background" name="" position="260,978" size="1400,1" zPosition="-10" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_ok.png" position="1491,986" size="64,38" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_exit.png" position="1555,986" size="64,38" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="list" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="310,155" size="1300,550" transparent="1" zPosition="3" />
+    <widget name="info" font="Regular2; 30" backgroundColor="EL_Background" foregroundColor="blueCH" halign="left" position="center,725" size="1300,245" transparent="1" />
+    <!-- Clock -->
+    <panel name="Clock" />
+  </screen>
+
+  <screen name="CCcamInfoMenuConfig" title="CCcam Info Config" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
+    <panel name="Backg" />
+    <panel name="BN4" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_ok.png" position="1491,986" size="64,38" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_exit.png" position="1555,986" size="64,38" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="list" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="310,155" size="1300,800" transparent="1" zPosition="3" />
+    <!-- Clock -->
+    <panel name="Clock" />
+  </screen>
+
+  <screen name="CCcamShareViewMenu" title="CCcam Share Menu" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
+    <panel name="Backg" />
+    <!-- Extra -->
+    <eLabel backgroundColor="blue" foregroundColor="EL_Background" name="" position="260,978" size="1400,1" zPosition="-10" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_ok.png" position="1491,986" size="64,38" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_exit.png" position="1555,986" size="64,38" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="list" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="310,155" size="1300,450" transparent="1" zPosition="3" />
+    <widget name="uphops" font="Regular2; 30" backgroundColor="EL_Background" foregroundColor="blueCH" halign="left" position="center,610" size="1300,45" transparent="1" />
+    <widget name="cards" font="Regular2; 30" backgroundColor="EL_Background" foregroundColor="green" halign="left" position="center,655" size="1300,45" transparent="1" />
+    <widget name="providers" font="Regular2; 30" backgroundColor="EL_Background" foregroundColor="blueCH" halign="left" position="center,700" size="1300,45" transparent="1" />
+    <widget name="reshare" font="Regular2; 30" backgroundColor="EL_Background" foregroundColor="green" halign="left" position="center,745" size="1300,45" transparent="1" />
+    <widget name="title" font="Regular2; 26" backgroundColor="EL_Background" foregroundColor="white" halign="center" position="center,790" size="1300,175" transparent="1" />
+    <!-- Clock -->
+    <panel name="Clock" />
+  </screen>
+
+  <screen name="CCcamInfoShareInfo" title="CCcam Share Info" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
+    <panel name="Backg" />
+    <panel name="BN4" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_ok.png" position="1491,986" size="64,38" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_exit.png" position="1555,986" size="64,38" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="list" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="310,155" size="1300,800" transparent="1" zPosition="3" />
+    <!-- Clock -->
+    <panel name="Clock" />
+  </screen>
+
+  <screen name="CCcamInfoConfigSwitcher" title="CCcam Config Switcher" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
+    <panel name="Backg" />
+    <panel name="BN4" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_ok.png" position="1491,986" size="64,38" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_exit.png" position="1555,986" size="64,38" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="list" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="310,155" size="1300,800" transparent="1" zPosition="3" />
+    <!-- Clock -->
+    <panel name="Clock" />
+  </screen>
+
+  <screen name="CCcamInfoConfigMenu" title="CCcam Info Setup" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
+    <panel name="Backg" />
+    <panel name="BN4" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_ok.png" position="1491,986" size="64,38" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_exit.png" position="1555,986" size="64,38" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="config" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="310,155" size="1300,800" transparent="1" zPosition="3" />
+    <!-- Clock -->
+    <panel name="Clock" />
+  </screen>
+
+  <screen name="CCcamInfoEcmInfoSelection" title="CCcam ECM Info" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
+    <panel name="Backg" />
+    <!-- Extra -->
+    <eLabel backgroundColor="blue" foregroundColor="EL_Background" name="" position="260,978" size="1400,1" zPosition="-10" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_ok.png" position="1491,986" size="64,38" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_exit.png" position="1555,986" size="64,38" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="config" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="310,155" size="1300,800" transparent="1" zPosition="3" />
+    <!-- Clock -->
+    <panel name="Clock" />
+  </screen>
+
+  <screen name="CCcamInfoInfoScreen" title="CCcam Info" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
+    <panel name="Backg" />
+    <!-- Extra -->
+    <eLabel backgroundColor="blue" foregroundColor="EL_Background" name="" position="260,978" size="1400,1" zPosition="-10" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_ok.png" position="1491,986" size="64,38" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_exit.png" position="1555,986" size="64,38" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="text" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="white" position="310,155" size="1300,800" transparent="1" zPosition="3" />
+    <!-- Clock -->
+    <panel name="Clock" />
+  </screen>
+
+
+
   <!-- CacheFlush -->
   <!-- CacheFlush -->
   <screen name="CacheFlushSetupMenu" title="" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
