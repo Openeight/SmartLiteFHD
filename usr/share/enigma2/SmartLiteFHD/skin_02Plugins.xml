@@ -548,7 +548,6 @@
     <widget name="output" itemHeight="50" font="Regular; 32" scrollbarMode="showOnDemand" foregroundColor="white" backgroundColor="background" position="160,center" size="1650,750" zPosition="1" transparent="1" />
     <!-- Buttons -->
     <eLabel backgroundColor="blue" foregroundColor="EL_Background" name="" position="160,978" size="1650,1" zPosition="-10" />
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_ok.png" position="1600,986" size="64,38" />
     <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_exit.png" position="1695,986" size="64,38" />
     <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="210,985" size="40,40" />
     <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="530,985" size="40,40" />
@@ -646,7 +645,6 @@
 	</widget>
     <!-- Buttons -->
     <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_exit.png" position="1804,1000" size="64,38" />
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_ok.png" position="1730,1000" size="64,38" />
     <!-- Clock -->
     <eLabel backgroundColor="white" position="1757,44" size="1,50" transparent="0" zPosition="-1" />
     <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1764,27" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
@@ -702,7 +700,6 @@
       </widget>
     <!-- Buttons -->
     <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_exit.png" position="1804,1000" size="64,38" />
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_ok.png" position="1730,1000" size="64,38" />
     <!-- Clock -->
     <eLabel backgroundColor="white" position="1757,44" size="1,50" transparent="0" zPosition="-1" />
     <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1764,27" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
