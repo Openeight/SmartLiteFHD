@@ -610,112 +610,111 @@
 
   <screen name="oscReaderStats" title="Client Info" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
     <!-- Backg1 -->
-    <eLabel backgroundColor="EL_Background" position="center,center" size="1800,960" zPosition="-20" />
-    <eLabel backgroundColor="Red" position="center,140" size="1800,3" zPosition="-9" foregroundColor="white" />
-    <eLabel backgroundColor="blue" foregroundColor="white" name="" position="60,955" size="1800,1" zPosition="-10" />
+    <eLabel backgroundColor="EL_Background" position="center,center" size="1900,1020" zPosition="-20" />
+    <eLabel backgroundColor="Red" position="center,110" size="1900,3" zPosition="-9" foregroundColor="white" />
+    <eLabel backgroundColor="blue" foregroundColor="white" name="" position="center,990" size="1900,1" zPosition="-10" />
     <!-- Widget -->
-    <widget source="Title" render="Label" position="80,70" size="1470,65" font="FHD; 42" halign="left" backgroundColor="EL_Background" foregroundColor="white" transparent="1" />
-    <widget source="output" render="Listbox" backgroundColor="EL_Background" foregroundColor="white" position="center,165" size="1740,765" scrollbarMode="showOnDemand" transparent="1">
+    <widget source="Title" render="Label" position="30,40" size="1570,65" font="FHD; 42" halign="left" backgroundColor="EL_Background" foregroundColor="white" transparent="1" />
+    <widget source="output" render="Listbox" backgroundColor="EL_Background" foregroundColor="white" position="center,145" size="1860,810" scrollbarMode="showOnDemand" transparent="1">
       <convert type="TemplatedMultiContent">
 			{"templates":
-				{"default": (45,[
-					MultiContentEntryText(pos = (5, 1), size = (190, 45), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is caid
-					MultiContentEntryText(pos = (200, 1), size = (100, 24), font=0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is csystem
-					MultiContentEntryText(pos = (305, 1), size = (250, 24), font=0, flags = RT_HALIGN_LEFT, text = 2), # index 2 is hop 1
-					MultiContentEntryText(pos = (560, 1), size = (160, 24), font=0, flags = RT_HALIGN_LEFT, text = 3), # index 3 is hop 2
-					MultiContentEntryText(pos = (720, 1), size = (160, 24), font=0, flags = RT_HALIGN_LEFT, text = 4), # index 4 is hop 3
-					MultiContentEntryText(pos = (880, 1), size = (180, 24), font=0, flags = RT_HALIGN_LEFT, text = 5), # index 5 is hop 4
-					MultiContentEntryText(pos = (1240, 1), size = (180, 24), font=0, flags = RT_HALIGN_LEFT, text = 6), # index 6 is hop 5
-					MultiContentEntryText(pos = (1420, 1), size = (180, 24), font=0, flags = RT_HALIGN_LEFT, text = 7), # index 7 is sum of cards for caid
-					]),
-				"HD": (45,[
-				        MultiContentEntryText(pos = (5, 1), size = (200, 24), font=1, flags = RT_HALIGN_LEFT, text = 0), # index 0 is caid
-					MultiContentEntryText(pos = (200, 1), size = (70, 24), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 1 is csystem
-					MultiContentEntryText(pos = (300, 1), size = (220, 24), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is hop 1
-					MultiContentEntryText(pos = (540, 1), size = (80, 24), font=1, flags = RT_HALIGN_LEFT, text = 3), # index 3 is hop 2
-					MultiContentEntryText(pos = (630, 1), size = (80, 24), font=1, flags = RT_HALIGN_LEFT, text = 4), # index 4 is hop 3
-					MultiContentEntryText(pos = (720, 1), size = (130, 24), font=1, flags = RT_HALIGN_LEFT, text = 5), # index 5 is hop 4
-					MultiContentEntryText(pos = (840, 1), size = (130, 24), font=1, flags = RT_HALIGN_LEFT, text = 6), # index 6 is hop 5
-					MultiContentEntryText(pos = (970, 1), size = (100, 24), font=1, flags = RT_HALIGN_LEFT, text = 7), # index 7 is sum of cards for caid
-				]),
-				},
-				"fonts": [gFont("Regular", 24),gFont("Regular", 26),gFont("Regular", 30),gFont("Regular", 28)],
-				"itemHeight": 45
-				}
-      </convert>
-    </widget>
+					{"default": (45,[
+							MultiContentEntryText(pos = (0, 2), size = (150, 36), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is caid
+							MultiContentEntryText(pos = (150, 2), size = (75, 36), font=0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is csystem
+							MultiContentEntryText(pos = (225, 2), size = (225, 36), font=0, flags = RT_HALIGN_LEFT, text = 2), # index 2 is hop 1
+							MultiContentEntryText(pos = (450, 2), size = (90, 36), font=0, flags = RT_HALIGN_LEFT, text = 3), # index 3 is hop 2
+							MultiContentEntryText(pos = (540, 2), size = (90, 36), font=0, flags = RT_HALIGN_LEFT, text = 4), # index 4 is hop 3
+							MultiContentEntryText(pos = (630, 2), size = (120, 36), font=0, flags = RT_HALIGN_LEFT, text = 5), # index 5 is hop 4
+							MultiContentEntryText(pos = (765, 2), size = (120, 36), font=0, flags = RT_HALIGN_LEFT, text = 6), # index 6 is hop 5
+							MultiContentEntryText(pos = (885, 2), size = (120, 36), font=0, flags = RT_HALIGN_LEFT, text = 7), # index 7 is sum of cards for caid
+							]),
+					"HD": (45,[
+							MultiContentEntryText(pos = (15, 2), size = (285, 36), font=1, flags = RT_HALIGN_LEFT, text = 0), # index 0 is caid
+							MultiContentEntryText(pos = (255, 2), size = (105, 36), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 1 is csystem
+							MultiContentEntryText(pos = (360, 2), size = (345, 36), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is hop 1
+							MultiContentEntryText(pos = (780, 2), size = (240, 36), font=1, flags = RT_HALIGN_LEFT, text = 3), # index 3 is hop 2
+							MultiContentEntryText(pos = (1020, 2), size = (195, 36), font=1, flags = RT_HALIGN_LEFT, text = 4), # index 4 is hop 3
+							MultiContentEntryText(pos = (1215, 2), size = (195, 36), font=1, flags = RT_HALIGN_LEFT, text = 5), # index 5 is hop 4
+							MultiContentEntryText(pos = (1350, 2), size = (195, 36), font=1, flags = RT_HALIGN_LEFT, text = 6), # index 6 is hop 5
+							MultiContentEntryText(pos = (1590, 2), size = (150, 36), font=1, flags = RT_HALIGN_LEFT, text = 7), # index 7 is sum of cards for caid
+							]),
+					},
+					"fonts": [gFont("Regular",21),gFont("Regular",27),gFont("Regular",36),gFont("Regular",30)],
+					"itemHeight": 45
+		}
+	  </convert>
+	</widget>
     <!-- Buttons -->
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_exit.png" position="1754,971" size="64,38" />
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_ok.png" position="1680,971" size="64,38" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_exit.png" position="1804,1000" size="64,38" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_ok.png" position="1730,1000" size="64,38" />
     <!-- Clock -->
-    <eLabel backgroundColor="white" position="1707,74" size="1,50" transparent="0" zPosition="-1" />
-    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1714,57" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+    <eLabel backgroundColor="white" position="1757,44" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1764,27" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
       <convert type="ClockToText">Format:%H:%M</convert>
     </widget>
-    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1554,97" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1604,67" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%e. %b</convert>
     </widget>
-    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1554,69" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1604,39" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
   </screen>
 
   <screen name="oscEntitlements" title="Client Info" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
     <!-- Backg1 -->
-    <eLabel backgroundColor="EL_Background" position="center,center" size="1800,960" zPosition="-20" />
-    <eLabel backgroundColor="Red" position="center,140" size="1800,3" zPosition="-9" foregroundColor="white" />
-    <eLabel backgroundColor="blue" foregroundColor="white" name="" position="60,955" size="1800,1" zPosition="-10" />
+    <eLabel backgroundColor="EL_Background" position="center,center" size="1900,1020" zPosition="-20" />
+    <eLabel backgroundColor="Red" position="center,110" size="1900,3" zPosition="-9" foregroundColor="white" />
+    <eLabel backgroundColor="blue" foregroundColor="white" name="" position="center,990" size="1900,1" zPosition="-10" />
     <!-- Widget -->
-    <widget source="Title" render="Label" position="80,70" size="1470,65" font="FHD; 42" halign="left" backgroundColor="EL_Background" foregroundColor="white" transparent="1" />
-    <widget source="output" render="Listbox" backgroundColor="EL_Background" foregroundColor="white" position="center,165" size="1740,765" scrollbarMode="showOnDemand" transparent="1">
+    <widget source="Title" render="Label" position="30,40" size="1570,65" font="FHD; 42" halign="left" backgroundColor="EL_Background" foregroundColor="white" transparent="1" />
+    <widget source="output" render="Listbox" backgroundColor="EL_Background" foregroundColor="white" position="center,145" size="1860,810" scrollbarMode="showOnDemand" transparent="1">
       <convert type="TemplatedMultiContent">
 				{"templates":
-					{"default": (60,[
-							MultiContentEntryText(pos = (0, 1), size = (80, 24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is caid
-							MultiContentEntryText(pos = (90, 1), size = (150, 24), font=0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is csystem
-							MultiContentEntryText(pos = (250, 1), size = (40, 24), font=0, flags = RT_HALIGN_LEFT, text = 2), # index 2 is hop 1
-							MultiContentEntryText(pos = (290, 1), size = (40, 24), font=0, flags = RT_HALIGN_LEFT, text = 3), # index 3 is hop 2
-							MultiContentEntryText(pos = (330, 1), size = (40, 24), font=0, flags = RT_HALIGN_LEFT, text = 4), # index 4 is hop 3
-							MultiContentEntryText(pos = (370, 1), size = (40, 24), font=0, flags = RT_HALIGN_LEFT, text = 5), # index 5 is hop 4
-							MultiContentEntryText(pos = (410, 1), size = (40, 24), font=0, flags = RT_HALIGN_LEFT, text = 6), # index 6 is hop 5
-							MultiContentEntryText(pos = (480, 1), size = (70, 24), font=0, flags = RT_HALIGN_LEFT, text = 7), # index 7 is sum of cards for caid
-							MultiContentEntryText(pos = (550, 1), size = (80, 24), font=0, flags = RT_HALIGN_LEFT, text = 8), # index 8 is reshare
-							MultiContentEntryText(pos = (0, 25), size = (700, 24), font=1, flags = RT_HALIGN_LEFT, text = 9), # index 9 is providers
+					{"default": (90,[
+							MultiContentEntryText(pos = (0, 2), size = (120, 36), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is caid
+							MultiContentEntryText(pos = (135, 2), size = (225, 36), font=0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is csystem
+							MultiContentEntryText(pos = (375, 2), size = (60, 36), font=0, flags = RT_HALIGN_LEFT, text = 2), # index 2 is hop 1
+							MultiContentEntryText(pos = (435, 2), size = (60, 36), font=0, flags = RT_HALIGN_LEFT, text = 3), # index 3 is hop 2
+							MultiContentEntryText(pos = (495, 2), size = (60, 36), font=0, flags = RT_HALIGN_LEFT, text = 4), # index 4 is hop 3
+							MultiContentEntryText(pos = (555, 2), size = (60, 36), font=0, flags = RT_HALIGN_LEFT, text = 5), # index 5 is hop 4
+							MultiContentEntryText(pos = (615, 2), size = (60, 36), font=0, flags = RT_HALIGN_LEFT, text = 6), # index 6 is hop 5
+							MultiContentEntryText(pos = (720, 2), size = (105, 36), font=0, flags = RT_HALIGN_LEFT, text = 7), # index 7 is sum of cards for caid
+							MultiContentEntryText(pos = (825, 2), size = (120, 36), font=0, flags = RT_HALIGN_LEFT, text = 8), # index 8 is reshare
+							MultiContentEntryText(pos = (0, 38), size = (1050, 36), font=1, flags = RT_HALIGN_LEFT, text = 9), # index 9 is providers
 							]),
-					"HD": (60,[
-							MultiContentEntryText(pos = (0, 1), size = (80, 24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is caid
-							MultiContentEntryText(pos = (90, 1), size = (150, 24), font=0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is csystem
-							MultiContentEntryText(pos = (250, 1), size = (40, 24), font=0, flags = RT_HALIGN_LEFT, text = 2), # index 2 is hop 1
-							MultiContentEntryText(pos = (290, 1), size = (40, 24), font=0, flags = RT_HALIGN_LEFT, text = 3), # index 3 is hop 2
-							MultiContentEntryText(pos = (330, 1), size = (40, 24), font=0, flags = RT_HALIGN_LEFT, text = 4), # index 4 is hop 3
-							MultiContentEntryText(pos = (370, 1), size = (40, 24), font=0, flags = RT_HALIGN_LEFT, text = 5), # index 5 is hop 4
-							MultiContentEntryText(pos = (410, 1), size = (40, 24), font=0, flags = RT_HALIGN_LEFT, text = 6), # index 6 is hop 5
-							MultiContentEntryText(pos = (480, 1), size = (70, 24), font=0, flags = RT_HALIGN_LEFT, text = 7), # index 7 is sum of cards for caid
-							MultiContentEntryText(pos = (550, 1), size = (80, 24), font=0, flags = RT_HALIGN_LEFT, text = 8), # index 8 is reshare
-							MultiContentEntryText(pos = (630, 1), size = (1024, 50), font=1, flags = RT_HALIGN_LEFT, text = 9), # index 9 is providers
+					"HD": (90,[
+							MultiContentEntryText(pos = (0, 2), size = (120, 36), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is caid
+							MultiContentEntryText(pos = (135, 2), size = (225, 36), font=0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is csystem
+							MultiContentEntryText(pos = (375, 2), size = (60, 36), font=0, flags = RT_HALIGN_LEFT, text = 2), # index 2 is hop 1
+							MultiContentEntryText(pos = (435, 2), size = (60, 36), font=0, flags = RT_HALIGN_LEFT, text = 3), # index 3 is hop 2
+							MultiContentEntryText(pos = (495, 2), size = (60, 36), font=0, flags = RT_HALIGN_LEFT, text = 4), # index 4 is hop 3
+							MultiContentEntryText(pos = (555, 2), size = (60, 36), font=0, flags = RT_HALIGN_LEFT, text = 5), # index 5 is hop 4
+							MultiContentEntryText(pos = (615, 2), size = (60, 36), font=0, flags = RT_HALIGN_LEFT, text = 6), # index 6 is hop 5
+							MultiContentEntryText(pos = (720, 2), size = (105, 36), font=0, flags = RT_HALIGN_LEFT, text = 7), # index 7 is sum of cards for caid
+							MultiContentEntryText(pos = (825, 2), size = (120, 36), font=0, flags = RT_HALIGN_LEFT, text = 8), # index 8 is reshare
+							MultiContentEntryText(pos = (945, 2), size = (1536, 75), font=1, flags = RT_HALIGN_LEFT, text = 9), # index 9 is providers
 							]),
 					},
-					"fonts": [gFont("Regular",18),gFont("Regular",14),gFont("Regular",24),gFont("Regular",20)],
-					"itemHeight": 60
+					"fonts": [gFont("Regular",27),gFont("Regular",21),gFont("Regular",36),gFont("Regular",30)],
+					"itemHeight": 90
 				}
-				</convert>
-    </widget>
+			</convert>
+      </widget>
     <!-- Buttons -->
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_exit.png" position="1754,971" size="64,38" />
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_ok.png" position="1680,971" size="64,38" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_exit.png" position="1804,1000" size="64,38" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_ok.png" position="1730,1000" size="64,38" />
     <!-- Clock -->
-    <eLabel backgroundColor="white" position="1707,74" size="1,50" transparent="0" zPosition="-1" />
-    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1714,57" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+    <eLabel backgroundColor="white" position="1757,44" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1764,27" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
       <convert type="ClockToText">Format:%H:%M</convert>
     </widget>
-    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1554,97" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1604,67" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%e. %b</convert>
     </widget>
-    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1554,69" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1604,39" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
   </screen>
-
 
   <!-- CCCamScreens -->
   <!-- CCCamScreens -->
@@ -832,7 +831,7 @@
     <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_exit.png" position="1555,986" size="64,38" />
     <!-- Widget -->
     <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
-    <widget name="list" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="310,155" size="1300,800" transparent="1" zPosition="3" />
+    <widget name="list" itemHeight="95" font="Regular2; 28" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="310,155" size="1300,800" transparent="1" zPosition="3" />
     <!-- Clock -->
     <panel name="Clock" />
   </screen>
@@ -844,7 +843,7 @@
     <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_exit.png" position="1555,986" size="64,38" />
     <!-- Widget -->
     <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
-    <widget name="list" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="310,155" size="1300,800" transparent="1" zPosition="3" />
+    <widget name="list" itemHeight="85" font="FHD; 32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="310,155" size="1300,800" transparent="1" zPosition="3" />
     <!-- Clock -->
     <panel name="Clock" />
   </screen>
