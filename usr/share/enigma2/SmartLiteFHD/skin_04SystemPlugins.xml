@@ -451,35 +451,47 @@
   </screen>
 
   <screen name="DiseqcTester" title="DiSEqC Tester" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-    <panel name="Backg" />
-    <panel name="Clock" />
+    <!-- Backg1 -->
+    <ePixmap position="0,0" size="1920,1080" zPosition="-90" pixmap="SmartLiteFHD/menu/bgBlue1.png" />
+    <eLabel backgroundColor="Red" position="center,140" size="1800,2" zPosition="-9" />
     <!-- Widget -->
-    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
-    <widget source="progress_list" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="EL_Foreground" position="310,155" size="1300,300" transparent="1" zPosition="2">
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="80,70" size="1280,58" transparent="1" />
+    <widget source="progress_list" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="EL_Foreground" position="center,155" size="1760,500" transparent="1" zPosition="2">
       <convert type="TemplatedMultiContent">
 		{"template": [
-		MultiContentEntryText(pos = (15, 0), size = (750, 37), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the index name,
-		MultiContentEntryText(pos = (750, 0), size = (450, 37), flags = RT_HALIGN_RIGHT, text = 2) # index 2 is the status,
+		MultiContentEntryText(pos = (15, 0), size = (1100, 50), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the index name,
+		MultiContentEntryText(pos = (1190, 0), size = (500, 50), flags = RT_HALIGN_RIGHT, text = 2) # index 2 is the status,
 		],
 		"fonts": [gFont("FHD", 32)],
 		"itemHeight": 50
 		}
 	</convert>
     </widget>
-    <eLabel backgroundColor="blue" position="310,470" size="1220,3" zPosition="-9" foregroundColor="white" />
-    <eLabel name="" text="Overall progress:" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="310,490" size="300,45" transparent="1" />
-    <widget source="overall_progress" render="Progress" borderColor="grey" borderWidth="1" foregroundColor="green_light" position="310,540" size="950,30" transparent="1" />
-    <eLabel name="" text="Progress:" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="310,585" size="300,45" transparent="1" />
-    <widget source="sub_progress" render="Progress" borderColor="grey" borderWidth="1" foregroundColor="green_light" position="310,635" size="950,30" transparent="1" />
-    <eLabel name="" text="Failed:" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="310,770" size="170,45" transparent="1" />
-    <eLabel name="" text="Succeeded:" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="310,820" size="180,45" transparent="1" />
-    <eLabel name="" text="With errors:" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="310,870" size="190,45" transparent="1" />
-    <eLabel name="" text="Not tested:" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="310,920" size="180,45" transparent="1" />
-    <widget source="failed_counter" render="Label" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="500,770" size="300,45" transparent="1" />
-    <widget source="succeeded_counter" render="Label" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="500,820" size="300,45" transparent="1" />
-    <widget source="witherrors_counter" render="Label" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="500,870" size="300,45" transparent="1" />
-    <widget source="untestable_counter" render="Label" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="500,920" size="300,45" transparent="1" />
-    <widget source="CmdText" render="Label" font="Regular; 28" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="950,683" size="700,340" transparent="1" />
+    <eLabel backgroundColor="blue" position="center,670" size="1760,3" zPosition="-9" foregroundColor="white" />
+    <eLabel name="" text="Overall progress:" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="80,690" size="300,45" transparent="1" />
+    <widget source="overall_progress" render="Progress" borderColor="grey" borderWidth="1" foregroundColor="blue" position="80,740" size="950,30" transparent="1" />
+    <eLabel name="" text="Progress:" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="80,785" size="300,45" transparent="1" />
+    <widget source="sub_progress" render="Progress" borderColor="grey" borderWidth="1" foregroundColor="blue" position="80,835" size="950,30" transparent="1" />
+    <eLabel name="" text="Failed:" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="1320,700" size="220,45" transparent="1" />
+    <eLabel name="" text="Succeeded:" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="1320,745" size="220,45" transparent="1" />
+    <eLabel name="" text="With errors:" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="1320,790" size="220,45" transparent="1" />
+    <eLabel name="" text="Not tested:" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="1320,835" size="220,45" transparent="1" />
+    <widget source="failed_counter" render="Label" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="1540,700" size="300,45" transparent="1" />
+    <widget source="succeeded_counter" render="Label" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="1540,745" size="300,45" transparent="1" />
+    <widget source="witherrors_counter" render="Label" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="1540,790" size="300,45" transparent="1" />
+    <widget source="untestable_counter" render="Label" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="1540,835" size="300,45" transparent="1" />
+    <widget source="CmdText" render="Label" font="Regular2; 34" backgroundColor="EL_Background" foregroundColor="blueCH" halign="center" position="center,920" size="1760,85" transparent="1" />
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="1707,74" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1714,57" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1554,97" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1554,69" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
   </screen>
 
 
