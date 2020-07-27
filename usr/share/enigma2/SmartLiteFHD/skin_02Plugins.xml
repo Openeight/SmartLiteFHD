@@ -617,36 +617,35 @@
     <widget source="Title" render="Label" position="30,40" size="1570,65" font="FHD; 42" halign="left" backgroundColor="EL_Background" foregroundColor="white" transparent="1" />
     <widget source="output" render="Listbox" backgroundColor="EL_Background" foregroundColor="white" position="center,145" size="1860,810" scrollbarMode="showOnDemand" transparent="1">
       <convert type="TemplatedMultiContent">
-			{"templates":
-					{"default": (45,[
-							MultiContentEntryText(pos = (0, 2), size = (150, 36), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is caid
-							MultiContentEntryText(pos = (150, 2), size = (75, 36), font=0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is csystem
-							MultiContentEntryText(pos = (225, 2), size = (225, 36), font=0, flags = RT_HALIGN_LEFT, text = 2), # index 2 is hop 1
-							MultiContentEntryText(pos = (450, 2), size = (90, 36), font=0, flags = RT_HALIGN_LEFT, text = 3), # index 3 is hop 2
-							MultiContentEntryText(pos = (540, 2), size = (90, 36), font=0, flags = RT_HALIGN_LEFT, text = 4), # index 4 is hop 3
-							MultiContentEntryText(pos = (630, 2), size = (120, 36), font=0, flags = RT_HALIGN_LEFT, text = 5), # index 5 is hop 4
-							MultiContentEntryText(pos = (765, 2), size = (120, 36), font=0, flags = RT_HALIGN_LEFT, text = 6), # index 6 is hop 5
-							MultiContentEntryText(pos = (885, 2), size = (120, 36), font=0, flags = RT_HALIGN_LEFT, text = 7), # index 7 is sum of cards for caid
-							]),
-					"HD": (45,[
-							MultiContentEntryText(pos = (15, 2), size = (285, 36), font=1, flags = RT_HALIGN_LEFT, text = 0), # index 0 is caid
-							MultiContentEntryText(pos = (255, 2), size = (105, 36), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 1 is csystem
-							MultiContentEntryText(pos = (360, 2), size = (345, 36), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is hop 1
-							MultiContentEntryText(pos = (780, 2), size = (240, 36), font=1, flags = RT_HALIGN_LEFT, text = 3), # index 3 is hop 2
-							MultiContentEntryText(pos = (1020, 2), size = (195, 36), font=1, flags = RT_HALIGN_LEFT, text = 4), # index 4 is hop 3
-							MultiContentEntryText(pos = (1215, 2), size = (195, 36), font=1, flags = RT_HALIGN_LEFT, text = 5), # index 5 is hop 4
-							MultiContentEntryText(pos = (1350, 2), size = (195, 36), font=1, flags = RT_HALIGN_LEFT, text = 6), # index 6 is hop 5
-							MultiContentEntryText(pos = (1590, 2), size = (150, 36), font=1, flags = RT_HALIGN_LEFT, text = 7), # index 7 is sum of cards for caid
-							]),
-					},
-					"fonts": [gFont("Regular",21),gFont("Regular",27),gFont("Regular",36),gFont("Regular",30)],
-					"itemHeight": 45
-		}
-	  </convert>
-	</widget>
+                   {"templates":
+                      {"default": (45,[
+                          MultiContentEntryText(pos = (0, 2), size = (150, 36), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is label
+                          MultiContentEntryText(pos = (150, 2), size = (75, 36), font=0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is caid
+                          MultiContentEntryText(pos = (225, 2), size = (225, 36), font=0, flags = RT_HALIGN_LEFT, text = 2), # index 2 is channel
+                          MultiContentEntryText(pos = (450, 2), size = (90, 36), font=0, flags = RT_HALIGN_LEFT, text = 3), # index 3 is emc average
+                          MultiContentEntryText(pos = (540, 2), size = (90, 36), font=0, flags = RT_HALIGN_LEFT, text = 4), # index 4 is emc last
+                          MultiContentEntryText(pos = (630, 2), size = (120, 36), font=0, flags = RT_HALIGN_LEFT, text = 5), # index 5 is status
+                          MultiContentEntryText(pos = (765, 2), size = (120, 36), font=0, flags = RT_HALIGN_LEFT, text = 6), # index 6 is last request
+                          MultiContentEntryText(pos = (885, 2), size = (120, 36), font=0, flags = RT_HALIGN_LEFT, text = 7), # index 7 is total requests
+                       ]),
+                       "HD": (45,[
+                          MultiContentEntryText(pos = (5, 4), size = (210, 34), font=1, flags = RT_HALIGN_LEFT, text = 0), # index 0 is label
+                          MultiContentEntryText(pos = (230, 4), size = (70, 34), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 1 is caid
+                          MultiContentEntryText(pos = (335, 4), size = (250, 34), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is channel
+                          MultiContentEntryText(pos = (650, 4), size = (180, 34), font=1, flags = RT_HALIGN_LEFT, text = 3), # index 3 is emc average
+                          MultiContentEntryText(pos = (850, 4), size = (180, 34), font=1, flags = RT_HALIGN_LEFT, text = 4), # index 4 is emc last
+                          MultiContentEntryText(pos = (1080, 4), size = (180, 34), font=1, flags = RT_HALIGN_LEFT, text = 5), # index 5 is status
+                          MultiContentEntryText(pos = (1300, 4), size = (180, 34), font=1, flags = RT_HALIGN_LEFT, text = 6), # index 6 is last request
+                          MultiContentEntryText(pos = (1520, 4), size = (100, 34), font=1, flags = RT_HALIGN_LEFT, text = 7), # index 7 is total requests
+                       ]),
+                       },
+                   "fonts": [gFont("Regular",21),gFont("Regular",27),gFont("Regular",36),gFont("Regular",30)],
+                   "itemHeight": 45
+                    }
+      </convert>
+    </widget>
     <!-- Buttons -->
     <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_exit.png" position="1804,1000" size="64,38" />
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_ok.png" position="1730,1000" size="64,38" />
     <!-- Clock -->
     <eLabel backgroundColor="white" position="1757,44" size="1,50" transparent="0" zPosition="-1" />
     <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1764,27" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
@@ -1060,7 +1059,7 @@
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <!-- Bouquet -->
-    <widget name="timeline_text" position="90,130" size="1740,45" foregroundColor="blueCH" backgroundColor="EL_Background" transparent="1" selectionDisabled="1" itemHeight="55" font="Regular; 28" />
+    <widget name="timeline_text" position="0,130" size="1830,45" foregroundColor="blueCH" backgroundColor="EL_Background" transparent="1" selectionDisabled="1" itemHeight="55" font="Regular; 28" />
     <widget name="list" font="Regular2; 30" position="90,175" size="1740,540" CoolBackColorSel="#ffd200" CoolCurrentColSel="#ffd200" CoolNowColSel="#ffd200" scrollbarMode="showNever" transparent="1" />
     <widget name="timeline0" position="0,134" zPosition="1" size="0,0" pixmap="/usr/share/enigma2/SmartLiteFHD/EL_images/timeline-now.png" />
     <widget name="timeline1" position="0,134" zPosition="1" size="0,0" pixmap="/usr/share/enigma2/SmartLiteFHD/EL_images/timeline-now.png" />
@@ -1098,7 +1097,7 @@
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <!-- Bouquet -->
-    <widget name="timeline_text" position="90,130" size="1740,45" foregroundColor="blueCH" backgroundColor="EL_Background" transparent="1" selectionDisabled="1" itemHeight="55" font="Regular; 28" />
+    <widget name="timeline_text" position="0,130" size="1830,45" foregroundColor="blueCH" backgroundColor="EL_Background" transparent="1" selectionDisabled="1" itemHeight="55" font="Regular; 28" />
     <widget name="list" font="Regular2; 30" position="90,175" size="1740,540" CoolBackColorSel="#ffd200" CoolCurrentColSel="#ffd200" CoolNowColSel="#ffd200" scrollbarMode="showNever" transparent="1" />
     <widget name="timeline0" position="0,134" zPosition="1" size="0,0" pixmap="/usr/share/enigma2/SmartLiteFHD/EL_images/timeline-now.png" />
     <widget name="timeline1" position="0,134" zPosition="1" size="0,0" pixmap="/usr/share/enigma2/SmartLiteFHD/EL_images/timeline-now.png" />
@@ -1287,7 +1286,7 @@
     <widget source="Event" render="Label" position="90,235" zPosition="1" size="1740,150" font="Regular2; 27" backgroundColor="EL_Background" transparent="1" valign="top">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
-    <widget name="timeline_text" position="90,400" size="1740,45" foregroundColor="green_light" backgroundColor="EL_Background" transparent="1" selectionDisabled="1" itemHeight="55" font="Regular; 28" />
+    <widget name="timeline_text" position="0,400" size="1830,45" foregroundColor="green_light" backgroundColor="EL_Background" transparent="1" selectionDisabled="1" itemHeight="55" font="Regular; 28" />
     <widget name="timeline_now" position="71,460" zPosition="2" size="19,480" pixmap="SmartLiteFHD/extensions/timeline-now2.png" alphatest="blend" />
     <widget name="list" scrollbarSliderForegroundColor="EL_Foreground" scrollbarSliderBorderColor="EL_Foreground" scrollbarSliderBorderWidth="1" CoolBackColor="EL_Foreground" CoolBackColorSel="EL_Selection" CoolCurrentCol="#8585ff" CoolCurrentColSel="EL_Selection" CoolFontCol="EL_Foreground" CoolFontColSel="yellow" CoolNowCol="dark" CoolNowColSel="EL_Foreground" CoolNowFontCol="EL_Foreground" CoolNowFontColSel="dark" backgroundColor="EL_Background" position="center,460" scrollbarMode="showOnDemand" size="1740,480" transparent="1" scrollbarWidth="4" />
   </screen>
@@ -1324,7 +1323,7 @@
     <widget source="Event" render="Label" position="90,235" zPosition="1" size="1740,150" font="Regular2; 27" backgroundColor="EL_Background" transparent="1" valign="top">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
-    <widget name="timeline_text" position="90,400" size="1740,45" foregroundColor="green_light" backgroundColor="EL_Background" transparent="1" selectionDisabled="1" itemHeight="55" font="Regular; 28" />
+    <widget name="timeline_text" position="0,400" size="1830,45" foregroundColor="green_light" backgroundColor="EL_Background" transparent="1" itemHeight="55" font="Regular; 30" />
     <widget name="timeline_now" position="71,460" zPosition="2" size="19,480" pixmap="SmartLiteFHD/extensions/timeline-now2.png" alphatest="blend" />
     <widget name="list" scrollbarSliderForegroundColor="EL_Foreground" scrollbarSliderBorderColor="EL_Foreground" scrollbarSliderBorderWidth="1" CoolBackColor="EL_Foreground" CoolBackColorSel="EL_Selection" CoolCurrentCol="#8585ff" CoolCurrentColSel="EL_Selection" CoolFontCol="EL_Foreground" CoolFontColSel="yellow" CoolNowCol="dark" CoolNowColSel="EL_Foreground" CoolNowFontCol="EL_Foreground" CoolNowFontColSel="dark" backgroundColor="EL_Background" position="center,460" scrollbarMode="showOnDemand" size="1740,480" transparent="1" scrollbarWidth="4" />
   </screen>
