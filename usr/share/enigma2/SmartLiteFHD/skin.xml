@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <skin>
-  <!-- SmartLiteFHD Skin V6.7g by SkinMania for Octagon -->
+  <!-- SmartLiteFHD Skin V6.7i by SkinMania for Octagon -->
   <!-- Recommended to use with XPicons (220x132) -->
   <!-- You are not allowed to modify and redistribute SmartLiteFHD Skin and all graphics -->
   <output id="0">
@@ -211,6 +211,17 @@
     <parameter name="ProgrammlistenUpdaterList" value="15,12,720,300,60" />
     <parameter name="ProgrammlistenUpdaterListFont" value="Bold;30" />
     <parameter name="ChoicelistNameSingle" value="7,3,1000,50" />
+    <parameter name="ImsSelectionListDescr" value="55,5,1000,50" />
+    <parameter name="ImsSelectionListLock" value="5,5,50,50" />
+    <!-- FileCommander -->
+    <parameter name="FcFileListName" value="50,1,1175,50" />
+    <parameter name="FcFileListIcon" value="5, 8, 40, 40" />
+    <parameter name="FcFileListMultiName" value="50,1,1175,50" />
+    <parameter name="FcFileListMultiIcon" value="5, 8, 40, 40" />
+    <parameter name="FcFileListMultiLock" value="5, 8, 40, 40" />
+    <!-- EPGImport -->
+    <parameter name="SelectionListDescr" value="55,1,1250, 50" />
+    <parameter name="SelectionListLock" value="0,8,50,50" />
   </parameters>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="InfoBar" position="center,center" size="1920,1080" title="InfoBar">
     <eLabel backgroundColor="EL_Background" name="InfoBar" position="center,895" size="1920,185" zPosition="-11" />
