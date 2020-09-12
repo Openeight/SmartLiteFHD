@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <skin>
-  <!-- SmartLiteFHD Skin V6.7i by SkinMania for Octagon -->
+  <!-- SmartLiteFHD Skin V6.7k by SkinMania for Octagon -->
   <!-- Recommended to use with XPicons (220x132) -->
   <!-- You are not allowed to modify and redistribute SmartLiteFHD Skin and all graphics -->
   <output id="0">
@@ -4184,10 +4184,10 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <eLabel backgroundColor="EL_Background" foregroundColor="EL_Background" name="" position="410,390" size="1100,300" zPosition="-20" />
     <eLabel backgroundColor="Red" position="410,470" size="1100,3" zPosition="-9" foregroundColor="white" />
     <!-- Widget -->
-    <eLabel text="Cable Scan" position="460,400" size="1000,58" font="FHD; 42" backgroundColor="EL_Background" transparent="1" foregroundColor="white" />
-    <widget name="frontend" pixmap="skin_default/icons/scan-c.png" position="460,505" size="64,64" transparent="1" alphatest="blend" />
-    <widget name="scan_state" font="Bold; 28" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="540,515" size="920,45" transparent="1" />
-    <widget name="scan_progress" pixmap="SmartLiteFHD/colors/00A4C400.png" borderWidth="2" borderColor="darkgrey" position="460,590" size="1000,30" transparent="0" />
+    <eLabel text="Cable Scan" position="center,400" size="1040,58" font="FHD; 42" backgroundColor="EL_Background" transparent="1" foregroundColor="white" />
+    <widget name="frontend" pixmap="SmartLiteFHD/icons/scan-c2.png" position="440,525" size="96,96" transparent="1" alphatest="blend" />
+    <widget name="scan_state" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="565,515" size="920,55" transparent="1" />
+    <widget name="scan_progress" pixmap="SmartLiteFHD/colors/00A4C400.png" borderWidth="2" borderColor="darkgrey" position="565,590" size="920,30" transparent="0" />
   </screen>
   <screen name="FastScanScreen" title="Fast Scan" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <panel name="Backg" />
@@ -4926,7 +4926,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <widget name="introduction" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="310,920" size="1300,45" transparent="1" />
   </screen>
   <screen backgroundColor="black" flags="wfNoBorder" name="VideoFinetune" position="0,0" size="1920,1080">
-    <widget source="Canvas" render="Canvas" position="600,200" size="1000,700" font="Regular2; 26" />
+    <widget source="Canvas" render="Canvas" position="0,0" size="1920,1080" font="Regular2; 26" />
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="VirtualKeyBoard" position="center,center" size="1920,1080" title="Virtual KeyBoard" zPosition="99">
     <panel name="Backg" />

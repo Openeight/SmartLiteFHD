@@ -161,6 +161,7 @@
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
     <eLabel backgroundColor="blue" foregroundColor="blue" name="new eLabel" position="1565,1007" size="230,1" zPosition="-1" />
+    <widget name="Cover" position="1585,660" size="185,280" zPosition="1" alphatest="blend" />
     <!-- Clock -->
     <eLabel backgroundColor="EL_Background" position="1687,73" size="150,68" transparent="0" zPosition="-12" />
     <eLabel backgroundColor="blue" position="1530,73" size="157,68" transparent="0" zPosition="-12" foregroundColor="white" />

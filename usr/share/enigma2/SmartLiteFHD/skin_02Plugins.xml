@@ -2267,7 +2267,7 @@
     <panel name="BN4" />
     <!-- Widget -->
     <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
-    <widget name="list" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="center,155" size="1300,800" transparent="1" zPosition="3" />
+    <widget name="list" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="center,155" size="1300,800" transparent="1" zPosition="3" />
   </screen>
 
   <screen name="filtersServicesSelection" title="Select service to add..." backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
@@ -3253,7 +3253,7 @@
   <screen name="localcityscreen" title="" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
     <panel name="Backg" />
     <panel name="Clock" />
-    <panel name="BN3" />
+    <panel name="BN4" />
     <!-- Widget -->
     <widget name="favor" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
     <widget name="plaatsn" font="Regular2; 32" backgroundColor="EL_Background" foregroundColor="green_light" position="310,155" size="1300,45" valign="center" halign="left" zPosition="3" transparent="1" />
@@ -8576,6 +8576,69 @@
     <!-- Widget -->
     <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
     <widget name="scriptList" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="white" position="center,155" size="1300,800" transparent="1" zPosition="1" halign="center" />
+  </screen>
+
+  <screen name="HddSleep" title="HddSleep Configuration" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <!-- Backg1 -->
+    <eLabel backgroundColor="EL_Background" position="center,center" size="1800,960" zPosition="-20" />
+    <eLabel backgroundColor="Red" position="center,140" size="1800,2" zPosition="-9" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/menu/harddisk.png" position="1380,120" size="350,310" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="90,70" size="1470,65" transparent="1" />
+    <widget name="config" itemHeight="50" font="FHD; 32" backgroundColor="EL_Background" position="155,165" scrollbarMode="showOnDemand" size="1085,450" transparent="1" />
+    <eLabel backgroundColor="blue" position="1250,165" size="1,770" zPosition="-1" foregroundColor="white" />
+    <eLabel backgroundColor="white" position="90,650" size="1150,1" zPosition="-1" foregroundColor="white" />
+    <eLabel backgroundColor="white" position="1305,770" size="480,4" zPosition="-9" foregroundColor="white" />
+    <widget name="0" pixmaps="SmartLiteFHD/buttons/grey.png,SmartLiteFHD/buttons/key_green.png" position="90,171" zPosition="10" size="64,38" transparent="1" alphatest="blend" />
+    <widget name="1" pixmaps="SmartLiteFHD/buttons/grey.png,SmartLiteFHD/buttons/key_blue.png" position="90,221" zPosition="10" size="64,38" transparent="1" alphatest="blend" />
+    <widget name="2" pixmaps="SmartLiteFHD/buttons/grey.png,SmartLiteFHD/buttons/key_blue.png" position="90,271" zPosition="10" size="64,38" transparent="1" alphatest="blend" />
+    <widget name="3" pixmaps="SmartLiteFHD/buttons/grey.png,SmartLiteFHD/buttons/key_blue.png" position="90,321" zPosition="10" size="64,38" transparent="1" alphatest="blend" />
+    <widget name="4" pixmaps="SmartLiteFHD/buttons/grey.png,SmartLiteFHD/buttons/key_blue.png" position="90,371" zPosition="10" size="64,38" transparent="1" alphatest="blend" />
+    <widget name="5" pixmaps="SmartLiteFHD/buttons/grey.png,SmartLiteFHD/buttons/key_blue.png" position="90,421" zPosition="10" size="64,38" transparent="1" alphatest="blend" />
+    <widget name="6" pixmaps="SmartLiteFHD/buttons/grey.png,SmartLiteFHD/buttons/key_green.png" position="90,471" zPosition="10" size="64,38" transparent="1" alphatest="blend" />
+    <widget name="devices" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="blueCH" position="90,665" size="280,50" transparent="1" />
+    <widget name="mounted" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="blueCH" position="380,665" size="860,200" transparent="1" />
+    <widget name="process" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="yellow" position="90,760" size="150,50" transparent="1" />
+    <widget name="daemon0" alphatest="blend" pixmap="SmartLiteFHD/buttons/grey.png" position="240,768" size="64,38" zPosition="10" transparent="1" />
+    <widget name="daemon1" alphatest="blend" pixmap="SmartLiteFHD/buttons/key_green.png" position="240,768" size="64,38" zPosition="10" transparent="1" />
+    <widget name="statusbar" font="Regular; 32" backgroundColor="EL_Background" foregroundColor="white" position="90,885" size="1150,50" transparent="1" />
+    <widget name="version" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="white" position="1305,461" size="500,50" zPosition="2" transparent="1" halign="center" />
+    <ePixmap pixmap="~/author.png" position="1538,518" zPosition="2" size="25,25" />
+    <!-- Buttons -->
+    <eLabel backgroundColor="blue" foregroundColor="white" name="" position="60,955" size="1800,1" zPosition="-10" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="90,970" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="425,970" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/yellow.png" position="760,970" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/blue.png" position="1095,970" size="40,40" />
+    <widget backgroundColor="EL_Background" font="Regular; 28" halign="left" position="140,970" size="280,40" name="key_red" transparent="1" zPosition="1" />
+    <widget backgroundColor="EL_Background" font="Regular; 28" halign="left" position="475,970" size="280,40" name="key_green" transparent="1" zPosition="1" />
+    <widget backgroundColor="EL_Background" font="Regular; 28" halign="left" position="810,970" size="280,40" name="key_yellow" transparent="1" zPosition="1" />
+    <widget backgroundColor="EL_Background" font="Regular; 28" halign="left" position="1145,970" size="280,40" name="key_blue" transparent="1" zPosition="1" />
+    <!-- Weather -->
+    <widget backgroundColor="background" font="FHD; 40" render="Label" position="1525,872" size="120,55" source="session.MSNWeather" transparent="1" zPosition="8" halign="right" foregroundColor="white">
+      <convert type="MSNWeather">temperature_current</convert>
+    </widget>
+    <widget backgroundColor="background" font="FHD; 28" render="Label" position="1305,881" size="220,45" source="session.MSNWeather" zPosition="8" halign="right" transparent="1" foregroundColor="EL_Blue">
+      <convert type="MSNWeather">temperature_heigh_low,day2</convert>
+    </widget>
+    <widget backgroundColor="background" font="FHD; 32" render="Label" position="1305,820" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
+      <convert type="MSNWeather">city</convert>
+    </widget>
+    <eLabel backgroundColor="blue" position="1305,870" size="340,2" zPosition="-9" foregroundColor="white" />
+    <widget alphatest="blend" render="MSNWeatherPixmap" position="1663,810" size="125,125" source="session.MSNWeather" transparent="1" zPosition="8">
+      <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/SmartLiteFHD/WeatherIcon/,png</convert>
+    </widget>
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="1707,74" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1714,57" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1554,97" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1554,69" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
   </screen>
 
 
