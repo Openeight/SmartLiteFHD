@@ -112,12 +112,15 @@
     <widget backgroundColor="EL_Background" font="Bold; 30" foregroundColor="EL_Blue" halign="right" position="1220,1010" render="Label" size="140,45" source="Service" transparent="1" valign="center" text="+55:59">
       <convert type="EMCServicePosition">Remaining,Negate</convert>
     </widget>
-    <eLabel backgroundColor="white" foregroundColor="EL_Accent1" name="new eLabel" position="220,1031" size="1000,1" zPosition="-1" />
+    <eLabel backgroundColor="white" foregroundColor="EL_Accent1" name="new eLabel" position="220,1031" size="1000,1" zPosition="1" />
     <widget source="Service" render="EMCPositionGauge" position="220,1028" size="1000,7" transparent="1" zPosition="6">
       <convert type="EMCServicePosition">Gauge</convert>
     </widget>
-    <widget source="Service" render="EMCPositionGauge" pointer="SmartLiteFHD/extensions/CoolPointer4.png:1000,0" position="220,1028" size="1000,7" transparent="1" zPosition="7">
+	<widget source="Service" render="Progress" foregroundColor="blue" borderWidth="0" position="220,1028" size="1000,7" transparent="1" zPosition="5">
       <convert type="EMCServicePosition">Position</convert>
+    </widget>
+    <widget source="Service" render="Progress" pointer="SmartLiteFHD/extensions/CoolPointerRec4.png:1000,0" position="220,1028" size="1000,7" transparent="1" zPosition="4">
+      <convert type="EMCRecordPosition">Position</convert>
     </widget>
     <!-- icons -->
     <widget backgroundColor="EL_Background" font="Bold; 32" foregroundColor="EL_Blue" halign="right" position="1555,958" render="Label" size="110,45" source="session.CurrentService" transparent="1" valign="center" zPosition="1">

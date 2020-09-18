@@ -362,12 +362,8 @@
     <widget source="session.FrontendStatus" render="Label" position="543,1027" size="140,42" backgroundColor="EL_Background" foregroundColor="white" transparent="1" halign="center" font="FHD; 30" valign="center">
       <convert type="FrontendInfo">SNR</convert>
     </widget>
-    <widget backgroundColor="EL_Background" font="FHD; 30" foregroundColor="white" halign="right" position="880,1027" render="Label" size="150,42" source="session.CurrentService" transparent="1" valign="center" zPosition="1">
-      <convert type="ServiceInfo">VideoWidth</convert>
-    </widget>
-    <eLabel backgroundColor="EL_Background" font="FHD; 30" foregroundColor="white" position="1030,1027" size="30,42" text="x" transparent="1" valign="center" zPosition="2" halign="center" />
-    <widget backgroundColor="EL_Background" font="FHD; 30" foregroundColor="white" halign="left" position="1060,1027" render="Label" size="145,42" source="session.CurrentService" transparent="1" valign="center" zPosition="3">
-      <convert type="ServiceInfo">VideoHeight</convert>
+    <widget backgroundColor="EL_Background" font="FHD; 30" foregroundColor="white" halign="center" position="818,1027" render="Label" size="420,42" source="session.CurrentService" transparent="1" valign="center" zPosition="1" text="1280x720p25">
+      <convert type="SL_HDVInfo">VideoSize</convert>
     </widget>
     <!-- WeatherSmall -->
     <eLabel backgroundColor="blue" position="200,68" size="160,80" transparent="0" zPosition="-12" foregroundColor="white" />
@@ -522,7 +518,7 @@
       <convert type="FrontendInfo">SNR</convert>
     </widget>
     <widget backgroundColor="EL_Background" font="FHD; 30" foregroundColor="white" halign="center" position="818,1027" render="Label" size="420,42" source="session.CurrentService" transparent="1" valign="center" zPosition="1" text="1280x720p25">
-      <convert type="PliExtraInfo">ResolutionString</convert>
+      <convert type="SL_HDVInfo">VideoSize</convert>
     </widget>
     <!-- Clock -->
     <panel name="Clock2" />
