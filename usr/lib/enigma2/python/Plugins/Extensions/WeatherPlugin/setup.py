@@ -27,6 +27,7 @@ from enigma import eListboxPythonMultiContent, getDesktop, gFont, RT_HALIGN_LEFT
 	RT_VALIGN_CENTER
 from Screens.Screen import Screen
 from Screens.MessageBox import MessageBox
+from Screens.VirtualKeyBoard import VirtualKeyBoard
 from Components.MenuList import MenuList
 from Components.Sources.StaticText import StaticText
 from Components.ActionMap import ActionMap
@@ -187,13 +188,14 @@ class MSNWeatherPluginEntryConfigScreen(ConfigListScreen, Screen):
 	def __init__(self, session, entry):
 		Screen.__init__(self, session)
 		self.title = _("WeatherPlugin: Edit Entry")
-		self["actions"] = ActionMap(["SetupActions", "ColorActions"],
+		self["actions"] = ActionMap(["SetupActions", "ColorActions", "VirtualKeyboardActions"],
 		{
 			"green": self.keySave,
 			"red": self.keyCancel,
 			"blue": self.keyDelete,
 			"yellow": self.searchLocation,
-			"cancel": self.keyCancel
+			"cancel": self.keyCancel,
+			"showVirtualKeyboard": self.KeyText
 		}, -2)
 
 		self["key_red"] = StaticText(_("Cancel"))
@@ -215,6 +217,16 @@ class MSNWeatherPluginEntryConfigScreen(ConfigListScreen, Screen):
 		]
 
 		ConfigListScreen.__init__(self, cfglist, session)
+
+	def KeyText(self):
+		from Screens.VirtualKeyBoard import VirtualKeyBoard
+		self.session.openWithCallback(self.VirtualKeyBoardCallback, VirtualKeyBoard, title=self['config'].getCurrent()[0], text=self['config'].getCurrent()[1].getValue())
+
+	def VirtualKeyBoardCallback(self, callback = None):
+		if callback is not None and len(callback):
+			self['config'].getCurrent()[1].setValue(callback)
+			self['config'].invalidate(self['config'].getCurrent())
+		return
 		
 	def searchLocation(self):
 		if self.current.city.value != "":

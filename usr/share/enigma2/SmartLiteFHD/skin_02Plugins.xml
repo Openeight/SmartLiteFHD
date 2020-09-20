@@ -1250,7 +1250,7 @@
     <widget name="CoolEvent" itemHeight="45" CoolFont="Regular2;30" CoolDayPos="0" CoolDaySize="80" CoolDayColor="white" CoolTimePos="100" CoolTimeSize="200" CoolTimeColor="white" CoolEventPos="310" CoolEventSize="1250" CoolEventColor="white" CoolDurationPos="1590" CoolDurationSize="150" CoolDurationColor="EL_Foreground" CoolBackColorSel="blue" CoolFontColSel="EL_Foreground" CoolRecAlarmCol="#DC6D28" CoolRecColor="red" CoolTunerCol="grey" backgroundColor="EL_Background" position="90,280" size="1740,45" transparent="1" />
     <widget name="CoolShort" backgroundColor="EL_Background" font="Regular2; 30" foregroundColor="blueCH" halign="left" position="90,178" size="1740,45" transparent="1" />
     <eLabel backgroundColor="EL_Blue" position="90,720" size="1740,1" zPosition="-9" foregroundColor="EL_Blue" />
-    <eLabel text="Similar broadcasts:" backgroundColor="EL_Background" font="Regular2; 30" halign="left" position="90,725" size="365,45" transparent="1" foregroundColor="EL_Blue" />
+    <eLabel text="Similar broadcasts:" backgroundColor="EL_Background" font="Regular2; 30" halign="left" position="90,725" size="500,45" transparent="1" foregroundColor="EL_Blue" />
     <widget name="CoolSimilar" backgroundColor="EL_Background" font="Regular; 28" position="90,770" size="1740,180" transparent="1" />
   </screen>
 
