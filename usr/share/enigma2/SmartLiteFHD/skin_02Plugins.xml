@@ -4117,6 +4117,8 @@
     <panel name="Backg" />
     <panel name="Clock" />
     <panel name="BS4" />
+    <!-- Extra -->
+    <ePixmap pixmap="SmartLiteFHD/buttons/key_text.png" alphatest="blend" position="1585,986" size="64,38" />
     <!-- Widget -->
     <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
     <widget name="config" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="310,155" size="1300,800" transparent="1" zPosition="3" />
