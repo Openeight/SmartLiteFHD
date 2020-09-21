@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <skin>
-  <!-- SmartLiteFHD Skin V6.7k by SkinMania for Octagon -->
+  <!-- SmartLiteFHD Skin V6.7l by SkinMania for Octagon -->
   <!-- Recommended to use with XPicons (220x132) -->
   <!-- You are not allowed to modify and redistribute SmartLiteFHD Skin and all graphics -->
   <output id="0">
@@ -49,6 +49,7 @@
     <color name="transpWhite" value="#77ffffff" />
     <color name="transpyellow" value="#33bab329" />
     <color name="un111112" value="#00111112" />
+    <color name="un11330000" value="#11330000" />
     <color name="un18080911" value="#18080911" />
     <color name="un1c202b" value="#001c202b" />
     <color name="un1f771f" value="#001f771f" />
