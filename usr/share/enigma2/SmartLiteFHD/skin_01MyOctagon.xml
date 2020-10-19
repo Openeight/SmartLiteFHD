@@ -33,7 +33,7 @@
     <widget backgroundColor="background" font="FHD; 28" render="Label" position="210,871" size="220,45" source="session.MSNWeather" zPosition="8" halign="right" transparent="1" foregroundColor="EL_Blue">
       <convert type="MSNWeather">temperature_heigh_low,day2</convert>
     </widget>
-    <widget backgroundColor="background" font="FHD; 32" render="Label" position="210,810" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
+    <widget backgroundColor="background" font="FHD; 32" render="SL_RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" position="210,810" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
       <convert type="MSNWeather">city</convert>
     </widget>
     <eLabel backgroundColor="blue" position="210,860" size="340,2" zPosition="-9" foregroundColor="white" />
@@ -54,7 +54,7 @@
   </screen>
 
 
-  <screen backgroundColor="transparent" flags="wfNoBorder" name="SoftcamSetup" position="center,center" size="1920,1080" title="Softcam Setup">
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="SoftcamSetup" position="center,center" size="1920,1080" title="">
     <panel name="Backg" />
     <panel name="Clock" />
     <panel name="BS4" />
@@ -68,7 +68,7 @@
   </screen>
 
 
-  <screen backgroundColor="transparent" flags="wfNoBorder" name="ScNewSelection" position="center,center" size="1920,1080" title="Cam Setup">
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="ScNewSelection" position="center,center" size="1920,1080" title="">
     <panel name="Backg" />
     <panel name="Clock" />
     <panel name="BN4" />
@@ -86,7 +86,7 @@
   </screen>
 
 
-  <screen backgroundColor="transparent" flags="wfNoBorder" name="ScSetupScreen" title="Settings menu" position="0,center" size="1920,1080" transparent="0">
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="ScSetupScreen" title="" position="0,center" size="1920,1080" transparent="0">
     <panel name="Backg" />
     <panel name="Clock" />
     <!-- Widget -->
@@ -101,7 +101,7 @@
   </screen>
 
 
-  <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoCamListSetup" position="center,center" size="1920,1080" title="Auto-Camd List Setup">
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoCamListSetup" position="center,center" size="1920,1080" title="">
     <panel name="Backg" />
     <panel name="Clock" />
     <panel name="BN4" />
@@ -122,7 +122,7 @@
   </screen>
 
 
-  <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoCamServiceSetup" position="center,center" size="1920,1080" title="Auto CamService Setup">
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoCamServiceSetup" position="center,center" size="1920,1080" title="">
     <panel name="Backg" />
     <panel name="Clock" />
     <panel name="BN4" />

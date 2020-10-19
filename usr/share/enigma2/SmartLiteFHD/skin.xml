@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <skin>
-  <!-- SmartLiteFHD Skin V6.7l by SkinMania for Octagon -->
+  <!-- SmartLiteFHD Skin V6.7a1 by SkinMania for Octagon -->
   <!-- Recommended to use with XPicons (220x132) -->
   <!-- You are not allowed to modify and redistribute SmartLiteFHD Skin and all graphics -->
   <output id="0">
@@ -60,6 +60,7 @@
     <color name="un2e2e2e" value="#002e2e2e" />
     <color name="un2f4f4f" value="#002f4f4f" />
     <color name="un33ff33" value="#0033ff33" />
+    <color name="un404040" value="#00404040" />
     <color name="un44000000" value="#44000000" />
     <color name="un444444" value="#00444444" />
     <color name="un555555" value="#00555555" />
@@ -560,11 +561,11 @@
     </widget>
     <!-- Info -->
     <!-- WeatherMSN -->
-    <widget backgroundColor="background" font="FHD; 42" render="Label" position="960,183" size="480,54" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
+    <widget backgroundColor="background" font="FHD; 38" render="SL_RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" position="960,183" size="580,54" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
       <convert type="MSNWeather">city</convert>
     </widget>
-    <eLabel backgroundColor="blue" position="1470,246" size="195,6" zPosition="-9" foregroundColor="white" />
-    <widget backgroundColor="background" font="FHD; 42" render="Label" position="1470,183" size="195,54" source="session.MSNWeather" transparent="1" zPosition="8" halign="center" foregroundColor="white">
+    <eLabel backgroundColor="blue" position="1570,246" size="105,6" zPosition="-9" foregroundColor="white" />
+    <widget backgroundColor="background" font="FHD; 42" render="Label" position="1570,183" size="105,54" source="session.MSNWeather" transparent="1" zPosition="8" halign="center" foregroundColor="white">
       <convert type="MSNWeather">temperature_current</convert>
     </widget>
     <widget alphatest="blend" render="MSNWeatherPixmap" position="1690,185" size="125,125" source="session.MSNWeather" transparent="1" zPosition="8">
@@ -624,16 +625,16 @@
       <convert type="MSNWeather">weathericon,day5,/usr/share/enigma2/SmartLiteFHD/WeatherIcon/,png</convert>
     </widget>
     <!-- Humidity -->
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/plugins_png/YahooWeather/wind2.png" position="1380,285" size="60,60" zPosition="1" />
-    <widget source="session.MSNWeather" render="Label" font="Regular2; 28" backgroundColor="background" foregroundColor="EL_Blue" position="960,315" size="400,45" zPosition="5" halign="right" transparent="1">
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/plugins_png/YahooWeather/wind2.png" position="1480,265" size="60,60" zPosition="1" />
+    <widget source="session.MSNWeather" render="Label" font="Regular2; 28" backgroundColor="background" foregroundColor="EL_Blue" position="960,300" size="500,45" zPosition="5" halign="right" transparent="1">
       <convert type="MSNWeather">winddisplay</convert>
     </widget>
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/plugins_png/YahooWeather/humi.png" position="1504,285" size="40,55" zPosition="1" />
-    <widget backgroundColor="background" font="Regular2; 36" render="Label" position="1550,291" size="65,55" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" foregroundColor="EL_Blue">
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/plugins_png/YahooWeather/humi.png" position="1574,270" size="40,55" zPosition="1" />
+    <widget backgroundColor="background" font="Regular2; 36" render="Label" position="1620,276" size="65,55" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" foregroundColor="EL_Blue">
       <convert type="MSNWeather">humidity</convert>
     </widget>
-    <eLabel backgroundColor="white" position="970,249" size="470,1" zPosition="-9" foregroundColor="white" />
-    <widget backgroundColor="background" font="Regular2; 28" foregroundColor="EL_Blue" render="Label" position="960,270" size="400,45" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" valign="top">
+    <eLabel backgroundColor="white" position="970,249" size="570,1" zPosition="-9" foregroundColor="white" />
+    <widget backgroundColor="background" font="Regular2; 28" foregroundColor="EL_Blue" render="Label" position="960,255" size="500,45" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" valign="top">
       <convert type="MSNWeather">temperature_text,current</convert>
     </widget>
   </screen>
@@ -704,7 +705,7 @@
     <widget backgroundColor="background" font="FHD; 28" render="Label" position="310,881" size="220,45" source="session.MSNWeather" zPosition="8" halign="right" transparent="1" foregroundColor="EL_Blue">
       <convert type="MSNWeather">temperature_heigh_low,day2</convert>
     </widget>
-    <widget backgroundColor="background" font="FHD; 32" render="Label" position="310,820" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
+    <widget backgroundColor="background" font="FHD; 32" render="SL_RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" position="310,820" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
       <convert type="MSNWeather">city</convert>
     </widget>
     <eLabel backgroundColor="blue" position="310,870" size="340,2" zPosition="-9" foregroundColor="white" />
@@ -747,7 +748,7 @@
     <widget backgroundColor="background" font="FHD; 28" render="Label" position="310,881" size="220,45" source="session.MSNWeather" zPosition="8" halign="right" transparent="1" foregroundColor="EL_Blue">
       <convert type="MSNWeather">temperature_heigh_low,day2</convert>
     </widget>
-    <widget backgroundColor="background" font="FHD; 32" render="Label" position="310,820" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
+    <widget backgroundColor="background" font="FHD; 32" render="SL_RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" position="310,820" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
       <convert type="MSNWeather">city</convert>
     </widget>
     <eLabel backgroundColor="blue" position="310,870" size="340,2" zPosition="-9" foregroundColor="white" />
@@ -790,7 +791,7 @@
     <widget backgroundColor="background" font="FHD; 28" render="Label" position="310,881" size="220,45" source="session.MSNWeather" zPosition="8" halign="right" transparent="1" foregroundColor="EL_Blue">
       <convert type="MSNWeather">temperature_heigh_low,day2</convert>
     </widget>
-    <widget backgroundColor="background" font="FHD; 32" render="Label" position="310,820" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
+    <widget backgroundColor="background" font="FHD; 32" render="SL_RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" position="310,820" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
       <convert type="MSNWeather">city</convert>
     </widget>
     <eLabel backgroundColor="blue" position="310,870" size="340,2" zPosition="-9" foregroundColor="white" />
@@ -833,7 +834,7 @@
     <widget backgroundColor="background" font="FHD; 28" render="Label" position="310,881" size="220,45" source="session.MSNWeather" zPosition="8" halign="right" transparent="1" foregroundColor="EL_Blue">
       <convert type="MSNWeather">temperature_heigh_low,day2</convert>
     </widget>
-    <widget backgroundColor="background" font="FHD; 32" render="Label" position="310,820" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
+    <widget backgroundColor="background" font="FHD; 32" render="SL_RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" position="310,820" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
       <convert type="MSNWeather">city</convert>
     </widget>
     <eLabel backgroundColor="blue" position="310,870" size="340,2" zPosition="-9" foregroundColor="white" />
@@ -876,7 +877,7 @@
     <widget backgroundColor="background" font="FHD; 28" render="Label" position="310,881" size="220,45" source="session.MSNWeather" zPosition="8" halign="right" transparent="1" foregroundColor="EL_Blue">
       <convert type="MSNWeather">temperature_heigh_low,day2</convert>
     </widget>
-    <widget backgroundColor="background" font="FHD; 32" render="Label" position="310,820" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
+    <widget backgroundColor="background" font="FHD; 32" render="SL_RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" position="310,820" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
       <convert type="MSNWeather">city</convert>
     </widget>
     <eLabel backgroundColor="blue" position="310,870" size="340,2" zPosition="-9" foregroundColor="white" />
@@ -919,7 +920,7 @@
     <widget backgroundColor="background" font="FHD; 28" render="Label" position="310,881" size="220,45" source="session.MSNWeather" zPosition="8" halign="right" transparent="1" foregroundColor="EL_Blue">
       <convert type="MSNWeather">temperature_heigh_low,day2</convert>
     </widget>
-    <widget backgroundColor="background" font="FHD; 32" render="Label" position="310,820" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
+    <widget backgroundColor="background" font="FHD; 32" render="SL_RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" position="310,820" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
       <convert type="MSNWeather">city</convert>
     </widget>
     <eLabel backgroundColor="blue" position="310,870" size="340,2" zPosition="-9" foregroundColor="white" />
@@ -962,7 +963,7 @@
     <widget backgroundColor="background" font="FHD; 28" render="Label" position="310,881" size="220,45" source="session.MSNWeather" zPosition="8" halign="right" transparent="1" foregroundColor="EL_Blue">
       <convert type="MSNWeather">temperature_heigh_low,day2</convert>
     </widget>
-    <widget backgroundColor="background" font="FHD; 32" render="Label" position="310,820" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
+    <widget backgroundColor="background" font="FHD; 32" render="SL_RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" position="310,820" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
       <convert type="MSNWeather">city</convert>
     </widget>
     <eLabel backgroundColor="blue" position="310,870" size="340,2" zPosition="-9" foregroundColor="white" />
@@ -1005,7 +1006,7 @@
     <widget backgroundColor="background" font="FHD; 28" render="Label" position="310,881" size="220,45" source="session.MSNWeather" zPosition="8" halign="right" transparent="1" foregroundColor="EL_Blue">
       <convert type="MSNWeather">temperature_heigh_low,day2</convert>
     </widget>
-    <widget backgroundColor="background" font="FHD; 32" render="Label" position="310,820" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
+    <widget backgroundColor="background" font="FHD; 32" render="SL_RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" position="310,820" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
       <convert type="MSNWeather">city</convert>
     </widget>
     <eLabel backgroundColor="blue" position="310,870" size="340,2" zPosition="-9" foregroundColor="white" />
@@ -1154,7 +1155,7 @@
     <widget backgroundColor="background" font="FHD; 28" render="Label" position="110,881" size="220,45" source="session.MSNWeather" zPosition="8" halign="right" transparent="1" foregroundColor="EL_Blue">
       <convert type="MSNWeather">temperature_heigh_low,day2</convert>
     </widget>
-    <widget backgroundColor="background" font="FHD; 32" render="Label" position="110,820" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
+    <widget backgroundColor="background" font="FHD; 32" render="SL_RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" position="110,820" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
       <convert type="MSNWeather">city</convert>
     </widget>
     <eLabel backgroundColor="blue" position="110,870" size="340,2" zPosition="-9" foregroundColor="white" />
@@ -1328,7 +1329,7 @@
     <widget backgroundColor="background" font="FHD; 28" render="Label" position="210,871" size="220,45" source="session.MSNWeather" zPosition="8" halign="right" transparent="1" foregroundColor="EL_Blue">
       <convert type="MSNWeather">temperature_heigh_low,day2</convert>
     </widget>
-    <widget backgroundColor="background" font="FHD; 32" render="Label" position="210,810" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
+    <widget backgroundColor="background" font="FHD; 32" render="SL_RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" position="210,810" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
       <convert type="MSNWeather">city</convert>
     </widget>
     <eLabel backgroundColor="blue" position="210,860" size="340,2" zPosition="-9" foregroundColor="white" />
@@ -1364,7 +1365,7 @@
     <widget backgroundColor="background" font="FHD; 28" render="Label" position="210,871" size="220,45" source="session.MSNWeather" zPosition="8" halign="right" transparent="1" foregroundColor="EL_Blue">
       <convert type="MSNWeather">temperature_heigh_low,day2</convert>
     </widget>
-    <widget backgroundColor="background" font="FHD; 32" render="Label" position="210,810" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
+    <widget backgroundColor="background" font="FHD; 32" render="SL_RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" position="210,810" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
       <convert type="MSNWeather">city</convert>
     </widget>
     <eLabel backgroundColor="blue" position="210,860" size="340,2" zPosition="-9" foregroundColor="white" />
@@ -1408,7 +1409,7 @@
     <widget backgroundColor="background" font="FHD; 28" render="Label" position="310,881" size="220,45" source="session.MSNWeather" zPosition="8" halign="right" transparent="1" foregroundColor="EL_Blue">
       <convert type="MSNWeather">temperature_heigh_low,day2</convert>
     </widget>
-    <widget backgroundColor="background" font="FHD; 32" render="Label" position="310,820" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
+    <widget backgroundColor="background" font="FHD; 32" render="SL_RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" position="310,820" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
       <convert type="MSNWeather">city</convert>
     </widget>
     <eLabel backgroundColor="blue" position="310,870" size="340,2" zPosition="-9" foregroundColor="white" />
@@ -1610,7 +1611,7 @@
     <widget backgroundColor="background" font="FHD; 28" render="Label" position="210,871" size="220,45" source="session.MSNWeather" zPosition="8" halign="right" transparent="1" foregroundColor="EL_Blue">
       <convert type="MSNWeather">temperature_heigh_low,day2</convert>
     </widget>
-    <widget backgroundColor="background" font="FHD; 32" render="Label" position="210,810" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
+    <widget backgroundColor="background" font="FHD; 32" render="SL_RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" position="210,810" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
       <convert type="MSNWeather">city</convert>
     </widget>
     <eLabel backgroundColor="blue" position="210,860" size="340,2" zPosition="-9" foregroundColor="white" />
@@ -1646,7 +1647,7 @@
     <widget backgroundColor="background" font="FHD; 28" render="Label" position="210,871" size="220,45" source="session.MSNWeather" zPosition="8" halign="right" transparent="1" foregroundColor="EL_Blue">
       <convert type="MSNWeather">temperature_heigh_low,day2</convert>
     </widget>
-    <widget backgroundColor="background" font="FHD; 32" render="Label" position="210,810" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
+    <widget backgroundColor="background" font="FHD; 32" render="SL_RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" position="210,810" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
       <convert type="MSNWeather">city</convert>
     </widget>
     <eLabel backgroundColor="blue" position="210,860" size="340,2" zPosition="-9" foregroundColor="white" />
@@ -2371,7 +2372,7 @@
     <widget backgroundColor="background" font="FHD; 28" render="Label" position="210,871" size="220,45" source="session.MSNWeather" zPosition="8" halign="right" transparent="1" foregroundColor="EL_Blue">
       <convert type="MSNWeather">temperature_heigh_low,day2</convert>
     </widget>
-    <widget backgroundColor="background" font="FHD; 32" render="Label" position="210,810" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
+    <widget backgroundColor="background" font="FHD; 32" render="SL_RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" position="210,810" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
       <convert type="MSNWeather">city</convert>
     </widget>
     <eLabel backgroundColor="blue" position="210,860" size="340,2" zPosition="-9" foregroundColor="white" />
@@ -2417,7 +2418,7 @@
     <widget backgroundColor="background" font="FHD; 28" render="Label" position="210,871" size="220,45" source="session.MSNWeather" zPosition="8" halign="right" transparent="1" foregroundColor="EL_Blue">
       <convert type="MSNWeather">temperature_heigh_low,day2</convert>
     </widget>
-    <widget backgroundColor="background" font="FHD; 32" render="Label" position="210,810" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
+    <widget backgroundColor="background" font="FHD; 32" render="SL_RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" position="210,810" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
       <convert type="MSNWeather">city</convert>
     </widget>
     <eLabel backgroundColor="blue" position="210,860" size="340,2" zPosition="-9" foregroundColor="white" />
@@ -2536,7 +2537,7 @@
     <widget backgroundColor="background" font="FHD; 28" render="Label" position="310,881" size="220,45" source="session.MSNWeather" zPosition="8" halign="right" transparent="1" foregroundColor="EL_Blue">
       <convert type="MSNWeather">temperature_heigh_low,day2</convert>
     </widget>
-    <widget backgroundColor="background" font="FHD; 32" render="Label" position="310,820" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
+    <widget backgroundColor="background" font="FHD; 32" render="SL_RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" position="310,820" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
       <convert type="MSNWeather">city</convert>
     </widget>
     <eLabel backgroundColor="blue" position="310,870" size="340,2" zPosition="-9" foregroundColor="white" />
@@ -2617,7 +2618,7 @@
     <widget backgroundColor="background" font="FHD; 28" render="Label" position="310,881" size="220,45" source="session.MSNWeather" zPosition="8" halign="right" transparent="1" foregroundColor="EL_Blue">
       <convert type="MSNWeather">temperature_heigh_low,day2</convert>
     </widget>
-    <widget backgroundColor="background" font="FHD; 32" render="Label" position="310,820" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
+    <widget backgroundColor="background" font="FHD; 32" render="SL_RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" position="310,820" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
       <convert type="MSNWeather">city</convert>
     </widget>
     <eLabel backgroundColor="blue" position="310,870" size="340,2" zPosition="-9" foregroundColor="white" />
@@ -3136,7 +3137,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <widget backgroundColor="background" font="FHD; 28" render="Label" position="310,881" size="220,45" source="session.MSNWeather" zPosition="8" halign="right" transparent="1" foregroundColor="EL_Blue">
       <convert type="MSNWeather">temperature_heigh_low,day2</convert>
     </widget>
-    <widget backgroundColor="background" font="FHD; 32" render="Label" position="310,820" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
+    <widget backgroundColor="background" font="FHD; 32" render="SL_RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" position="310,820" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
       <convert type="MSNWeather">city</convert>
     </widget>
     <eLabel backgroundColor="blue" position="310,870" size="340,2" zPosition="-9" foregroundColor="white" />
@@ -3168,10 +3169,15 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
   <screen name="MovieBrowserConfiguration" title="Movie Browser Configuration" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
     <panel name="Backg" />
     <panel name="Clock" />
-    <panel name="BN2" />
     <!-- Widget -->
     <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
-    <widget name="config" itemHeight="50" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="white" position="310,155" size="1300,800" transparent="1" zPosition="3" />
+    <widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="310,155" size="1300,800" transparent="1" zPosition="3" />
+    <!-- ButtonExtra -->
+    <eLabel backgroundColor="blue" foregroundColor="EL_Background" name="" position="260,978" size="1400,1" zPosition="-10" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="310,985" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="630,985" size="40,40" />
+    <eLabel text="Cancel" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="355,985" size="270,40" transparent="1" zPosition="1" />
+    <eLabel text="Save" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="675,985" size="270,40" transparent="1" zPosition="1" />
   </screen>
   <screen name="MovieSelection" position="0,0" size="1920,1080" backgroundColor="transparent" title="Select a movie" flags="wfNoBorder">
     <!-- Backg -->
@@ -3268,7 +3274,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <widget backgroundColor="background" font="FHD; 28" render="Label" position="310,871" size="220,45" source="session.MSNWeather" zPosition="8" halign="right" transparent="1" foregroundColor="EL_Blue">
       <convert type="MSNWeather">temperature_heigh_low,day2</convert>
     </widget>
-    <widget backgroundColor="background" font="FHD; 32" render="Label" position="310,810" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
+    <widget backgroundColor="background" font="FHD; 32" render="SL_RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" position="310,810" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
       <convert type="MSNWeather">city</convert>
     </widget>
     <eLabel backgroundColor="blue" position="310,860" size="340,2" zPosition="-9" foregroundColor="white" />
@@ -3923,7 +3929,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <widget backgroundColor="background" font="FHD; 28" render="Label" position="210,871" size="220,45" source="session.MSNWeather" zPosition="8" halign="right" transparent="1" foregroundColor="EL_Blue">
       <convert type="MSNWeather">temperature_heigh_low,day2</convert>
     </widget>
-    <widget backgroundColor="background" font="FHD; 32" render="Label" position="210,810" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
+    <widget backgroundColor="background" font="FHD; 32" render="SL_RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" position="210,810" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
       <convert type="MSNWeather">city</convert>
     </widget>
     <eLabel backgroundColor="blue" position="210,860" size="340,2" zPosition="-9" foregroundColor="white" />
@@ -3968,7 +3974,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <widget backgroundColor="background" font="FHD; 28" render="Label" position="210,871" size="220,45" source="session.MSNWeather" zPosition="8" halign="right" transparent="1" foregroundColor="EL_Blue">
       <convert type="MSNWeather">temperature_heigh_low,day2</convert>
     </widget>
-    <widget backgroundColor="background" font="FHD; 32" render="Label" position="210,810" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
+    <widget backgroundColor="background" font="FHD; 32" render="SL_RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" position="210,810" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
       <convert type="MSNWeather">city</convert>
     </widget>
     <eLabel backgroundColor="blue" position="210,860" size="340,2" zPosition="-9" foregroundColor="white" />
@@ -4473,7 +4479,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <widget backgroundColor="background" font="FHD; 28" render="Label" position="1365,881" size="220,45" source="session.MSNWeather" zPosition="8" halign="right" transparent="1" foregroundColor="EL_Blue">
       <convert type="MSNWeather">temperature_heigh_low,day2</convert>
     </widget>
-    <widget backgroundColor="background" font="FHD; 32" render="Label" position="1365,820" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
+    <widget backgroundColor="background" font="FHD; 32" render="SL_RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" position="1365,820" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
       <convert type="MSNWeather">city</convert>
     </widget>
     <eLabel backgroundColor="blue" position="1365,870" size="340,2" zPosition="-9" foregroundColor="white" />
@@ -4515,7 +4521,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <widget backgroundColor="background" font="FHD; 28" render="Label" position="310,881" size="220,45" source="session.MSNWeather" zPosition="8" halign="right" transparent="1" foregroundColor="EL_Blue">
       <convert type="MSNWeather">temperature_heigh_low,day2</convert>
     </widget>
-    <widget backgroundColor="background" font="FHD; 32" render="Label" position="310,820" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
+    <widget backgroundColor="background" font="FHD; 32" render="SL_RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" position="310,820" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
       <convert type="MSNWeather">city</convert>
     </widget>
     <eLabel backgroundColor="blue" position="310,870" size="340,2" zPosition="-9" foregroundColor="white" />
@@ -4763,7 +4769,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <widget backgroundColor="background" font="FHD; 28" render="Label" position="310,871" size="220,45" source="session.MSNWeather" zPosition="8" halign="right" transparent="1" foregroundColor="EL_Blue">
       <convert type="MSNWeather">temperature_heigh_low,day2</convert>
     </widget>
-    <widget backgroundColor="background" font="FHD; 32" render="Label" position="310,810" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
+    <widget backgroundColor="background" font="FHD; 32" render="SL_RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" position="310,810" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
       <convert type="MSNWeather">city</convert>
     </widget>
     <eLabel backgroundColor="blue" position="310,860" size="340,2" zPosition="-9" foregroundColor="white" />
@@ -4835,7 +4841,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <widget backgroundColor="background" font="FHD; 28" render="Label" position="210,871" size="220,45" source="session.MSNWeather" zPosition="8" halign="right" transparent="1" foregroundColor="EL_Blue">
       <convert type="MSNWeather">temperature_heigh_low,day2</convert>
     </widget>
-    <widget backgroundColor="background" font="FHD; 32" render="Label" position="210,810" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
+    <widget backgroundColor="background" font="FHD; 32" render="SL_RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" position="210,810" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
       <convert type="MSNWeather">city</convert>
     </widget>
     <eLabel backgroundColor="blue" position="210,860" size="340,2" zPosition="-9" foregroundColor="white" />
@@ -5300,8 +5306,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
     <widget source="description" render="Label" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="white" position="310,155" size="1300,200" transparent="1" zPosition="1" halign="center" />
     <eLabel backgroundColor="white" position="center,360" size="1300,3" zPosition="-9" foregroundColor="white" />
-    <widget name="config" font="FHD; 32" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="white" position="center,380" size="1300,250" transparent="1" zPosition="1" />
-    <widget source="options" render="Label" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="white" position="center,680" size="1300,250" transparent="1" zPosition="1" />
+    <widget name="config" font="FHD; 32" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="white" position="center,380" size="1300,450" transparent="1" zPosition="1" />
+    <widget source="options" render="Label" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="white" position="center,830" size="1300,100" transparent="1" zPosition="1" />
   </screen>
   <screen name="Config" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <panel name="Backg" />
@@ -5572,5 +5578,625 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     </widget>
     <!-- Clock -->
     <panel name="Clock2" />
+  </screen>
+  <screen name="ReaderDataScreen" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <!-- Backg1 -->
+    <eLabel backgroundColor="EL_Background" position="center,center" size="1800,960" zPosition="-20" />
+    <eLabel backgroundColor="Red" position="center,140" size="1800,2" zPosition="-9" />
+    <!-- Widget -->
+    <widget source="title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="90,70" size="1450,58" halign="left" transparent="1" />
+    <widget source="data" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="white" position="center,170" size="1740,800" transparent="1">
+      <convert type="TemplatedMultiContent">
+              {"template": [MultiContentEntryText(pos = (  10, 0), size = ( 80, 50), font=0, flags = RT_HALIGN_LEFT, text = 0),
+			    MultiContentEntryText(pos = ( 110, 0), size = (180, 50), font=0, flags = RT_HALIGN_LEFT, text = 1),
+			    MultiContentEntryText(pos = (300, 0), size = (400, 50), font=0, flags = RT_HALIGN_LEFT, text = 2),
+			    MultiContentEntryText(pos = (710, 0), size = (350, 50), font=0, flags = RT_HALIGN_LEFT, text = 3),
+			    MultiContentEntryText(pos = (1070, 0), size = ( 160, 50), font=0, flags = RT_HALIGN_LEFT, text = 4),
+			    ],
+			    "fonts": [gFont("FHD", 30)],"itemHeight": 50}
+      </convert>
+    </widget>
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="1707,74" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1714,57" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1554,97" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1554,69" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+  </screen>
+  <screen name="ClientDataScreen" title="" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080" transparent="0">
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/menu/oscam.png" position="275,125" size="350,350" />
+    <!-- Backg -->
+    <eLabel backgroundColor="EL_Background" position="750,center" size="1000,880" zPosition="-21" />
+    <eLabel backgroundColor="EL_New" position="200,100" size="500,550" zPosition="-50" foregroundColor="white" />
+    <eLabel backgroundColor="EL_New" position="200,679" size="500,100" zPosition="-50" foregroundColor="white" />
+    <!-- Widget -->
+    <widget render="Label" source="title" font="FHD; 38" backgroundColor="EL_Background" foregroundColor="white" position="210,465" size="480,175" transparent="1" valign="center" zPosition="3" halign="center" />
+    <widget render="Label" source="lprotocol" font="FHD;30" backgroundColor="EL_Background" foregroundColor="white" transparent="1" position="780,130" size="220,50" />
+    <widget render="Label" source="protocol" font="FHD;30" backgroundColor="EL_Background" foregroundColor="white" transparent="1" position="1000,130" size="500,50" />
+    <widget render="Label" source="lprotocolext" font="FHD;30" backgroundColor="EL_Background" foregroundColor="white" transparent="1" position="780,180" size="220,50" />
+    <widget render="Label" source="protocolext" font="FHD;30" backgroundColor="EL_Background" foregroundColor="white" transparent="1" position="1000,180" size="500,90" />
+    <widget render="Label" source="lau" font="FHD;30" backgroundColor="EL_Background" foregroundColor="white" transparent="1" position="780,270" size="220,45" />
+    <widget render="Label" source="au" font="FHD;30" backgroundColor="EL_Background" foregroundColor="white" transparent="1" position="1000,270" size="500,45" />
+    <widget render="Label" source="lcaid" font="FHD;30" backgroundColor="EL_Background" foregroundColor="white" transparent="1" position="780,315" size="220,45" />
+    <widget render="Label" source="caid" font="FHD;30" backgroundColor="EL_Background" foregroundColor="white" transparent="1" position="1000,315" size="120,45" />
+    <widget render="Label" source="lprovid" font="FHD;30" backgroundColor="EL_Background" foregroundColor="white" transparent="1" position="1125,315" size="150,45" />
+    <widget render="Label" source="provid" font="FHD;30" backgroundColor="EL_Background" foregroundColor="white" transparent="1" position="1275,315" size="200,45" />
+    <widget render="Label" source="lsrvid" font="FHD;30" backgroundColor="EL_Background" foregroundColor="white" transparent="1" position="780,360" size="220,45" />
+    <widget render="Label" source="srvid" font="FHD;30" backgroundColor="EL_Background" foregroundColor="white" transparent="1" position="1000,360" size="500,45" />
+    <widget render="Label" source="lecmtime" font="FHD;30" backgroundColor="EL_Background" foregroundColor="white" transparent="1" position="780,405" size="220,45" />
+    <widget render="Label" source="ecmtime" font="FHD;30" backgroundColor="EL_Background" foregroundColor="white" transparent="1" position="1000,405" size="500,45" />
+    <widget render="Label" source="lecmhistory" font="FHD;30" backgroundColor="EL_Background" foregroundColor="white" transparent="1" position="780,455" size="220,120" />
+    <widget render="Label" source="historymax" font="FHD; 28" backgroundColor="EL_Background" foregroundColor="white" transparent="1" position="1420,455" size="90,50" />
+    <widget render="Label" source="historymin" font="FHD; 28" backgroundColor="EL_Background" foregroundColor="white" transparent="1" position="1420,525" size="90,50" />
+    <widget name="progress" zPosition="4" position="1005,455" size="15,117" transparent="1" borderColor="darkgrey" borderWidth="1" orientation="orBottomToTop" />
+    <widget render="Label" source="lanswered" font="FHD;30" backgroundColor="EL_Background" foregroundColor="white" transparent="1" position="780,580" size="220,45" />
+    <widget render="Label" source="answered" font="FHD;30" backgroundColor="EL_Background" foregroundColor="white" transparent="1" position="1000,580" size="500,45" />
+    <widget render="Label" source="lservice" font="FHD;30" backgroundColor="EL_Background" foregroundColor="white" transparent="1" position="780,625" size="220,45" />
+    <widget render="Label" source="service" font="FHD;30" backgroundColor="EL_Background" foregroundColor="white" transparent="1" position="1000,625" size="500,45" />
+    <widget render="Label" source="llogin" font="FHD;30" backgroundColor="EL_Background" foregroundColor="white" transparent="1" position="780,670" size="220,45" />
+    <widget render="Label" source="login" font="FHD;30" backgroundColor="EL_Background" foregroundColor="white" transparent="1" position="1000,670" size="500,45" />
+    <widget render="Label" source="lonline" font="FHD;30" backgroundColor="EL_Background" foregroundColor="white" transparent="1" position="780,715" size="220,45" />
+    <widget render="Label" source="online" font="FHD;30" backgroundColor="EL_Background" foregroundColor="white" transparent="1" position="1000,715" size="500,45" />
+    <widget render="Label" source="lidle" font="FHD;30" backgroundColor="EL_Background" foregroundColor="white" transparent="1" position="780,760" size="220,45" />
+    <widget render="Label" source="idle" font="FHD;30" backgroundColor="EL_Background" foregroundColor="white" transparent="1" position="1000,760" size="500,45" />
+    <widget render="Label" source="lip" font="FHD;30" backgroundColor="EL_Background" foregroundColor="white" transparent="1" position="780,805" size="220,45" />
+    <widget render="Label" source="ip" font="FHD;30" backgroundColor="EL_Background" foregroundColor="white" transparent="1" position="1000,805" size="500,45" />
+    <widget render="Label" source="lport" font="FHD;30" backgroundColor="EL_Background" foregroundColor="white" transparent="1" position="780,850" size="220,45" />
+    <widget render="Label" source="port" font="FHD;30" backgroundColor="EL_Background" foregroundColor="white" transparent="1" position="1000,850" size="500,45" />
+    <widget render="Label" source="lconnection" font="FHD;30" backgroundColor="EL_Background" foregroundColor="white" transparent="1" position="780,895" size="220,45" />
+    <widget render="Label" source="connection" font="FHD;30" backgroundColor="EL_Background" foregroundColor="white" transparent="1" position="1000,895" size="500,45" />
+    <widget name="KeyYellow" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/OscamStatus/icons/bt_yellow.png" position="1500,905" size="52,37" zPosition="4" transparent="1" alphatest="blend" />
+    <!-- Weather -->
+    <eLabel backgroundColor="EL_New" position="200,795" size="500,135" zPosition="-50" foregroundColor="white" />
+    <widget backgroundColor="background" font="FHD; 40" render="Label" position="430,862" size="120,55" source="session.MSNWeather" transparent="1" zPosition="8" halign="right" foregroundColor="white">
+      <convert type="MSNWeather">temperature_current</convert>
+    </widget>
+    <widget backgroundColor="background" font="FHD; 28" render="Label" position="210,871" size="220,45" source="session.MSNWeather" zPosition="8" halign="right" transparent="1" foregroundColor="EL_Blue">
+      <convert type="MSNWeather">temperature_heigh_low,day2</convert>
+    </widget>
+    <widget backgroundColor="background" font="FHD; 32" render="SL_RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" position="210,810" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
+      <convert type="MSNWeather">city</convert>
+    </widget>
+    <eLabel backgroundColor="blue" position="210,860" size="340,2" zPosition="-9" foregroundColor="white" />
+    <widget alphatest="blend" render="MSNWeatherPixmap" position="568,800" size="125,125" source="session.MSNWeather" transparent="1" zPosition="8">
+      <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/SmartLiteFHD/WeatherIcon/,png</convert>
+    </widget>
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="537,704" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="544,687" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="384,727" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="384,699" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+  </screen>
+  <screen name="OscamDataScreen" title="" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080" transparent="0">
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/menu/oscam.png" position="275,125" size="350,350" />
+    <!-- Backg -->
+    <eLabel backgroundColor="EL_Background" position="750,center" size="1000,880" zPosition="-21" />
+    <eLabel backgroundColor="EL_New" position="200,100" size="500,550" zPosition="-50" foregroundColor="white" />
+    <eLabel backgroundColor="EL_New" position="200,679" size="500,100" zPosition="-50" foregroundColor="white" />
+    <!-- Widget -->
+    <widget render="Label" source="title" font="FHD; 38" backgroundColor="EL_Background" foregroundColor="white" position="210,465" size="480,175" transparent="1" valign="center" zPosition="3" halign="center" />
+    <widget render="Label" source="lversion" font="FHD;30" backgroundColor="EL_Background" foregroundColor="white" transparent="1" position="780,130" size="220,50" />
+    <widget render="Label" source="version" font="FHD;30" backgroundColor="EL_Background" foregroundColor="white" transparent="1" position="1000,130" size="500,50" />
+    <widget render="Label" source="lrevision" font="FHD;30" backgroundColor="EL_Background" foregroundColor="white" transparent="1" position="780,185" size="220,50" />
+    <widget render="Label" source="revision" font="FHD;30" backgroundColor="EL_Background" foregroundColor="white" transparent="1" position="1000,185" size="500,50" />
+    <widget render="Label" source="lstarttime" font="FHD;30" backgroundColor="EL_Background" foregroundColor="white" transparent="1" position="780,240" size="220,45" />
+    <widget render="Label" source="starttime" font="FHD;30" backgroundColor="EL_Background" foregroundColor="white" transparent="1" position="1000,240" size="500,45" />
+    <widget render="Label" source="luptime" font="FHD;30" backgroundColor="EL_Background" foregroundColor="white" transparent="1" position="780,290" size="220,45" />
+    <widget render="Label" source="uptime" font="FHD;30" backgroundColor="EL_Background" foregroundColor="white" transparent="1" position="1000,290" size="500,45" />
+    <widget render="Label" source="lreadonly" font="FHD;30" backgroundColor="EL_Background" foregroundColor="white" transparent="1" position="780,340" size="220,45" />
+    <widget render="Label" source="readonly" font="FHD;30" backgroundColor="EL_Background" foregroundColor="white" transparent="1" position="1000,340" size="500,45" />
+    <!-- Weather -->
+    <eLabel backgroundColor="EL_New" position="200,795" size="500,135" zPosition="-50" foregroundColor="white" />
+    <widget backgroundColor="background" font="FHD; 40" render="Label" position="430,862" size="120,55" source="session.MSNWeather" transparent="1" zPosition="8" halign="right" foregroundColor="white">
+      <convert type="MSNWeather">temperature_current</convert>
+    </widget>
+    <widget backgroundColor="background" font="FHD; 28" render="Label" position="210,871" size="220,45" source="session.MSNWeather" zPosition="8" halign="right" transparent="1" foregroundColor="EL_Blue">
+      <convert type="MSNWeather">temperature_heigh_low,day2</convert>
+    </widget>
+    <widget backgroundColor="background" font="FHD; 32" render="SL_RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" position="210,810" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
+      <convert type="MSNWeather">city</convert>
+    </widget>
+    <eLabel backgroundColor="blue" position="210,860" size="340,2" zPosition="-9" foregroundColor="white" />
+    <widget alphatest="blend" render="MSNWeatherPixmap" position="568,800" size="125,125" source="session.MSNWeather" transparent="1" zPosition="8">
+      <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/SmartLiteFHD/WeatherIcon/,png</convert>
+    </widget>
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="537,704" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="544,687" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="384,727" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="384,699" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+  </screen>
+  <screen name="OscamRestartScreen" title="" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080" transparent="0">
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/menu/oscam.png" position="275,125" size="350,350" />
+    <!-- Backg -->
+    <eLabel backgroundColor="EL_Background" position="750,center" size="1000,880" zPosition="-21" />
+    <eLabel backgroundColor="EL_New" position="200,100" size="500,550" zPosition="-50" foregroundColor="white" />
+    <eLabel backgroundColor="EL_New" position="200,679" size="500,100" zPosition="-50" foregroundColor="white" />
+    <!-- Widget -->
+    <widget render="Label" source="title" font="FHD; 38" backgroundColor="EL_Background" foregroundColor="white" position="210,465" size="480,175" transparent="1" valign="center" zPosition="3" halign="center" />
+    <widget render="Label" source="lversion" font="FHD;30" backgroundColor="EL_Background" foregroundColor="white" transparent="1" position="780,130" size="220,50" />
+    <widget render="Label" source="version" font="FHD;30" backgroundColor="EL_Background" foregroundColor="white" transparent="1" position="1000,130" size="500,50" />
+    <widget render="Label" source="lrevision" font="FHD;30" backgroundColor="EL_Background" foregroundColor="white" transparent="1" position="780,185" size="220,50" />
+    <widget render="Label" source="revision" font="FHD;30" backgroundColor="EL_Background" foregroundColor="white" transparent="1" position="1000,185" size="500,50" />
+    <widget render="Label" source="lstarttime" font="FHD;30" backgroundColor="EL_Background" foregroundColor="white" transparent="1" position="780,240" size="220,45" />
+    <widget render="Label" source="starttime" font="FHD;30" backgroundColor="EL_Background" foregroundColor="white" transparent="1" position="1000,240" size="500,45" />
+    <widget render="Label" source="luptime" font="FHD;30" backgroundColor="EL_Background" foregroundColor="white" transparent="1" position="780,290" size="220,45" />
+    <widget render="Label" source="uptime" font="FHD;30" backgroundColor="EL_Background" foregroundColor="white" transparent="1" position="1000,290" size="500,45" />
+    <widget render="Label" source="lreadonly" font="FHD;30" backgroundColor="EL_Background" foregroundColor="white" transparent="1" position="780,340" size="220,45" />
+    <widget render="Label" source="readonly" font="FHD;30" backgroundColor="EL_Background" foregroundColor="white" transparent="1" position="1000,340" size="500,45" />
+    <!-- Buttons-->
+    <eLabel backgroundColor="blue" position="750,915" size="1000,1" zPosition="5" foregroundColor="white" />
+    <widget name="ButtonYellow" alphatest="blend" pixmap="SmartLiteFHD/buttons/yellow.png" position="772,930" size="40,40" />
+    <widget name="ButtonBlue" alphatest="blend" pixmap="SmartLiteFHD/buttons/blue.png" position="1185,930" size="40,40" />
+    <widget name="ButtonYellowtext" backgroundColor="EL_Background" font="Regular2; 28" halign="left" position="815,930" size="370,40" transparent="1" zPosition="1" />
+    <widget name="ButtonBluetext" backgroundColor="EL_Background" font="Regular2; 28" halign="left" position="1230,930" size="370,40" transparent="1" zPosition="1" />
+    <!-- Weather -->
+    <eLabel backgroundColor="EL_New" position="200,795" size="500,135" zPosition="-50" foregroundColor="white" />
+    <widget backgroundColor="background" font="FHD; 40" render="Label" position="430,862" size="120,55" source="session.MSNWeather" transparent="1" zPosition="8" halign="right" foregroundColor="white">
+      <convert type="MSNWeather">temperature_current</convert>
+    </widget>
+    <widget backgroundColor="background" font="FHD; 28" render="Label" position="210,871" size="220,45" source="session.MSNWeather" zPosition="8" halign="right" transparent="1" foregroundColor="EL_Blue">
+      <convert type="MSNWeather">temperature_heigh_low,day2</convert>
+    </widget>
+    <widget backgroundColor="background" font="FHD; 32" render="SL_RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" position="210,810" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
+      <convert type="MSNWeather">city</convert>
+    </widget>
+    <eLabel backgroundColor="blue" position="210,860" size="340,2" zPosition="-9" foregroundColor="white" />
+    <widget alphatest="blend" render="MSNWeatherPixmap" position="568,800" size="125,125" source="session.MSNWeather" transparent="1" zPosition="8">
+      <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/SmartLiteFHD/WeatherIcon/,png</convert>
+    </widget>
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="537,704" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="544,687" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="384,727" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="384,699" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+  </screen>
+  <screen name="ReaderDataScreen" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <!-- Backg1 -->
+    <eLabel backgroundColor="EL_Background" position="center,center" size="1800,960" zPosition="-20" />
+    <eLabel backgroundColor="Red" position="center,140" size="1800,2" zPosition="-9" />
+    <!-- Widget -->
+    <widget source="title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="90,70" size="1450,58" halign="left" transparent="1" />
+    <widget source="data" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="white" position="center,175" size="1740,720" transparent="1">
+      <convert type="TemplatedMultiContent">
+              {"template": [MultiContentEntryText(pos = (  3, 3), size = ( 80, 50), font=2, flags = RT_HALIGN_LEFT, text = 0),
+			    MultiContentEntryText(pos = ( 85, 3), size = ( 100, 50), font=0, flags = RT_HALIGN_LEFT, text = 1),
+			    MultiContentEntryText(pos = (250, 3), size = (350, 50), font=0, flags = RT_HALIGN_LEFT, text = 2),
+			    MultiContentEntryText(pos = (700, 3), size = (250, 50), font=0, flags = RT_HALIGN_LEFT, text = 3),
+			    MultiContentEntryText(pos = (980, 3), size = (260, 50), font=0, flags = RT_HALIGN_LEFT, text = 4),
+			    MultiContentEntryText(pos = ( 85,50), size = ( 50, 45), font=1, flags = RT_HALIGN_LEFT, text = 5),
+			    MultiContentEntryText(pos = ( 120,50), size = (500, 45), font=1, flags = RT_HALIGN_LEFT, text = 6),
+			    MultiContentEntryText(pos = ( 85,90), size = ( 50, 45), font=1, flags = RT_HALIGN_LEFT, text = 7),
+			    MultiContentEntryText(pos = ( 120,90), size = (500, 45), font=1, flags = RT_HALIGN_LEFT, text = 8),
+			    MultiContentEntryText(pos = (980,50), size = ( 50, 45), font=1, flags = RT_HALIGN_LEFT, text = 9),
+			    MultiContentEntryText(pos = (1050,50), size = (500, 45), font=1, flags = RT_HALIGN_LEFT, text = 10),
+			    MultiContentEntryText(pos = (980,90), size = ( 500, 45), font=1, flags = RT_HALIGN_LEFT, text = 11),
+			    MultiContentEntryText(pos = (1050,90), size = (500, 45), font=1, flags = RT_HALIGN_LEFT, text = 12),
+			    ],
+			    "fonts": [gFont("FHD", 30), gFont("Regular2", 23), gFont("FHD", 34)],"itemHeight": 120}
+      </convert>
+    </widget>
+    <!-- ButtonExtra -->
+    <eLabel backgroundColor="blue" foregroundColor="white" name="" position="60,955" size="1800,1" zPosition="-10" />
+    <widget name="KeyYellow" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/OscamStatus/icons/bt_yellow.png" position="1790,970" size="52,37" zPosition="4" transparent="1" alphatest="blend" />
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="1707,74" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1714,57" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1554,97" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1554,69" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+  </screen>
+  <screen name="LogDataScreen" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <!-- Backg1 -->
+    <eLabel backgroundColor="EL_Background" position="center,center" size="1800,960" zPosition="-20" />
+    <eLabel backgroundColor="Red" position="center,140" size="1800,2" zPosition="-9" />
+    <!-- Widget -->
+    <widget source="title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="90,70" size="1450,58" halign="left" transparent="1" />
+    <widget name="data" itemHeight="50" font="FHD; 28" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="white" position="center,155" size="1740,850" transparent="1" />
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="1707,74" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1714,57" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1554,97" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1554,69" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+  </screen>
+  <screen name="ReaderlistScreen" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/menu/oscam.png" position="275,125" size="350,350" />
+    <!-- Backg -->
+    <eLabel backgroundColor="EL_Background" position="750,center" size="1000,880" zPosition="-21" />
+    <eLabel backgroundColor="EL_New" position="200,100" size="500,550" zPosition="-50" foregroundColor="white" />
+    <eLabel backgroundColor="EL_New" position="200,679" size="500,100" zPosition="-50" foregroundColor="white" />
+    <!-- Widget -->
+    <widget render="Label" source="title" font="FHD; 38" backgroundColor="EL_Background" foregroundColor="white" position="210,465" size="480,175" transparent="1" valign="center" zPosition="3" halign="center" />
+    <widget render="Label" source="label0" font="Regular2;33" position="820,154" size="500,45" valign="center" zPosition="5" transparent="0" foregroundColor="black" backgroundColor="white" />
+    <widget render="Label" source="label1" font="Regular2;33" position="1330,155" size="280,45" valign="center" zPosition="5" transparent="0" foregroundColor="black" backgroundColor="white" />
+    <widget render="Label" source="label2" font="Regular2;33" position="1620,155" size="100,45" valign="center" zPosition="5" transparent="0" foregroundColor="black" backgroundColor="white" />
+    <widget source="data" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="white" position="780,220" size="940,720" transparent="1">
+      <convert type="TemplatedMultiContent">
+		{"template": [MultiContentEntryPixmapAlphaTest(pos = (10, 16), size = (24, 24), png = 0),
+		              MultiContentEntryText(pos = ( 40, 3), size = (500, 50), font=0, flags = RT_HALIGN_LEFT, text = 1),
+			      MultiContentEntryText(pos = (560, 3), size = (280, 50), font=0, flags = RT_HALIGN_LEFT, text = 2),
+			      MultiContentEntryText(pos = (850, 3), size = (100, 50), font=0, flags = RT_HALIGN_LEFT, text = 3),
+			      ],
+			     "fonts": [gFont("FHD", 32)], "itemHeight": 50}
+			</convert>
+    </widget>
+    <!-- Buttons-->
+    <eLabel backgroundColor="blue" position="750,915" size="1000,1" zPosition="5" foregroundColor="white" />
+    <widget name="ButtonRed" alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="772,930" size="40,40" />
+    <widget name="ButtonGreen" alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="1185,930" size="40,40" />
+    <widget name="ButtonRedtext" backgroundColor="EL_Background" font="Regular2; 28" halign="left" position="815,930" size="370,40" transparent="1" zPosition="1" />
+    <widget name="ButtonGreentext" backgroundColor="EL_Background" font="Regular2; 28" halign="left" position="1230,930" size="370,40" transparent="1" zPosition="1" />
+    <!-- Weather -->
+    <eLabel backgroundColor="EL_New" position="200,795" size="500,135" zPosition="-50" foregroundColor="white" />
+    <widget backgroundColor="background" font="FHD; 40" render="Label" position="430,862" size="120,55" source="session.MSNWeather" transparent="1" zPosition="8" halign="right" foregroundColor="white">
+      <convert type="MSNWeather">temperature_current</convert>
+    </widget>
+    <widget backgroundColor="background" font="FHD; 28" render="Label" position="210,871" size="220,45" source="session.MSNWeather" zPosition="8" halign="right" transparent="1" foregroundColor="EL_Blue">
+      <convert type="MSNWeather">temperature_heigh_low,day2</convert>
+    </widget>
+    <widget backgroundColor="background" font="FHD; 32" render="SL_RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" position="210,810" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
+      <convert type="MSNWeather">city</convert>
+    </widget>
+    <eLabel backgroundColor="blue" position="210,860" size="340,2" zPosition="-9" foregroundColor="white" />
+    <widget alphatest="blend" render="MSNWeatherPixmap" position="568,800" size="125,125" source="session.MSNWeather" transparent="1" zPosition="8">
+      <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/SmartLiteFHD/WeatherIcon/,png</convert>
+    </widget>
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="537,704" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="544,687" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="384,727" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="384,699" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+  </screen>
+  <screen name="ReaderstatsScreen" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <!-- Backg1 -->
+    <eLabel backgroundColor="EL_Background" position="center,center" size="1800,960" zPosition="-20" />
+    <eLabel backgroundColor="Red" position="center,140" size="1800,2" zPosition="-9" />
+    <!-- Widget -->
+    <widget source="title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="90,70" size="1450,58" halign="left" transparent="1" />
+    <widget render="Label" source="lEMMerror" position="90,160" size="380,85" valign="center" halign="center" zPosition="5" transparent="1" foregroundColor="white" font="FHD; 28" />
+    <widget render="Label" source="lEMMwritten" position="470,160" size="380,85" valign="center" halign="center" zPosition="5" transparent="1" backgroundColor="EL_Background" foregroundColor="white" font="FHD; 28" />
+    <widget render="Label" source="lEMMskipped" position="850,160" size="380,85" valign="center" halign="center" zPosition="5" transparent="1" backgroundColor="EL_Background" foregroundColor="white" font="FHD; 28" />
+    <widget render="Label" source="lEMMblocked" position="1230,160" size="380,85" valign="center" halign="center" zPosition="5" transparent="1" backgroundColor="EL_Background" foregroundColor="white" font="FHD; 28" />
+    <widget name="EMMerror" position="90,245" size="380,50" valign="center" halign="center" zPosition="5" transparent="1" backgroundColor="EL_Background" foregroundColor="white" font="FHD; 28" />
+    <widget name="EMMwritten" position="470,245" size="380,50" valign="center" halign="center" zPosition="5" transparent="1" backgroundColor="EL_Background" foregroundColor="white" font="FHD; 28" />
+    <widget name="EMMskipped" position="850,245" size="380,50" valign="center" halign="center" zPosition="5" transparent="1" backgroundColor="EL_Background" foregroundColor="white" font="FHD; 28" />
+    <widget name="EMMblocked" position="1230,245" size="380,50" valign="center" halign="center" zPosition="5" transparent="1" backgroundColor="EL_Background" foregroundColor="white" font="FHD; 28" />
+    <widget render="Label" source="label0" position="90,300" size="160,50" valign="center" zPosition="5" transparent="0" foregroundColor="black" backgroundColor="white" font="Regular2; 32" />
+    <widget render="Label" source="label1" position="260,300" size="600,50" valign="center" zPosition="5" transparent="0" foregroundColor="black" backgroundColor="white" font="Regular2; 32" />
+    <widget render="Label" source="label2" position="870,300" size="340,50" valign="center" zPosition="5" transparent="0" foregroundColor="black" backgroundColor="white" font="Regular2; 32" />
+    <widget render="Label" source="label3" position="1220,300" size="220,50" halign="center" valign="center" zPosition="5" transparent="0" foregroundColor="black" backgroundColor="white" font="Regular2; 32" />
+    <widget render="Label" source="label4" position="1450,300" size="210,50" valign="center" zPosition="5" transparent="0" foregroundColor="black" backgroundColor="white" font="Regular2; 32" />
+    <widget render="Label" source="label5" position="1670,300" size="160,50" valign="center" zPosition="5" transparent="0" foregroundColor="black" backgroundColor="white" font="Regular2; 32" />
+    <widget source="data" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="white" position="center,360" size="1740,650" transparent="1">
+      <convert type="TemplatedMultiContent">
+		{"template": [
+		MultiContentEntryText(pos = (  5, 3), size = ( 160, 50), font=0, flags = RT_HALIGN_RIGHT, text = 0),
+		MultiContentEntryText(pos = (180, 3), size = (600, 50), font=0, flags = RT_HALIGN_LEFT, text = 1),
+		MultiContentEntryText(pos = (790, 3), size = (340, 50), font=0, flags = RT_HALIGN_LEFT, text = 2),
+		MultiContentEntryText(pos = (1140, 3), size = (220, 50), font=0, flags = RT_HALIGN_LEFT, text = 3),
+		MultiContentEntryText(pos = (1370, 3), size = (210, 50), font=0, flags = RT_HALIGN_LEFT, text = 4),
+		MultiContentEntryText(pos = (1590, 3), size = (160, 50), font=0, flags = RT_HALIGN_LEFT, text = 5),
+		],
+		"fonts": [gFont("FHD", 30)],
+		"itemHeight": 50
+		}
+     </convert>
+    </widget>
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="1707,74" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1714,57" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1554,97" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1554,69" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+  </screen>
+  <screen name="UserstatsScreen" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <!-- Backg1 -->
+    <eLabel backgroundColor="EL_Background" position="center,center" size="1800,960" zPosition="-20" />
+    <eLabel backgroundColor="Red" position="center,140" size="1800,2" zPosition="-9" />
+    <!-- Widget -->
+    <widget source="title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="90,70" size="1450,58" halign="left" transparent="1" />
+    <widget render="Label" source="label0" position="150,160" size="320,50" valign="center" zPosition="5" transparent="0" foregroundColor="black" backgroundColor="white" font="Regular2; 32" />
+    <widget render="Label" source="label1" position="480,160" size="320,50" valign="center" zPosition="5" transparent="0" foregroundColor="black" backgroundColor="white" font="Regular2; 32" />
+    <widget render="Label" source="label2" position="810,160" size="420,50" valign="center" zPosition="5" transparent="0" foregroundColor="black" backgroundColor="white" font="Regular2; 32" />
+    <widget render="Label" source="label3" position="1240,160" size="590,50" valign="center" zPosition="5" transparent="0" foregroundColor="black" backgroundColor="white" font="Regular2; 32" />
+    <widget source="data" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="white" position="center,220" size="1740,700" transparent="1">
+      <convert type="TemplatedMultiContent">
+		   {"template": [
+			MultiContentEntryPixmapAlphaTest(pos = (10, 16), size = (24, 24), png = 0),
+			MultiContentEntryText(pos = ( 60, 1), size = (320, 50), font=0, flags = RT_HALIGN_LEFT, text = 1),
+			MultiContentEntryText(pos = (390, 1), size = (320, 50), font=0, flags = RT_HALIGN_LEFT, text = 2),
+			MultiContentEntryText(pos = (720, 1), size = (420, 50), font=0, flags = RT_HALIGN_LEFT, text = 3),
+			MultiContentEntryText(pos = (1150, 1), size = (590, 50), font=0, flags = RT_HALIGN_LEFT, text = 4),
+			],
+			"fonts": [gFont("FHD", 32)],
+			"itemHeight": 50
+			}
+      </convert>
+    </widget>
+    <!-- ButtonsExtra -->
+    <eLabel backgroundColor="blue" foregroundColor="white" name="" position="60,955" size="1800,1" zPosition="-10" />
+    <widget name="ButtonRed" alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="90,970" size="40,40" />
+    <widget name="ButtonGreen" alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="495,970" size="40,40" />
+    <widget name="ButtonRedtext" backgroundColor="EL_Background" font="Regular; 28" halign="left" position="140,970" size="350,40" transparent="1" zPosition="1" />
+    <widget name="ButtonGreentext" backgroundColor="EL_Background" font="Regular; 28" halign="left" position="545,970" size="350,40" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="1707,74" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1714,57" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1554,97" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1554,69" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+  </screen>
+  <screen name="StatusDataScreen" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <!-- Backg1 -->
+    <eLabel backgroundColor="EL_Background" position="center,center" size="1800,960" zPosition="-20" />
+    <eLabel backgroundColor="Red" position="center,140" size="1800,2" zPosition="-9" />
+    <!-- Widget -->
+    <widget source="title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="90,70" size="1450,58" halign="left" transparent="1" />
+    <widget render="Label" source="label0" position="90,160" size="400,50" valign="center" zPosition="5" transparent="0" foregroundColor="black" backgroundColor="white" font="Regular2; 32" />
+    <widget render="Label" source="label1" position="500,160" size="320,50" valign="center" zPosition="5" transparent="0" foregroundColor="black" backgroundColor="white" font="Regular2; 32" />
+    <widget render="Label" source="label2" position="830,160" size="100,50" valign="center" zPosition="5" transparent="0" foregroundColor="black" backgroundColor="white" font="Regular2; 32" />
+    <widget render="Label" source="label3" position="940,160" size="200,50" valign="center" zPosition="5" transparent="0" foregroundColor="black" backgroundColor="white" font="Regular2; 32" />
+    <widget render="Label" source="label4" position="1150,160" size="200,50" valign="center" zPosition="5" transparent="0" foregroundColor="black" backgroundColor="white" font="Regular2; 32" />
+    <widget render="Label" source="label5" position="1360,160" size="470,50" valign="center" zPosition="5" transparent="0" foregroundColor="black" backgroundColor="white" font="Regular2; 32" />
+    <widget source="data" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="white" position="center,220" size="1740,700" transparent="1">
+      <convert type="TemplatedMultiContent">
+		   {"template": [
+			MultiContentEntryText(pos = (  3, 3), size = (400, 58), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
+			MultiContentEntryText(pos = (410, 2), size = (320, 58), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1),
+			MultiContentEntryPixmapAlphaTest(pos = (765, 23), size = (50, 58), png = 2),
+			MultiContentEntryText(pos = (850, 2), size = (200, 66), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 3),
+			MultiContentEntryPixmapAlphaTest(pos = (1100, 3), size = (200, 55), png = 4),
+			MultiContentEntryText(pos = (1270, 2), size = (470, 58), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 5),
+			],
+			"fonts": [gFont("FHD", 30)],
+			"itemHeight": 60
+			}
+      </convert>
+    </widget>
+    <!-- ButtonsExtra -->
+    <eLabel backgroundColor="blue" foregroundColor="white" name="" position="60,955" size="1800,1" zPosition="-10" />
+    <widget name="ButtonYellow" alphatest="blend" pixmap="SmartLiteFHD/buttons/yellow.png" position="90,970" size="40,40" />
+    <widget name="ButtonBlue" alphatest="blend" pixmap="SmartLiteFHD/buttons/blue.png" position="495,970" size="40,40" />
+    <widget name="ButtonYellowtext" backgroundColor="EL_Background" font="Regular; 28" halign="left" position="140,970" size="350,40" transparent="1" zPosition="1" />
+    <widget name="ButtonBluetext" backgroundColor="EL_Background" font="Regular; 28" halign="left" position="545,970" size="350,40" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="1707,74" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1714,57" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1554,97" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="1554,69" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+  </screen>
+  <screen name="OscamStatus" title="" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080" transparent="0">
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/menu/oscam.png" position="275,125" size="350,350" />
+    <!-- Backg -->
+    <eLabel backgroundColor="EL_Background" position="750,center" size="1000,880" zPosition="-21" />
+    <eLabel backgroundColor="EL_New" position="200,100" size="500,550" zPosition="-50" foregroundColor="white" />
+    <eLabel backgroundColor="EL_New" position="200,679" size="500,100" zPosition="-50" foregroundColor="white" />
+    <!-- Widget -->
+    <widget render="Label" source="title" font="FHD; 38" backgroundColor="EL_Background" foregroundColor="white" position="210,465" size="480,175" transparent="1" valign="center" zPosition="3" halign="center" />
+    <widget source="menu" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="white" position="780,130" size="940,780" transparent="1">
+      <convert type="TemplatedMultiContent">
+		   {"template": [
+			MultiContentEntryPixmapAlphaTest(pos = (8, 15), size = (48, 48), png = 0),
+			MultiContentEntryText(pos = (75, 0), size = (700, 60), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1),
+			],
+			"fonts": [gFont("FHD", 38)],
+			"itemHeight": 60
+			}
+			</convert>
+    </widget>
+    <!-- Buttons-->
+    <eLabel backgroundColor="blue" position="750,915" size="1000,1" zPosition="5" foregroundColor="white" />
+    <widget name="KeyMenu" alphatest="blend" pixmap="SmartLiteFHD/buttons/key_menu.png" position="770,931" size="64,38" />
+    <widget render="Label" source="KeyMenuText" backgroundColor="EL_Background" font="Regular2; 28" halign="left" position="835,930" size="370,40" transparent="1" zPosition="1" />
+    <!-- Weather -->
+    <eLabel backgroundColor="EL_New" position="200,795" size="500,135" zPosition="-50" foregroundColor="white" />
+    <widget backgroundColor="background" font="FHD; 40" render="Label" position="430,862" size="120,55" source="session.MSNWeather" transparent="1" zPosition="8" halign="right" foregroundColor="white">
+      <convert type="MSNWeather">temperature_current</convert>
+    </widget>
+    <widget backgroundColor="background" font="FHD; 28" render="Label" position="210,871" size="220,45" source="session.MSNWeather" zPosition="8" halign="right" transparent="1" foregroundColor="EL_Blue">
+      <convert type="MSNWeather">temperature_heigh_low,day2</convert>
+    </widget>
+    <widget backgroundColor="background" font="FHD; 32" render="SL_RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" position="210,810" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
+      <convert type="MSNWeather">city</convert>
+    </widget>
+    <eLabel backgroundColor="blue" position="210,860" size="340,2" zPosition="-9" foregroundColor="white" />
+    <widget alphatest="blend" render="MSNWeatherPixmap" position="568,800" size="125,125" source="session.MSNWeather" transparent="1" zPosition="8">
+      <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/SmartLiteFHD/WeatherIcon/,png</convert>
+    </widget>
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="537,704" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="544,687" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="384,727" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="384,699" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+  </screen>
+  <screen name="globalsConfigScreen" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/menu/oscam.png" position="275,125" size="350,350" />
+    <!-- Backg -->
+    <eLabel backgroundColor="EL_Background" position="750,center" size="1000,880" zPosition="-21" />
+    <eLabel backgroundColor="EL_New" position="200,100" size="500,550" zPosition="-50" foregroundColor="white" />
+    <eLabel backgroundColor="EL_New" position="200,679" size="500,100" zPosition="-50" foregroundColor="white" />
+    <!-- Widget -->
+    <widget render="Label" source="title" font="FHD; 38" backgroundColor="EL_Background" foregroundColor="white" position="210,465" size="480,175" transparent="1" valign="center" zPosition="3" halign="center" />
+    <widget name="config" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="white" position="770,130" size="960,760" transparent="1" />
+    <!-- Buttons-->
+    <eLabel backgroundColor="blue" position="750,915" size="1000,1" zPosition="5" foregroundColor="white" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="772,930" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="1085,930" size="40,40" />
+    <widget render="Label" source="ButtonRedtext" backgroundColor="EL_Background" font="Regular2; 28" halign="left" position="815,930" size="270,40" transparent="1" zPosition="1" />
+    <widget render="Label" source="ButtonGreentext" backgroundColor="EL_Background" font="Regular2; 28" halign="left" position="1130,930" size="270,40" transparent="1" zPosition="1" />
+    <!-- Weather -->
+    <eLabel backgroundColor="EL_New" position="200,795" size="500,135" zPosition="-50" foregroundColor="white" />
+    <widget backgroundColor="background" font="FHD; 40" render="Label" position="430,862" size="120,55" source="session.MSNWeather" transparent="1" zPosition="8" halign="right" foregroundColor="white">
+      <convert type="MSNWeather">temperature_current</convert>
+    </widget>
+    <widget backgroundColor="background" font="FHD; 28" render="Label" position="210,871" size="220,45" source="session.MSNWeather" zPosition="8" halign="right" transparent="1" foregroundColor="EL_Blue">
+      <convert type="MSNWeather">temperature_heigh_low,day2</convert>
+    </widget>
+    <widget backgroundColor="background" font="FHD; 32" render="SL_RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" position="210,810" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
+      <convert type="MSNWeather">city</convert>
+    </widget>
+    <eLabel backgroundColor="blue" position="210,860" size="340,2" zPosition="-9" foregroundColor="white" />
+    <widget alphatest="blend" render="MSNWeatherPixmap" position="568,800" size="125,125" source="session.MSNWeather" transparent="1" zPosition="8">
+      <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/SmartLiteFHD/WeatherIcon/,png</convert>
+    </widget>
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="537,704" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="544,687" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="384,727" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="384,699" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+  </screen>
+  <screen name="OscamServerEntriesListConfigScreen" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/menu/oscam.png" position="275,125" size="350,350" />
+    <!-- Backg -->
+    <eLabel backgroundColor="EL_Background" position="750,center" size="1000,880" zPosition="-21" />
+    <eLabel backgroundColor="EL_New" position="200,100" size="500,550" zPosition="-50" foregroundColor="white" />
+    <eLabel backgroundColor="EL_New" position="200,679" size="500,100" zPosition="-50" foregroundColor="white" />
+    <!-- Widget -->
+    <widget render="Label" source="title" font="FHD; 38" backgroundColor="EL_Background" foregroundColor="white" position="210,465" size="480,175" transparent="1" valign="center" zPosition="3" halign="center" />
+    <widget name="list" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="white" position="770,130" size="960,760" transparent="1" />
+    <!-- Buttons-->
+    <eLabel backgroundColor="blue" position="750,915" size="1000,1" zPosition="5" foregroundColor="white" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="772,930" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/yellow.png" position="1085,930" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/blue.png" position="1400,930" size="40,40" />
+    <widget render="Label" source="ButtonGreentext" backgroundColor="EL_Background" font="Regular2; 28" halign="left" position="815,930" size="270,40" transparent="1" zPosition="1" />
+    <widget render="Label" source="ButtonYellowtext" backgroundColor="EL_Background" font="Regular2; 28" halign="left" position="1130,930" size="270,40" transparent="1" zPosition="1" />
+    <widget render="Label" source="ButtonBluetext" backgroundColor="EL_Background" font="Regular2; 28" halign="left" position="1445,930" size="270,40" transparent="1" zPosition="1" />
+    <!-- Weather -->
+    <eLabel backgroundColor="EL_New" position="200,795" size="500,135" zPosition="-50" foregroundColor="white" />
+    <widget backgroundColor="background" font="FHD; 40" render="Label" position="430,862" size="120,55" source="session.MSNWeather" transparent="1" zPosition="8" halign="right" foregroundColor="white">
+      <convert type="MSNWeather">temperature_current</convert>
+    </widget>
+    <widget backgroundColor="background" font="FHD; 28" render="Label" position="210,871" size="220,45" source="session.MSNWeather" zPosition="8" halign="right" transparent="1" foregroundColor="EL_Blue">
+      <convert type="MSNWeather">temperature_heigh_low,day2</convert>
+    </widget>
+    <widget backgroundColor="background" font="FHD; 32" render="SL_RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" position="210,810" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
+      <convert type="MSNWeather">city</convert>
+    </widget>
+    <eLabel backgroundColor="blue" position="210,860" size="340,2" zPosition="-9" foregroundColor="white" />
+    <widget alphatest="blend" render="MSNWeatherPixmap" position="568,800" size="125,125" source="session.MSNWeather" transparent="1" zPosition="8">
+      <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/SmartLiteFHD/WeatherIcon/,png</convert>
+    </widget>
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="537,704" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="544,687" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="384,727" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="384,699" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+  </screen>
+  <screen name="OscamServerEntryConfigScreen" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/menu/oscam.png" position="275,125" size="350,350" />
+    <!-- Backg -->
+    <eLabel backgroundColor="EL_Background" position="750,center" size="1000,880" zPosition="-21" />
+    <eLabel backgroundColor="EL_New" position="200,100" size="500,550" zPosition="-50" foregroundColor="white" />
+    <eLabel backgroundColor="EL_New" position="200,679" size="500,100" zPosition="-50" foregroundColor="white" />
+    <!-- Widget -->
+    <widget render="Label" source="title" font="FHD; 38" backgroundColor="EL_Background" foregroundColor="white" position="210,465" size="480,175" transparent="1" valign="center" zPosition="3" halign="center" />
+    <widget name="config" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="white" position="770,130" size="960,760" transparent="1" />
+    <!-- Buttons-->
+    <eLabel backgroundColor="blue" position="750,915" size="1000,1" zPosition="5" foregroundColor="white" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="772,930" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="1135,930" size="40,40" />
+    <widget render="Label" source="ButtonRedtext" backgroundColor="EL_Background" font="Regular2; 28" halign="left" position="815,930" size="320,40" transparent="1" zPosition="1" />
+    <widget render="Label" source="ButtonGreentext" backgroundColor="EL_Background" font="Regular2; 28" halign="left" position="1180,930" size="320,40" transparent="1" zPosition="1" />
+    <!-- Weather -->
+    <eLabel backgroundColor="EL_New" position="200,795" size="500,135" zPosition="-50" foregroundColor="white" />
+    <widget backgroundColor="background" font="FHD; 40" render="Label" position="430,862" size="120,55" source="session.MSNWeather" transparent="1" zPosition="8" halign="right" foregroundColor="white">
+      <convert type="MSNWeather">temperature_current</convert>
+    </widget>
+    <widget backgroundColor="background" font="FHD; 28" render="Label" position="210,871" size="220,45" source="session.MSNWeather" zPosition="8" halign="right" transparent="1" foregroundColor="EL_Blue">
+      <convert type="MSNWeather">temperature_heigh_low,day2</convert>
+    </widget>
+    <widget backgroundColor="background" font="FHD; 32" render="SL_RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" position="210,810" size="340,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="white">
+      <convert type="MSNWeather">city</convert>
+    </widget>
+    <eLabel backgroundColor="blue" position="210,860" size="340,2" zPosition="-9" foregroundColor="white" />
+    <widget alphatest="blend" render="MSNWeatherPixmap" position="568,800" size="125,125" source="session.MSNWeather" transparent="1" zPosition="8">
+      <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/SmartLiteFHD/WeatherIcon/,png</convert>
+    </widget>
+    <!-- Clock -->
+    <eLabel backgroundColor="white" position="537,704" size="1,50" transparent="0" zPosition="-1" />
+    <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="544,687" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="384,727" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %b</convert>
+    </widget>
+    <widget backgroundColor="EL_Background" font="Bold; 23" foregroundColor="EL_Blue" halign="right" position="384,699" render="Label" size="145,30" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
   </screen>
 </skin>
