@@ -13,11 +13,11 @@
     <eLabel backgroundColor="blue" position="300,560" size="300,3" zPosition="-9" foregroundColor="white" />
     <!-- Widget -->
     <widget source="Title" render="Label" font="FHD; 45" backgroundColor="EL_Background" foregroundColor="white" position="210,465" size="480,95" transparent="1" valign="center" zPosition="3" halign="center" />
-    <widget source="list" render="Listbox" enableWrapAround="1" position="780,130" scrollbarMode="showLeft" size="880,810" transparent="1" zPosition="3">
+    <widget source="list" render="Listbox" enableWrapAround="1" position="770,130" scrollbarMode="showLeft" size="900,810" transparent="1" zPosition="3">
       <convert type="TemplatedMultiContent">
                   {"template": [
-                              MultiContentEntryText(pos = (20, 0), size = (930, 48), font=0, text=0, color = 0x00ffffff, color_sel = 0x00ffffff), # text 1 is the menu_entry,
-                              MultiContentEntryText(pos = (20, 50), size = (930, 40), font=1, text=2, color = 0x006bb7e5, color_sel = 0x00ffffff),# text 2 is the menu_enty_description
+                              MultiContentEntryText(pos = (10, 0), size = (930, 48), font=0, text=0, color = 0x00ffffff, color_sel = 0x00ffffff), # text 1 is the menu_entry,
+                              MultiContentEntryText(pos = (10, 50), size = (930, 40), font=1, text=2, color = 0x006bb7e5, color_sel = 0x00ffffff),# text 2 is the menu_enty_description
                                ],
                              "fonts": [gFont("FHD", 36), gFont("Regular2", 27)],
                              "itemHeight": 90

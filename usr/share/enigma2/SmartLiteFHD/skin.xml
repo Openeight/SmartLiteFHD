@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <skin>
-  <!-- SmartLiteFHD Skin V6.7a1 by SkinMania for Octagon -->
+  <!-- SmartLiteFHD Skin V6.7a2 by SkinMania for Octagon -->
   <!-- Recommended to use with XPicons (220x132) -->
   <!-- You are not allowed to modify and redistribute SmartLiteFHD Skin and all graphics -->
   <output id="0">
@@ -2293,19 +2293,24 @@
     <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_ok.png" position="310,986" size="64,38" />
     <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_exit.png" position="393,986" size="64,38" />
   </screen>
-  <screen name="HarddiskSetup" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" transparent="0">
+  <screen name="HarddiskSetup" title="Setup hard disk" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" transparent="0">
     <panel name="Backg" />
     <panel name="Clock" />
     <!-- Widget -->
-    <eLabel text="Harddisk Setup" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
     <widget name="model" render="Label" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="310,155" size="1300,50" transparent="1" />
     <widget name="capacity" render="Label" font="Bold; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="310,210" size="1300,50" transparent="1" />
     <widget name="bus" render="Label" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="310,265" size="1300,50" transparent="1" />
     <widget name="HelpWindow" position="275,550" size="1,1" transparent="1" zPosition="1" />
     <!-- Buttons -->
-    <eLabel backgroundColor="EL_Selection" foregroundColor="EL_Background" name="" position="260,978" size="1400,1" zPosition="-10" />
+    <eLabel backgroundColor="blue" foregroundColor="EL_Background" name="" position="260,978" size="1400,1" zPosition="-10" />
     <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="310,985" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="730,985" size="40,40" />
     <widget name="initializetext" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="355,985" size="370,40" transparent="1" zPosition="1" />
+    <widget source="key_red" render="Label" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="355,985" size="370,40" transparent="1" zPosition="1" />
+    <widget source="key_green" render="Label" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="775,985" size="370,40" transparent="1" zPosition="1" />
+    <widget name="key_red" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="355,985" size="370,40" transparent="1" zPosition="1" />
+    <widget name="key_green" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="775,985" size="370,40" transparent="1" zPosition="1" />
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="HarddiskWait" position="0,center" size="1920,1080" transparent="0">
     <panel name="Backg" />
@@ -6199,4 +6204,5 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
       <convert type="ClockToText">Format:%A</convert>
     </widget>
   </screen>
+
 </skin>
