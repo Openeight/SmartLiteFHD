@@ -577,7 +577,16 @@
   <screen backgroundColor="transparent" flags="wfNoBorder" name="ScriptRunner" position="center,center" size="1920,1080" title="Jop Manager" transparent="0">
     <panel name="Backg" />
     <panel name="Clock" />
-    <panel name="BN2" />
+    <!-- Extra Buttons-->
+    <eLabel backgroundColor="blue" foregroundColor="EL_Background" name="" position="260,978" size="1400,1" zPosition="-10" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="310,985" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="560,985" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/yellow.png" position="810,985" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/blue.png" position="1230,985" size="40,40" />
+    <widget name="key_red" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="355,985" size="200,40" transparent="1" zPosition="1" />
+    <widget name="key_green" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="605,985" size="200,40" transparent="1" zPosition="1" />
+    <widget name="key_yellow" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="855,985" size="370,40" transparent="1" zPosition="1" />
+    <widget name="key_blue" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="1275,985" size="370,40" transparent="1" zPosition="1" />
     <!-- Widget -->
     <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
     <widget name="lab1" position="310,155" size="1300,50" font="FHD; 32" valign="center" transparent="1" halign="left" foregroundColor="EL_Foreground" backgroundColor="EL_Background" />

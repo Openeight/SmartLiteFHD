@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <skin>
-  <!-- SmartLiteFHD Skin V6.7a2 by SkinMania for Octagon -->
+  <!-- SmartLiteFHD Skin V6.7a3 by SkinMania for Octagon -->
   <!-- Recommended to use with XPicons (220x132) -->
   <!-- You are not allowed to modify and redistribute SmartLiteFHD Skin and all graphics -->
   <output id="0">
@@ -2677,13 +2677,15 @@ listwidth = 0
 listheight = 0
 
 if self.list:
-	try:
-		for i in self.list:
-			if len(i[0]) &gt; listwidth:
-				listwidth = len(i[0])
-		listwidth = listwidth * offset_listwidth
-		listheight = len(self.list) * offset_listheight
-	except:
+try:
+     for i in self.list:
+        if len(i[0]) &gt; listwidth:
+        listwidth = len(i[0])
+        listwidth = listwidth * offset_listwidth
+        if (len(self.list) &gt;18): ############### If the list has more than 18 Items :
+        offset_listheight = 32 ################ Set the offset_listheight to 32
+        listheight = len(self.list) * offset_listheight
+      except:
 		pass
 
 if (min_height &gt;textheight):
@@ -2765,13 +2767,15 @@ listwidth = 0
 listheight = 0
 
 if self.list:
-	try:
-		for i in self.list:
-			if len(i[0]) &gt; listwidth:
-				listwidth = len(i[0])
-		listwidth = listwidth * offset_listwidth
-		listheight = len(self.list) * offset_listheight
-	except:
+try:
+     for i in self.list:
+        if len(i[0]) &gt; listwidth:
+        listwidth = len(i[0])
+        listwidth = listwidth * offset_listwidth
+        if (len(self.list) &gt;18): ############### If the list has more than 18 Items :
+        offset_listheight = 32 ################ Set the offset_listheight to 32
+        listheight = len(self.list) * offset_listheight
+      except:
 		pass
 
 if (min_height &gt;textheight):
@@ -2853,13 +2857,15 @@ listwidth = 0
 listheight = 0
 
 if self.list:
-	try:
-		for i in self.list:
-			if len(i[0]) &gt; listwidth:
-				listwidth = len(i[0])
-		listwidth = listwidth * offset_listwidth
-		listheight = len(self.list) * offset_listheight
-	except:
+try:
+     for i in self.list:
+        if len(i[0]) &gt; listwidth:
+        listwidth = len(i[0])
+        listwidth = listwidth * offset_listwidth
+        if (len(self.list) &gt;18): ############### If the list has more than 18 Items :
+        offset_listheight = 32 ################ Set the offset_listheight to 32
+        listheight = len(self.list) * offset_listheight
+      except:
 		pass
 
 if (min_height &gt;textheight):
@@ -2941,13 +2947,15 @@ listwidth = 0
 listheight = 0
 
 if self.list:
-	try:
-		for i in self.list:
-			if len(i[0]) &gt; listwidth:
-				listwidth = len(i[0])
-		listwidth = listwidth * offset_listwidth
-		listheight = len(self.list) * offset_listheight
-	except:
+try:
+     for i in self.list:
+        if len(i[0]) &gt; listwidth:
+        listwidth = len(i[0])
+        listwidth = listwidth * offset_listwidth
+        if (len(self.list) &gt;18): ############### If the list has more than 18 Items :
+        offset_listheight = 32 ################ Set the offset_listheight to 32
+        listheight = len(self.list) * offset_listheight
+      except:
 		pass
 
 if (min_height &gt;textheight):
@@ -4282,9 +4290,9 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="BN4" />
     <!-- Widget -->
     <widget source="Title" render="Label" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
-    <widget name="list" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="310,155" size="1300,750" transparent="1" />
-    <eLabel backgroundColor="white" position="310,915" size="1300,1" zPosition="-9" foregroundColor="white" />
-    <widget source="hint" render="Label" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="310,920" size="1300,45" transparent="1" font="FHD; 30" />
+    <widget name="list" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="EL_Foreground" position="310,155" size="1300,700" transparent="1" />
+    <eLabel backgroundColor="white" position="center,865" size="1300,1" zPosition="-9" foregroundColor="white" />
+    <widget source="hint" render="Label" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="center,870" size="1300,90" transparent="1" font="FHD; 30" />
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="NimSelection" title="Choose Tuner" position="0,center" size="1920,1080" transparent="0">
     <panel name="Backg" />
@@ -5192,7 +5200,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 				}
 			</convert>
     </widget>
-    <widget name="label1" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="center" position="center,925" size="1300,45" transparent="1" />
+    <widget name="lab1" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="center" position="center,925" size="1300,45" transparent="1" />
     <!-- Buttons -->
     <eLabel backgroundColor="blue" foregroundColor="EL_Background" name="" position="center,978" size="1400,1" zPosition="-10" />
     <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_exit.png" position="1580,986" size="64,38" />
@@ -6204,5 +6212,4 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
       <convert type="ClockToText">Format:%A</convert>
     </widget>
   </screen>
-
 </skin>
