@@ -2677,15 +2677,15 @@ listwidth = 0
 listheight = 0
 
 if self.list:
-try:
-     for i in self.list:
-        if len(i[0]) &gt; listwidth:
-        listwidth = len(i[0])
-        listwidth = listwidth * offset_listwidth
-        if (len(self.list) &gt;18): ############### If the list has more than 18 Items :
-        offset_listheight = 32 ################ Set the offset_listheight to 32
-        listheight = len(self.list) * offset_listheight
-      except:
+	try:
+		for i in self.list:
+			if len(i[0]) &gt; listwidth:
+				listwidth = len(i[0])
+		listwidth = listwidth * offset_listwidth
+		if (len(self.list) &gt;18): ############### If the list has more than 18 Items :
+			offset_listheight = 32 ################ Set the offset_listheight to 32
+		listheight = len(self.list) * offset_listheight
+	except:
 		pass
 
 if (min_height &gt;textheight):
@@ -2767,15 +2767,15 @@ listwidth = 0
 listheight = 0
 
 if self.list:
-try:
-     for i in self.list:
-        if len(i[0]) &gt; listwidth:
-        listwidth = len(i[0])
-        listwidth = listwidth * offset_listwidth
-        if (len(self.list) &gt;18): ############### If the list has more than 18 Items :
-        offset_listheight = 32 ################ Set the offset_listheight to 32
-        listheight = len(self.list) * offset_listheight
-      except:
+	try:
+		for i in self.list:
+			if len(i[0]) &gt; listwidth:
+				listwidth = len(i[0])
+		listwidth = listwidth * offset_listwidth
+		if (len(self.list) &gt;18): ############### If the list has more than 18 Items :
+			offset_listheight = 32 ################ Set the offset_listheight to 32
+		listheight = len(self.list) * offset_listheight
+	except:
 		pass
 
 if (min_height &gt;textheight):
@@ -2857,15 +2857,15 @@ listwidth = 0
 listheight = 0
 
 if self.list:
-try:
-     for i in self.list:
-        if len(i[0]) &gt; listwidth:
-        listwidth = len(i[0])
-        listwidth = listwidth * offset_listwidth
-        if (len(self.list) &gt;18): ############### If the list has more than 18 Items :
-        offset_listheight = 32 ################ Set the offset_listheight to 32
-        listheight = len(self.list) * offset_listheight
-      except:
+	try:
+		for i in self.list:
+			if len(i[0]) &gt; listwidth:
+				listwidth = len(i[0])
+		listwidth = listwidth * offset_listwidth
+		if (len(self.list) &gt;18): ############### If the list has more than 18 Items :
+			offset_listheight = 32 ################ Set the offset_listheight to 32
+		listheight = len(self.list) * offset_listheight
+	except:
 		pass
 
 if (min_height &gt;textheight):
@@ -2947,15 +2947,15 @@ listwidth = 0
 listheight = 0
 
 if self.list:
-try:
-     for i in self.list:
-        if len(i[0]) &gt; listwidth:
-        listwidth = len(i[0])
-        listwidth = listwidth * offset_listwidth
-        if (len(self.list) &gt;18): ############### If the list has more than 18 Items :
-        offset_listheight = 32 ################ Set the offset_listheight to 32
-        listheight = len(self.list) * offset_listheight
-      except:
+	try:
+		for i in self.list:
+			if len(i[0]) &gt; listwidth:
+				listwidth = len(i[0])
+		listwidth = listwidth * offset_listwidth
+		if (len(self.list) &gt;18): ############### If the list has more than 18 Items :
+			offset_listheight = 32 ################ Set the offset_listheight to 32
+		listheight = len(self.list) * offset_listheight
+	except:
 		pass
 
 if (min_height &gt;textheight):
