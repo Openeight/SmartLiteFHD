@@ -2491,6 +2491,16 @@
     <widget name="slider" backgroundColor="EL_Background" borderColor="grey" borderWidth="2" foregroundColor="blue" position="410,595" size="1100,25" transparent="1" />
     <widget name="package" backgroundColor="EL_Background" font="FHD; 32" foregroundColor="EL_Foreground" position="410,490" size="1100,95" transparent="1" valign="top" />
   </screen>
+    <screen backgroundColor="transparent" flags="wfNoBorder" name="OpkgInstaller" title="..." position="center,center" size="1920,1080">
+    <panel name="Backg" />
+    <panel name="Clock" />
+    <panel name="BS2" />
+    <!-- Widget -->
+    <eLabel text="IpkgInstaller" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="list" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="310,155" size="1300,750" transparent="1" />
+    <eLabel backgroundColor="white" position="310,915" size="1300,1" zPosition="-1" />
+    <widget source="introduction" render="Label" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="310,920" size="1300,45" transparent="1" />
+  </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="IpkgInstaller" title="..." position="center,center" size="1920,1080">
     <panel name="Backg" />
     <panel name="Clock" />
