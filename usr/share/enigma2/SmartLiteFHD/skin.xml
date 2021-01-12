@@ -2491,16 +2491,6 @@
     <widget name="slider" backgroundColor="EL_Background" borderColor="grey" borderWidth="2" foregroundColor="blue" position="410,595" size="1100,25" transparent="1" />
     <widget name="package" backgroundColor="EL_Background" font="FHD; 32" foregroundColor="EL_Foreground" position="410,490" size="1100,95" transparent="1" valign="top" />
   </screen>
-    <screen backgroundColor="transparent" flags="wfNoBorder" name="OpkgInstaller" title="..." position="center,center" size="1920,1080">
-    <panel name="Backg" />
-    <panel name="Clock" />
-    <panel name="BS2" />
-    <!-- Widget -->
-    <eLabel text="IpkgInstaller" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
-    <widget name="list" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="310,155" size="1300,750" transparent="1" />
-    <eLabel backgroundColor="white" position="310,915" size="1300,1" zPosition="-1" />
-    <widget source="introduction" render="Label" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="310,920" size="1300,45" transparent="1" />
-  </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="IpkgInstaller" title="..." position="center,center" size="1920,1080">
     <panel name="Backg" />
     <panel name="Clock" />
@@ -2520,6 +2510,43 @@
     <widget name="filelist" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="310,155" size="1300,800" transparent="1" />
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="IPKGSource" title="IPKG source" position="center,center" size="1920,1080">
+    <panel name="Backg" />
+    <panel name="Clock" />
+    <panel name="BS2" />
+    <!-- Widget -->
+    <eLabel text="OPKG feed source..." font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="text" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="310,155" size="1300,800" transparent="1" />
+  </screen>
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="Opkg" title="Installing Software..." position="center,center" size="1920,1080">
+    <!-- Back -->
+    <eLabel backgroundColor="EL_Background" foregroundColor="EL_Background" name="" position="360,345" size="1200,390" zPosition="-20" />
+    <eLabel backgroundColor="Red" position="360,425" size="1200,3" zPosition="-9" foregroundColor="white" />
+    <!-- Widget -->
+    <eLabel text="Installing Software..." position="410,355" size="1100,58" font="FHD; 42" backgroundColor="EL_Background" transparent="1" foregroundColor="white" />
+    <widget name="activityslider" backgroundColor="EL_Background" borderColor="grey" borderWidth="2" foregroundColor="blue" position="410,455" size="800,25" transparent="1" />
+    <widget name="status" backgroundColor="EL_Background" font="FHD; 32" foregroundColor="EL_Foreground" position="410,630" size="1100,95" transparent="1" valign="top" />
+    <widget name="slider" backgroundColor="EL_Background" borderColor="grey" borderWidth="2" foregroundColor="blue" position="410,595" size="1100,25" transparent="1" />
+    <widget name="package" backgroundColor="EL_Background" font="FHD; 32" foregroundColor="EL_Foreground" position="410,490" size="1100,95" transparent="1" valign="top" />
+  </screen>
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="OpkgInstaller" title="..." position="center,center" size="1920,1080">
+    <panel name="Backg" />
+    <panel name="Clock" />
+    <panel name="BS2" />
+    <!-- Widget -->
+    <eLabel text="IpkgInstaller" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="list" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="310,155" size="1300,750" transparent="1" />
+    <eLabel backgroundColor="white" position="310,915" size="1300,1" zPosition="-1" />
+    <widget source="introduction" render="Label" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="310,920" size="1300,45" transparent="1" />
+  </screen>
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="OPKGMenu" title="Select IPKG source....." position="center,center" size="1920,1080">
+    <panel name="Backg" />
+    <panel name="Clock" />
+    <panel name="BS2" />
+    <!-- Widget -->
+    <eLabel text="IPKGMenu" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
+    <widget name="filelist" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="310,155" size="1300,800" transparent="1" />
+  </screen>
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="OPKGSource" title="IPKG source" position="center,center" size="1920,1080">
     <panel name="Backg" />
     <panel name="Clock" />
     <panel name="BS2" />
