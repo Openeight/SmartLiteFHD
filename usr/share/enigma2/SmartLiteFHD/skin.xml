@@ -4992,6 +4992,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <!-- Widget -->
     <eLabel text="Virtual KeyBoard" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
     <widget name="header" backgroundColor="EL_Background" font="FHD; 35" foregroundColor="EL_Foreground" halign="left" noWrap="1" position="310,155" size="1300,120" transparent="1" valign="center" />
+    <widget name="prompt" backgroundColor="EL_Background" font="FHD; 35" foregroundColor="EL_Foreground" halign="left" noWrap="1" position="310,155" size="1300,120" transparent="1" valign="center" />
     <eLabel backgroundColor="dark" position="312,282" size="1236,56" zPosition="2" font="Regular; 24" />
     <widget backgroundColor="EL_Background" font="Bold; 33" foregroundColor="EL_Foreground" halign="right" name="text" noWrap="1" position="324,286" size="1212,50" zPosition="3" />
     <widget name="list" position="480,360" size="952,340" backgroundColor="EL_Background" foregroundColor="white" selectionDisabled="1" transparent="1" />
@@ -5012,6 +5013,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <!-- Widget -->
     <eLabel text="Virtual KeyBoard" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
     <widget name="header" backgroundColor="EL_Background" font="FHD; 35" foregroundColor="EL_Foreground" halign="left" noWrap="1" position="310,155" size="1300,120" transparent="1" valign="center" />
+    <widget name="prompt" backgroundColor="EL_Background" font="FHD; 35" foregroundColor="EL_Foreground" halign="left" noWrap="1" position="310,155" size="1300,120" transparent="1" valign="center" />
     <eLabel backgroundColor="dark" position="312,282" size="1236,56" zPosition="2" font="Regular; 24" />
     <widget backgroundColor="EL_Background" font="Bold; 33" foregroundColor="EL_Foreground" halign="right" name="text" noWrap="1" position="324,286" size="1212,50" zPosition="3" />
     <widget name="list" position="480,360" size="1960,1740" selectionDisabled="1" transparent="1" />
