@@ -82,12 +82,12 @@ class MSNWeatherPluginEntriesListConfigScreen(Screen):
 		self["entrylist"] = WeatherPluginEntryList([])
 		self["actions"] = ActionMap(["WizardActions","MenuActions","ShortcutActions"],
 			{
-			 "ok"	:	self.keyOK,
-			 "back"	:	self.keyClose,
-			 "red"	:	self.keyClose,
-			 "green":	self.keyGreen,			 
-			 "yellow":	self.keyYellow,
-			 "blue": 	self.keyDelete,
+			 "ok"	: self.keyOK,
+			 "back"	: self.keyClose,
+			 "red"	: self.keyClose,
+			 "green": self.keyGreen,    
+			 "yellow": self.keyYellow,
+			 "blue": self.keyDelete,
 			 }, -1)
 		self.updateList()
 
@@ -163,14 +163,14 @@ class WeatherPluginEntryList(MenuList):
 
 				res = [
 					c,
-					(eListboxPythonMultiContent.TYPE_TEXT, 5, 0, 650, 50, 1, RT_HALIGN_LEFT|RT_VALIGN_CENTER, str(c.city.value)),
-					(eListboxPythonMultiContent.TYPE_TEXT, 650, 0, 100, 50, 1, RT_HALIGN_LEFT|RT_VALIGN_CENTER, str(c.degreetype .value)),
+					(eListboxPythonMultiContent.TYPE_TEXT, 5, 0, 650, 50, 1, RT_HALIGN_LEFT | RT_VALIGN_CENTER, str(c.city.value)),
+					(eListboxPythonMultiContent.TYPE_TEXT, 650, 0, 100, 50, 1, RT_HALIGN_LEFT | RT_VALIGN_CENTER, str(c.degreetype .value)),
 				]
 			else:
 				res = [
 					c,
-					(eListboxPythonMultiContent.TYPE_TEXT, 5, 0, 650, 38, 0, RT_HALIGN_LEFT|RT_VALIGN_CENTER, str(c.city.value)),
-					(eListboxPythonMultiContent.TYPE_TEXT, 650, 0, 100, 38, 0, RT_HALIGN_LEFT|RT_VALIGN_CENTER, str(c.degreetype .value)),
+					(eListboxPythonMultiContent.TYPE_TEXT, 5, 0, 650, 38, 0, RT_HALIGN_LEFT | RT_VALIGN_CENTER, str(c.city.value)),
+					(eListboxPythonMultiContent.TYPE_TEXT, 650, 0, 100, 38, 0, RT_HALIGN_LEFT | RT_VALIGN_CENTER, str(c.degreetype .value)),
 				]
 			list.append(res)
 		self.list = list
@@ -292,7 +292,7 @@ class MSNWeatherPluginEntryConfigScreen(ConfigListScreen, Screen):
 				if childs.tag == "weather" and childs.attrib.has_key("errormessage"):
 					errormessage = childs.attrib.get("errormessage").encode("utf-8", 'ignore')
 					break
-			if len(errormessage) !=0:
+			if len(errormessage) != 0:
 				self.session.open(MessageBox, errormessage, MessageBox.TYPE_ERROR)					
 			else:
 				self.session.openWithCallback(self.searchCallback, MSNWeatherPluginSearch, xmlstring)
@@ -328,9 +328,9 @@ class MSNWeatherPluginSearch(Screen):
 		self["entrylist"] = MSNWeatherPluginSearchResultList([])
 		self["actions"] = ActionMap(["WizardActions","MenuActions","ShortcutActions"],
 			{
-			 "ok"	:	self.keyOK,
+			 "ok"	: self.keyOK,
 			 "green": self.keyOK,
-			 "back"	:	self.keyClose,
+			 "back"	: self.keyClose,
 			 "red": self.keyClose,
 			 }, -1)
 		self.updateList(xmlstring)
@@ -383,14 +383,14 @@ class MSNWeatherPluginSearchResultList(MenuList):
 				if sz_w and sz_w == 1920:
 					res = [
 						(weatherlocationcode, searchlocation),
-						(eListboxPythonMultiContent.TYPE_TEXT, 5, 0, 1250, 45, 1, RT_HALIGN_LEFT|RT_VALIGN_CENTER, searchlocation),
-						(eListboxPythonMultiContent.TYPE_TEXT, 5, 45, 1250, 40, 1, RT_HALIGN_LEFT|RT_VALIGN_CENTER, searchresult),
+						(eListboxPythonMultiContent.TYPE_TEXT, 5, 0, 1250, 45, 1, RT_HALIGN_LEFT | RT_VALIGN_CENTER, searchlocation),
+						(eListboxPythonMultiContent.TYPE_TEXT, 5, 45, 1250, 40, 1, RT_HALIGN_LEFT | RT_VALIGN_CENTER, searchresult),
 					]
 				else:
 					res = [
 						(weatherlocationcode, searchlocation),
-						(eListboxPythonMultiContent.TYPE_TEXT, 5, 0, 1250, 35, 0, RT_HALIGN_LEFT|RT_VALIGN_CENTER, searchlocation),
-						(eListboxPythonMultiContent.TYPE_TEXT, 5, 35, 1250, 35, 0, RT_HALIGN_LEFT|RT_VALIGN_CENTER, searchresult),
+						(eListboxPythonMultiContent.TYPE_TEXT, 5, 0, 1250, 35, 0, RT_HALIGN_LEFT | RT_VALIGN_CENTER, searchlocation),
+						(eListboxPythonMultiContent.TYPE_TEXT, 5, 35, 1250, 35, 0, RT_HALIGN_LEFT | RT_VALIGN_CENTER, searchresult),
 					]
 				list.append(res)
 		self.list = list

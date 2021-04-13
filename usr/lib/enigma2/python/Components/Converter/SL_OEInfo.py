@@ -105,11 +105,11 @@ class SL_OEInfo(Poll, Converter, object):
 			uptime_info = None
 		if uptime_info is not None:			
 			total_seconds = float(uptime_info[0])
-			MINUTE  = 60
-			HOUR    = MINUTE * 60
-			DAY     = HOUR * 24
-			days    = int(total_seconds / DAY)
-			hours   = int((total_seconds % DAY) / HOUR)
+			MINUTE = 60
+			HOUR = MINUTE * 60
+			DAY = HOUR * 24
+			days = int(total_seconds / DAY)
+			hours = int((total_seconds % DAY) / HOUR)
 			minutes = int((total_seconds % HOUR) / MINUTE)
 			seconds = int(total_seconds % MINUTE)
 			uptime = ""

@@ -21,47 +21,47 @@ class SL_Crypt(Poll, Converter, object):
 		self.poll_interval = 1000
 		self.poll_enabled = True
 		self.caid_data = (
-			("0x100",  "0x1ff", "Seca",     "S",  True),
-			("0x500",  "0x5ff", "Via",      "V",  True),
-			("0x600",  "0x6ff", "Irdeto",   "I",  True),
-			("0x900",  "0x9ff", "NDS",      "ND", True),
-			("0xb00",  "0xbff", "Conax",    "CO", True),
-			("0xd00",  "0xdff", "CryptoW",  "CW", True),
-			("0xe00",  "0xeff", "PowerVU",  "P",  False),
-			("0x1700", "0x17ff", "Beta",     "B",  True),
-			("0x1800", "0x18ff", "Nagra",    "N",  True),
-			("0x2600", "0x2600", "Biss",     "BI", False),
-			("0x4ae0", "0x4ae1", "Dre",      "D",  False),
+			("0x100", "0x1ff", "Seca", "S", True),
+			("0x500", "0x5ff", "Via", "V", True),
+			("0x600", "0x6ff", "Irdeto", "I", True),
+			("0x900", "0x9ff", "NDS", "ND", True),
+			("0xb00", "0xbff", "Conax", "CO", True),
+			("0xd00", "0xdff", "CryptoW", "CW", True),
+			("0xe00", "0xeff", "PowerVU", "P", False),
+			("0x1700", "0x17ff", "Beta", "B", True),
+			("0x1800", "0x18ff", "Nagra", "N", True),
+			("0x2600", "0x2600", "Biss", "BI", False),
+			("0x4ae0", "0x4ae1", "Dre", "D", False),
 			("0x4aee", "0x4aee", "BulCrypt", "B1", False),
 			("0x5581", "0x5581", "BulCrypt", "B2", False)
 		)
 		self.ca_table = (
-			("CryptoCaidSecaAvailable",	"S",	False),
-			("CryptoCaidViaAvailable",	"V",	False),
-			("CryptoCaidIrdetoAvailable",	"I",	False),
-			("CryptoCaidNDSAvailable",	"ND",	False),
-			("CryptoCaidConaxAvailable",	"Co",	False),
-			("CryptoCaidCryptoWAvailable",	"CW",	False),
-			("CryptoCaidPowerVUAvailable",	"P",	False),
-			("CryptoCaidBetaAvailable",	"B",	False),
-			("CryptoCaidNagraAvailable",	"N",	False),
-			("CryptoCaidBissAvailable",	"BI",	False),
-			("CryptoCaidDreAvailable",	"D",	False),
-			("CryptoCaidBulCrypt1Available","B1",	False),
-			("CryptoCaidBulCrypt2Available","B2",	False),
-			("CryptoCaidSecaSelected",	"S",	True),
-			("CryptoCaidViaSelected",	"V",	True),
-			("CryptoCaidIrdetoSelected",	"I",	True),
-			("CryptoCaidNDSSelected",	"ND",	True),
-			("CryptoCaidConaxSelected",	"Co",	True),
-			("CryptoCaidCryptoWSelected",	"CW",	True),
-			("CryptoCaidPowerVUSelected",	"P",	True),
-			("CryptoCaidBetaSelected",	"B",	True),
-			("CryptoCaidNagraSelected",	"N",	True),
-			("CryptoCaidBissSelected",	"BI",	True),
-			("CryptoCaidDreSelected",	"D",	True),
-			("CryptoCaidBulCrypt1Selected",	"B1",	True),
-			("CryptoCaidBulCrypt2Selected",	"B2",	True),
+			("CryptoCaidSecaAvailable", "S", False),
+			("CryptoCaidViaAvailable", "V", False),
+			("CryptoCaidIrdetoAvailable", "I", False),
+			("CryptoCaidNDSAvailable", "ND", False),
+			("CryptoCaidConaxAvailable", "Co", False),
+			("CryptoCaidCryptoWAvailable", "CW", False),
+			("CryptoCaidPowerVUAvailable", "P", False),
+			("CryptoCaidBetaAvailable", "B", False),
+			("CryptoCaidNagraAvailable", "N", False),
+			("CryptoCaidBissAvailable", "BI", False),
+			("CryptoCaidDreAvailable", "D", False),
+			("CryptoCaidBulCrypt1Available","B1", False),
+			("CryptoCaidBulCrypt2Available","B2", False),
+			("CryptoCaidSecaSelected", "S", True),
+			("CryptoCaidViaSelected", "V", True),
+			("CryptoCaidIrdetoSelected", "I", True),
+			("CryptoCaidNDSSelected", "ND", True),
+			("CryptoCaidConaxSelected", "Co", True),
+			("CryptoCaidCryptoWSelected", "CW", True),
+			("CryptoCaidPowerVUSelected", "P", True),
+			("CryptoCaidBetaSelected", "B", True),
+			("CryptoCaidNagraSelected", "N", True),
+			("CryptoCaidBissSelected", "BI", True),
+			("CryptoCaidDreSelected", "D", True),
+			("CryptoCaidBulCrypt1Selected", "B1", True),
+			("CryptoCaidBulCrypt2Selected", "B2", True),
 		)
 		self.ecmdata = GetEcmInfo()
 		self.feraw = self.fedata = self.updateFEdata = None
@@ -85,13 +85,13 @@ class SL_Crypt(Poll, Converter, object):
 
 		for caid_entry in self.caid_data:
 			if int(self.current_caid, 16) >= int(caid_entry[0], 16) and int(self.current_caid, 16) <= int(caid_entry[1], 16):
-				color="\c0000??00"
+				color = "\c0000??00"
 			else:
 				color = "\c007?7?7?"
 				try:
 					for caid in available_caids:
 						if caid >= int(caid_entry[0], 16) and caid <= int(caid_entry[1], 16):
-							color="\c00????00"
+							color = "\c00????00"
 				except:
 					pass
 
@@ -121,7 +121,7 @@ class SL_Crypt(Poll, Converter, object):
 			return ""
 		yres = info.getInfo(iServiceInformation.sVideoHeight)
 		mode = ("i", "p", " ")[info.getInfo(iServiceInformation.sProgressive)]
-		fps  = str((info.getInfo(iServiceInformation.sFrameRate) + 500) / 1000)
+		fps = str((info.getInfo(iServiceInformation.sFrameRate) + 500) / 1000)
 		return str(xres) + "x" + str(yres) + mode + fps
 
 	def createVideoCodec(self, info):
@@ -357,7 +357,7 @@ class SL_Crypt(Poll, Converter, object):
 		if data is None:
 			return False
 
-		current_caid	= data[1]
+		current_caid = data[1]
 
 		available_caids = info.getInfoObject(iServiceInformation.sCAIDs)
 
