@@ -79,7 +79,7 @@ class MSNWeatherPluginEntriesListConfigScreen(Screen):
 		self["city"] = StaticText(_("City"))
 		self["degreetype"] = StaticText(_("System"))
 		self["key_red"] = StaticText(_("Back"))
-		self["key_green"] = StaticText(_("Add"))		
+		self["key_green"] = StaticText(_("Add"))
 		self["key_yellow"] = StaticText(_("Edit"))
 		self["key_blue"] = StaticText(_("Delete"))
 		self["entrylist"] = WeatherPluginEntryList([])
@@ -88,7 +88,7 @@ class MSNWeatherPluginEntriesListConfigScreen(Screen):
 			 "ok": self.keyOK,
 			 "back": self.keyClose,
 			 "red": self.keyClose,
-			 "green": self.keyGreen,    
+			 "green": self.keyGreen,
 			 "yellow": self.keyYellow,
 			 "blue": self.keyDelete,
 			 }, -1)
@@ -238,7 +238,7 @@ class MSNWeatherPluginEntryConfigScreen(ConfigListScreen, Screen):
 			self['config'].getCurrent()[1].setValue(callback)
 			self['config'].invalidate(self['config'].getCurrent())
 		return
-		
+
 	def searchLocation(self):
 		if self.current.city.value != "":
 			language = config.osd.language.value.replace("_", "-")
@@ -274,7 +274,7 @@ class MSNWeatherPluginEntryConfigScreen(ConfigListScreen, Screen):
 	def keyDelete(self):
 		if self.newmode == 1:
 			self.keyCancel()
-		else:		
+		else:
 			self.session.openWithCallback(self.deleteConfirm, MessageBox, _("Really delete this WeatherPlugin Entry?"))
 
 	def deleteConfirm(self, result):
@@ -287,7 +287,7 @@ class MSNWeatherPluginEntryConfigScreen(ConfigListScreen, Screen):
 		config.plugins.WeatherPlugin.save()
 		configfile.save()
 		self.close()
-		
+
 	def xmlCallback(self, xmlstring):
 		if xmlstring:
 			errormessage = ""
@@ -297,20 +297,20 @@ class MSNWeatherPluginEntryConfigScreen(ConfigListScreen, Screen):
 					errormessage = childs.attrib.get("errormessage").encode("utf-8", 'ignore')
 					break
 			if len(errormessage) != 0:
-				self.session.open(MessageBox, errormessage, MessageBox.TYPE_ERROR)					
+				self.session.open(MessageBox, errormessage, MessageBox.TYPE_ERROR)
 			else:
 				self.session.openWithCallback(self.searchCallback, MSNWeatherPluginSearch, xmlstring)
-			
+
 	def error(self, error=None):
 		if error is not None:
 			print error
-		
+
 	def searchCallback(self, result):
 		if result:
 			self.current.weatherlocationcode.value = result[0]
 			self.current.city.value = result[1]
-	
-		
+
+
 class MSNWeatherPluginSearch(Screen):
 	skin = """
 		<screen name="MSNWeatherPluginSearch" position="center,center" size="550,400">
@@ -321,13 +321,13 @@ class MSNWeatherPluginSearch(Screen):
 			<ePixmap position="140,10" zPosition="4" size="140,40" pixmap="skin_default/buttons/green.png" transparent="1" alphatest="on" />
 			<ePixmap position="280,10" zPosition="4" size="140,40" pixmap="skin_default/buttons/yellow.png" transparent="1" alphatest="on" />
 			<ePixmap position="420,10" zPosition="4" size="140,40" pixmap="skin_default/buttons/blue.png" transparent="1" alphatest="on" />
-		</screen>""" 
+		</screen>"""
 
 	def __init__(self, session, xmlstring):
 		Screen.__init__(self, session)
 		self.title = _("MSN location search result")
 		self["key_red"] = StaticText(_("Back"))
-		self["key_green"] = StaticText(_("OK"))		
+		self["key_green"] = StaticText(_("OK"))
 		self["entrylist"] = MSNWeatherPluginSearchResultList([])
 		self["actions"] = ActionMap(["WizardActions", "MenuActions", "ShortcutActions"],
 			{
@@ -351,7 +351,7 @@ class MSNWeatherPluginSearch(Screen):
 		except:
 			sel = None
 		self.close(sel)
-		
+
 
 class MSNWeatherPluginSearchResultList(MenuList):
 	def __init__(self, list, enableWrapAround=True):

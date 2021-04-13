@@ -14,7 +14,7 @@ from Screens.InfoBar import InfoBar
 class SL_RefString(Converter, object):
 	CURRENT = 0
 	EVENT = 1
-	
+
 	def __init__(self, type):
 		Converter.__init__(self, type)
 		self.CHANSEL = None

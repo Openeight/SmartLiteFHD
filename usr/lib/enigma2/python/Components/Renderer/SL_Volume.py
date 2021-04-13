@@ -25,6 +25,3 @@ class SL_Volume(Renderer, VariableText):
     def onHide(self):
         self.suspended = True
         self.vol_timer.stop()
-
-
-

@@ -45,7 +45,7 @@ class SL_ServiceName(Converter, object):
 		else:
 			self.type = self.FORMAT
 			self.sfmt = type[:]
-		
+
 		self.what = self.tpdata = None
 		self.Timer = eTimer()
 		self.Timer.callback.append(self.neededChange)
@@ -366,6 +366,3 @@ class SL_ServiceName(Converter, object):
 				self.Timer.start(200, True)
 			else:
 				Converter.changed(self, what)
-
-
-

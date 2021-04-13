@@ -19,7 +19,3 @@ class SL_Title(VariableText, Renderer):
             self.text = ""
         else:
             self.text = self.source.text.replace("User - bouquets/", "").replace("User - bouquets", "bouquets").replace("Benutzerspezifische - Kanallisten (Bouquets)/", "").replace("Benutzerspezifische - Kanallisten (Bouquets)", "Bouquets").replace("Recorded files...", "").replace("Aufgenommene Dateien...", "")
-
-
-
-
