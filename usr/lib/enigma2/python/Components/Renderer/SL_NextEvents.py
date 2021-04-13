@@ -3,6 +3,7 @@ from Renderer import Renderer
 from enigma import eLabel, eEPGCache
 from time import localtime
 
+
 class SL_NextEvents(VariableText, Renderer):
 	def __init__(self):
 		Renderer.__init__(self)

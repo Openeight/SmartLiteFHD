@@ -27,6 +27,7 @@ import os
 from Poll import Poll
 from Tools.HardwareInfo import HardwareInfo
 
+
 class SL_OEInfo(Poll, Converter, object):
 	BOXTYPE = 0
 	LOAD = 1

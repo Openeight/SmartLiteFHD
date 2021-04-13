@@ -38,6 +38,7 @@ from xml.etree.cElementTree import fromstring as cet_fromstring
 from twisted.web.client import getPage
 from urllib import quote as urllib_quote
 
+
 def initWeatherPluginEntryConfig():
 	s = ConfigSubsection()
 	s.city = ConfigText(default="Heidelberg", visible_width=100, fixed_size=False)
@@ -46,6 +47,7 @@ def initWeatherPluginEntryConfig():
 	config.plugins.WeatherPlugin.Entry.append(s)
 	return s
 
+
 def initConfig():
 	count = config.plugins.WeatherPlugin.entrycount.value
 	if count != 0:
@@ -53,6 +55,7 @@ def initConfig():
 		while i < count:
 			initWeatherPluginEntryConfig()
 			i += 1
+
 
 class MSNWeatherPluginEntriesListConfigScreen(Screen):
 	skin = """
@@ -137,6 +140,7 @@ class MSNWeatherPluginEntriesListConfigScreen(Screen):
 		configfile.save()
 		self.updateList()
 
+
 class WeatherPluginEntryList(MenuList):
 	def __init__(self, list, enableWrapAround=True):
 		MenuList.__init__(self, list, enableWrapAround, eListboxPythonMultiContent)
@@ -176,6 +180,7 @@ class WeatherPluginEntryList(MenuList):
 		self.list = list
 		self.l.setList(list)
 		self.moveToIndex(0)
+
 
 class MSNWeatherPluginEntryConfigScreen(ConfigListScreen, Screen):
 	skin = """
@@ -283,7 +288,6 @@ class MSNWeatherPluginEntryConfigScreen(ConfigListScreen, Screen):
 		configfile.save()
 		self.close()
 		
-		
 	def xmlCallback(self, xmlstring):
 		if xmlstring:
 			errormessage = ""
@@ -306,7 +310,6 @@ class MSNWeatherPluginEntryConfigScreen(ConfigListScreen, Screen):
 			self.current.weatherlocationcode.value = result[0]
 			self.current.city.value = result[1]
 	
-		
 		
 class MSNWeatherPluginSearch(Screen):
 	skin = """

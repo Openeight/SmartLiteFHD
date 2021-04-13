@@ -10,6 +10,7 @@ SIZE_UNITS = ['B',
  'PB',
  'EB']
 
+
 class SL_BoxInfo(Poll, Converter):
     HDDTEMP = 0
     LOADAVG = 1

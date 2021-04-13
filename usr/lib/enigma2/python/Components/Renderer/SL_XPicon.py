@@ -12,6 +12,7 @@ from ServiceReference import ServiceReference
 import re
 import unicodedata
 
+
 class SL_XPicon(Renderer):
 	searchPaths = ('/media/usb/XPicons/%s/', '/media/usb/%s/', '/%s/', '/%sx/', '/usr/share/enigma2/XPicons/%s/', '/usr/share/enigma2/%s/', '/usr/%s/', '/media/hdd/XPicons/%s/', '/media/hdd/%s/')
 

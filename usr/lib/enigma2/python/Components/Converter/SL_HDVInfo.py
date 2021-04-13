@@ -8,6 +8,7 @@ from Poll import Poll
 
 ##########################################################################
 
+
 class SL_HDVInfo(Poll, Converter, object):
 
 	VIDEOMODE = 0
