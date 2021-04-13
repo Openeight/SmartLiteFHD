@@ -17,7 +17,7 @@ class SL_Title(VariableText, Renderer):
         if what[0] == self.CHANGED_CLEAR:
             self.text = ""
         else:
-            self.text = self.source.text.replace("User - bouquets/","").replace("User - bouquets","bouquets").replace("Benutzerspezifische - Kanallisten (Bouquets)/","").replace("Benutzerspezifische - Kanallisten (Bouquets)","Bouquets").replace("Recorded files...","").replace("Aufgenommene Dateien...","")
+            self.text = self.source.text.replace("User - bouquets/", "").replace("User - bouquets", "bouquets").replace("Benutzerspezifische - Kanallisten (Bouquets)/", "").replace("Benutzerspezifische - Kanallisten (Bouquets)", "Bouquets").replace("Recorded files...", "").replace("Aufgenommene Dateien...", "")
 
 
 

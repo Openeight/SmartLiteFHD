@@ -47,8 +47,8 @@ class SL_Crypt(Poll, Converter, object):
 			("CryptoCaidNagraAvailable", "N", False),
 			("CryptoCaidBissAvailable", "BI", False),
 			("CryptoCaidDreAvailable", "D", False),
-			("CryptoCaidBulCrypt1Available","B1", False),
-			("CryptoCaidBulCrypt2Available","B2", False),
+			("CryptoCaidBulCrypt1Available", "B1", False),
+			("CryptoCaidBulCrypt2Available", "B2", False),
 			("CryptoCaidSecaSelected", "S", True),
 			("CryptoCaidViaSelected", "V", True),
 			("CryptoCaidIrdetoSelected", "I", True),
@@ -110,7 +110,7 @@ class SL_Crypt(Poll, Converter, object):
 				if int(self.current_caid, 16) >= int(caid_entry[0], 16) and int(self.current_caid, 16) <= int(caid_entry[1], 16):
 					caid_name = caid_entry[2]
 					break
-			return caid_name + ":%04x:%04x:%04x:%04x" % (int(self.current_caid,16), int(self.current_provid,16), info.getInfo(iServiceInformation.sSID), int(self.current_ecmpid,16))
+			return caid_name + ":%04x:%04x:%04x:%04x" % (int(self.current_caid, 16), int(self.current_provid, 16), info.getInfo(iServiceInformation.sSID), int(self.current_ecmpid, 16))
 		except:
 			pass
 		return ""
@@ -219,7 +219,7 @@ class SL_Crypt(Poll, Converter, object):
 			return str((float(orbpos)) / 10.0) + "\xc2\xb0 E"
 		return ""
 
-	def createOrbPosOrTunerSystem(self, fedata,feraw):
+	def createOrbPosOrTunerSystem(self, fedata, feraw):
 		orbpos = self.createOrbPos(feraw)
 		if orbpos is not "":
 			return orbpos
@@ -319,7 +319,7 @@ class SL_Crypt(Poll, Converter, object):
 			return self.createTunerSystem(fedata)
 
 		if self.type == "OrbitalPositionOrTunerSystem":
-			return self.createOrbPosOrTunerSystem(fedata,feraw)
+			return self.createOrbPosOrTunerSystem(fedata, feraw)
 
 		if self.type == "PIDInfo":
 			return self.createPIDInfo(info)

@@ -13,7 +13,7 @@ import re
 import unicodedata
 
 class SL_XPicon(Renderer):
-	searchPaths = ('/media/usb/XPicons/%s/','/media/usb/%s/','/%s/','/%sx/','/usr/share/enigma2/XPicons/%s/','/usr/share/enigma2/%s/','/usr/%s/','/media/hdd/XPicons/%s/','/media/hdd/%s/')
+	searchPaths = ('/media/usb/XPicons/%s/', '/media/usb/%s/', '/%s/', '/%sx/', '/usr/share/enigma2/XPicons/%s/', '/usr/share/enigma2/%s/', '/usr/%s/', '/media/hdd/XPicons/%s/', '/media/hdd/%s/')
 
 	def __init__(self):
 		Renderer.__init__(self)
@@ -27,7 +27,7 @@ class SL_XPicon(Renderer):
 			if attrib == "path":
 				self.path = value
 			else:
-				attribs.append((attrib,value))
+				attribs.append((attrib, value))
 		self.skinAttributes = attribs
 		return Renderer.applySkin(self, desktop, parent)
 
@@ -41,7 +41,7 @@ class SL_XPicon(Renderer):
 				sname = self.source.text
 				pos = sname.rfind(':')
 				if pos != -1:
-					sname = sname[:pos].rstrip(':').replace(':','_')
+					sname = sname[:pos].rstrip(':').replace(':', '_')
 					sname = sname.split("_http")[0]
 				pngname = self.nameCache.get(sname, "")
 				if pngname == "":
