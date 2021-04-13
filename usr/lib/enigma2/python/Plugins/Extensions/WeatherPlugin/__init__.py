@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 from Components.Language import language
 from Tools.Directories import resolveFilename, SCOPE_PLUGINS, SCOPE_LANGUAGE
-import os,gettext
+import os
+import gettext
 
 def localeInit():
 	lang = language.getLanguage()[:2] # getLanguage returns e.g. "fi_FI" for "language_country"
