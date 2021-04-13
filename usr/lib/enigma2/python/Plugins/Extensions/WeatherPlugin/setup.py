@@ -40,9 +40,9 @@ from urllib import quote as urllib_quote
 
 def initWeatherPluginEntryConfig():
 	s = ConfigSubsection()
-	s.city = ConfigText(default = "Heidelberg", visible_width = 100, fixed_size = False)
-	s.degreetype = ConfigSelection(choices = [("C", _("metric system")), ("F", _("imperial system"))], default = "C")
-	s.weatherlocationcode = ConfigText(default = "", visible_width = 100, fixed_size = False)
+	s.city = ConfigText(default="Heidelberg", visible_width=100, fixed_size=False)
+	s.degreetype = ConfigSelection(choices=[("C", _("metric system")), ("F", _("imperial system"))], default="C")
+	s.weatherlocationcode = ConfigText(default="", visible_width=100, fixed_size=False)
 	config.plugins.WeatherPlugin.Entry.append(s)
 	return s
 
@@ -138,7 +138,7 @@ class MSNWeatherPluginEntriesListConfigScreen(Screen):
 		self.updateList()
 
 class WeatherPluginEntryList(MenuList):
-	def __init__(self, list, enableWrapAround = True):
+	def __init__(self, list, enableWrapAround=True):
 		MenuList.__init__(self, list, enableWrapAround, eListboxPythonMultiContent)
 		sz_w = getDesktop(0).size().width()
 		if sz_w and sz_w == 1920:
@@ -228,7 +228,7 @@ class MSNWeatherPluginEntryConfigScreen(ConfigListScreen, Screen):
 		from Screens.VirtualKeyBoard import VirtualKeyBoard
 		self.session.openWithCallback(self.VirtualKeyBoardCallback, VirtualKeyBoard, title=self['config'].getCurrent()[0], text=self['config'].getCurrent()[1].getValue())
 
-	def VirtualKeyBoardCallback(self, callback = None):
+	def VirtualKeyBoardCallback(self, callback=None):
 		if callback is not None and len(callback):
 			self['config'].getCurrent()[1].setValue(callback)
 			self['config'].invalidate(self['config'].getCurrent())
@@ -297,7 +297,7 @@ class MSNWeatherPluginEntryConfigScreen(ConfigListScreen, Screen):
 			else:
 				self.session.openWithCallback(self.searchCallback, MSNWeatherPluginSearch, xmlstring)
 			
-	def error(self, error = None):
+	def error(self, error=None):
 		if error is not None:
 			print error
 		
@@ -351,7 +351,7 @@ class MSNWeatherPluginSearch(Screen):
 		
 
 class MSNWeatherPluginSearchResultList(MenuList):
-	def __init__(self, list, enableWrapAround = True):
+	def __init__(self, list, enableWrapAround=True):
 		MenuList.__init__(self, list, enableWrapAround, eListboxPythonMultiContent)
 		sz_w = getDesktop(0).size().width()
 		if sz_w and sz_w == 1920:
