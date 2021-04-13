@@ -108,18 +108,18 @@ class SL_OEInfo(Poll, Converter, object):
 			MINUTE  = 60
 			HOUR    = MINUTE * 60
 			DAY     = HOUR * 24
-			days    = int( total_seconds / DAY )
-			hours   = int( ( total_seconds % DAY ) / HOUR )
-			minutes = int( ( total_seconds % HOUR ) / MINUTE )
-			seconds = int( total_seconds % MINUTE )
+			days    = int(total_seconds / DAY)
+			hours   = int((total_seconds % DAY) / HOUR)
+			minutes = int((total_seconds % HOUR) / MINUTE)
+			seconds = int(total_seconds % MINUTE)
 			uptime = ""
 			if days > 0:
-				uptime += str(days) + " " + (days == 1 and "day" or "days" ) + ", "
+				uptime += str(days) + " " + (days == 1 and "day" or "days") + ", "
 			if len(uptime) > 0 or hours > 0:
-				uptime += str(hours) + " " + (hours == 1 and "hour" or "hours" ) + ", "
+				uptime += str(hours) + " " + (hours == 1 and "hour" or "hours") + ", "
 			if len(uptime) > 0 or minutes > 0:
-				uptime += str(minutes) + " " + (minutes == 1 and "minute" or "minutes" ) + ", "
-			uptime += str(seconds) + " " + (seconds == 1 and "second" or "seconds" )
+				uptime += str(minutes) + " " + (minutes == 1 and "minute" or "minutes") + ", "
+			uptime += str(seconds) + " " + (seconds == 1 and "second" or "seconds")
 			return "Uptime: %s" % uptime
 
 	def getTempSensor(self):
