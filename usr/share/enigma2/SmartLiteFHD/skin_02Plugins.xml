@@ -8755,7 +8755,7 @@
     <eLabel backgroundColor="blueCH" position="1120,470" size="715,3" zPosition="-9" foregroundColor="white" />
     <eLabel backgroundColor="blueCH" position="1100,155" size="3,855" zPosition="-9" foregroundColor="white" />
     <eLabel backgroundColor="blueCH" position="100,335" size="980,3" zPosition="-9" foregroundColor="white" />
-    <eLabel text="V 1.0.1" font="FHD; 38" backgroundColor="EL_Background" foregroundColor="white" position="292,70" size="155,58" transparent="1" zPosition="3" valign="center" halign="center" />
+    <eLabel text="V 1.0.5" font="FHD; 38" backgroundColor="EL_Background" foregroundColor="white" position="292,70" size="155,58" transparent="1" zPosition="3" valign="center" halign="center" />
     <!-- Buttons -->
     <eLabel backgroundColor="blue" foregroundColor="white" name="" position="1120,968" size="715,1" zPosition="-10" />
     <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_menu.png" position="1710,976" size="64,38" />
@@ -8782,7 +8782,7 @@
     <eLabel backgroundColor="EL_New" position="200,679" size="500,100" zPosition="-50" foregroundColor="white" />
     <!-- Widget -->
     <eLabel text="PureVPN" font="FHD; 48" backgroundColor="EL_Background" foregroundColor="white" position="210,418" size="480,175" transparent="1" valign="bottom" zPosition="3" halign="center" />
-    <eLabel text="V 1.0.1" font="FHD; 36" backgroundColor="EL_Background" foregroundColor="white" position="210,593" size="480,58" transparent="1" zPosition="3" valign="center" halign="center" />
+    <eLabel text="V 1.0.5" font="FHD; 36" backgroundColor="EL_Background" foregroundColor="white" position="210,593" size="480,58" transparent="1" zPosition="3" valign="center" halign="center" />
     <widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="white" position="770,130" size="960,750" transparent="1" />
     <ePixmap name="setting" position="391,403" size="120,124" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/PureVPN/icon/settings_1920.png" alphatest="blend" zPosition="2" />
     <!-- Buttons-->
