@@ -7020,11 +7020,11 @@
     <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="90,970" size="40,40" />
     <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="395,970" size="40,40" />
     <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/yellow.png" position="700,970" size="40,40" />
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/blue.png" position="1005,970" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/blue.png" position="1020,970" size="40,40" />
     <widget name="key_red" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="140,970" size="250,40" transparent="1" zPosition="1" />
     <widget name="key_green" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="445,970" size="250,40" transparent="1" zPosition="1" />
-    <widget name="key_yellow" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="750,970" size="250,40" transparent="1" zPosition="1" />
-    <widget name="key_blue" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="1055,970" size="250,40" transparent="1" zPosition="1" />
+    <widget name="key_yellow" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="750,970" size="260,40" transparent="1" zPosition="1" />
+    <widget name="key_blue" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="1070,970" size="260,40" transparent="1" zPosition="1" />
     <!-- Clock -->
     <eLabel backgroundColor="white" position="1707,74" size="1,50" transparent="0" zPosition="-1" />
     <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1714,57" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
@@ -7063,11 +7063,11 @@
     <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/red.png" position="90,970" size="40,40" />
     <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/green.png" position="395,970" size="40,40" />
     <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/yellow.png" position="700,970" size="40,40" />
-    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/blue.png" position="1005,970" size="40,40" />
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/blue.png" position="1020,970" size="40,40" />
     <widget name="key_red" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="140,970" size="250,40" transparent="1" zPosition="1" />
     <widget name="key_green" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="445,970" size="250,40" transparent="1" zPosition="1" />
-    <widget name="key_yellow" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="750,970" size="250,40" transparent="1" zPosition="1" />
-    <widget name="key_blue" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="1055,970" size="250,40" transparent="1" zPosition="1" />
+    <widget name="key_yellow" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="750,970" size="260,40" transparent="1" zPosition="1" />
+    <widget name="key_blue" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" halign="left" position="1070,970" size="260,40" transparent="1" zPosition="1" />
     <!-- Clock -->
     <eLabel backgroundColor="white" position="1707,74" size="1,50" transparent="0" zPosition="-1" />
     <widget backgroundColor="EL_Background" font="Bold; 50" halign="left" position="1714,57" render="Label" size="142,80" source="global.CurrentTime" transparent="1" valign="center">
