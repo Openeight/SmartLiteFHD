@@ -3308,11 +3308,11 @@
     <!-- Widget -->
     <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/key_menu.png" position="1580,986" size="64,38" />
     <widget name="config" position="310,155" size="1300,440" zPosition="3" itemHeight="50" font="FHD; 32" backgroundColor="EL_Background" scrollbarMode="showOnDemand"/>
-    <widget name="address" position="310,560" size="310,38" zPosition="3" font="FHD; 28" backgroundColor="EL_Background" foregroundColor="blue"/>
-    <widget name="sendto" position="960,560" size="310,38" zPosition="3" font="FHD; 28" backgroundColor="EL_Background" foregroundColor="blue"/>
+    <widget name="address" position="360,560" size="310,38" zPosition="3" font="FHD; 28" backgroundColor="EL_Background" foregroundColor="blue"/>
+    <widget name="sendto" position="1000,560" size="310,38" zPosition="3" font="FHD; 28" backgroundColor="EL_Background" foregroundColor="blue"/>
     <eLabel backgroundColor="blue" position="center,600" size="1300,1" zPosition="-9" foregroundColor="blue" />
-    <widget name="ltx" position="310,602" size="40,32" zPosition="3" font="FHD; 25" backgroundColor="EL_Background" halign="left" foregroundColor="green"/>
-    <widget name="txtext" position="350,602" size="500,350" zPosition="3" font="FHD; 25" backgroundColor="EL_Background" halign="left"/>
+    <widget name="ltx" position="320,602" size="40,32" zPosition="3" font="FHD; 25" backgroundColor="EL_Background" halign="left" foregroundColor="green"/>
+    <widget name="txtext" position="360,602" size="500,350" zPosition="3" font="FHD; 25" backgroundColor="EL_Background" halign="left"/>
     <widget name="lrx" position="960,602" size="40,32" zPosition="3" font="FHD; 25" backgroundColor="EL_Background" halign="left" foregroundColor="red"/>
     <widget name="rxtext" position="1000,602" size="500,350" zPosition="3" font="FHD; 25" backgroundColor="EL_Background" halign="left"/>
   </screen>
@@ -3329,7 +3329,7 @@
   <screen name="HdmiTestOptions" title="HdmiTest - options" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
     <panel name="Backg" />
     <panel name="Clock" />
-    <panel name="BN4" />
+    <panel name="BN2" />
     <eLabel text="HdmiTest - options" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
     <!-- Widget -->
     <widget name="config" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" backgroundColor="EL_Background" foregroundColor="white" position="310,155" size="1300,780" transparent="1" zPosition="3" />
