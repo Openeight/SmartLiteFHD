@@ -2,6 +2,7 @@ from Components.VariableText import VariableText
 from enigma import eLabel, eDVBVolumecontrol, eTimer
 from Renderer import Renderer
 
+
 class SL_Volume(Renderer, VariableText):
     def __init__(self):
         Renderer.__init__(self)
@@ -24,6 +25,3 @@ class SL_Volume(Renderer, VariableText):
     def onHide(self):
         self.suspended = True
         self.vol_timer.stop()
-
-
-

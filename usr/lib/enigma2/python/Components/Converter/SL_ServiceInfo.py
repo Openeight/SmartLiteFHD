@@ -20,6 +20,7 @@ from xml.etree.cElementTree import parse
 
 ##########################################################################
 
+
 class SL_ServiceInfo(Converter, object):
 	SERVICENAME = 0
 	SERVICENUMBER = 1
@@ -148,7 +149,7 @@ class SL_ServiceInfo(Converter, object):
 		number = ""
 		if name in list:
 			for idx in range(1, len(list)):
-				if name == list[idx-1]:
+				if name == list[idx - 1]:
 					number = str(idx)
 					break
 		return number
@@ -164,8 +165,8 @@ class SL_ServiceInfo(Converter, object):
 					orbital = transponderData["orbital_position"]
 					orbital = int(orbital)
 					if orbital > 1800:
-						orbital = str((float(3600 - orbital))/10.0) + "W"
+						orbital = str((float(3600 - orbital)) / 10.0) + "W"
 					else:
-						orbital = str((float(orbital))/10.0) + "E"
+						orbital = str((float(orbital)) / 10.0) + "E"
 					return orbital
 		return ""
