@@ -3448,7 +3448,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
   <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoMountView" position="center,center" size="1920,1080" title="MountView">
     <panel name="Backg" />
     <panel name="Clock" />
-    <panel name="BS2" />
+    <panel name="BS1" />
     <!-- Widget -->
     <eLabel text="MountView" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
     <widget source="legend1" render="Label" backgroundColor="EL_Background" font="FHD; 32" foregroundColor="white" halign="center" position="310,155" size="250,90" transparent="1" valign="center" />
@@ -3470,6 +3470,8 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
                         }
             </convert>
     </widget>
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/yellow.png" position="950,985" size="40,40" />
+    <widget source="key_yellow" render="Label" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="995,985" size="270,40" transparent="1" zPosition="1" />
     <eLabel backgroundColor="white" position="310,910" size="1240,1" zPosition="-1" foregroundColor="white" />
     <widget source="introduction" font="FHD; 32" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="310,920" render="Label" size="1300,50" transparent="1" />
   </screen>
@@ -3637,7 +3639,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
   <screen backgroundColor="transparent" flags="wfNoBorder" name="UserManager" position="center,center" size="1920,1080" title="UserManager">
     <panel name="Backg" />
     <panel name="Clock" />
-    <panel name="BS2" />
+    <panel name="BS1" />
     <!-- Widget -->
     <eLabel text="UserManager" font="FHD; 42" backgroundColor="EL_Background" foregroundColor="white" position="310,60" size="1030,58" transparent="1" />
     <widget source="config" render="Listbox" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="EL_Background" foregroundColor="white" position="310,155" size="1300,700" transparent="1">
@@ -3651,6 +3653,8 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
                 }
             </convert>
     </widget>
+    <ePixmap alphatest="blend" pixmap="SmartLiteFHD/buttons/yellow.png" position="950,985" size="40,40" />
+    <widget source="key_yellow" render="Label" font="Regular2; 28" backgroundColor="EL_Background" foregroundColor="white" valign="center" halign="left" position="995,985" size="270,40" transparent="1" zPosition="1" />
     <eLabel backgroundColor="white" position="310,915" size="1300,1" zPosition="-1" foregroundColor="white" />
     <widget source="introduction" render="Label" font="FHD; 30" backgroundColor="EL_Background" foregroundColor="EL_Foreground" halign="left" position="310,920" size="1300,45" transparent="1" />
   </screen>
